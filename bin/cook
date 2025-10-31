@@ -1,0 +1,39 @@
+#!/bin/sh
+set -euf
+
+# Cook the Claude markdown output to use better formatting.
+# Specifically, this script adjusts the headlines and casings.
+# 
+# Depending on how well Claude works, you may also need to adjust 
+# each output link.
+#
+# From a format with a header and number such as:
+#
+#     ### 1. Title: Alfa
+#     URL: Bravo
+#     Summary: Charlie
+# 
+# Into to a list item with a markdown link such as:
+#
+#     - [Alfa](Bravo): Charlie
+#
+# Search:
+#
+#     ### \d+\. (.*)\nURL: (.*)\nSummary: (.*)
+#
+# Replace: 
+#
+#     - [$1]($2): $3
+#
+
+sed -i.bak '\
+s/^## COURSERA COURSES/## Coursera courses/; \
+s/^## UDEMY COURSES/## Udemy courses/; \
+s/^## SKILLSOFT COURSES/## Skillsoft courses/; \
+s/^## EDX COURSES/## EdX courses/; \
+s/^## MIT OPENCOURSEWARE COURSES/## MIT OpenCourseWare courses/; \
+s/^## BLOG POSTS/## Blog posts/; \
+s/^## RESEARCH ARTICLES/## Research articles/; \
+s/^## YOUTUBE VIDEOS/## Videos/; \
+s/^## AMAZON KINDLE BOOKS/## Books/; \
+' "$@"
