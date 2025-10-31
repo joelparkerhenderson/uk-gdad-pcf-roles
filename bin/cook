@@ -3,37 +3,19 @@ set -euf
 
 # Cook the Claude markdown output to use better formatting.
 # Specifically, this script adjusts the headlines and casings.
-# 
-# Depending on how well Claude works, you may also need to adjust 
-# each output link.
-#
-# From a format with a header and number such as:
-#
-#     ### 1. Title: Alfa
-#     URL: Bravo
-#     Summary: Charlie
-# 
-# Into to a list item with a markdown link such as:
-#
-#     - [Alfa](Bravo): Charlie
-#
-# Search & replace:
-#
-#     ### \d+\. (.*)\n\**URL:\** (.*)\n\**Summary:\** (.*)
-#     - [$1]($2): $3
-#
-#     ### \d+\. (.*)\n\**(\w+):\** (.*)\n\**URL:\** (.*)\n\**Summary:\** (.*)
-#     - [$1]($4): $5 $2: $3.
-#
+# See the correspondign file cook-test.md for test examples.
 
-sed ' \
-s/^## COURSERA COURSES/## Coursera courses/i; \
-s/^## UDEMY COURSES/## Udemy courses/i; \
-s/^## SKILLSOFT COURSES/## Skillsoft courses/i; \
-s/^## EDX COURSES/## edX courses/i; \
-s/^## MIT OPENCOURSEWARE COURSES/## MIT OpenCourseWare courses/i; \
-s/^## BLOG POSTS/## Blog posts/i; \
-s/^## RESEARCH ARTICLES/## Research articles/i; \
-s/^## YOUTUBE VIDEOS/## Videos/u; \
-s/^## AMAZON KINDLE BOOKS/## Books/i; \
+gsed '/./{H;$!d} ; x ;
+s/### [0-9]\{1,\}\. \(\**Title:\** \|\)\(.*\)\n\(\**\w\{1,\}:\** \|\)\(.*\)\n\(\**\w\{1,\}:\** \|\)\(.*\)\n\**URL:\** \(.*\)\n\**Summary:\** \(.*\)/- [\2](\7): \8 \4. \6./;
+s/### [0-9]\{1,\}\. \(\**Title:\** \|\)\(.*\)\n\(\**\w\{1,\}:\** \|\)\(.*\)\n\**URL:\** \(.*\)\n\**Summary:\** \(.*\)/- [\2](\5): \6 \4./;
+s/### [0-9]\{1,\}\. \(\**Title:\** \|\)\(.*\)\n\**URL:\** \(.*\)\n\**Summary:\** \(.*\)/- [\2](\3): \4/;
+s/^## COURSERA COURSES/## Coursera courses/;
+s/^## UDEMY COURSES/## Udemy courses/;
+s/^## SKILLSOFT COURSES/## Skillsoft courses/;
+s/^## EDX COURSES/## edX courses/;
+s/^## MIT OPENCOURSEWARE COURSES/## MIT OpenCourseWare courses/;
+s/^## BLOG POSTS/## Blog posts/;
+s/^## RESEARCH ARTICLES/## Research articles/;
+s/^## YOUTUBE VIDEOS/## Videos/;
+s/^## AMAZON KINDLE BOOKS/## Books/;
 ' "$@"
