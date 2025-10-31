@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(mkdir:*)",
+      "Bash(python3:*)",
+      "Bash(chmod:*)",
+      "Bash(file=\"/Users/jph/git/joelparkerhenderson/uk-gdad-pcf-roles/output/data-data-analyst-data-analyst.txt\")",
+      "Bash(awk:*)",
+      "Bash(file=\"software-development-software-developer-junior-developer.txt\")",
+      "Bash(echo:*)",
+      "Bash(xargs -I {} bash -c 'echo \"\"\"\"=== {} ===\"\"\"\" && grep -c \"\"\"\"Title:\"\"\"\" {}')",
+      "Bash(cat:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
