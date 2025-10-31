@@ -10,7 +10,9 @@
       "Bash(file=\"software-development-software-developer-junior-developer.txt\")",
       "Bash(echo:*)",
       "Bash(xargs -I {} bash -c 'echo \"\"\"\"=== {} ===\"\"\"\" && grep -c \"\"\"\"Title:\"\"\"\" {}')",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "WebFetch(domain:www.coursera.org)",
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": []

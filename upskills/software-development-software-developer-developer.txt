@@ -1,15 +1,20 @@
-# Training Resources for Software Developer Role
+# Software developer - upskill resources
 
-This document provides comprehensive training resources for the Software Developer role based on the UK Government Digital and Data (GDAD) Professional Capability Framework (PCF).
+This page focus on learning and growth resources for the work role of test engineer.
 
-## Role Summary
-A software developer designs, runs and improves software that meets user needs. Key responsibilities include:
-- Writing clean, secure code following a test-driven approach
-- Creating code that is open by default and easy for others to reuse
-- Developing software to meet user needs
-- Following best practice guidelines and helping to improve those guidelines
-- Coaching and mentoring more junior colleagues
-- Operating the services built and identifying issues in production
+- The resources include links to online courses, blogs, research articles, videos, and books. 
+
+- The resources are links for help with job upskilling, work training, professional development, career advancement, and the like. 
+
+- The resources here are intended to be a short list of good starting points, rather than a comprehensive catalogue.
+
+We welcome constructive feedback to improve this page and these lists.
+
+- GitHub issues and/or pull requests are welcome.
+
+- The resources are found via AI searches then go through human-in-the-loop proofing, so please let us know if anything here needs attention.
+
+- For more contact Joel Henderson <joel@joelparkerhenderson.com>
 
 ## Coursera courses
 
