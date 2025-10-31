@@ -1,6 +1,6 @@
-# Quality assurance testing (QAT) test engineer - learning and growth
+# Test engineer - upskill resources
 
-This page focus on learning and growth resources for the work role of quality assurance testing (QAT) test engineer.
+This page focus on learning and growth resources for the work role of test engineer.
 
 - The resources include links to online courses, blogs, research articles, videos, and books. 
 
@@ -15,7 +15,7 @@ We welcome constructive feedback to improve this page and these lists.
 - The resources are found via AI searches then go through human-in-the-loop proofing, so please let us know if anything here needs attention.
 
 - For more contact Joel Henderson <joel@joelparkerhenderson.com>
- 
+
 ## Coursera Courses
 
 - [Software Testing and Automation Specialization](https://www.coursera.org/specializations/software-testing-automation): This program covers automated functional tests for both front-end and back-end code and teaches how to use automated testing to achieve full mutation coverage. The specialization provides comprehensive training in test automation techniques for software engineers and test engineers. Provider: University of Minnesota.
@@ -40,7 +40,7 @@ We welcome constructive feedback to improve this page and these lists.
 
 - [Comparing Manual & Automated Testing (Intermediate)](https://www.skillsoft.com/course/comparing-manual-automated-testing-7a0a961f-6089-49a8-8ad5-9f41e0d93a2b): Explores Software Development Life Cycle (SDLC) concepts and examines types of manual testing, goals, and frameworks. This course helps test engineers understand when to use manual vs automated testing approaches.
 
-## EdX courses
+## edX courses
 
 - [Automated Software Testing Professional Certificate](https://www.edx.org/certificates/professional-certificate/delftx-automated-software-testing): This program is designed to help you become a better developer through practical software testing training. The professional certificate covers comprehensive automated testing methodologies and best practices. Provider: DelftX (Delft University of Technology).
 
