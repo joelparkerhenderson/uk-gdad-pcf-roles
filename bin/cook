@@ -17,23 +17,23 @@ set -euf
 #
 #     - [Alfa](Bravo): Charlie
 #
-# Search:
+# Search & replace:
 #
-#     ### \d+\. (.*)\nURL: (.*)\nSummary: (.*)
-#
-# Replace: 
-#
+#     ### \d+\. (.*)\n\**URL:\** (.*)\n\**Summary:\** (.*)
 #     - [$1]($2): $3
 #
+#     ### \d+\. (.*)\n\**(\w+):\** (.*)\n\**URL:\** (.*)\n\**Summary:\** (.*)
+#     - [$1]($4): $5 $2: $3.
+#
 
-sed -i.bak '\
-s/^## COURSERA COURSES/## Coursera courses/; \
-s/^## UDEMY COURSES/## Udemy courses/; \
-s/^## SKILLSOFT COURSES/## Skillsoft courses/; \
-s/^## EDX COURSES/## EdX courses/; \
-s/^## MIT OPENCOURSEWARE COURSES/## MIT OpenCourseWare courses/; \
-s/^## BLOG POSTS/## Blog posts/; \
-s/^## RESEARCH ARTICLES/## Research articles/; \
-s/^## YOUTUBE VIDEOS/## Videos/; \
-s/^## AMAZON KINDLE BOOKS/## Books/; \
+sed ' \
+s/^## COURSERA COURSES/## Coursera courses/i; \
+s/^## UDEMY COURSES/## Udemy courses/i; \
+s/^## SKILLSOFT COURSES/## Skillsoft courses/i; \
+s/^## EDX COURSES/## edX courses/i; \
+s/^## MIT OPENCOURSEWARE COURSES/## MIT OpenCourseWare courses/i; \
+s/^## BLOG POSTS/## Blog posts/i; \
+s/^## RESEARCH ARTICLES/## Research articles/i; \
+s/^## YOUTUBE VIDEOS/## Videos/u; \
+s/^## AMAZON KINDLE BOOKS/## Books/i; \
 ' "$@"
