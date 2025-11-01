@@ -12,7 +12,11 @@
       "Bash(xargs -I {} bash -c 'echo \"\"\"\"=== {} ===\"\"\"\" && grep -c \"\"\"\"Title:\"\"\"\" {}')",
       "Bash(cat:*)",
       "WebFetch(domain:www.coursera.org)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "WebFetch(domain:www.udemy.com)",
+      "WebFetch(domain:www.skillsoft.com)",
+      "WebFetch(domain:www.edx.org)",
+      "WebFetch(domain:ocw.mit.edu)"
     ],
     "deny": [],
     "ask": []
