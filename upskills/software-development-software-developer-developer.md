@@ -1,6 +1,6 @@
 # Software developer - upskill resources
 
-This page focus on learning and growth resources for the work role of test engineer.
+This page focus on learning and growth resources for the work role of software developer.
 
 - The resources include links to online courses, blogs, research articles, videos, and books. 
 
