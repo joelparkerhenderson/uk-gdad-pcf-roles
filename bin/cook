@@ -6,17 +6,19 @@ set -euf
 # See the correspondign file cook-test.md for test examples.
 
 gsed '/./{H;$!d} ; x ;
-s/### [0-9]\{1,\}\. \(\**Title:\** \|\)\(.*\)\n\(\**\w\{1,\}:\** \|\)\(.*\)\n\(\**\w\{1,\}:\** \|\)\(.*\)\n\**URL:\** \(.*\)\n\**Summary:\** \(.*\)/- [\2](\7): \8 \4. \6./;
-s/### [0-9]\{1,\}\. \(\**Title:\** \|\)\(.*\)\n\(\**\w\{1,\}:\** \|\)\(.*\)\n\**URL:\** \(.*\)\n\**Summary:\** \(.*\)/- [\2](\5): \6 \4./;
-s/### [0-9]\{1,\}\. \(\**Title:\** \|\)\(.*\)\n\**URL:\** \(.*\)\n\**Summary:\** \(.*\)/- [\2](\3): \4/;
-s/## COURSERA COURSES/## Coursera courses/;
-s/## UDEMY COURSES/## Udemy courses/;
-s/## SKILLSOFT COURSES/## Skillsoft courses/;
-s/## EDX COURSES/## edX courses/;
-s/## MIT OPENCOURSEWARE COURSES/## MIT OpenCourseWare courses/;
-s/## BLOG POSTS/## Blog posts/;
-s/## RESEARCH ARTICLES/## Research articles/;
-s/## YOUTUBE VIDEOS/## Videos/;
-s/## AMAZON KINDLE BOOKS/## Books/;
-s/\n---\n/\n/;
+s/\n#* *[0-9]\{1,\}\. \(\**Title:\** \|\)\(.*\)\n\(\**\w\{1,\}:\** \|\)\(.*\)\n\(\**\w\{1,\}:\** \|\)\(.*\)\n\**URL:\** \(.*\)\n\**Summary:\** \(.*\)/\n- [\2](\7): \8 \4. \6./;
+s/\n#* *[0-9]\{1,\}\. \(\**Title:\** \|\)\(.*\)\n\(\**\w\{1,\}:\** \|\)\(.*\)\n\**URL:\** \(.*\)\n\**Summary:\** \(.*\)/\n- [\2](\5): \6 \4./;
+s/\n#* *[0-9]\{1,\}\. \(\**Title:\** \|\)\(.*\)\n\**URL:\** \(.*\)\n\**Summary:\** \(.*\)/\n- [\2](\3): \4/;
+s/\n#* *COURSERA COURSES\( ([0-9]\{1,\})\|\)/\n## Coursera courses/;
+s/\n#* *UDEMY COURSES\( ([0-9]\{1,\})\|\)/\n## Udemy courses/;
+s/\n#* *SKILLSOFT COURSES\( ([0-9]\{1,\})\|\)/\n## Skillsoft courses/;
+s/\n#* *EDX COURSES\( ([0-9]\{1,\})\|\)/\n## edX courses/;
+s/\n#* *MIT OPENCOURSEWARE COURSES\( ([0-9]\{1,\})\|\)/\n## MIT OpenCourseWare courses/;
+s/\n#* *BLOG POSTS\( ([0-9]\{1,\})\|\)/\n## Blog posts/;
+s/\n#* *RESEARCH ARTICLES\( ([0-9]\{1,\})\|\)/\n## Research articles/;
+s/\n#* *YOUTUBE VIDEOS\( ([0-9]\{1,\})\|\)/\n## Videos/;
+s/\n#* *AMAZON KINDLE BOOKS\( ([0-9]\{1,\})\|\)/\n## Books/;
+s/\n----*\n/\n/g;
+s/\n====*/\n/;
+s/\n====*$/\n/g;
 ' "$@"
