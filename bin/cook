@@ -18,7 +18,8 @@ s/\n#* *BLOG POSTS\( ([0-9]\{1,\})\|\)/\n## Blog posts/;
 s/\n#* *RESEARCH ARTICLES\( ([0-9]\{1,\})\|\)/\n## Research articles/;
 s/\n#* *YOUTUBE VIDEOS\( ([0-9]\{1,\})\|\)/\n## Videos/;
 s/\n#* *AMAZON KINDLE BOOKS\( ([0-9]\{1,\})\|\)/\n## Books/;
-s/\n----*\n/\n/g;
+s/\n----*/\n/g;
+s/\n----*$/\n/g;
 s/\n====*/\n/;
 s/\n====*$/\n/g;
 ' "$@"
