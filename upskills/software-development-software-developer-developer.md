@@ -4,15 +4,15 @@ This page focus on learning and growth resources for the work role of test engin
 
 - The resources include links to online courses, blogs, research articles, videos, and books. 
 
-- The resources are links for help with job upskilling, work training, professional development, career advancement, and the like. 
+- These help with job upskilling, work training, professional development, and career advancement,
 
-- The resources here are intended to be a short list of good starting points, rather than a comprehensive catalogue.
+- These are intended to be good starting points, not a comprehensive catalogue.
 
 We welcome constructive feedback to improve this page and these lists.
 
 - GitHub issues and/or pull requests are welcome.
 
-- The resources are found via AI searches then go through human-in-the-loop proofing, so please let us know if anything here needs attention.
+- The resources are found via AI searches then go through human-in-the-loop proofing.
 
 - For more contact Joel Henderson <joel@joelparkerhenderson.com>
 
