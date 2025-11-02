@@ -1,7 +1,6 @@
+# Frontend developer - upskill resources
 
-# Frontend Developer - upskill resources
-
-This page focus on learning and growth resources for the work role of frontend developer/
+This page focus on learning and growth resources for the work role of frontend developer.
 
 - The resources include links to online courses, blogs, research articles, videos, and books. 
 
