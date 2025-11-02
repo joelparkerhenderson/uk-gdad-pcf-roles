@@ -168,3 +168,12 @@ We welcome constructive feedback to improve this page and these lists.
 - Microsoft Certified: DevOps Engineer Expert
 - Certified Kubernetes Administrator (CKA)
 - HashiCorp Certified: Terraform Associate
+
+## Professional development tips
+
+- Commit to continuous learning because tools and techniques evolve rapidly
+- Build a portfolio of demonstration projects so you can share your skills
+- Join relevant communities, attend events, and connect with colleagues
+- Practice explaining concepts to audiences in person and also in writing
+- Focus on developing both technical skills and business acumen
+- Seek opportunities to work with diverse people and projects

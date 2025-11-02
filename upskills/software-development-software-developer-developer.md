@@ -143,3 +143,12 @@ We welcome constructive feedback to improve this page and these lists.
 - [RESTful Web APIs: Services for a Changing World](https://www.amazon.com/RESTful-Web-APIs-Services-Changing-ebook/dp/B00F5BS966): This practical guide teaches what it takes to design usable REST APIs that evolve over time. It explores the concepts behind REST, learning different strategies for creating hypermedia-based APIs, and then putting everything together with a step-by-step guide to designing a RESTful Web API. The book covers HTTP methods, status codes, resource design, and API versioning. Authors: Leonard Richardson, Mike Amundsen, and Sam Ruby.
 
 - [Code Complete (Developer Best Practices)](https://www.amazon.com/Code-Complete-Developer-Best-Practices-ebook/dp/B00JDMPOSY): This comprehensive guide captures the body of knowledge available from research, academia, and everyday commercial practice. It serves experienced programmers who want a comprehensive, easy-to-use guide to software development. Topics include design, coding, debugging, testing, and best practices for creating high-quality software. The book is considered a must-read for professional software developers. Author: Steve McConnell.
+
+## Professional development tips
+
+- Commit to continuous learning because tools and techniques evolve rapidly
+- Build a portfolio of demonstration projects so you can share your skills
+- Join relevant communities, attend events, and connect with colleagues
+- Practice explaining concepts to audiences in person and also in writing
+- Focus on developing both technical skills and business acumen
+- Seek opportunities to work with diverse people and projects

@@ -144,3 +144,12 @@ We welcome constructive feedback to improve this page and these lists.
 - [Quantifying the User Experience: Practical Statistics for User Research (Second Edition)](https://www.amazon.com/Quantifying-User-Experience-Practical-Statistics-ebook/dp/B01IIXZVU4): Practical guide on using statistics to solve common quantitative problems in user research. Addresses questions about competitive usability, task completion rates, and statistical significance of findings. Jeff Sauro, James R. Lewis.
 
 - [2024-2025 Newbies Guide to UI/UX Design Using Figma](https://www.amazon.ca/2024-Fundamentals-Experience-User-centric-Interactive-ebook/dp/B0D6PJFSMC): Comprehensive guide covering fundamentals of UI and UX design including user research. Specifically labeled for 2024-2025 timeframe with focus on creating user-centric interfaces and interactive prototypes using Figma. Anthony E. Sanchez.
+
+## Professional development tips
+
+- Commit to continuous learning because tools and techniques evolve rapidly
+- Build a portfolio of demonstration projects so you can share your skills
+- Join relevant communities, attend events, and connect with colleagues
+- Practice explaining concepts to audiences in person and also in writing
+- Focus on developing both technical skills and business acumen
+- Seek opportunities to work with diverse people and projects

@@ -145,3 +145,12 @@ We welcome constructive feedback to improve this page and these lists.
 - [UML for the IT Business Analyst](https://www.amazon.com/gp/product/B00B7RE19G/): Completely updated for UML 2.2, and includes coverage of all the relevant new BABOK 2 knowledge areas. Covers various lifecycle approaches (non-empirical, empirical, waterfall, iterative, and agile) and their impact on project steps. Howard Podeswa.
 
 - [Business Analyst Interview Questions and Answers: with Scenario based questions](https://www.amazon.com/Business-Analyst-Interview-Questions-Answers-ebook/dp/B077Y1QXPX): Features scenario-based questions with real-time examples. Described as a basic book for anyone interested in the profession as a Business Analyst, and great for people in the early stages of their career preparing for interviews. Abhishek Srivastava.
+
+## Professional development tips
+
+- Commit to continuous learning because tools and techniques evolve rapidly
+- Build a portfolio of demonstration projects so you can share your skills
+- Join relevant communities, attend events, and connect with colleagues
+- Practice explaining concepts to audiences in person and also in writing
+- Focus on developing both technical skills and business acumen
+- Seek opportunities to work with diverse people and projects

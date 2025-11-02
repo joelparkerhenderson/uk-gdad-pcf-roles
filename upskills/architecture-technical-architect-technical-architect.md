@@ -143,3 +143,12 @@ We welcome constructive feedback to improve this page and these lists.
 - [Domain-Driven Design: Tackling Complexity in the Heart of Software by Eric Evans](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software-ebook/dp/B00794TAUG): The seminal book offering a systematic approach to domain-driven design, presenting design best practices, experience-based techniques, and fundamental principles. Essential reading for understanding DDD and its application to software architecture.
 
 - [Building Evolutionary Architectures by Neal Ford, Rebecca Parsons, Patrick Kua, and Pramod Sadalage](https://www.amazon.com/Building-Evolutionary-Architectures-Neal-Ford-ebook/dp/B0BN4T1P27): This book addresses how architecture changes over time, with ways to protect important architectural characteristics as it evolves. Covers automated software governance and provides practical approaches to building systems that can adapt to changing requirements and technologies.
+
+## Professional development tips
+
+- Commit to continuous learning because tools and techniques evolve rapidly
+- Build a portfolio of demonstration projects so you can share your skills
+- Join relevant communities, attend events, and connect with colleagues
+- Practice explaining concepts to audiences in person and also in writing
+- Focus on developing both technical skills and business acumen
+- Seek opportunities to work with diverse people and projects

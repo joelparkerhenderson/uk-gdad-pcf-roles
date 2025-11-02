@@ -143,3 +143,12 @@ We welcome constructive feedback to improve this page and these lists.
 - [Selenium WebDriver 3 Practical Guide - Second Edition by Unmesh Gundecha and Satya Avasarala](https://www.amazon.com/Selenium-WebDriver-Practical-Guide-End-ebook/dp/B07BJKWB1J): This updated second edition covers end-to-end automation testing for web and mobile browsers with Selenium WebDriver. The book walks through Selenium WebDriver APIs used in automation tests and teaches how to strategize and handle rich web UI using advanced WebDriver API along with real-time challenges and solutions.
 
 - [Hands-On Selenium WebDriver with Java by Boni Garcia](https://www.amazon.com/Hands-Selenium-WebDriver-Java-Garcia-ebook/dp/B09WZHXDWR): This practical hands-on book takes Java developers through Selenium's main features for automating web navigation, browser manipulation, web element interaction, and more, with ready-to-be-executed test examples.
+
+## Professional development tips
+
+- Commit to continuous learning because tools and techniques evolve rapidly
+- Build a portfolio of demonstration projects so you can share your skills
+- Join relevant communities, attend events, and connect with colleagues
+- Practice explaining concepts to audiences in person and also in writing
+- Focus on developing both technical skills and business acumen
+- Seek opportunities to work with diverse people and projects
