@@ -3,12 +3,12 @@ set -euf
 
 # Cook the Claude markdown output to use better formatting.
 # Specifically, this script adjusts the headlines and casings.
-# See the correspondign file cook-test.md for test examples.
+# See the corresponding file cook-test.md for test examples.
 
 gsed '/./{H;$!d} ; x ;
-s/\n#* *[0-9]\{1,\}\. \(\**Title:\** \|\)\(.*\)\n\(\**\w\{1,\}:\** \|\)\(.*\)\n\(\**\w\{1,\}:\** \|\)\(.*\)\n\**URL:\** \(.*\)\n\**Summary:\** \(.*\)/\n- [\2](\7): \8 \4. \6./;
-s/\n#* *[0-9]\{1,\}\. \(\**Title:\** \|\)\(.*\)\n\(\**\w\{1,\}:\** \|\)\(.*\)\n\**URL:\** \(.*\)\n\**Summary:\** \(.*\)/\n- [\2](\5): \6 \4./;
-s/\n#* *[0-9]\{1,\}\. \(\**Title:\** \|\)\(.*\)\n\**URL:\** \(.*\)\n\**Summary:\** \(.*\)/\n- [\2](\3): \4/;
+s/\n#* *[0-9]\{1,\}\. \(\**Title:\** \|\)\(.*\)\n\{1,\}\(\**\w\{1,\}:\** \|\)\(.*\)\n\{1,\}\(\**\w\{1,\}:\** \|\)\(.*\)\n\{1,\}\**URL:\** \(.*\)\n\{1,\}\**Summary:\** \(.*\)/\n- [\2](\7): \8 \4. \6./;
+s/\n#* *[0-9]\{1,\}\. \(\**Title:\** \|\)\(.*\)\n\{1,\}\(\**\w\{1,\}:\** \|\)\(.*\)\n\{1,\}\**URL:\** \(.*\)\n\{1,\}\**Summary:\** \(.*\)/\n- [\2](\5): \6 \4./;
+s/\n#* *[0-9]\{1,\}\. \(\**Title:\** \|\)\(.*\)\n\{1,\}\**URL:\** \(.*\)\n\{1,\}\**Summary:\** \(.*\)/\n- [\2](\3): \4/;
 s/\n#* *COURSERA COURSES\( ([0-9]\{1,\})\|\)/\n## Coursera courses/;
 s/\n#* *UDEMY COURSES\( ([0-9]\{1,\})\|\)/\n## Udemy courses/;
 s/\n#* *SKILLSOFT COURSES\( ([0-9]\{1,\})\|\)/\n## Skillsoft courses/;
