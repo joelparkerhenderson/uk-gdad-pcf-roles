@@ -1,4 +1,3 @@
-
 # Technical architect - upskill resources
 
 This page focus on learning and growth resources for the work role of test engineer.
