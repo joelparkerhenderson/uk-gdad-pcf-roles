@@ -1,4 +1,3 @@
-
 # Product manager - upskill resources
 
 This page focus on learning and growth resources for the work role of product manager.
