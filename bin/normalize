@@ -1,8 +1,8 @@
 #!/bin/sh
-set -euf
 GIT_TOP_DIR="$(git rev-parse --show-toplevel)"
 
-for subdir0 in summaries; do
+#for subdir0 in assessments summaries upskills; do
+for subdir0 in assessments; do
     dir="$GIT_TOP_DIR/$subdir0"
     
     # for subdir1 in \
@@ -18,95 +18,95 @@ for subdir0 in summaries; do
     #     mv "$dir/$subdir1-"* "$dir/$subdir1" 2>/dev/null || true
     # done
 
-    cd "$dir/architecture"; rename 's/^architecture-//' *
-    cd "$dir/chief-digital-and-data"; rename 's/^chief-digital-and-data-//' *
-    cd "$dir/data"; rename 's/^data-//' *
-    cd "$dir/it-operations"; rename 's/^it-operations-//' *
-    cd "$dir/product-and-delivery"; rename 's/^product-and-delivery-//' *
-    cd "$dir/quality-assurance-testing"; rename 's/^quality-assurance-testing-//' *
-    cd "$dir/software-development"; rename 's/^software-development-//' *
-    cd "$dir/user-centred-design"; rename 's/^user-centred-design-//' *
+    # cd "$dir/architecture"; rename 's/^architecture-//' *
+    # cd "$dir/chief-digital-and-data"; rename 's/^chief-digital-and-data-//' *
+    # cd "$dir/data"; rename 's/^data-//' *
+    # cd "$dir/it-operations"; rename 's/^it-operations-//' *
+    # cd "$dir/product-and-delivery"; rename 's/^product-and-delivery-//' *
+    # cd "$dir/quality-assurance-testing"; rename 's/^quality-assurance-testing-//' *
+    # cd "$dir/software-development"; rename 's/^software-development-//' *
+    # cd "$dir/user-centred-design"; rename 's/^user-centred-design-//' *
 
     cd "$dir/architecture/business-architect"
     rename 's/^business-architect-//' *
-    x="trainee-business-architect" && test -e "$x" && mv "$x" "1-$x"
-    x="associate-business-architect" && test -e "$x" && mv "$x" "2-$x"
-    x="business-architect" && test -e "$x" && mv "$x" "3-$x"
-    x="lead-business-architect" && test -e "$x" && mv "$x" "4-$x"
+    x="trainee-business-architect.md" && test -e "$x" && mv "$x" "1-$x"
+    x="associate-business-architect.md" && test -e "$x" && mv "$x" "2-$x"
+    x="business-architect.md" && test -e "$x" && mv "$x" "3-$x"
+    x="lead-business-architect.md" && test -e "$x" && mv "$x" "4-$x"
 
-    cd "$dir/architecture/business-architect"
+    cd "$dir/architecture/data-architect"
     rename 's/^data-architect-//' *
-    x="data-architect" && test -e "$x" && mv "$x" "1-$x"
-    x="senior-data-architect" && test -e "$x" && mv "$x" "2-$x"
-    x="chief-data-architect" && test -e "$x" && mv "$x" "3-$x"
+    x="data-architect.md" && test -e "$x" && mv "$x" "1-$x"
+    x="senior-data-architect.md" && test -e "$x" && mv "$x" "2-$x"
+    x="chief-data-architect.md" && test -e "$x" && mv "$x" "3-$x"
 
     cd "$dir/architecture/enterprise-architect/"
     rename 's/^enterprise-architect-//' *
-    x="enterprise-architect" && test -e "$x" && mv "$x" "1-$x"
-    x="senior-enterprise-architect" && test -e "$x" && mv "$x" "2-$x"
-    x="lead-enterprise-architect" && test -e "$x" && mv "$x" "3-$x"
-    x="principal-enterprise-architect" && test -e "$x" && mv "$x" "4-$x"
+    x="enterprise-architect.md" && test -e "$x" && mv "$x" "1-$x"
+    x="senior-enterprise-architect.md" && test -e "$x" && mv "$x" "2-$x"
+    x="lead-enterprise-architect.md" && test -e "$x" && mv "$x" "3-$x"
+    x="principal-enterprise-architect.md" && test -e "$x" && mv "$x" "4-$x"
 
     cd "$dir/architecture/network-architect"
     rename 's/^network-architect-//' *
-    x="associate-network-architect" && test -e "$x" && mv "$x" "1-$x"
-    x="network-architect" && test -e "$x" && mv "$x" "2-$x"
-    x="lead-network-architect" && test -e "$x" && mv "$x" "3-$x"
+    x="associate-network-architect.md" && test -e "$x" && mv "$x" "1-$x"
+    x="network-architect.md" && test -e "$x" && mv "$x" "2-$x"
+    x="lead-network-architect.md" && test -e "$x" && mv "$x" "3-$x"
 
     cd "$dir/architecture/security-architect"
     rename 's/^security-architect-//' *
-    x="security-architect" && test -e "$x" && mv "$x" "1-$x"
-    x="lead-security-architect" && test -e "$x" && mv "$x" "2-$x"
-    x="principal-security-architect" && test -e "$x" && mv "$x" "3-$x"
+    x="security-architect.md" && test -e "$x" && mv "$x" "1-$x"
+    x="lead-security-architect.md" && test -e "$x" && mv "$x" "2-$x"
+    x="principal-security-architect.md" && test -e "$x" && mv "$x" "3-$x"
 
     cd "$dir/architecture/solution-architect"
     rename 's/^solution-architect-//' *
-    x="associate-solution-architect" && test -e "$x" && mv "$x" "1-$x"
-    x="solution-architect" && test -e "$x" && mv "$x" "2-$x"
-    x="senior-solution-architect" && test -e "$x" && mv "$x" "3-$x"
-    x="lead-solution-architect" && test -e "$x" && mv "$x" "4-$x"
-    x="principal-solution-architect" && test -e "$x" && mv "$x" "5-$x"
+    x="associate-solution-architect.md" && test -e "$x" && mv "$x" "1-$x"
+    x="solution-architect.md" && test -e "$x" && mv "$x" "2-$x"
+    x="senior-solution-architect.md" && test -e "$x" && mv "$x" "3-$x"
+    x="lead-solution-architect.md" && test -e "$x" && mv "$x" "4-$x"
+    x="principal-solution-architect.md" && test -e "$x" && mv "$x" "5-$x"
 
     cd "$dir/architecture/technical-architect"
     rename 's/^technical-architect-//' *
-    x="associate-technical-architect" && test -e "$x" && mv "$x" "1-$x"
-    x="technical-architect" && test -e "$x" && mv "$x" "2-$x"
-    x="senior-technical-architect" && test -e "$x" && mv "$x" "3-$x"
-    x="lead-technical-architect" && test -e "$x" && mv "$x" "4-$x"
-    x="principal-technical-architect" && test -e "$x" && mv "$x" "5-$x"
+    x="associate-technical-architect.md" && test -e "$x" && mv "$x" "1-$x"
+    x="technical-architect.md" && test -e "$x" && mv "$x" "2-$x"
+    x="senior-technical-architect.md" && test -e "$x" && mv "$x" "3-$x"
+    x="lead-technical-architect.md" && test -e "$x" && mv "$x" "4-$x"
+    x="principal-technical-architect.md" && test -e "$x" && mv "$x" "5-$x"
 
     cd "$dir/data/data-analyst"
     rename 's/^data-analyst-//' *
-    x="associate-data-analyst" && test -e "$x" && mv "$x" "1-$x"
-    x="data-analyst" && test -e "$x" && mv "$x" "2-$x"
-    x="senior-data-analyst" && test -e "$x" && mv "$x" "3-$x"
-    x="principal-data-analyst" && test -e "$x" && mv "$x" "4-$x"
+    x="associate-data-analyst.md" && test -e "$x" && mv "$x" "1-$x"
+    x="data-analyst.md" && test -e "$x" && mv "$x" "2-$x"
+    x="senior-data-analyst.md" && test -e "$x" && mv "$x" "3-$x"
+    x="principal-data-analyst.md" && test -e "$x" && mv "$x" "4-$x"
 
     cd "$dir/data/analytics-engineer"
     rename 's/^analytics-engineer-//' *
-    x="trainee-analytics-engineer" && test -e "$x" && mv "$x" "1-$x"
-    x="analytics-engineer" && test -e "$x" && mv "$x" "2-$x"
-    x="senior-analytics-engineer" && test -e "$x" && mv "$x" "3-$x"
-    x="lead-analytics-engineer" && test -e "$x" && mv "$x" "4-$x"
-    x="head-of-analytics-engineering" && test -e "$x" && mv "$x" "5-$x"
+    x="trainee-analytics-engineer.md" && test -e "$x" && mv "$x" "1-$x"
+    x="analytics-engineer.md" && test -e "$x" && mv "$x" "2-$x"
+    x="senior-analytics-engineer.md" && test -e "$x" && mv "$x" "3-$x"
+    x="lead-analytics-engineer.md" && test -e "$x" && mv "$x" "4-$x"
+    x="head-of-analytics-engineering.md" && test -e "$x" && mv "$x" "5-$x"
 
     cd "$dir/data/data-engineer"
     rename 's/^data-engineer-//' *
-    x="data-engineer" && test -e "$x" && mv "$x" "1-$x"
-    x="senior-data-engineer" && test -e "$x" && mv "$x" "2-$x"
-    x="lead-data-engineer" && test -e "$x" && mv "$x" "3-$x"
-    x="head-of-data-engineering" && test -e "$x" && mv "$x" "4-$x"
+    x="data-engineer.md" && test -e "$x" && mv "$x" "1-$x"
+    x="senior-data-engineer.md" && test -e "$x" && mv "$x" "2-$x"
+    x="lead-data-engineer.md" && test -e "$x" && mv "$x" "3-$x"
+    x="head-of-data-engineering.md" && test -e "$x" && mv "$x" "4-$x"
 
     cd "$dir/data/data-ethicist"
     rename 's/^data-ethicist-//' *
-    x="data-ethics-lead" && test -e "$x" && mv "$x" "1-$x"
-    x="head-of-data-ethics" && test -e "$x" && mv "$x" "2-$x"
+    x="data-ethics-lead.md" && test -e "$x" && mv "$x" "1-$x"
+    x="head-of-data-ethics.md" && test -e "$x" && mv "$x" "2-$x"
 
     cd "$dir/data/data-governance-manager"
     rename 's/^data-governance-manager-//' *
-    x="data-governance-manager" && test -e "$x" && mv "$x" "1-$x"
-    x="lead-data-governance-manager" && test -e "$x" && mv "$x" "2-$x"
-    x="head-of-data-governance" && test -e "$x" && mv "$x" "3-$x"
+    x="data-governance-manager.md" && test -e "$x" && mv "$x" "1-$x"
+    x="lead-data-governance-manager.md" && test -e "$x" && mv "$x" "2-$x"
+    x="head-of-data-governance.md" && test -e "$x" && mv "$x" "3-$x"
 
     cd "$dir/data/data-scientist"
     rename 's/^data-scientist-//' *
@@ -222,12 +222,12 @@ for subdir0 in summaries; do
 
     cd "$dir/product-and-delivery/business-analyst"
     rename 's/^business-analyst-//' *
-    x="trainee-business-analyst" && test -e "$x" && mv "$x" "1-$x"
-    x="junior-business-analyst" && test -e "$x" && mv "$x" "2-$x"
-    x="business-analyst" && test -e "$x" && mv "$x" "3-$x"
-    x="senior-business-analyst" && test -e "$x" && mv "$x" "4-$x"
-    x="lead-business-analyst" && test -e "$x" && mv "$x" "5-$x"
-    x="head-of-business-analysis" && test -e "$x" && mv "$x" "6-$x"
+    x="trainee-business-analyst.md" && test -e "$x" && mv "$x" "1-$x"
+    x="junior-business-analyst.md" && test -e "$x" && mv "$x" "2-$x"
+    x="business-analyst.md" && test -e "$x" && mv "$x" "3-$x"
+    x="senior-business-analyst.md" && test -e "$x" && mv "$x" "4-$x"
+    x="lead-business-analyst.md" && test -e "$x" && mv "$x" "5-$x"
+    x="head-of-business-analysis.md" && test -e "$x" && mv "$x" "6-$x"
 
     cd "$dir/product-and-delivery/delivery-manager"
     rename 's/^delivery-manager-//' *
@@ -238,18 +238,18 @@ for subdir0 in summaries; do
 
     cd "$dir/product-and-delivery/digital-portfolio-manager"
     rename 's/^digital-portfolio-manager-//' *
-    x="digital-portfolio-analyst" && test -e "$x" && mv "$x" "1-$x"
-    x="digital-portfolio-manager" && test -e "$x" && mv "$x" "2-$x"
-    x="senior-digital-portfolio-manager" && test -e "$x" && mv "$x" "3-$x"
-    x="head-of-portfolio" && test -e "$x" && mv "$x" "4-$x"
+    x="digital-portfolio-analyst.md" && test -e "$x" && mv "$x" "1-$x"
+    x="digital-portfolio-manager.md" && test -e "$x" && mv "$x" "2-$x"
+    x="senior-digital-portfolio-manager.md" && test -e "$x" && mv "$x" "3-$x"
+    x="head-of-portfolio.md" && test -e "$x" && mv "$x" "4-$x"
 
     cd "$dir/product-and-delivery/product-manager"
     rename 's/^product-manager-//' *
-    x="associate-product-manager" && test -e "$x" && mv "$x" "1-$x"
-    x="product-manager" && test -e "$x" && mv "$x" "2-$x"
-    x="senior-product-manager" && test -e "$x" && mv "$x" "3-$x"
-    x="lead-product-manager" && test -e "$x" && mv "$x" "4-$x"
-    x="head-of-product" && test -e "$x" && mv "$x" "5-$x"
+    x="associate-product-manager.md" && test -e "$x" && mv "$x" "1-$x"
+    x="product-manager.md" && test -e "$x" && mv "$x" "2-$x"
+    x="senior-product-manager.md" && test -e "$x" && mv "$x" "3-$x"
+    x="lead-product-manager.md" && test -e "$x" && mv "$x" "4-$x"
+    x="head-of-product.md" && test -e "$x" && mv "$x" "5-$x"
 
     cd "$dir/product-and-delivery/programme-delivery-manager"
     rename 's/^programme-delivery-manager-//' *
@@ -261,10 +261,10 @@ for subdir0 in summaries; do
 
     cd "$dir/quality-assurance-testing/quality-assurance-test-analyst"
     rename 's/^quality-assurance-test-analyst-//' *
-    x="associate-quality-assurance-test-analyst" && test -e "$x" && mv "$x" "1-$x"
-    x="quality-assurance-test-analyst" && test -e "$x" && mv "$x" "2-$x"
-    x="senior-quality-assurance-test-analyst" && test -e "$x" && mv "$x" "3-$x"
-    x="lead-quality-assurance-test-analyst" && test -e "$x" && mv "$x" "4-$x"
+    x="associate-quality-assurance-test-analyst.md" && test -e "$x" && mv "$x" "1-$x"
+    x="quality-assurance-test-analyst.md" && test -e "$x" && mv "$x" "2-$x"
+    x="senior-quality-assurance-test-analyst.md" && test -e "$x" && mv "$x" "3-$x"
+    x="lead-quality-assurance-test-analyst.md" && test -e "$x" && mv "$x" "4-$x"
 
     cd "$dir/quality-assurance-testing/test-engineer"
     rename 's/^test-engineer-//' *
@@ -285,91 +285,91 @@ for subdir0 in summaries; do
 
     cd "$dir/software-development/frontend-developer"
     rename 's/^frontend-developer-//' *
-    x="apprentice-frontend-developer" && test -e "$x" && mv "$x" "1-$x"
-    x="junior-frontend-developer" && test -e "$x" && mv "$x" "2-$x"
-    x="frontend-developer" && test -e "$x" && mv "$x" "3-$x"
-    x="senior-frontend-developer" && test -e "$x" && mv "$x" "4-$x"
-    x="lead-frontend-developer" && test -e "$x" && mv "$x" "5-$x"
-    x="head-of-frontend-development" && test -e "$x" && mv "$x" "6-$x"
+    x="apprentice-frontend-developer.md" && test -e "$x" && mv "$x" "1-$x"
+    x="junior-frontend-developer.md" && test -e "$x" && mv "$x" "2-$x"
+    x="frontend-developer.md" && test -e "$x" && mv "$x" "3-$x"
+    x="senior-frontend-developer.md" && test -e "$x" && mv "$x" "4-$x"
+    x="lead-frontend-developer.md" && test -e "$x" && mv "$x" "5-$x"
+    x="head-of-frontend-development.md" && test -e "$x" && mv "$x" "6-$x"
 
     cd "$dir/software-development/development-operations-engineer"
     rename 's/^development-operations-engineer-//' *
-    x="apprentice-devops-engineer" && test -e "$x" && mv "$x" "1-$x"
-    x="junior-devops-engineer" && test -e "$x" && mv "$x" "2-$x"
-    x="devops-engineer" && test -e "$x" && mv "$x" "3-$x"
-    x="senior-devops-engineer" && test -e "$x" && mv "$x" "4-$x"
-    x="senior-devops-engineer-management" && test -e "$x" && mv "$x" "5-$x"
-    x="lead-devops-engineer" && test -e "$x" && mv "$x" "6-$x"
-    x="lead-devops-engineer-management" && test -e "$x" && mv "$x" "7-$x"
-    x="principal-devops-engineer" && test -e "$x" && mv "$x" "8-$x"
-    x="principal-devops-engineer-management" && test -e "$x" && mv "$x" "9-$x"
+    x="apprentice-devops-engineer.md" && test -e "$x" && mv "$x" "1-$x"
+    x="junior-devops-engineer.md" && test -e "$x" && mv "$x" "2-$x"
+    x="devops-engineer.md" && test -e "$x" && mv "$x" "3-$x"
+    x="senior-devops-engineer.md" && test -e "$x" && mv "$x" "4-$x"
+    x="senior-devops-engineer-management.md" && test -e "$x" && mv "$x" "5-$x"
+    x="lead-devops-engineer.md" && test -e "$x" && mv "$x" "6-$x"
+    x="lead-devops-engineer-management.md" && test -e "$x" && mv "$x" "7-$x"
+    x="principal-devops-engineer.md" && test -e "$x" && mv "$x" "8-$x"
+    x="principal-devops-engineer-management.md" && test -e "$x" && mv "$x" "9-$x"
 
     cd "$dir/software-development/software-developer"
     rename 's/^software-developer-//' *
-    x="apprentice-developer" && test -e "$x" && mv "$x" "1-$x"
-    x="junior-developer" && test -e "$x" && mv "$x" "2-$x"
-    x="developer" && test -e "$x" && mv "$x" "3-$x"
-    x="senior-developer" && test -e "$x" && mv "$x" "4-$x"
-    x="senior-developer-management" && test -e "$x" && mv "$x" "5-$x"
-    x="lead-developer" && test -e "$x" && mv "$x" "6-$x"
-    x="lead-developer-management" && test -e "$x" && mv "$x" "7-$x"
-    x="principal-developer" && test -e "$x" && mv "$x" "8-$x"
-    x="principal-developer-management" && test -e "$x" && mv "$x" "9-$x"
+    x="apprentice-developer.md" && test -e "$x" && mv "$x" "1-$x"
+    x="junior-developer.md" && test -e "$x" && mv "$x" "2-$x"
+    x="developer.md" && test -e "$x" && mv "$x" "3-$x"
+    x="senior-developer.md" && test -e "$x" && mv "$x" "4-$x"
+    x="senior-developer-management.md" && test -e "$x" && mv "$x" "5-$x"
+    x="lead-developer.md" && test -e "$x" && mv "$x" "6-$x"
+    x="lead-developer-management.md" && test -e "$x" && mv "$x" "7-$x"
+    x="principal-developer.md" && test -e "$x" && mv "$x" "8-$x"
+    x="principal-developer-management.md" && test -e "$x" && mv "$x" "9-$x"
 
     cd "$dir/user-centred-design/accessibility-specialist"
     rename 's/^accessibility-specialist-//' *
-    x="junior-accessibility-specialist" && test -e "$x" && mv "$x" "1-$x"
-    x="senior-accessibility-specialist" && test -e "$x" && mv "$x" "3-$x"
-    x="accessibility-specialist" && test -e "$x" && mv "$x" "2-$x"
-    x="head-of-accessibility" && test -e "$x" && mv "$x" "4-$x"
+    x="junior-accessibility-specialist.md" && test -e "$x" && mv "$x" "1-$x"
+    x="senior-accessibility-specialist.md" && test -e "$x" && mv "$x" "3-$x"
+    x="accessibility-specialist.md" && test -e "$x" && mv "$x" "2-$x"
+    x="head-of-accessibility.md" && test -e "$x" && mv "$x" "4-$x"
 
     cd "$dir/user-centred-design/content-designer"
     rename 's/^content-designer-//' *
-    x="associate-content-designer" && test -e "$x" && mv "$x" "1-$x"
-    x="junior-content-designer" && test -e "$x" && mv "$x" "2-$x"
-    x="content-designer" && test -e "$x" && mv "$x" "3-$x"
-    x="senior-content-designer" && test -e "$x" && mv "$x" "4-$x"
-    x="lead-content-designer" && test -e "$x" && mv "$x" "5-$x"
-    x="head-of-content-design" && test -e "$x" && mv "$x" "6-$x"
+    x="associate-content-designer.md" && test -e "$x" && mv "$x" "1-$x"
+    x="junior-content-designer.md" && test -e "$x" && mv "$x" "2-$x"
+    x="content-designer.md" && test -e "$x" && mv "$x" "3-$x"
+    x="senior-content-designer.md" && test -e "$x" && mv "$x" "4-$x"
+    x="lead-content-designer.md" && test -e "$x" && mv "$x" "5-$x"
+    x="head-of-content-design.md" && test -e "$x" && mv "$x" "6-$x"
 
     cd "$dir/user-centred-design/content-strategist"
     rename 's/^content-strategist-//' *
-    x="content-strategist" && test -e "$x" && mv "$x" "1-$x"
+    x="content-strategist.md" && test -e "$x" && mv "$x" "1-$x"
 
     cd "$dir/user-centred-design/graphic-designer"
     rename 's/^graphic-designer-//' *.md
-    x="associate-graphic-designer" && test -e "$x" && mv "$x" "1-$x"
-    x="junior-graphic-designer" && test -e "$x" && mv "$x" "2-$x"
-    x="graphic-designer" && test -e "$x" && mv "$x" "3-$x"
-    x="senior-graphic-designer" && test -e "$x" && mv "$x" "4-$x"
-    x="lead-graphic-designer" && test -e "$x" && mv "$x" "5-$x"
-    x="head-of-graphic-design" && test -e "$x" && mv "$x" "6-$x"
+    x="associate-graphic-designer.md" && test -e "$x" && mv "$x" "1-$x"
+    x="junior-graphic-designer.md" && test -e "$x" && mv "$x" "2-$x"
+    x="graphic-designer.md" && test -e "$x" && mv "$x" "3-$x"
+    x="senior-graphic-designer.md" && test -e "$x" && mv "$x" "4-$x"
+    x="lead-graphic-designer.md" && test -e "$x" && mv "$x" "5-$x"
+    x="head-of-graphic-design.md" && test -e "$x" && mv "$x" "6-$x"
 
     cd "$dir/user-centred-design/interaction-designer"
     rename 's/^interaction-designer-//' *
-    x="associate-interaction-designer" && test -e "$x" && mv "$x" "1-$x"
-    x="junior-interaction-designer" && test -e "$x" && mv "$x" "2-$x"
-    x="interaction-designer" && test -e "$x" && mv "$x" "3-$x"
-    x="senior-interaction-designer" && test -e "$x" && mv "$x" "4-$x"
-    x="lead-interaction-designer" && test -e "$x" && mv "$x" "5-$x"
-    x="head-of-interaction-design" && test -e "$x" && mv "$x" "6-$x"
+    x="associate-interaction-designer.md" && test -e "$x" && mv "$x" "1-$x"
+    x="junior-interaction-designer.md" && test -e "$x" && mv "$x" "2-$x"
+    x="interaction-designer.md" && test -e "$x" && mv "$x" "3-$x"
+    x="senior-interaction-designer.md" && test -e "$x" && mv "$x" "4-$x"
+    x="lead-interaction-designer.md" && test -e "$x" && mv "$x" "5-$x"
+    x="head-of-interaction-design.md" && test -e "$x" && mv "$x" "6-$x"
 
     cd "$dir/user-centred-design/user-researcher"
     rename 's/^user-researcher-//' *
-    x="associate-user-researcher" && test -e "$x" && mv "$x" "1-$x"
-    x="junior-user-researcher" && test -e "$x" && mv "$x" "2-$x"
-    x="user-researcher" && test -e "$x" && mv "$x" "3-$x"
-    x="senior-user-researcher" && test -e "$x" && mv "$x" "4-$x"
-    x="lead-user-researcher" && test -e "$x" && mv "$x" "5-$x"
-    x="head-of-user-research" && test -e "$x" && mv "$x" "6-$x"
+    x="associate-user-researcher.md" && test -e "$x" && mv "$x" "1-$x"
+    x="junior-user-researcher.md" && test -e "$x" && mv "$x" "2-$x"
+    x="user-researcher.md" && test -e "$x" && mv "$x" "3-$x"
+    x="senior-user-researcher.md" && test -e "$x" && mv "$x" "4-$x"
+    x="lead-user-researcher.md" && test -e "$x" && mv "$x" "5-$x"
+    x="head-of-user-research.md" && test -e "$x" && mv "$x" "6-$x"
 
     cd "$dir/user-centred-design/service-designer"
     rename 's/^service-designer-//' *
-    x="associate-service-designer" && test -e "$x" && mv "$x" "1-$x"
-    x="junior-service-designer" && test -e "$x" && mv "$x" "2-$x"
-    x="service-designer" && test -e "$x" && mv "$x" "3-$x"
-    x="senior-service-designer" && test -e "$x" && mv "$x" "4-$x"
-    x="lead-service-designer" && test -e "$x" && mv "$x" "5-$x"
-    x="head-of-service-design" && test -e "$x" && mv "$x" "6-$x"
+    x="associate-service-designer.md" && test -e "$x" && mv "$x" "1-$x"
+    x="junior-service-designer.md" && test -e "$x" && mv "$x" "2-$x"
+    x="service-designer.md" && test -e "$x" && mv "$x" "3-$x"
+    x="senior-service-designer.md" && test -e "$x" && mv "$x" "4-$x"
+    x="lead-service-designer.md" && test -e "$x" && mv "$x" "5-$x"
+    x="head-of-service-design.md" && test -e "$x" && mv "$x" "6-$x"
 
 done
