@@ -470,4 +470,438 @@ A regression pack of 180 tests must be split among three testers in proportion t
 - **Reading the wrong table subset.** "More than one day" means specific columns; "high-priority tickets" means a specific row or column total. Match the question's words to the table before calculating.
 - **Trusting your first pass under time pressure.** Question 12 modelled the fix: recompute the critical step once, quickly. Agreement between two passes is cheap confidence; disagreement is a caught error.
 
-<!-- APPEND -->
+## Workplace job-specific verbal reasoning assessment
+
+### About this assessment
+
+A workplace job-specific verbal reasoning assessment checks whether you can work out exactly what a piece of writing says — no more and no less. That sounds simple, and it is the thing most candidates lose marks on, because it is very easy to answer from what you know rather than from what is on the page.
+
+For a junior developer the material is the kind of writing you meet every day: a ticket description, a team's coding standard, a testing policy, a README, a bug report, a piece of documentation for a library you are about to use.
+
+The usual format gives you a short passage and then some statements. You mark each one **True**, **False**, or **Cannot Say**:
+
+- **True** means the passage tells you this is so.
+- **False** means the passage tells you the opposite.
+- **Cannot Say** means the passage does not settle it either way.
+
+That third option is the one to get comfortable with. "Cannot Say" does not mean "I don't know" — it means the passage genuinely does not contain the answer. It is a correct, confident answer, and there will usually be several of them.
+
+Two things are worth knowing before you start.
+
+The first is that **"must", "should" and "may" mean different things** in technical writing, and the difference is deliberate. *Must* is a requirement. *Should* is a strong recommendation you can depart from with a good reason. *May* is optional. Teams choose these words carefully, and reading "should" as "must" will have you blocking work that was allowed.
+
+The second is that **your own knowledge is the main trap**. You may know perfectly well that a password should be hashed. If the passage does not say so, the answer is Cannot Say. This feels wrong the first few times and becomes second nature quickly.
+
+Take your time on this section. There is usually enough of it, and one careful read of the passage beats three anxious ones.
+
+### How this assessment maps to your role
+
+- **Reading standards precisely** maps to **Modern development standards**, where you apply principles under guidance — and applying them correctly starts with reading them correctly.
+- **Reading tickets and specifications** maps to delivering stories in a multidisciplinary team.
+- **Reading test documentation** maps to being proficient in different types of testing.
+- **Reading security guidance** maps to **Information security**, where you use available controls.
+- **Reading operational documentation** maps to **Availability and capacity management**.
+- **Explaining things accurately to others** maps to coaching and mentoring more junior colleagues.
+
+### Practice questions
+
+*Passage A — for Questions 1 to 4*
+
+"All code must be reviewed by at least one other developer before it is merged. Code that changes how users are authenticated must be reviewed by two developers, one of whom should be a senior developer. Reviewers must check that automated tests cover the change. Where a change is urgent and no second reviewer is available, a developer may merge with a single review, provided the change is re-reviewed within two working days. Changes to documentation only do not require review."
+
+**Question 1 (easy)**
+
+Statement: All code changes must be reviewed before merging.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The first sentence says all code must be reviewed, which is why this looks like True — but the last sentence tells you that documentation-only changes do not require review. So "all" is too strong, and the passage contradicts it. The lesson here is simple and worth carrying into every question in this section: **read to the end of the passage before answering**. Exceptions are usually at the bottom.
+
+**Question 2 (easy)**
+
+Statement: A change to how users log in needs two reviewers.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** "Changes how users are authenticated" is the formal way of saying "changes how users log in", and the passage says those need two reviewers. Straightforward. Notice that the passage adds that one of the two *should* be senior — a recommendation rather than a requirement — but that does not affect the count of two, which is a *must*.
+
+**Question 3 (moderate)**
+
+Statement: An authentication change must be reviewed by a senior developer.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** This is the "should versus must" question. The passage says one of the two reviewers *should* be a senior developer. That is a strong recommendation, not a requirement, so "must be reviewed by a senior developer" overstates it — and the passage uses *must* twice in the same sentence for the other parts, which shows the choice of *should* here was deliberate. If you answered True, you have just found the single most common way to lose marks in this section, and it is an easy habit to fix.
+
+**Question 4 (moderate)**
+
+Statement: If a change is urgent and only one reviewer is available, it can be merged and never looked at again.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage allows the single-review merge, but only "provided the change is re-reviewed within two working days". So it is looked at again — that condition is part of the permission, not an optional extra. Watch for the word "provided": whatever follows it is a condition that has to be met for the permission to apply at all.
+
+*Passage B — for Questions 5 to 8*
+
+"The bug was reported by a user at 14:20. The support team reproduced it at 14:45 and passed it to the development team. A developer identified that the error occurs only when a customer's address contains an apostrophe. A fix was deployed at 16:30. The team has added a test covering addresses containing apostrophes. The same code path also handles addresses containing hyphens, which were not tested."
+
+**Question 5 (easy)**
+
+Statement: The bug was reported before the support team reproduced it.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Reported at 14:20, reproduced at 14:45. 14:20 comes first, so True. An easy one — but do read the times rather than assuming the order the sentences appear in is the order things happened, because passages often describe events out of sequence.
+
+**Question 6 (moderate)**
+
+Statement: The bug also affects addresses containing hyphens.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** This is the key question in the passage. You are told that the same code path handles hyphens, and that hyphens were not tested. That is a very good reason to be *worried* about hyphens — and being worried is not the same as knowing. The passage does not say whether hyphens are affected. As a developer your instinct is right and your instinct is not the answer here. Untested is not the same as broken.
+
+**Question 7 (moderate)**
+
+Statement: The fix was deployed less than three hours after the bug was reported.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** 14:20 to 16:30 is two hours and ten minutes, which is less than three hours. True. Take the extra five seconds to do the subtraction rather than eyeballing it — the numbers are right there, and questions like this are free marks if you actually compute them.
+
+**Question 8 (harder)**
+
+Statement: The developer found the cause of the bug before 16:30.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** The passage says a developer identified the cause, and that a fix was deployed at 16:30. You cannot deploy a fix for a cause you have not yet identified, and the passage presents the identification before the deployment. So the cause was found before 16:30. This one asks you to combine two facts rather than read one, which is what makes it the harder question in the set — but the reasoning is short, and you do not need an exact time to know it was earlier.
+
+*Passage C — for Questions 9 to 12*
+
+"The library provides two functions for reading configuration. `readConfig` returns the configuration as a plain object and throws an error if the file cannot be read. `tryReadConfig` returns the configuration or, if the file cannot be read, returns null. Neither function validates the contents of the file. Both functions cache their result; a subsequent call returns the cached value without reading the file again. The cache can be cleared by calling `clearConfigCache`."
+
+**Question 9 (easy)**
+
+Statement: `tryReadConfig` throws an error when the file cannot be read.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage says `tryReadConfig` returns null in that case; `readConfig` is the one that throws. The passage contradicts the statement. Reading documentation for two similar functions and keeping straight which does what is an everyday task, and the way to do it reliably is to note the difference explicitly as you read: *one throws, one returns null*.
+
+**Question 10 (moderate)**
+
+Statement: If the configuration file contains invalid values, `readConfig` will throw an error.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage says `readConfig` throws "if the file cannot be read", and separately that neither function validates the contents. Invalid contents are not the same as an unreadable file — the file reads perfectly well, it just contains rubbish — and the passage explicitly rules out validation. So it will not throw. This is a genuinely useful thing to notice about real libraries: "cannot be read" and "contains something wrong" are different failures, and confusing them is how unvalidated configuration reaches production.
+
+**Question 11 (moderate)**
+
+Statement: Calling `readConfig` twice will read the file twice.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage says both functions cache their result and that a subsequent call returns the cached value "without reading the file again". So the second call does not read the file. False. Caching behaviour is exactly the kind of detail that is easy to skim past in documentation and then produces a confusing bug later when you change a config file and nothing happens.
+
+**Question 12 (harder)**
+
+Statement: After calling `clearConfigCache`, a call to `readConfig` will return the current contents of the file.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** This is a good one to finish on. You know the cache can be cleared, and you know that a call reads the file when there is no cached value — so it is very reasonable to expect the current contents. But the passage never actually says what happens after the cache is cleared. It says the cache *can* be cleared, and nothing more. Almost certainly true in reality; not established by this passage. If you marked True, you did what an experienced developer does, which is fill the gap with sensible knowledge — and this section is asking for something slightly different.
+
+### Preparation tips
+
+- **Read the whole passage before answering anything.** Exceptions live at the end.
+- **Underline "must", "should", "may" and "only".** They decide more questions than anything else.
+- **Treat "Cannot Say" as a real answer.** If the passage does not settle it, that is your answer, however confident you feel.
+- **Watch for "provided" and "unless".** What follows is a condition attached to a permission.
+- **Do the small arithmetic.** Times and counts in passages are free marks if you actually subtract.
+- **Ask yourself "where does it say that?"** If you cannot point at a sentence, it is probably Cannot Say.
+- **Notice when two similar things are described.** Note the difference in your own words as you read.
+- **Practise on your own team's standards.** Read your coding standard and ask what it actually requires versus recommends.
+
+### Common pitfalls to avoid
+
+- **Answering from what you know about software rather than from the passage.**
+- **Reading "should" as "must".**
+- **Marking a statement True because it is almost certainly true in real life.**
+- **Missing an exception in the last sentence.**
+- **Treating "untested" as meaning "broken".**
+- **Skipping the condition after "provided".**
+- **Confusing two similar functions or two similar rules described in the same passage.**
+- **Rushing. This section usually gives you enough time for one careful read.**
+
+## Workplace job-specific situational judgement assessment
+
+### About this assessment
+
+A workplace job-specific situational judgement assessment gives you realistic situations from your working life and asks what you would do. There is usually no trick — the situations are ordinary, and the question is which response a thoughtful, experienced person would pick.
+
+For a junior developer the situations involve working under supervision, asking for help, being given feedback, spotting something that looks wrong, and working with people from other disciplines.
+
+You will usually be asked to choose the **most effective** and **least effective** response, or to rate each one. Scoring is against a key built from experienced practitioners, so you are aiming at what the profession generally agrees is good practice.
+
+Three things are worth knowing before you start, because they explain most of the answer key.
+
+**Asking for help early is a strength, not a weakness.** This is the single most common thing junior developers get wrong in real life, and the assessment reflects the profession's view firmly. Two hours stuck is learning; two days stuck in silence is a cost to the team that nobody chose to pay. Your role summary says you work *under supervision* — that is the arrangement working as designed, not a sign you are failing.
+
+**Saying what you do not know is safe and valuable.** Nobody expects a junior developer to know everything. What experienced colleagues watch for is whether you are straight about the edges of what you know, because that is what tells them how much to rely on your answer.
+
+**Raising a concern is welcome, even when you turn out to be wrong.** A team where junior people mention the odd-looking thing catches problems early. The occasional false alarm costs an hour; the unmentioned real problem costs a great deal more.
+
+### How this assessment maps to your role
+
+- **Working under supervision** maps directly to your role level's description.
+- **Testing judgement** maps to understanding and being proficient in different types of testing.
+- **Security awareness** maps to **Information security**, where you are aware of but not responsible for security.
+- **Applying standards** maps to **Modern development standards** under guidance.
+- **Working with other disciplines** maps to delivering stories in a multidisciplinary team.
+- **Helping others** maps to coaching and mentoring more junior colleagues.
+
+### Practice questions
+
+**Question 1 (easy) — Stuck on a problem**
+
+You have been stuck on a problem for most of the morning. Your team is busy. What is the most effective response?
+
+- A) Keep going; you should be able to work it out.
+- B) Ask a colleague, saying briefly what you are trying to do, what you have tried, and where you are stuck — because a few minutes of someone's time now saves the rest of your day, and the summary makes it quick for them to help.
+- C) Move to a different task and come back to it.
+- D) Wait until the next stand-up to mention it.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** A morning is long enough to have made a genuine attempt, which is what makes this the right moment. The three-part summary in option B is the part worth learning by heart — *what I'm doing, what I've tried, where I'm stuck* — because it turns a vague interruption into a question someone can answer in two minutes. Option D is least effective: waiting until tomorrow's stand-up can waste a whole further day, and "the team is busy" is true of every team all the time. Option A treats struggling alone as a virtue. Option C is a reasonable thing to do *as well*, but on its own it just postpones the problem.
+
+**Question 2 (easy) — Feedback on your code**
+
+A senior developer leaves a lot of comments on your pull request. What is the most effective response?
+
+- A) Make all the changes without asking about them.
+- B) Work through them, make the changes you understand, and ask about any you do not — because the reason behind a comment is the part that stops you making the same thing happen again, and reviewers expect questions.
+- C) Explain why you did it your way.
+- D) Ask a different colleague whether the comments are fair.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** A heavily commented review is normal early on and is somebody investing time in you. Option B gets the value out of it, and the asking part matters — changes made without understanding produce the same review next week. Option D is least effective: quietly checking whether the reviewer was fair goes around the person who is trying to help you and would land badly if they found out. Option C is fine as part of a conversation, and as your first move it reads as defending rather than learning. Option A is compliant and wastes the lesson.
+
+**Question 3 (moderate) — Something looks wrong**
+
+While working on a ticket, you notice code elsewhere that looks like it might have a bug. It is not related to your work and you are not sure. What is the most effective response?
+
+- A) Leave it; it is not your ticket and you might be wrong.
+- B) Mention it to a colleague or raise it as a ticket, saying what you noticed and that you are not certain — because it takes a couple of minutes, and someone with more context can tell quickly whether it matters.
+- C) Fix it as part of your current change.
+- D) Investigate it thoroughly before saying anything.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** You do not need to be sure to mention something, and the honest "I might be wrong about this" framing costs you nothing — colleagues would far rather look at five things that turn out to be fine than miss one that was not. Option C is least effective: fixing unrelated code inside your change makes the pull request harder to review, mixes up what is being changed and why, and does it without anyone deciding it should be done. Option D spends hours doing what a colleague could resolve in five minutes. Option A is the tempting one and lets a possible bug sit.
+
+**Question 4 (moderate) — Testing**
+
+You have finished a change and the existing tests all pass. What is the most effective next step?
+
+- A) Raise the pull request; the tests pass.
+- B) Add tests covering the behaviour you just changed, and check what happens in the awkward cases — empty input, very long input, the error path — because passing existing tests shows you have not broken anything, not that your new code works.
+- C) Test it manually in your local environment.
+- D) Ask a colleague to test it.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** This is the distinction worth being clear about: existing tests protect existing behaviour, and they say nothing about the behaviour you have just added. Option B covers it and points at the cases where new code usually breaks. Option A is least effective because it treats a green build as evidence about something the build never examined. Option C is useful and does not leave anything behind for the next person. Option D asks someone else to do work you are able to do.
+
+**Question 5 (moderate) — A ticket you do not understand**
+
+You are given a ticket and you are not sure what it is actually asking for. What is the most effective response?
+
+- A) Start on the part you do understand and work the rest out as you go.
+- B) Ask whoever wrote it what the user is trying to achieve — because a ticket is usually a short summary of a longer conversation, and the person who wrote it can explain the intent in two minutes.
+- C) Make a sensible assumption and note it in the pull request.
+- D) Ask a colleague what they think it means.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** The person who wrote the ticket knows what they meant, and asking them is quick and expected. Option B also asks the most useful version of the question — what the *user* is trying to achieve, rather than what the ticket means — because that gives you enough context to make good decisions on the details nobody wrote down. Option A is least effective: building the part you understood and improvising the rest is how a day's work gets thrown away. Option C is better and still risks building the wrong thing. Option D asks someone who is also guessing.
+
+**Question 6 (moderate) — A security-looking problem**
+
+You notice that a piece of code appears to write user passwords into a log file. Security is not your responsibility. What is the most effective response?
+
+- A) Raise it straight away with your team lead or a senior developer, describing what you saw.
+- B) Leave it; security is not your responsibility at your level.
+- C) Fix it yourself.
+- D) Add it to the backlog.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** Your role summary says you are *aware of but not responsible for* security, and this is exactly what that means in practice — you are not expected to own it, and you are expected to say something when you see it. Passwords in logs is a serious and common problem, and raising it takes a minute. Option B is least effective: "not my responsibility" is about who fixes it, not about who may mention it. Option D is far too slow for something like this. Option C is well-meant and belongs to someone with more context — you might be wrong about what the code does, and a hasty fix in this area can make things worse.
+
+**Question 7 (harder) — A mistake you made**
+
+You realise a change you made yesterday has caused a problem in a test environment. Nobody has noticed. What is the most effective response?
+
+- A) Tell your team now, say what you think happened, and fix it.
+- B) Fix it quietly before anyone notices.
+- C) Wait to see whether it causes an actual problem.
+- D) Fix it and mention it at the next retrospective.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Everybody breaks things, especially early on, and how you handle it is what people remember rather than the breakage. Option A is quick, honest, and lets someone check whether the problem is bigger than you think — which is the part you cannot assess alone. Option C is least effective: waiting to see means the problem is found by someone else, later, with no idea what caused it, and that costs the team far more than your change did. Option B looks tidy and removes the chance for anyone to spot a wider impact. Option D delays the information by days.
+
+**Question 8 (harder) — Being asked something you do not know**
+
+In a meeting, a product manager asks you whether something is technically possible. You are not sure. What is the most effective response?
+
+- A) Say you are not sure, say what you would need to check, and offer to come back to them by a specific time.
+- B) Say it is probably possible.
+- C) Say you would need to ask a senior developer.
+- D) Say you do not know.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** Option A does three things at once: it is honest, it shows you know how to find out, and it gives the product manager a time by which they will have an answer, which is what they actually need to plan around. That combination reads as competent rather than uncertain. Option B is least effective — a guess offered in a meeting gets written down and planned against, and "probably" disappears in the retelling. Option C is honest and hands the whole thing to someone else. Option D is honest and leaves the person with nothing.
+
+**Question 9 (harder) — Helping someone newer than you**
+
+A new starter asks you how something works. You know roughly, but not in detail. What is the most effective response?
+
+- A) Tell them what you know, being clear about which parts you are confident on and which you are not, and point them at where to find more.
+- B) Explain it as best you can.
+- C) Send them to a senior developer.
+- D) Offer to look into it and get back to them.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** Your role summary includes coaching and mentoring more junior colleagues, and this is what that looks like at your level — you do not need to be an expert to be useful. The valuable part of option A is the labelling: telling someone which parts of your answer are solid and which are your best guess lets them know how much to rely on it. Option B is least effective because an uncertain explanation delivered confidently is how wrong information spreads, and a new starter has no way to tell. Option C is a reasonable addition and, alone, is less helpful than it looks. Option D is fine and slower than needed.
+
+**Question 10 (harder) — Estimating**
+
+You are asked how long a piece of work will take. You have not done anything like it before. What is the most effective response?
+
+- A) Give a range rather than a single number, say what you are unsure about, and offer to give a better estimate after a short look at the code.
+- B) Give your best guess as a single number.
+- C) Say you cannot estimate it.
+- D) Give a generous estimate so you are safe.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** Estimating unfamiliar work is genuinely hard and nobody expects precision from you — what they need is an honest sense of scale and of what might change it. Option A gives that, and the offer to look first is often accepted and produces a much better answer. Option D is least effective: padding to be safe seems harmless and quietly distorts everyone else's planning, and it also means that when you finish early nobody trusts your estimates afterwards. Option B hides the uncertainty. Option C leaves the person with nothing to plan with.
+
+**Question 11 (harder) — Disagreeing with a more experienced colleague**
+
+A senior developer tells you to do something a particular way. You think there is a better approach. What is the most effective response?
+
+- A) Ask about it — explain the approach you had in mind and ask what you are missing — because you may be right, you may be missing context, and either way the question is a reasonable one to ask.
+- B) Do it their way; they are more experienced.
+- C) Do it your way and see if anyone notices.
+- D) Ask another senior developer for a second opinion.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** The framing "what am I missing?" makes this easy to ask and easy to answer, and it is honest — quite often you *are* missing something, and finding out what is worth more than winning. Equally, senior developers are wrong sometimes and would rather be asked. Option C is least effective: doing something different without saying so causes confusion, wastes the review, and damages trust for no benefit. Option B might be right and skips a chance to learn why. Option D goes around the person you disagree with.
+
+**Question 12 (harder) — Too much work**
+
+You have been given more work than you think you can finish this sprint. What is the most effective response?
+
+- A) Say so now, explain which items you think are at risk and why, and ask what the priority order is.
+- B) Do your best and see how far you get.
+- C) Work extra hours to get it done.
+- D) Mention it at the end of the sprint if you have not finished.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** Raising it at the start is the whole point — it gives everyone the chance to reprioritise while there is still time to act, which is the only period in which the information is useful. Asking for the priority order is the practical part: if something has to slip, far better that it is the item the team would have chosen. Option D is least effective because information that arrives after the sprint cannot change anything. Option C hides a planning problem behind your own time and is not sustainable. Option B leaves everyone to find out at the end.
+
+### Preparation tips
+
+- **Ask for help with a three-part summary.** What I'm doing, what I've tried, where I'm stuck.
+- **Say what you are unsure about.** It reads as competence, not weakness.
+- **Raise things early.** Almost every answer above is better because it happened sooner.
+- **Mention concerns even when you might be wrong.**
+- **Give ranges rather than single numbers when estimating unfamiliar work.**
+- **Ask "what am I missing?" when you disagree with someone more experienced.**
+- **Never change something without telling anyone.**
+- **Check what your new code does, not just that old tests pass.**
+
+### Common pitfalls to avoid
+
+- **Staying stuck in silence to avoid looking inexperienced.**
+- **Making review changes without understanding them.**
+- **Fixing unrelated code inside your own pull request.**
+- **Treating passing existing tests as evidence your change works.**
+- **Guessing in a meeting because "probably" feels helpful.**
+- **Fixing your own mistake quietly.**
+- **Padding an estimate to be safe.**
+- **Waiting until the end of the sprint to say the work will not fit.**
+
+## Conclusion
+
+You have worked through four assessments built around the reasoning a junior developer actually uses, and it is worth pulling the threads together.
+
+The cognitive section was about working things out carefully from what is in front of you — spotting patterns, checking details, following logic through several steps — using the kinds of material you meet in the job rather than abstract puzzles.
+
+The numeric section was ordinary arithmetic done accurately under a little time pressure: percentages and their bases, averages, rates, units. None of it was advanced, and all of it rewarded writing the steps down rather than doing it in your head.
+
+The verbal section asked for something slightly unusual: reading exactly what a passage says and resisting everything you know. "Should" is not "must". "Untested" is not "broken". And a statement that is almost certainly true in real life is Cannot Say if the passage does not settle it.
+
+The situational judgement section was mostly about one thing, and it is the thing that most helps people early in this career: **say things sooner**. Ask for help after a morning rather than a week. Mention the odd-looking code even if you might be wrong. Tell the team when you break something. Say when the work will not fit. Every strong answer above involved raising something earlier than felt comfortable, and none of them involved struggling on quietly.
+
+That is worth trusting, because it can feel backwards. It is easy to think that asking questions looks inexperienced. In practice, experienced colleagues read early questions as a sign that someone is going to be reliable — and they read silence, discovered late, as the thing that costs everybody time.
+
+Good luck. You are at the stage where habits form fastest and matter longest, and the fact that you have worked through all of this says something good about how you approach the job.

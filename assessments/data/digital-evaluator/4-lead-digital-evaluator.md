@@ -836,3 +836,19 @@ You lead evaluation across nine services with a team of six. A new minister's pr
 - **Ignoring your specific duties.** Your role carries explicit responsibilities — data ethics oversight, evaluation standards, honest publication. An option acceptable for a generic manager may be wrong for you because it neglects a duty your role profile names.
 - **Passing the problem along.** Options that hand the dilemma to legal, HR, the team, or the stakeholders without your own contribution score poorly; involving experts is right, abdicating to them is not.
 - **Forgetting the least-effective judgement.** Candidates often deliberate the best option carefully and pick the "least effective" hastily. The least-effective choice is scored too — apply the same care, and remember it is usually either the passive option or the one that quietly compromises integrity.
+
+## Conclusion
+
+You have worked through four assessments pitched at lead digital evaluator, and it is worth drawing the threads together.
+
+The cognitive section was about reasoning from evidence to conclusions that hold — separating what an evaluation design can establish from what it merely suggests, and recognising when a difference between groups is a finding about the groups rather than about the intervention.
+
+The numeric section was the arithmetic that decides whether an evaluation says anything: base rates, confidence intervals against targets, the difference between a metric moving and an outcome changing, and the seasonal or compositional explanations that account for a great many apparent effects.
+
+The verbal section asked for a discipline that runs against your expertise. You know a great deal about evaluation guidance, data protection and what these documents usually require, and the format asks only what this passage establishes. "Encouraged", "preferred" and "required" create different duties. Silence makes a statement Cannot Say, not False. And "may partly reflect the spring dip" does not establish that it did.
+
+The situational judgement section circled the particular position of a lead: enough authority to be listened to, not enough to compel, with explicit duties around data ethics and quality assurance that occasionally require you to be the difficult person in the room. The strong answers acted on root causes rather than instances, avoided both the passive options and the autocratic ones, and treated a direct conversation as the step that comes before escalation rather than instead of it.
+
+If one thread runs through all four, it is that your value lies in being right about uncomfortable things. Anyone can report an evaluation that confirms what a programme hoped. The credibility to be believed when a finding is unwelcome is built slowly on evaluations that turned out to be sound, and spent quickly by a single conclusion softened to keep the peace.
+
+Good luck. This is work that determines what an organisation is able to learn about itself, and the care you have given it is exactly right.

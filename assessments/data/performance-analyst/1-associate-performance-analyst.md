@@ -585,3 +585,436 @@ D) Both statements are wrong
 - **Time-sink questions.** A multi-stage question that is not yielding should be skipped and revisited. Never let one question consume three questions' worth of time.
 - **Confusing percentage points with percentages.** As Question 7 showed, a rise from 60% to 69% is 9 points but 15% - test writers love this distinction.
 - **Answering a sub-step.** Long questions often list intermediate results among the wrong options. Re-read exactly what is asked ("in total", "next month", "after the change") before choosing.
+
+## Workplace job-specific verbal reasoning assessment
+
+### About this assessment
+
+A workplace job-specific verbal reasoning assessment checks whether you can work out exactly what a piece of writing establishes — not what it implies, and not what you already believe to be true.
+
+For an associate performance analyst the material is the writing that surrounds your analysis: a performance measurement framework, a definition of a key performance indicator, a data quality note, guidance on a tool, or a summary of what a service is supposed to achieve.
+
+The usual format gives you a passage and then statements to mark **True**, **False** or **Cannot Say**:
+
+- **True** — the passage establishes it.
+- **False** — the passage contradicts it.
+- **Cannot Say** — the passage settles it neither way.
+
+Get comfortable with Cannot Say. It is a confident, correct answer rather than an admission that you are stuck, and in a well-built test there will be several.
+
+Two things are worth knowing before you start.
+
+The first is that **definitions in performance frameworks are precise, and small words carry them**. "Completed transactions", "unique users", "per quarter", "excluding resubmissions" — each of these changes what a number means. Your role summary says you are responsible for the accuracy and quality of data and analysis, and that responsibility starts with reading a definition exactly as written.
+
+The second is that **what you know is the main hazard**. You may know perfectly well how a metric is usually calculated. If the passage defines it differently, the passage wins. This feels odd the first few times and quickly becomes natural — and it is genuinely useful, because organisations define the same-sounding metric differently all the time.
+
+### What it measures for your role
+
+- **Reading definitions precisely** maps to **Performance measurement**, where you work with KPIs and frameworks.
+- **Reading data quality notes** maps to **Quality assurance of data and analysis**.
+- **Reading tool documentation** maps to **Technical understanding (performance analyst)**.
+- **Reading a brief accurately** maps to working under guidance on projects with limited scope.
+- **Describing findings accurately** maps to **Communicating analysis and insight**.
+- **Reading about users** maps to **User-centred analysis**.
+
+### Practice questions
+
+*Passage A — for Questions 1 to 4*
+
+"The service's completion rate is defined as the number of applications submitted divided by the number of applications started, expressed as a percentage, measured per calendar month. An application is counted as started when the user reaches the first question page. Applications abandoned and later resumed within 30 days count once, at the point they were first started. Applications from users who begin more than one application in a month are counted separately. Test transactions are excluded. The rate is reported to one decimal place."
+
+**Question 1 (easy)**
+
+Statement: The completion rate is measured per calendar month.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly in the definition. A straightforward one, and worth reading carefully anyway — several of the questions below turn on other parts of the same sentence, and getting into the habit of reading a whole definition before answering the first question about it saves time overall.
+
+**Question 2 (easy)**
+
+Statement: An application is counted as started when the user lands on the service's home page.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage says an application counts as started "when the user reaches the first question page", which is not the home page. The passage contradicts the statement. This distinction matters more than it looks: counting from the home page would include everyone who arrived and left, which would produce a much lower completion rate for the same service.
+
+**Question 3 (moderate)**
+
+Statement: A user who starts two applications in the same month is counted once.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage says applications "from users who begin more than one application in a month are counted separately". So two starts count as two. The passage contradicts the statement. Note the metric counts *applications*, not users — a distinction that catches people out, because "unique users" is such a common measure that it is easy to assume it applies here.
+
+**Question 4 (harder)**
+
+Statement: An application started in January, abandoned, and resumed and submitted in February counts towards February's completion rate.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** This is the hardest question in the set and worth working through slowly. The passage says applications resumed within 30 days "count once, at the point they were first started" — so the *start* belongs to January. What it does not say is where the *submission* is counted, and the rate is a ratio of submissions to starts. If both are attributed to January, February is unaffected; if the submission lands in February, February's rate is affected by a submission with no matching start. The passage settles the start and is silent on the submission, so you cannot answer. In real work this is exactly the kind of gap you would take back to whoever wrote the definition.
+
+*Passage B — for Questions 5 to 8*
+
+"The data quality note records that tracking was not functioning on the mobile version of the service between 3 and 11 March. Desktop tracking was unaffected. Figures for March should therefore be treated as incomplete. The analyst has estimated the missing mobile volume by applying February's mobile-to-desktop ratio to March's desktop figures. The estimate is shown separately in the dashboard and is not included in the published headline figure. Comparisons between March and other months should note the gap."
+
+**Question 5 (easy)**
+
+Statement: Desktop tracking worked normally throughout March.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** The passage says "Desktop tracking was unaffected", and the outage described is specific to mobile between 3 and 11 March. The passage establishes it. Note that "unaffected" refers to the mobile tracking failure — the passage tells you desktop was not affected by this problem, which is what the statement claims.
+
+**Question 6 (moderate)**
+
+Statement: The published headline figure for March includes an estimate of the missing mobile data.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts this: the estimate "is shown separately in the dashboard and is not included in the published headline figure". This is good practice being described — an estimate kept visibly separate from measured data — and reading it correctly matters, because someone comparing the headline figure with other months is comparing a number that is missing eight days of mobile traffic.
+
+**Question 7 (moderate)**
+
+Statement: The estimate of missing mobile volume is accurate.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage describes how the estimate was made — February's mobile-to-desktop ratio applied to March's desktop figures — and says nothing about how accurate it turned out to be, which nobody can know, since the actual data was never captured. The method is reasonable and reasonable is not accurate. Distinguishing a described method from a validated result is a habit worth building early.
+
+**Question 8 (harder)**
+
+Statement: Mobile traffic was lower than usual between 3 and 11 March.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The *recorded* mobile traffic was lower, because tracking was not working. Whether the actual traffic was lower is a completely different question, and the passage gives no reason to think users stopped using the mobile service — they just were not counted. Confusing "we did not measure it" with "it did not happen" is one of the most important distinctions in this job, and it is the reason the data quality note exists at all.
+
+*Passage C — for Questions 9 to 12*
+
+"The performance framework sets four key performance indicators for the service: completion rate, user satisfaction, cost per transaction, and time to complete. Targets are set annually by the service owner. The framework states that satisfaction is measured by a survey offered at the end of the transaction, with a target of 80% rating the service good or very good. Cost per transaction is calculated quarterly. The framework notes that time to complete excludes time when the application is awaiting information from a third party. Reporting against the framework is monthly, except for cost per transaction."
+
+**Question 9 (easy)**
+
+Statement: The framework sets four key performance indicators.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly and then listed. Straightforward — and it is worth counting the list against the number when you read a passage like this, because a mismatch between a stated count and the items listed is a classic error-checking question.
+
+**Question 10 (moderate)**
+
+Statement: Cost per transaction is reported monthly.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts this twice: cost per transaction "is calculated quarterly", and reporting is monthly "except for cost per transaction". The exception at the end of the passage is what makes this definite. Reading to the end before answering is the lesson here — a reader who stopped after the first sentence about monthly reporting would answer True.
+
+**Question 11 (moderate)**
+
+Statement: The satisfaction figure reflects the views of all users of the service.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The survey is "offered at the end of the transaction", so it reaches people who got to the end. Anyone who abandoned partway through — who may well be the least satisfied — is not offered it at all. So the figure does not reflect all users, and the passage's own description of the method establishes that. This is one of the most useful things to understand about satisfaction data early in your career, because the figure is quoted constantly and the limitation almost never is.
+
+**Question 12 (harder)**
+
+Statement: A service meeting its satisfaction target has 80% of its users rating it good or very good.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** This combines the two previous ideas. The target is 80% of *survey respondents* rating the service good or very good — and respondents are people who completed the transaction and chose to answer, not "its users". So a service can hit the target without 80% of users being satisfied. The statement conflates respondents with users, which the passage's own definition contradicts. If you found this one demanding, that is reasonable: it asks you to hold a definition from earlier in the passage while reading a claim that quietly changes one word.
+
+### Preparation tips
+
+- **Read the whole definition before answering anything about it.**
+- **Watch small qualifying words.** "Started", "submitted", "per calendar month", "excluding".
+- **Check whether a metric counts people or events.** They are different.
+- **Treat "Cannot Say" as a real answer** when the passage genuinely does not settle it.
+- **Look for the exception at the end.** It often reverses the obvious answer.
+- **Distinguish "not measured" from "did not happen".**
+- **Ask who a survey actually reaches.**
+- **Ask yourself "where does it say that?"** If you cannot point at a sentence, it is Cannot Say.
+
+### Common pitfalls to avoid
+
+- **Answering from how a metric is usually defined.**
+- **Assuming a rate counts unique users.**
+- **Treating a described method as a validated result.**
+- **Reading a tracking outage as a fall in real activity.**
+- **Missing the exception in the last sentence.**
+- **Treating survey respondents as all users.**
+- **Rushing. There is usually enough time for one careful read.**
+
+## Workplace job-specific situational judgement assessment
+
+### About this assessment
+
+A workplace job-specific situational judgement assessment gives you realistic situations from your working life and asks what you would do. The situations are ordinary, and the question is which response an experienced analyst would choose.
+
+For an associate performance analyst the situations involve working under guidance, checking your own work, being asked for numbers quickly, spotting something that looks wrong, and explaining analysis to people who will act on it.
+
+You will usually pick the **most effective** and **least effective** response, or rate each. Scoring is against a key built from experienced practitioners, so you are aiming at professional consensus rather than personal style.
+
+Three things explain most of the answer key.
+
+**You are responsible for the accuracy of your analysis, and that is stated explicitly in your role summary.** It is unusual for an entry-level role to carry that so plainly, and it shapes many of the answers below: checking before publishing, flagging a number you are unsure about, and correcting an error you have already sent are all part of the job rather than signs of inexperience.
+
+**Asking is expected.** You work under the guidance of performance analysts and more senior colleagues. A question early is the arrangement working properly; a wrong number produced confidently is the arrangement failing.
+
+**A number without context can mislead even when it is correct.** Much of the craft of this job is making sure the person receiving your analysis understands what it does and does not show, and that starts now.
+
+### What it measures for your role
+
+- **Accuracy and checking** maps to **Quality assurance of data and analysis**.
+- **Working under guidance** maps to your role level's description.
+- **Explaining findings** maps to **Communicating analysis and insight**.
+- **Understanding what a metric shows** maps to **Performance measurement**.
+- **Tool use** maps to **Technical understanding (performance analyst)**.
+- **Community engagement** maps to engaging with the performance analysis community.
+
+### Practice questions
+
+**Question 1 (easy) — A number that looks wrong**
+
+You produce a routine report and one figure is much higher than usual. What is the most effective response?
+
+- A) Check it before sending — look at whether the underlying data changed, whether a filter or date range is different, and whether anything happened in the service that would explain it.
+- B) Send it; the tool produced it.
+- C) Send it with a note saying the figure looks unusual.
+- D) Ask a colleague to look at the whole report.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** An unexpected figure is either a real change worth reporting or an error worth catching, and ten minutes tells you which. Option A lists the three things that explain the great majority of such cases. Option B is least effective: your role summary makes you responsible for accuracy, and "the tool produced it" is not a check. Option C is much better than B and still pushes the question onto the reader, who has less context than you. Option D is reasonable if you cannot resolve it yourself, and it is worth trying first.
+
+**Question 2 (easy) — An urgent request**
+
+Someone asks you for a figure by the end of the day. You can produce it, but not check it properly. What is the most effective response?
+
+- A) Send the figure and say clearly that it is unchecked, what you have not been able to verify, and when you could confirm it.
+- B) Send the figure.
+- C) Say you cannot produce it in the time.
+- D) Send an approximate figure rounded heavily.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** Option A gives them what they need to decide how much weight to put on it, which is the honest and useful thing — an unchecked figure clearly labelled is often perfectly good enough for the decision they are making. Option B is least effective: an unlabelled unchecked figure will be treated as verified and quoted onward. Option D disguises the uncertainty as precision-by-rounding, which does not tell the reader anything about whether the number is right. Option C withholds something you could provide.
+
+**Question 3 (moderate) — Stuck on a tool**
+
+You have been stuck for most of the morning trying to get a query to produce what you need. What is the most effective response?
+
+- A) Keep going; you will work it out.
+- B) Ask a colleague, saying what you are trying to produce, what you have tried and where it is going wrong — because a few minutes of their time saves the rest of your day, and the summary makes it quick for them to help.
+- C) Produce the analysis a different way that you know works, even though it takes longer.
+- D) Wait until the next team meeting to raise it.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** A morning is long enough to have made a genuine attempt, which is what makes this the right moment to ask. The three-part summary in option B is worth learning by heart — *what I'm trying to do, what I've tried, where it's going wrong* — because it turns a vague interruption into a question someone can answer in two minutes. Option D is least effective: waiting can waste days, and this is exactly what "under the guidance of more senior colleagues" is for. Option A treats struggling alone as a virtue. Option C gets the work done and leaves you unable to do it the efficient way next time.
+
+**Question 4 (moderate) — A finding someone will not like**
+
+Your analysis shows a change the team made has not improved the metric it was meant to improve. What is the most effective response?
+
+- A) Report what you found, clearly and without softening it, and include what the data does and does not show.
+- B) Report it, noting that the sample is small so it may change.
+- C) Wait another month to see whether the picture changes.
+- D) Report the metrics that did improve.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** Reporting what you found is the job, and the "does and does not show" part is what makes it useful rather than blunt — a change that has not improved a metric after one month is a different finding from one that has not after six. Option D is least effective: selecting the favourable metrics is the one response that actively misleads, and it is the habit that, once noticed, means nobody trusts any of your analysis. Option B is fine if the sample genuinely is small and becomes a way of softening findings if used routinely. Option C delays a real result.
+
+**Question 5 (moderate) — An error you have already sent**
+
+You realise a report you sent yesterday contains a mistake. What is the most effective response?
+
+- A) Tell the recipients now, explain what was wrong and what the corrected figures are, and say what you will do to avoid it.
+- B) Correct it quietly in the next report.
+- C) Wait to see whether anyone noticed.
+- D) Tell your manager and ask what to do.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** People may already be acting on the wrong number, which is what makes speed matter more than comfort. Option A is quick and complete. Option C is least effective: a mistake found later by someone else is far worse than one you corrected yourself, and the delay is what damages trust rather than the error. Option B leaves people with a wrong figure they may already have used. Option D is a perfectly reasonable thing to do *as well*, particularly early on, and it should not delay telling the people who have the wrong number.
+
+**Question 6 (moderate) — A request for a metric that will mislead**
+
+A colleague asks for "the number of users last month". You know the figure available counts sessions, not people. What is the most effective response?
+
+- A) Give the sessions figure, labelled clearly as sessions, and explain the difference — one person visiting four times is four sessions — so they can tell whether it answers their question.
+- B) Give the sessions figure as the number of users.
+- C) Tell them you cannot answer the question.
+- D) Give the sessions figure and let them ask if they need more.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** The distinction between sessions and users is one of the most commonly muddled in analytics, and telling someone which one they have got is a small thing that prevents a large error. Option A gives them the figure and the meaning. Option B is least effective: labelling sessions as users produces a number that will be quoted, compared and planned against incorrectly. Option D is close and relies on them knowing enough to ask. Option C withholds a useful figure over a solvable labelling issue.
+
+**Question 7 (harder) — Being asked to explain a change you cannot explain**
+
+A service manager asks why a metric moved last week. You can see the movement but do not know the cause. What is the most effective response?
+
+- A) Say what you can see, say plainly that you do not yet know the cause, and say what you would check and by when.
+- B) Offer the most likely explanation.
+- C) Say you do not know.
+- D) Say it is probably normal variation.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** Option A does three useful things at once: it separates what is observed from what is explained, it is honest about the gap, and it gives the person a time by which they will know more. That combination reads as competent rather than uncertain. Option D is least effective — it offers a specific explanation you have not tested, in a form that sounds reassuring and stops anyone investigating. Option B has the same problem in a more honest form. Option C is honest and leaves them with nothing.
+
+**Question 8 (harder) — Replicating existing analysis**
+
+You are asked to reproduce an analysis a colleague did last quarter. Following their method, you get a noticeably different answer. What is the most effective response?
+
+- A) Go through both versions to find where they diverge — usually a date range, a filter, or a changed data source — and raise it with your colleague with the specific difference.
+- B) Use your figure; you followed the method.
+- C) Use their figure; they are more experienced.
+- D) Report both figures.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** A difference between two runs of the same method has a specific cause, and finding it is both quick and the whole point — it means either your run is wrong, or theirs was, or something in the data changed, and each matters. Option A names where such differences usually hide. Option C is least effective: deferring to seniority without investigating means a possible error stays in the record, and your colleague would much rather be asked. Option B assumes you are right. Option D publishes a discrepancy without resolving it.
+
+**Question 9 (harder) — Feedback on your analysis**
+
+A senior analyst leaves a lot of comments on a piece of your work. What is the most effective response?
+
+- A) Work through them, make the changes you understand, and ask about any you do not — because the reasoning behind a comment is what stops the same thing recurring.
+- B) Make all the changes without asking.
+- C) Explain why you did it your way.
+- D) Ask a different colleague whether the comments are fair.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** A heavily commented review early on is somebody investing time in you. Option A gets the value from it, and asking about the ones you do not understand is the part that transfers the skill. Option D is least effective: quietly checking whether the reviewer was fair goes around the person trying to help you and would land badly if they knew. Option C has a place in a conversation, and as a first response it reads as defending rather than learning. Option B is compliant and wastes the lesson.
+
+**Question 10 (harder) — A dashboard nobody uses**
+
+You maintain a dashboard and notice from the access logs that almost nobody opens it. What is the most effective response?
+
+- A) Mention it to your manager or the team it was built for, and ask whether it is still needed or whether it should show something different.
+- B) Keep maintaining it; it was requested.
+- C) Stop maintaining it.
+- D) Add more charts to make it more useful.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Noticing this and raising it is genuinely valuable — maintaining an unused dashboard costs your time every month and provides nothing, and the team may have a need it no longer meets. Option A raises it in the most useful form, as a question rather than a complaint. Option C is least effective: quietly stopping means it breaks silently and someone discovers it at the worst moment. Option B accepts a permanent cost without questioning it. Option D adds work to something nobody looks at.
+
+**Question 11 (harder) — Too much work**
+
+You have been given more analysis than you think you can complete this week to a standard you are happy with. What is the most effective response?
+
+- A) Say so now, explain which pieces are at risk, and ask which matter most.
+- B) Do your best and see how far you get.
+- C) Complete everything, accepting that the checking will be lighter than usual.
+- D) Say something at the end of the week if it is not finished.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Raising it now lets someone reprioritise while there is still time, and asking which matter most means that if something slips it is the piece the team would have chosen. Option C is least effective and is the tempting one: quietly reducing the checking to fit the volume produces analysis that looks complete and may be wrong, which is worse than analysis that is late and is a direct conflict with your responsibility for accuracy. Option D delivers the information too late to be useful. Option B leaves everyone to discover it at the end.
+
+**Question 12 (harder) — Joining the community**
+
+You are invited to a cross-government performance analysis community session. Your week is busy. What is the most effective response?
+
+- A) Go, because your role summary names engaging with the community and these sessions are where you find out how other people solve problems you are currently solving alone.
+- B) Skip it; delivery work comes first.
+- C) Go if there is nothing more urgent.
+- D) Ask a colleague to summarise it afterwards.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** Community engagement is named explicitly in your role at this level, which is unusual and deliberate — early in a specialist career, the fastest route to competence is seeing how other people approach the same problems. Option A treats it as part of the job, which it is. Option B is least effective: "delivery first" is always available as a reason and, applied consistently, means you never go. Option C is the same in softer form, since there is always something more urgent. Option D gets you the headlines and none of the conversations, which are the useful part.
+
+### Preparation tips
+
+- **Check an unexpected figure before it leaves your hands.**
+- **Label an unchecked number as unchecked.**
+- **Ask for help with a three-part summary of where you are stuck.**
+- **Separate what you observed from what you can explain.**
+- **Find where two versions of an analysis diverge.**
+- **Correct your own errors quickly and completely.**
+- **Say what a figure counts — sessions, people, applications.**
+- **Raise capacity problems at the start of the week, not the end.**
+
+### Common pitfalls to avoid
+
+- **Sending a figure because the tool produced it.**
+- **Reporting only the metrics that improved.**
+- **Offering an untested explanation because it sounds reassuring.**
+- **Deferring to a more experienced colleague instead of finding the difference.**
+- **Cutting your checking to fit the workload.**
+- **Labelling sessions as users.**
+- **Fixing a sent error quietly in the next report.**
+- **Treating community engagement as optional.**
+
+## Conclusion
+
+You have worked through four assessments built around the reasoning an associate performance analyst actually uses, and it is worth drawing them together.
+
+The cognitive section was about working carefully from what is in front of you — spotting the pattern in a set of figures, following a definition through several conditions, and checking details rather than trusting a first impression.
+
+The numeric section was ordinary arithmetic done accurately under mild time pressure: percentages and their bases, rates, averages, and units. None of it was advanced, and all of it rewarded writing the steps down.
+
+The verbal section asked for something slightly counterintuitive — reading exactly what a definition says and setting aside how the metric is usually calculated. "Started" means what the framework says it means. A tracking outage is not a fall in activity. And a satisfaction target of 80% is 80% of the people who answered a survey, not of your users.
+
+The situational judgement section came back repeatedly to two habits. The first is **checking**: your role summary makes you responsible for accuracy, and almost every strong answer involved verifying something before it left your hands. The second is **saying things early**: asking when stuck, flagging an unchecked figure, correcting your own mistake, telling someone the work will not fit.
+
+Both are worth trusting even when they feel like admissions. Experienced colleagues read an analyst who checks their own work and flags their own uncertainty as someone who can be relied on with bigger things — and they read a confident number that turns out to be wrong as a reason to check everything else you produce.
+
+Good luck. You are at the stage where habits form fastest and matter longest, and working through all of this says something good about how you approach the work.

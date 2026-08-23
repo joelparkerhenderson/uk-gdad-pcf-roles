@@ -664,4 +664,223 @@ Which summary best captures the lesson?
 - **Being seduced by confident vagueness.** Options like "metrics have improved in line with expectations" sound professional and say nothing. In clear-writing questions, prefer the option a reader could accurately repeat.
 - **Rushing dense passages.** Verbal tests are usually generous enough for one careful read plus targeted re-reads. One accurate pass beats three skims — the same economics as code review.
 
-<!-- APPEND -->
+## Workplace job-specific situational judgement assessment
+
+### About this assessment
+
+A workplace job-specific situational judgement assessment presents realistic scenarios from your role and asks you to identify effective and ineffective responses. As a senior developer on the management track the scenarios involve planning and leading development across sets of related stories, coaching junior colleagues, operating the services you build, working with other disciplines, and holding quality when a date is under pressure.
+
+The commonest formats ask you to select the most and least effective response, or to rate each on a scale. Scoring is against a key derived from experienced practitioners at comparable levels, so you are aiming at professional consensus rather than personal preference.
+
+Three patterns run through the strong answers at this level.
+
+The first is that you now own outcomes produced by other people, which changes what a good response looks like. Doing the work yourself is usually the fastest way to today's result and the slowest way to a team that can produce it without you.
+
+The second is that your role explicitly includes operating what you build. That closes a loop most developers never see, and it means the reasoning about robustness, resilience and stability in your role summary is not abstract — you are the person woken up.
+
+The third is that you work with user researchers, designers, content designers and product people who hold information you do not, and your summary names representing users internally. Responses that gather that perspective before deciding consistently score higher than ones that resolve alone.
+
+### How this assessment maps to your role
+
+- **Leading development across related stories** maps to your role level's planning and leadership responsibility.
+- **Coaching** maps to coaching and mentoring more junior colleagues.
+- **Operational judgement** maps to **Service support** and **Availability and capacity management**.
+- **Design review** maps to **Systems design**, where you review the designs of others.
+- **Security judgement** maps to **Information security**.
+- **Cross-discipline working** maps to **User focus** and **Prototyping**.
+
+### Practice questions
+
+**Question 1 (easy) — Quality under a deadline**
+
+Two days before a release, meeting the date means skipping the integration testing your team normally does. What is the most effective response?
+
+- A) Skip it and test after release.
+- B) Say what skipping it means in concrete terms — which integrations would go untested and what would fail if they are broken — and put the options to the product manager, including releasing a reduced scope that avoids the untested paths.
+- C) Refuse to release without the testing.
+- D) Do a quick partial test and release.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** The date belongs to the product manager and the risk is theirs to weigh, so your job is to make sure the decision is made with the consequence visible rather than made silently by you. Option B also offers the option most often missed under time pressure — reducing scope so the risky paths are not in the release at all, which frequently resolves the whole tension. Option A is least effective because it makes the call invisibly, and post-release testing of integrations reliably slips. Option D is a reasonable action inside option B's frame and, chosen alone, decides the risk level without telling anyone. Option C removes the product manager from their own decision.
+
+**Question 2 (easy) — A junior colleague's pull request**
+
+A junior developer's pull request works but takes a roundabout approach. What is the most effective response?
+
+- A) Approve it; it works.
+- B) Ask what led them to the approach before suggesting the alternative — they may have hit a constraint you have not seen, and if they have not, the reasoning behind the simpler route is the part worth transferring rather than the instruction.
+- C) Tell them to use the simpler approach.
+- D) Rewrite it yourself before merging.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** Option B costs one conversation and buys two things: the possibility that they are right, and a developer who can make the judgement unaided next time. Option D is least effective — it removes the work, teaches nothing, and signals to the team that their code becomes yours whenever you disagree with it. Option C transfers an answer without the reasoning, which works exactly once. Option A lets a pattern spread that you will be correcting repeatedly.
+
+**Question 3 (moderate) — An incident at 3am**
+
+You are on call. A service you built is failing and you are not certain of the cause. What is the most effective first action?
+
+- A) Investigate the cause so the right fix can be applied.
+- B) Restore service first by whatever safe means exists — reverting the most recent change, failing over, restarting the affected component — and diagnose afterwards from preserved logs and metrics, because users are affected now and the diagnosis will still be available in the morning.
+- C) Wake a colleague to help diagnose.
+- D) Increase capacity in case it is load-related.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** Restoration and diagnosis are different activities and doing them in the wrong order costs users directly. Option B restores and preserves the evidence, which is what keeps the later diagnosis possible. Option D is least effective: changing a system parameter during an incident on an unconfirmed hypothesis can make things worse, and scaling up against a struggling dependency is a reliable way to deepen an outage. Option C is reasonable if you are stuck and is not the first move. Option A is what a developer instinctively does and what an operator learns not to.
+
+**Question 4 (moderate) — Reviewing another team's design**
+
+You are asked to review a design from another team. It is thorough and you have a concern about how it behaves under load. What is the most effective response?
+
+- A) Note the concern in the review comments.
+- B) State the concern as a specific prediction — at roughly what volume you expect the problem, and by what mechanism — and ask what they expect to happen at that point, because a testable claim converts a difference of opinion into a question with an answer and leaves room for you to be wrong.
+- C) Ask them to load test it.
+- D) Approve it; it is their design.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** Your role names reviewing others' designs, and a specific prediction is the most useful contribution because it can be checked, it teaches the reasoning, and it does not require either party to defer. Option C is a good next step and often follows directly from B, since a prediction tells you what to test for. Option D is least effective because it declines the review you were asked to do. Option A registers a concern in a form nobody has to act on.
+
+**Question 5 (moderate) — A user researcher's finding**
+
+A user researcher reports that people are struggling with a flow your team built and are confident works well. What is the most effective response?
+
+- A) Ask the researcher for the details — what people were trying to do, where they got stuck, how many participants — because that determines whether the fix is the flow, its wording, or something earlier in the journey, and the answer is frequently not the part you built.
+- B) Accept the finding and change the flow.
+- C) Ask about the sample size and methodology.
+- D) Ask to observe the next research session.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** The finding is that people struggled, which is a fact about their experience rather than a diagnosis, and the remedy depends on where. Option A gets the specifics that distinguish a flow problem from a content problem from a problem set up three screens earlier. Option C is least effective as a first response: querying methodology in reply to an unwelcome finding is what defensiveness sounds like, and it is the fastest way to stop being included in research. Option D is genuinely valuable and slower than asking. Option B may change the wrong thing.
+
+**Question 6 (moderate) — Planning related stories**
+
+You are planning a set of related stories and one of them carries most of the technical uncertainty. What is the strongest sequencing?
+
+- A) Do the straightforward stories first to build momentum.
+- B) Address the uncertain one first, or timebox a spike on it, because the uncertainty affects what the other stories should look like — and discovering that late means reworking the work you did to build momentum.
+- C) Do them in the order the product manager prioritised.
+- D) Split the uncertain story into smaller ones.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Uncertainty resolved early is cheap and resolved late is expensive, because everything built in the meantime was built on an assumption. Option B sequences accordingly and offers the spike as the lighter-weight version. Option A is least effective — it feels productive and maximises the amount of work exposed to the unknown. Option D is a useful technique and does not by itself reduce the uncertainty; four small stories about something you do not understand are still about something you do not understand. Option C is reasonable and abdicates a technical sequencing judgement that is yours to offer.
+
+**Question 7 (harder) — A security issue in a senior colleague's code**
+
+Reviewing a pull request from a developer more senior than you, you find an injection vulnerability. What is the most effective response?
+
+- A) Approve it and raise the issue separately.
+- B) Block the merge and describe the specific vulnerability with the input that would exploit it, treating it as a normal review finding — because the standard does not vary by author, and a concrete exploit is a technical observation rather than a comment on anyone's competence.
+- C) Fix it yourself and merge.
+- D) Ask a security specialist to review it.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** This is an ordinary review finding that feels difficult only because of the seniority, and handling it as ordinary is both correct and the least awkward path available. Naming the exploiting input keeps the exchange technical. Option A is least effective: approving code with a known injection vulnerability puts it in production, and the separate conversation happens after the risk is live. Option C denies the author sight of their own defect. Option D is a fine addition and an evasion as the primary response, since you have already found the problem.
+
+**Question 8 (harder) — Recurring production problems**
+
+Your service has had three incidents in two months, each with a different immediate cause. What is the most effective response?
+
+- A) Fix each cause thoroughly.
+- B) Look for what the three have in common — most often that these conditions were not detected before they became user-facing failures — because three different causes producing three outages usually points at a single missing property rather than three unrelated faults.
+- C) Add more alerting.
+- D) Schedule a resilience review.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Your role names finding ways to improve system robustness, resilience and stability, and this is what that looks like in practice. Three unrelated causes with the same consequence usually share a property — no leading indicators, no bounded resource use, or no isolation — and the fix for that covers the next three as well. Option A is least effective as the whole response: it resolves three specific faults and leaves the property that let them become outages entirely intact. Option C is directionally right and unspecific, and more alerts on symptoms would not have helped. Option D is a reasonable container for the work in B.
+
+**Question 9 (harder) — A team member struggling**
+
+A developer on your team is producing work that needs consistent rework, and others are starting to route around them. What is the most effective response?
+
+- A) Raise it with your manager.
+- B) Talk to them directly with specific examples and establish what is going on — a knowledge gap, an unclear brief, something outside work, or a genuine mismatch all look identical from outside and need entirely different responses — while recognising that the routing-around is a second problem needing action either way.
+- C) Give them simpler work.
+- D) Pair with them on everything.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** You cannot choose a response without knowing the cause, and the person most likely to know has not been asked. Option B starts with specifics rather than impressions and names the second problem, which will harden into permanent exclusion if left alone. Option C is least effective: it looks considerate, removes any route to improvement, is immediately obvious to the person, and confirms to the team that they are not to be relied on. Option D is unsustainable alone and may be part of a plan. Option A is appropriate if the direct conversation does not resolve things.
+
+**Question 10 (harder) — Technical debt nobody has asked about**
+
+You can see that a component your team maintains is becoming difficult to change, but nothing is failing and the backlog is full. What is the most effective response?
+
+- A) Improve it gradually alongside feature work.
+- B) Make it visible with evidence — how much longer changes in that area take, how many recent incidents touched it, what it is blocking — and put it to the product manager as a prioritisation decision, because this competes for the same time as everything else and needs to be chosen rather than smuggled in.
+- C) Raise it at a retrospective.
+- D) Add refactoring tickets to the backlog.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Evidence is what turns an engineering opinion into a decision someone can make, and the three measures in option B are usually available from data you already have. Option A is least effective: unsanctioned work done alongside sanctioned work makes both slower, is invisible if it succeeds, and looks like a missed estimate if it does not. Option D adds items to a queue nobody will prioritise without the argument. Option C surfaces it to the team rather than to the person who decides.
+
+**Question 11 (harder) — Disagreement with a designer**
+
+A designer's proposed interaction would be expensive to build and you think a simpler pattern would serve users equally well. What is the most effective response?
+
+- A) Build the simpler pattern and explain afterwards.
+- B) Describe the cost difference concretely and ask what the interaction is doing for users that the simpler pattern would not — because they may be solving a problem you cannot see from the specification, and if they are not, the comparison is one you can make together.
+- C) Build what was specified; design decisions are theirs.
+- D) Ask the product manager to decide.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Option B brings the information only you have — the cost — and asks for the information only they have, which is what the interaction is meant to achieve. That is the shape of a productive cross-discipline disagreement. Option A is least effective: quietly building something other than what was asked for is a decision made on their behalf without telling them, and it damages the working relationship more than a direct disagreement would. Option C accepts a cost without testing whether it buys anything. Option D escalates something the two of you can resolve.
+
+**Question 12 (harder) — Your own estimate was wrong**
+
+Work you estimated at a week is going to take three, and you knew by day three. It is now day six. What is the most effective response?
+
+- A) Tell the product manager now and explain the reasons.
+- B) Tell them now, say what you knew and when, and be specific about why you did not raise it on day three — because the delay in telling is the more consequential problem, and being honest about it is what makes your next estimate believable.
+- C) Push hard to recover as much of the time as possible.
+- D) Tell them now and commit to a firmer process for future estimates.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** The estimate being wrong is ordinary; the three days of silence is the part that costs, because it removed three days in which someone could have replanned. Option B addresses both, and the honesty about the delay is what distinguishes it from A — a report that presents the news as though it has just arrived leaves the pattern in place. Option C is least effective: working harder in silence is what produced the six days, and it substitutes effort for the information other people need. Option D is a reasonable addition and a process commitment does not replace the account of what happened.
+
+### Preparation tips
+
+- **Make quality trade-offs visible to whoever owns the date.**
+- **Restore service first; diagnose afterwards.**
+- **State design concerns as testable predictions.**
+- **Ask a researcher for specifics before accepting or disputing a finding.**
+- **Sequence the uncertain work first.**
+- **Read three incidents with three causes as one missing property.**
+- **Bring evidence when asking for time to fix something invisible.**
+- **Report a slipping estimate with the timeline of what you knew.**
+
+### Common pitfalls to avoid
+
+- **Rewriting a junior colleague's code instead of reviewing it.**
+- **Diagnosing during an incident while users are affected.**
+- **Querying research methodology in response to an unwelcome finding.**
+- **Doing the easy stories first to build momentum.**
+- **Approving code with a known vulnerability to avoid awkwardness.**
+- **Giving a struggling colleague simpler work.**
+- **Doing unsanctioned refactoring alongside committed work.**
+- **Quietly building something other than what a designer specified.**
+
+## Conclusion
+
+You have worked through four assessments pitched at senior developer on the management track, and it is worth drawing the threads together.
+
+The cognitive section was about reasoning across a whole system rather than a component — understanding how the pieces interact, what fails when a dependency is slow rather than absent, and why three incidents with three causes usually have one explanation.
+
+The numeric section was the arithmetic that supports the operational half of your role: availability figures, capacity headroom, error rates against real volumes, and the recurring lesson that an average across dissimilar things hides exactly the information you needed.
+
+The verbal section was an exercise in reading specifications and standards precisely, where "must", "should" and "may" are terms of art and an exception stops where it says it stops.
+
+The situational judgement section was about the shift this level represents. You are accountable for work other people do, you operate what you build, and you work with disciplines whose expertise is not yours. The strong answers made trade-offs visible to the people who own them, converted disagreements into checkable questions, coached by giving reasons rather than corrections, and — in the last question — treated a late disclosure as the real problem rather than the wrong estimate.
+
+If one thing is worth carrying away, it is that the strongest responses were rarely the most decisive. They were the ones that got the right decision made by the right person with the information they needed, and that built a team able to do it again without you. That is most of what leading development actually consists of.
+
+Good luck. This is a level where habits set now compound for years, and the attention you have given this is well spent.

@@ -450,4 +450,430 @@ Remediation budget covers two risks this year. The board suggests "the top two s
 - **Partial-completion savings claims.** Fixed costs terminate at completion, not proportionally. Any case claiming pro-rata savings from a partially executed exit or consolidation has mismodelled its own structure.
 - **Score-grid obedience.** Risk grids screen; they do not decide. Low-probability/catastrophic risks and coupled enabling risks are exactly what grids underweight — and exactly what principal-level review exists to catch.
 
-<!-- APPEND -->
+## Workplace job-specific verbal reasoning assessment
+
+### About this assessment
+
+A workplace job-specific verbal reasoning assessment tests whether you can determine exactly what a piece of written material establishes. At principal level in infrastructure operations the material is supplier contracts and service level agreements, service management framework documentation, change and incident policy, configuration management standards and regulatory requirements.
+
+The commonest format presents a passage followed by statements to be marked True, False or Cannot Say. True means the passage establishes it, False means it contradicts it, Cannot Say means it settles neither — regardless of what you know from operating these services.
+
+Long operational experience is the principal hazard. You will know how incident policy usually works, what a configuration management database normally contains, and what a supplier would normally be expected to do, while the passage in front of you describes this particular arrangement.
+
+Three specifics matter especially at your level.
+
+The first is that service level agreements define their terms — availability, priority, response, resolution — with precision, and those definitions decide what is actually promised. Your role names owning operational relationships with suppliers and ensuring alignment to contractual requirements, which makes this the reading that most directly determines whether you are getting what you pay for.
+
+The second is that service management frameworks distinguish carefully between roles and authorities. Who may raise, who may approve, who is consulted, who must be informed — these are different, and acting outside them is a governance failure rather than a technical one.
+
+The third is that priority definitions in incident policy are usually functions of two variables, impact and urgency, and reading one as the whole is a reliable way to misclassify.
+
+### How this assessment maps to your role
+
+- **Reading supplier agreements** maps to owning operational relationships with suppliers.
+- **Reading service level definitions** maps to **Service focus** and **Availability and capacity management**.
+- **Reading incident and change policy** maps to **Incident management** and **Change management**.
+- **Reading configuration standards** maps to **Asset and configuration management**.
+- **Reading framework documentation** maps to **Service management framework knowledge**.
+- **Reading problem records** maps to **Problem management**.
+
+### Practice questions
+
+*Passage A — for Questions 1 to 4*
+
+"Incident priority is determined by impact and urgency in accordance with the matrix at Annex B. Priority 1 incidents are those with both high impact and high urgency. The service desk assigns an initial priority; the incident manager may reassign priority at any point during the incident and must record the reason. Response targets apply from the time the incident is logged, not from the time it is reported. Resolution targets are suspended while an incident is awaiting information from the customer. A workaround that restores service is treated as a resolution for the purposes of the resolution target; the underlying fault is managed as a problem."
+
+**Question 1 (easy)**
+
+Statement: An incident with high impact is a Priority 1 incident.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts this: Priority 1 requires "both high impact and high urgency". High impact alone does not satisfy a conjunctive definition — a high-impact incident that is not urgent, such as a fault affecting a service nobody needs until month-end, is not Priority 1. Reading one half of a two-variable definition as the whole is the commonest way incidents get misclassified, in assessments and in service desks.
+
+**Question 2 (moderate)**
+
+Statement: The response target begins when a user reports the incident.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage states that response targets apply "from the time the incident is logged, not from the time it is reported". The clause exists precisely to close this reading, and the distinction has real money in it — a gap between reporting and logging is time that does not count against the supplier, which is worth knowing when you are assessing performance against the agreement.
+
+**Question 3 (moderate)**
+
+Statement: An incident resolved by a workaround has met its resolution target.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** The passage establishes this: "A workaround that restores service is treated as a resolution for the purposes of the resolution target". Note what it establishes and what it does not — the target is met, and the underlying fault remains, managed as a problem. Both are true, and a supplier reporting strong resolution performance while an unaddressed problem backlog grows is operating entirely within this policy, which is exactly the pattern worth watching for.
+
+**Question 4 (harder)**
+
+Statement: The incident manager can lower the priority of an incident without the service desk's agreement.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** The passage says the incident manager "may reassign priority at any point during the incident and must record the reason". Reassignment includes lowering, no agreement from the service desk is required, and the only attached condition is recording the reason. The passage establishes the power. If you hesitated over "lower" specifically, that is worth noting: the passage says reassign without qualifying direction, and reading an unqualified power as running only one way is a form of adding a condition that is not there.
+
+*Passage B — for Questions 5 to 8*
+
+"All configuration items must be recorded in the configuration management database before entering the production environment. The record must include the item's owner, its supported version and its relationships to other configuration items. Configuration items provided as part of a managed service are recorded at service level rather than individually, provided the supplier maintains a component inventory available to the department on request. Records are verified by audit annually. A configuration item whose record has not been verified within eighteen months must be treated as unverified in risk assessments. The configuration manager may exempt an item from individual recording where the item is ephemeral and automatically provisioned."
+
+**Question 5 (easy)**
+
+Statement: A configuration item must be recorded before it enters production.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly with "must". Note that two routes away from individual recording follow — managed services recorded at service level, and the ephemeral exemption — so this baseline obligation is real and not universal, which the later questions test.
+
+**Question 6 (moderate)**
+
+Statement: Components of a managed service must be recorded individually in the configuration management database.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts this: such items "are recorded at service level rather than individually, provided the supplier maintains a component inventory available to the department on request". The proviso is worth noticing as a supplier management point — the service-level recording is conditional on the supplier holding an inventory you can call for, which means asking for it occasionally is how you keep the condition alive rather than nominal.
+
+**Question 7 (moderate)**
+
+Statement: A configuration item verified sixteen months ago is treated as unverified in risk assessments.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The threshold is eighteen months: an item "whose record has not been verified within eighteen months must be treated as unverified". Sixteen months is inside the window, so the item is not treated as unverified. The passage contradicts the statement. Note the interaction with the annual audit — verification is meant to happen every twelve months, and the unverified threshold sits six months beyond it, which gives a deliberate grace period rather than an immediate consequence.
+
+**Question 8 (harder)**
+
+Statement: An automatically provisioned ephemeral item is exempt from individual recording.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage says the configuration manager "may exempt" such an item. That is a discretionary power, not an automatic exemption — an ephemeral automatically provisioned item is *eligible* for exemption and remains subject to the recording requirement unless the configuration manager exercises the power. The statement asserts the exemption as a property of the item rather than as an outcome of a decision. Distinguishing eligibility from entitlement is the discipline, and it matters operationally: a team assuming their ephemeral infrastructure is automatically out of scope may be non-compliant without anyone deciding anything.
+
+*Passage C — for Questions 9 to 12*
+
+"The supplier will provide 24-hour cover for Priority 1 and Priority 2 incidents, and cover during business hours for Priority 3 and Priority 4. Business hours are 08:00 to 18:00 on working days. Where a Priority 3 incident is raised outside business hours, the response target begins at the start of the next business day. The supplier will provide a named service manager and will notify the department of any change to that appointment. The supplier will hold a quarterly service review with the department. The department may request additional reviews where performance has fallen below target in any month; the supplier will not unreasonably refuse such a request."
+
+**Question 9 (moderate)**
+
+Statement: A Priority 2 incident raised at 22:00 receives cover immediately.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** The passage provides 24-hour cover for Priority 1 and Priority 2, and the deferral of response targets to the next business day is stated only for Priority 3. So a Priority 2 raised at 22:00 falls within 24-hour cover. The passage establishes this, and the asymmetry between the priorities is the substance of the clause.
+
+**Question 10 (moderate)**
+
+Statement: A Priority 4 incident raised at 19:00 on a working day has its response target begin the next business day.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** Priority 4 is covered during business hours only, so the incident is outside cover when raised — but the clause deferring the response target to the next business day is written for Priority 3 specifically. The passage does not say what happens to a Priority 4 raised out of hours. You would expect the same treatment, and the passage has not established it. Noticing that a clause names one priority and not its neighbour is exactly the kind of gap that becomes a dispute later.
+
+**Question 11 (moderate)**
+
+Statement: The supplier must agree to an additional service review when monthly performance has fallen below target.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage says the supplier "will not unreasonably refuse such a request". That establishes a qualified obligation, not an absolute one — a refusal is permitted if it is reasonable. The statement's "must agree" overstates it. Reasonableness standards of this kind are common in supplier agreements and are genuinely weaker than they read at first glance, though they are far from nothing, since an unreasonable refusal is a breach.
+
+**Question 12 (harder)**
+
+Statement: The supplier must obtain the department's agreement before changing the named service manager.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage says the supplier "will notify the department of any change to that appointment". Notification is not consent, and the passage allocates no approval role to the department. The obligation is to tell you, after or around the fact. This is a distinction worth being clear about before you need it: the named service manager is often the most valuable thing in an operational relationship, and if you want a say in changing them, the agreement has to give you one — this one does not.
+
+### Preparation tips
+
+- **Read two-variable definitions as conjunctions.** Impact *and* urgency.
+- **Check when a clock starts — reported, logged, or next business day.**
+- **Distinguish a workaround-as-resolution from a fault that is fixed.**
+- **Read "may exempt" as eligibility, not entitlement.**
+- **Check the threshold attached to a consequence.**
+- **Notice when a clause names one priority and is silent on its neighbour.**
+- **Read "will not unreasonably refuse" as a qualified obligation.**
+- **Distinguish notification from consent.**
+
+### Common pitfalls to avoid
+
+- **Treating high impact alone as Priority 1.**
+- **Assuming response targets run from the time of report.**
+- **Reading a discretionary exemption as automatic.**
+- **Adding a direction to an unqualified power of reassignment.**
+- **Extending a clause written for one priority to another.**
+- **Reading a reasonableness standard as an absolute obligation.**
+- **Assuming you have a say in a supplier's staffing.**
+- **Answering from how these agreements usually work.**
+
+## Workplace job-specific situational judgement assessment
+
+### About this assessment
+
+A workplace job-specific situational judgement assessment presents realistic scenarios and asks you to identify effective and ineffective responses. At principal level in infrastructure operations the scenarios involve incident leadership, supplier relationships, the standing tension between change control and delivery speed, and leading teams whose success is measured by the absence of events.
+
+The commonest formats ask for the most and least effective response, or for ratings. Scoring is against a key derived from experienced practitioners at comparable seniority.
+
+Three patterns run through the strong answers.
+
+The first is that restoration and diagnosis are separate activities. During an incident the priority is service; afterwards it is understanding. Mixing them costs users during, and costs you honest accounts afterwards.
+
+The second is that process problems are almost always design problems. When people work around change control, the change process is usually the thing that needs looking at — treating it as indiscipline drives the workarounds somewhere you cannot see them, which is strictly worse.
+
+The third is that your function is noticed only when it fails. Making the value of prevented incidents legible is a permanent part of the job, and nobody else in the organisation will do it.
+
+### How this assessment maps to your role
+
+- **Incident leadership** maps to **Incident management** and **Problem management**.
+- **Change judgement** maps to **Change management**.
+- **Supplier management** maps to owning operational relationships with suppliers.
+- **Capacity and availability** maps to **Availability and capacity management**.
+- **Team leadership** maps to leading and directing IT operations specialist teams.
+- **Service and user perspective** maps to **Service focus** and **User focus**.
+
+### Practice questions
+
+**Question 1 (easy) — During a major incident**
+
+A major incident is running. Two engineers are arguing about the root cause while the service remains down. What is the most effective response?
+
+- A) Let them work it out; the cause is what matters.
+- B) Redirect to restoration — revert, fail over, restart — and hold the cause discussion afterwards with logs and metrics preserved, because the argument can be settled later and the outage cannot.
+- C) Decide the cause yourself and direct the fix.
+- D) Bring more engineers onto the bridge.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** Option B separates the two activities and preserves what is needed for the later diagnosis. Option D is least effective: adding people to a live incident raises coordination cost sharply, and a crowded bridge is slower and noisier than a small one — this is one of the most reliably counterproductive instincts in incident management. Option C commits to a hypothesis on partial evidence. Option A allows a debate to continue while users are affected.
+
+**Question 2 (easy) — Blame in a post-incident review**
+
+A post-incident review is heading towards identifying who made the error. What is the most effective response?
+
+- A) Allow it; accountability matters.
+- B) Redirect to the conditions — what made the wrong action easy, what let it reach production, why nothing caught it — because a review that lands on a person stops there, and the conditions will produce the same outcome with someone else.
+- C) Take the discussion offline.
+- D) Restate that the review is blameless.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Option B supplies the specific questions that produce systemic findings, which is what makes the redirection work — stating that a review is blameless does nothing without them. Option A is least effective because it changes nothing about the system and guarantees the next incident is described less candidly, which is the expensive consequence. Option D names the principle without the alternative. Option C removes the discussion from the people who would learn.
+
+**Question 3 (moderate) — Teams working around change control**
+
+You discover that a team has been implementing changes outside the change process for two months. What is the most effective response?
+
+- A) Stop the practice immediately and require compliance.
+- B) Find out why first — two months of workaround by a capable team usually means the process does not work for their case, such as a weekly board that cannot serve an urgent fix — because enforcing without fixing that just moves the workaround somewhere less visible.
+- C) Report it as a compliance breach.
+- D) Add technical controls preventing unapproved changes.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** Sustained workaround by competent people is information about the process. Option B gets it, and the likely findings are actionable — a missing emergency path, a board cadence incompatible with operational reality, or approvals required for changes that do not need them. Option C is least effective: treating it as a compliance matter before understanding it guarantees you never hear about the next workaround and leaves the process defect in place. Option D is probably part of the eventual answer and, applied first, forces a team into a process that does not work. Option A is the same error more gently.
+
+**Question 4 (moderate) — A supplier missing targets**
+
+A supplier is consistently missing resolution targets. The contract provides service credits. What is the most effective response?
+
+- A) Claim the credits.
+- B) Establish why — capability, resourcing, or a contract that rewards something other than what you need — and address that, because credits compensate for a failure without changing it, and a supplier under-resourcing your account because the commercial model permits it will keep doing so through any number of claims.
+- C) Escalate to the supplier's account director.
+- D) Begin planning to replace the supplier.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** The three causes need different responses, and the commercial one is both the most common and the one least affected by escalation or credits. Option B diagnoses first. Option D is least effective as an opening move: replacing an infrastructure operations supplier is a long, risky undertaking, and starting it before knowing whether the problem is fixable is disproportionate. Option A takes compensation and accepts the service as it is. Option C is reasonable once you know what the escalation is about.
+
+**Question 5 (moderate) — A capacity warning nobody wants**
+
+Your analysis shows a service will exhaust capacity in about four months. The service owner says there is no budget this year. What is the most effective response?
+
+- A) Note the risk and move on; budget is their decision.
+- B) Put the consequence and the date in writing to the service owner and their accountable superior, with the options — additional capacity, reducing load, or accepting a degradation risk from roughly a stated date — so the decision is made explicitly by someone able to make it.
+- C) Escalate immediately to senior management.
+- D) Find efficiencies to defer the problem.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** The service owner may lack both the budget and the authority, which is why option B routes it upward while keeping them in it rather than going around them. The written record and the specific date turn a warning into a decision. Option A is least effective: a foreseeable outage that nobody was told about in a form they could act on will not be seen afterwards as somebody else's problem. Option C goes over the service owner's head without giving them a chance. Option D is worth doing alongside and is dangerous alone, since deferring the wall by two months removes the urgency without removing the problem.
+
+**Question 6 (moderate) — Configuration data nobody trusts**
+
+Your configuration management database is known to be inaccurate, and teams have stopped relying on it. What is the most effective response?
+
+- A) Run a data cleansing exercise.
+- B) Establish why it drifts — almost always that updating it is a manual step after the real work, so it is skipped under pressure — and fix the mechanism by deriving records from the systems themselves wherever possible, because a cleansed database maintained the same way will be inaccurate again within a year.
+- C) Require teams to update it and audit compliance.
+- D) Accept it and rely on other sources.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** Configuration data that has drifted once will drift again unless the mechanism changes, and the mechanism is nearly always a manual update decoupled from the change itself. Option B addresses that, and automated discovery or infrastructure-as-code derivation is what makes accuracy the default rather than an act of discipline. Option D is least effective: abandoning the configuration database means service compliance and risk assessment lose their basis, which your role explicitly names managing. Option A is necessary and insufficient alone. Option C adds enforcement to a mechanism that structurally invites skipping.
+
+**Question 7 (harder) — Pressure to bypass change control**
+
+A programme director asks you to approve a significant change the day before a peak period, outside the normal change window. What is the most effective response?
+
+- A) Refuse; the change window exists for this reason.
+- B) State the risk concretely — what could fail, what the impact would be during peak, how long recovery would take — and put the decision to whoever owns the service risk, with the alternatives of deploying after peak or deploying behind a mechanism that can be disabled without a further change.
+- C) Approve it; the programme owns its delivery.
+- D) Approve it with a rollback plan.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** Option B makes the risk evaluable and offers the alternative most often overlooked — decoupling deployment from activation, which frequently dissolves the tension entirely. Option C is least effective because it treats a risk you can see and they cannot as somebody else's problem. Option D is reasonable and thin: a rollback plan for a peak-period failure still means an outage during peak, which is the thing being risked. Option A removes the risk owner from a decision that is theirs.
+
+**Question 8 (harder) — A problem nobody is fixing**
+
+A known problem has generated recurring incidents for six months. Each incident is resolved by workaround. What is the most effective response?
+
+- A) Continue with the workaround; it restores service.
+- B) Quantify what the recurrence costs — incident volume, engineer hours, user-facing minutes, the risk that the workaround stops working — and put the fix forward as a funded piece of work, because an efficient workaround makes a problem permanent by removing the pressure to solve it.
+- C) Escalate the problem to the supplier.
+- D) Raise its problem priority internally.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** This is the specific failure mode of good workarounds: they resolve incidents against target while the underlying fault persists indefinitely, and because service is restored each time, nothing ever forces the issue. Option B converts the accumulated cost into a case. Option A is least effective as a settled position, since six months of recurrence with no plan is a decision made by default. Option C may be right and depends on whose fault it is. Option D changes a label rather than securing the resource.
+
+**Question 9 (harder) — A single point of knowledge**
+
+One engineer is the only person who can operate a critical part of the platform. What is the most effective response?
+
+- A) Ask them to write runbooks.
+- B) Reduce the dependency by having someone else do the work alongside them — a real change, a real incident — because the risk lives in what the expert does without thinking, which documentation systematically misses.
+- C) Recruit a second specialist.
+- D) Simplify the platform.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** Runbooks are worth having and are reliably incomplete precisely where it matters, because the expert cannot see which of their own actions are non-obvious. Option B transfers capability by exercising it. Option C is least effective as the primary response: slow, uncertain, expensive, and it ends with concentrated knowledge in two heads rather than distributed capability. Option D is often the best long-term answer and does nothing about the next quarter.
+
+**Question 10 (harder) — Recognising prevented incidents**
+
+An engineer has spent months on monitoring and automation. Incident volume in their area has fallen sharply and their work appears in no delivery metric. What is the most effective response?
+
+- A) Thank them and record it in their appraisal.
+- B) Make the value countable — incidents avoided at the previous rate, engineer hours not spent, user-facing minutes not lost — and put it in front of the people who decide promotion and resourcing, because prevented incidents are invisible unless someone converts them into a number.
+- C) Give them credit publicly at a team meeting.
+- D) Move them onto more visible work.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** Success in this work looks like nothing happening, which disadvantages the person in every process that counts outputs. Option B produces the count, which serves them and protects the work from being deprioritised next year. Option D is least effective — it solves the visibility problem by ending the valuable work and signals that prevention is a career dead end. Options A and C are good and reach nobody who makes resourcing decisions.
+
+**Question 11 (harder) — A metric that will be gamed**
+
+You are considering setting teams a target of reducing incident numbers. What is the most effective observation?
+
+- A) It is a sound target; fewer incidents is better.
+- B) Counting incidents creates pressure on the cheapest thing to change, which is how events are classified rather than whether they happen — so the count will improve while reliability does not, and a measure the team does not control the definition of, such as user-facing unavailable minutes, is a better target.
+- C) It should be combined with other measures.
+- D) Targets should not be set on incidents.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Any measure used as a target attracts pressure at its weakest point, and for incident counts that point is the classification threshold rather than the underlying reliability. Option B names the mechanism and the remedy — measure something defined by users rather than by the team's own judgement. Option A is least effective because it adopts the target without considering how it will be met. Option C is generically sensible and does not address a specific gaming route. Option D over-corrects; reliability targets are legitimate and the choice of measure is what matters.
+
+**Question 12 (harder) — Reporting to a board**
+
+A director asks you to summarise operational performance for a board paper. Availability is strong; mean time to restore is poor. What is the most effective response?
+
+- A) Report availability; it is the headline.
+- B) Report both and interpret them — services rarely fail and take a long time to recover when they do, which is specific and fixable — because a board given only the favourable metric will not fund the work the other one points at.
+- C) Report availability and mention restore time if asked.
+- D) Describe performance as mixed.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Option B is honest and, more usefully, interpretive: high availability with slow recovery is a recognisable pattern with known remedies — runbooks, rehearsed failover, better diagnostics — and naming it turns two numbers into a proposal a board can fund. Option A is least effective because it earns thanks now and leaves the recovery problem unfunded until a serious incident, at which point you will be asked what you knew. Option C is the same omission with a fallback. Option D characterises without informing.
+
+### Preparation tips
+
+- **Restore first, diagnose afterwards, preserve the evidence.**
+- **Redirect reviews to conditions using specific questions.**
+- **Read a sustained workaround as evidence about the process.**
+- **Diagnose why a supplier is failing before claiming credits.**
+- **Turn a capacity warning into a written, dated decision.**
+- **Fix the mechanism that lets configuration data drift.**
+- **Quantify what a recurring problem costs before asking for the fix.**
+- **Convert prevented incidents into countable value.**
+
+### Common pitfalls to avoid
+
+- **Adding engineers to a live incident bridge.**
+- **Letting a post-incident review identify a person.**
+- **Treating a change-process workaround as a compliance breach first.**
+- **Accepting service credits as a response to poor performance.**
+- **Cleansing configuration data without fixing the mechanism.**
+- **Letting an efficient workaround make a problem permanent.**
+- **Answering a single-person dependency with runbooks alone.**
+- **Setting a target on a count the team defines.**
+
+## Conclusion
+
+You have worked through four assessments pitched at principal infrastructure operations engineer, and the threads are worth drawing together.
+
+The cognitive section kept returning to the difference between an instance and a pattern. Several incidents with different immediate causes usually share one property — most often that each was a condition developing observably before anyone noticed. A workaround that resolves an incident every time can keep a problem alive indefinitely. And a process that capable people work around is telling you about the process.
+
+The numeric section was the arithmetic that runs this function: availability in minutes rather than percentages, headroom at peak rather than average utilisation, error budgets as burn rate against elapsed time, and volumetrics done before rather than after the first full-volume run.
+
+The verbal section was about the documents that define what you are owed. Priority is impact *and* urgency. Response clocks start at logging rather than reporting. A workaround counts as a resolution. Notification is not consent. And "may exempt" makes something eligible rather than exempt.
+
+The situational judgement section was about standing between delivery pressure and operational reality while leading a function that is noticed only when it fails. The strong answers restored before diagnosing, read workarounds as design feedback, made risks concrete enough for someone accountable to accept them explicitly, and converted prevented incidents into numbers that could be seen.
+
+If one thread runs through all four, it is that your value is measured in things that did not happen, and nobody else will translate that into evidence. The outages avoided, the peak absorbed, the change that did not break anything — these are real, and they are invisible by construction. Making them visible is not self-promotion; it is how the work continues to be funded and how the people doing it get recognised.
+
+Good luck. This is demanding work carried out largely out of sight, and the care you have given this is exactly right for it.

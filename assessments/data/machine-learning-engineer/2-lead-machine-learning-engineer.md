@@ -652,3 +652,224 @@ D. The bias towards open source is unintended and will be corrected.
 - **Collapsing disjunctions.** "Excluded or reweighted" is not "excluded." Reporting the stricter arm as the requirement misinforms your team; picking it in a test loses the mark.
 - **Time mismanagement.** Reading each passage exhaustively before viewing the questions typically costs 20–30% of your answering time. Statement-first scanning is faster and no less accurate with practice.
 - **Absence of evidence errors.** "No evidence of X" plus "limited ability to detect X" never supports "X did not happen." Verbal tests, like assurance work, punish this conflation.
+
+## Workplace job-specific situational judgement assessment
+
+### About this assessment
+
+A workplace job-specific situational judgement assessment presents realistic scenarios from your role and asks you to identify effective and ineffective responses. As a lead machine learning engineer the scenarios involve moving models from research into production, assuring models already in use, mediating between research and delivery cultures, and raising ethical and risk concerns that other people would prefer not to hear.
+
+The commonest formats ask you to select the most and least effective response, or to rate each on a scale. Scoring is against a key derived from experienced practitioners in comparable roles, so the target is professional consensus rather than personal style.
+
+Three patterns run through the strong answers at this level.
+
+The first is that a model in production is a system, not a result. The research question "does it perform well" is answered once; the engineering questions — what happens when the input distribution shifts, who notices, what the fallback is, how it is rolled back — are answered continuously, and your role exists largely to make sure they get asked.
+
+The second is that you sit between disciplines with genuinely different success criteria. Researchers are rewarded for model quality, delivery teams for shipping, and neither is wrong. Your skills description names mediating between people and moderating difficult discussions about high-risk topics, and most of that work is making an implicit disagreement explicit.
+
+The third is that ethical and privacy concerns are cheapest to raise early and hardest to raise late, and you are frequently the person best placed to see them and least likely to be thanked for it.
+
+### What it measures for your role
+
+- **Production readiness judgement** maps to co-ordinating the move from research and development into production.
+- **Assurance of models in use** maps to assuring the effectiveness of machine learning models across the organisation.
+- **Mediation across disciplines** maps to **Communicating between the technical and non-technical** and helping your team work with other teams.
+- **Ethical and risk judgement** maps to **Data ethics and privacy** and defining standards related to ethics, risk and security.
+- **Coaching and capability** maps to identifying training needs and to **Data science innovation**.
+- **Standards leadership** maps to **Systems integration** and **Programming and build (software engineering)**.
+
+### Practice questions
+
+**Question 1 (easy) — A model that performs well in evaluation**
+
+A research team presents a model with strong offline performance and asks to deploy it. What is the most effective response?
+
+- A) Deploy it; the evaluation is strong.
+- B) Ask the questions the offline evaluation cannot answer — how the training data differs from live traffic, what happens when inputs drift, what the fallback is when the model is unavailable, and how a bad prediction is detected — because offline performance establishes that the model can work, not that the system around it will.
+- C) Ask for additional offline evaluation.
+- D) Deploy it behind a flag.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Offline evaluation answers one question well and says nothing about the four in option B, each of which has caused production failures in models that evaluated beautifully. The distribution question is the most important: a model trained on historical data that was itself generated under a different process will degrade in ways the test set cannot reveal. Option D is a genuinely good mechanism and belongs after the questions rather than instead of them, since a flag limits exposure without telling you what you are exposed to. Option C asks for more of the evidence you already have. Option A treats a research result as a production decision.
+
+**Question 2 (easy) — A junior engineer's approach**
+
+A machine learning engineer on your team proposes a substantially more complex model architecture for a marginal accuracy gain. What is the most effective response?
+
+- A) Approve it; better accuracy is better.
+- B) Ask what the marginal gain is worth against the ongoing costs — training time, inference latency, debuggability when it behaves oddly, and the difficulty of explaining its output to a stakeholder — because complexity is paid for continuously and the gain is usually banked once.
+- C) Tell them to use the simpler model.
+- D) Ask them to benchmark both.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** Option B makes the trade-off explicit and teaches the reasoning, which is the transferable part. The debuggability point is the one most often omitted and the one that matters most at 3am: a complex model producing a strange prediction is a much harder problem than a simple one doing the same. Option C is least effective because it delivers a conclusion with no reasoning, and your role names coaching and inspiring curiosity rather than issuing verdicts. Option D is a reasonable step and does not by itself address whether the gain justifies the cost. Option A weighs one dimension.
+
+**Question 3 (moderate) — Disagreement with a data scientist**
+
+A senior data scientist objects to a change you require before production deployment, saying it will degrade model performance. What is the most effective response?
+
+- A) Require the change; production standards are yours to set.
+- B) Establish how much degradation and whether it matters at the decision threshold — a model that loses accuracy in a range where no decision changes has lost nothing operationally — and if the degradation is real, put the trade-off between performance and the property you were protecting to whoever owns the risk.
+- C) Waive the requirement.
+- D) Escalate to their line manager.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** "It will degrade performance" is a claim with a magnitude, and the magnitude usually settles it — a great deal of apparent performance loss occurs in regions of the output distribution where nothing downstream behaves differently. Option B establishes that and then routes a genuine trade-off correctly. Option D is least effective: escalating a technical disagreement to a line manager who cannot evaluate it converts a solvable question into a relationship problem, and it is the move that ends your ability to have these conversations directly. Option A asserts authority without engaging. Option C concedes a production standard to avoid a discussion.
+
+**Question 4 (moderate) — A model degrading in production**
+
+Monitoring shows a deployed model's performance has declined steadily over four months. The product team has not noticed any problem. What is the most effective response?
+
+- A) Retrain the model on recent data.
+- B) Establish what is actually degrading and whether it matters — a metric declining while nobody notices could mean the metric is not the one that matters, or that the impact is real and invisible to the product team — and involve them in that determination rather than resolving it as a technical matter.
+- C) Alert the product team that the model is failing.
+- D) Roll back to the previous model version.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** Steady decline over months is characteristic of distribution drift rather than a fault, and retraining may well be the answer — but option A applies it before knowing whether the metric that moved is the one connected to outcomes. Option B makes that determination with the people who know what the model is for, which is also how you find out whether "nobody has noticed" means "no impact" or "the impact is diffuse". Option D is least effective: rolling back to a model trained on even older data addresses drift by moving further from the current distribution. Option C states a conclusion the evidence does not yet support.
+
+**Question 5 (moderate) — Research and delivery in conflict**
+
+A research team wants three more months to improve a model; the delivery team wants to ship what exists. Both have escalated to you. What is the most effective response?
+
+- A) Side with delivery; shipping creates value.
+- B) Reframe it as a question about what the current model is good enough for — there is usually a narrower deployment where today's performance is clearly sufficient, which lets the service start delivering while research continues on the harder cases — because the argument as posed has no answer and the scope question usually does.
+- C) Side with research; deploying an inadequate model is worse.
+- D) Split the difference at six weeks.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** Ship-now against improve-first is a false binary in most machine learning deployments, because model performance varies enormously across the input space and there is nearly always a subset where the current model is unambiguously good enough. Option B finds it, which gives both teams what they actually need. Option D is least effective — an arbitrary compromise on timeline satisfies nobody, produces a model neither team believes in, and settles the dispute by stamina rather than by reasoning. Options A and C pick a side on a question that has a better answer.
+
+**Question 6 (moderate) — An ethical concern raised late**
+
+Days before launch, a team member raises a concern that the model may perform worse for a particular demographic group. What is the most effective response?
+
+- A) Launch and investigate afterwards.
+- B) Test it before launching, because the question is answerable with data you already have and the answer changes what you should do — and if it is true, launching a model with known differential performance in a public service is a decision that must be made explicitly by someone accountable, not absorbed by a launch date.
+- C) Delay the launch until it is resolved.
+- D) Add monitoring for the issue post-launch.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** The concern is empirically checkable, usually within hours, and doing so converts an uncomfortable question into a fact. Option B also names what happens if the concern holds: this becomes a risk decision belonging to an accountable person, not a technical judgement you make alone under time pressure. Option A is least effective — launching a public service model with an unexamined equity concern is exactly the failure that ends up in a published review. Option C may be the outcome and pre-empts the test that would tell you whether it is necessary. Option D monitors for something you could establish now.
+
+**Question 7 (harder) — Pressure to over-claim**
+
+A senior stakeholder wants to describe the model publicly as "99% accurate". The figure is from a balanced test set; live class distribution is heavily skewed, making the number misleading. What is the most effective response?
+
+- A) Allow it; the figure is technically correct.
+- B) Explain concretely why the number will mislead — on live data with this distribution, a trivial baseline would score similarly, so the figure conveys nothing about the model's value — and offer a claim that is both true and stronger, such as what the model does better than the process it replaces.
+- C) Refuse to allow the claim.
+- D) Suggest adding a caveat about the test set.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Option B does the two things that make this work: it explains the problem in terms a non-specialist can act on, and it supplies a replacement claim, which is what prevents the conversation becoming a refusal. A stakeholder wanting a strong public statement will accept a different strong statement much more readily than a subtraction. Option A is least effective because a misleading accuracy figure in public communication is the kind of claim that gets scrutinised later, and you will be the person asked why it was allowed. Option D preserves the misleading headline behind a caveat nobody reads. Option C is right in substance and offers nothing.
+
+**Question 8 (harder) — Defining ways of working**
+
+You are asked to define ways of working across the machine learning life cycle for four teams with different maturity. What is the most effective approach?
+
+- A) Set a single standard process for all four.
+- B) Separate what must be uniform from what can vary — model documentation, evaluation before deployment, monitoring and rollback usually must; experiment tooling and internal workflow usually need not — because uniformity in the areas where divergence costs other people is valuable, and elsewhere it is a tax.
+- C) Let each team define its own.
+- D) Adopt the most mature team's process across all four.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** The right question is not how prescriptive to be but what to be prescriptive about, and the answer follows from where the cost of divergence lands. Divergent evaluation and monitoring practices make organisation-wide assurance impossible, which is explicitly your responsibility; divergent notebook conventions cost nobody. Option D is least effective — imposing a mature team's full process on less mature teams transplants practices whose context has not been transplanted, and it reliably produces compliance without understanding. Option A is the same error stated generally. Option C abandons the assurance role your summary names.
+
+**Question 9 (harder) — Assuring someone else's model**
+
+Assuring a model built by another team, you find the evaluation used data that overlaps with the training set. The model is already in production. What is the most effective response?
+
+- A) Report it as an assurance failure.
+- B) Establish what it means before characterising it — overlap invalidates the reported performance figure without establishing that the model performs badly, so the immediate need is a clean evaluation, and only that will tell you whether this is a paperwork problem or a service problem.
+- C) Require the model be withdrawn pending re-evaluation.
+- D) Ask the team to re-run the evaluation.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** Train-test contamination means you do not know how the model performs, which is different from knowing it performs poorly, and the distinction determines everything that follows. Option B gets the clean number first. Option C is least effective as a first move — withdrawing a production model on the basis of an invalid evaluation rather than a demonstrated problem may remove a service that is working, and the disruption is real. Option D is close and weaker in one respect: asking the team that made the error to re-run their own evaluation is reasonable and benefits from your involvement in the design. Option A is accurate and premature.
+
+**Question 10 (harder) — A capability gap**
+
+You identify that only one person in the organisation can debug the training pipeline for three production models. What is the most effective response?
+
+- A) Ask them to document it.
+- B) Reduce the dependency by having someone else do the work alongside them — running a retrain, diagnosing a failure — because the risk lives in what the expert does without thinking about it, which documentation systematically misses, and only doing transfers it.
+- C) Recruit a second specialist.
+- D) Simplify the pipeline.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** Your role names identifying training needs, and the effective remedy for tacit knowledge is supervised practice rather than prose. Documentation is worth having and is reliably incomplete precisely where it matters, because the expert cannot see which of their actions are non-obvious. Option C is least effective as the primary response: it is slow, uncertain, expensive, and ends with concentrated knowledge in two heads rather than distributed capability. Option D is frequently the best long-term answer — a pipeline only one person can debug is usually too complicated — and it does not address the next three months.
+
+**Question 11 (harder) — Evidence against your own decision**
+
+A framework you championed for the team's model deployment is now causing significant friction, and a newer engineer proposes replacing it. What is the most effective response?
+
+- A) Defend it; the decision was right at the time.
+- B) Engage with the proposal on its merits and say plainly that the original assumptions have not held — what has changed, and what replacing it would cost now — because your visible willingness to have your own decisions revisited is what makes it safe for anyone else to raise one.
+- C) Agree to the replacement.
+- D) Ask them to write a full proposal.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** The decision may well have been right when made and be wrong now, and both can be true without either being a defence. Option B gets to the substance and models something the team needs to see, which matters more than this particular outcome: a team that cannot challenge the lead's tooling choices accumulates friction silently. Option A is least effective — it is the natural reaction, it usually wins because you have the authority, and it teaches everyone not to raise the next one. Option C skips the cost analysis. Option D is a fair process step that reads as delay if it substitutes for a view.
+
+**Question 12 (harder) — Speaking for the community**
+
+You are asked to present the organisation's machine learning work at an external event. The reality is mixed: two strong deployments and one that was quietly abandoned. What is the most effective approach?
+
+- A) Present the two successes.
+- B) Present all three, and be specific about why the third was abandoned — because the failure is the part the audience can actually learn from, an account that omits it is noticed by anyone who knows, and your own team will hear whether you described the work they did.
+- C) Present the successes and refer generally to challenges.
+- D) Decline until the picture is stronger.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** Your skills description names speaking on behalf of and representing the community to external audiences, and the value you can offer such an audience is disproportionately in the abandoned project — successes are hard to transfer and failures are instructive. Option C is least effective: vague reference to "challenges" in front of practitioners reads as evasion and costs more credibility than the abandonment itself. Option A omits the most useful material. Option D forgoes influence indefinitely, since the picture is always mixed.
+
+### Preparation tips
+
+- **Ask what offline evaluation cannot tell you.** Distribution, drift, fallback, detection.
+- **Price model complexity as a continuing cost, not a one-off.**
+- **Ask for the magnitude of a claimed performance degradation.**
+- **Look for the narrower deployment where today's model is good enough.**
+- **Test an equity concern rather than deferring it.**
+- **Replace a misleading claim with a true and stronger one.**
+- **Separate what must be uniform from what can vary when setting standards.**
+- **Transfer tacit knowledge by doing, not by documenting.**
+
+### Common pitfalls
+
+- **Treating a strong offline evaluation as a production decision.**
+- **Escalating a technical disagreement to a line manager.**
+- **Rolling back to an older model in response to drift.**
+- **Compromising on timeline instead of scope.**
+- **Launching with an unexamined differential performance concern.**
+- **Allowing a technically correct but misleading accuracy figure.**
+- **Withdrawing a production model on an invalid evaluation rather than a demonstrated fault.**
+- **Answering a single-person dependency with documentation alone.**
+
+## Conclusion
+
+You have worked through four assessments pitched at lead machine learning engineer, and the threads are worth drawing together.
+
+The cognitive section was about reasoning under the particular uncertainty this role carries: models whose behaviour is learned rather than specified, evaluated on data that is never quite the data they will meet. The recurring discipline was asking what a result does not establish.
+
+The numeric section was the arithmetic that separates a real improvement from an artefact — base rates, class imbalance, the difference between a metric moving and a decision changing, and the scale qualifiers that quietly multiply an answer by a thousand.
+
+The verbal section was an exercise in reading technical and governance prose exactly: disjunctions that are not conjunctions, "excluded or reweighted" as two permitted options rather than one requirement, and the standing trap that no evidence of an effect plus limited power to detect it never establishes absence.
+
+The situational judgement section circled what makes this role distinctive, which is that you are accountable for models in production while the culture that produced them is optimised for something else. The strong answers converted disputes into checkable questions, found the narrower deployment where the argument dissolved, tested the uncomfortable concern rather than deferring it, and — twice — treated your own past decisions and your organisation's failures as things to name openly.
+
+If one thing is worth carrying away, it is the pattern behind the equity question and the accuracy claim: both were cases where the honest move cost something immediately and very little compared to what the alternative costs later. You are frequently the only person positioned to see these, and being the person who reliably raises them is most of what the lead in your title means.
+
+Good luck. This is demanding work at the point where research meets consequence, and the care you have given this is exactly right.

@@ -273,3 +273,643 @@ D) Yes - and commitment 3 also contradicts commitment 4, because reproducibility
 - **Time-sink questions.** A multi-stage deduction you cannot crack in ninety seconds should be flagged and skipped; the easier marks you protect are worth more than the hard one you chase. This mirrors the spec guidance for cognitive tests generally, and it is doubly true in adaptive formats.
 - **Ignoring scale and scope qualifiers.** "Per quarter", "digital transactions only", "excluding resubmissions" - the qualifier is usually the question.
 - **Choosing the clever answer over the correct one.** Senior candidates sometimes over-engineer, selecting the most sophisticated option rather than the one the logic supports. Sophistication is not a scoring criterion; validity is.
+
+## Workplace job-specific numeric reasoning assessment
+
+### About this assessment
+
+A workplace job-specific numeric reasoning assessment tests whether you can reach a defensible conclusion from data at speed. As head of performance analysis the data is community capability and capacity, portfolio-level service performance, business cases attached to analytical investment, and the figures your own analysts produce and that others summarise.
+
+The format is typically fifteen to twenty-five minutes with a calculator, mixing computation with interpretation. Interpretation dominates at your level, because you are rarely the person doing the calculation and frequently the last person able to notice that it is wrong.
+
+Three habits are worth naming.
+
+The first is that you are usually assessing someone else's arithmetic, and the errors are rarely in the sums. They are in the base, the period, the assumption of linearity, or a benefit that would have arrived anyway.
+
+The second is that portfolio and community figures conceal enormous variation, so a mean across services or across analysts is generally the least informative statistic available.
+
+The third is that the profession's credibility rests on its numbers being right, and you are the person who sets the framework that determines whether they are. An arithmetic error you let through is a different kind of problem from one an analyst makes.
+
+### What it measures for your role
+
+- **Capability and capacity arithmetic** maps to managing capability through business planning, development and recruitment.
+- **Portfolio interpretation** maps to **Analysis and insight** and presenting findings that inform wider decisions.
+- **Quality framework arithmetic** maps to defining a framework for quality assurance.
+- **Business case scrutiny** maps to setting the performance analysis strategy.
+- **Measurement design** maps to **Performance measurement**.
+- **Presenting figures** maps to **Communicating analysis and insight**.
+
+### Practice questions
+
+*Table 1 — Performance analysis community, current position*
+
+| Level | Posts | Filled | Mean months in post | Reports produced per quarter |
+|---|---|---|---|---|
+| Associate | 10 | 6 | 11 | 90 |
+| Performance analyst | 22 | 20 | 19 | 340 |
+| Senior | 12 | 8 | 31 | 210 |
+| Lead | 4 | 4 | 44 | 60 |
+
+**Question 1 (easy) — Vacancy rate**
+
+What is the overall vacancy rate across the community?
+
+- A) About 12%
+- B) About 21%
+- C) About 25%
+- D) About 17%
+
+**Correct answer: B**
+
+**Explanation:** Total posts: 10 + 22 + 12 + 4 = 48. Filled: 6 + 20 + 8 + 4 = 38. Vacancies: 10, which is 10/48 = 20.8%. More than one post in five is unfilled — and the distribution matters more than the total, which the next question addresses.
+
+**Question 2 (easy) — Reports per filled post**
+
+Which level produces the most reports per filled post per quarter?
+
+- A) Associate
+- B) Performance analyst
+- C) Senior
+- D) Lead
+
+**Correct answer: C**
+
+**Explanation:** Associate 90/6 = 15.0; performance analyst 340/20 = 17.0; senior 210/8 = 26.25; lead 60/4 = 15.0. Senior is highest at 26.25, well ahead of the rest. The intuitive answer is that junior staff produce more routine output, and the figures say otherwise — which is why computing every row before choosing is worth the twenty seconds. Note too that a report is not a standardised unit, so this measure identifies where to look rather than what is true: seniors may be producing shorter pieces, or may simply be counted against work several people contributed to.
+
+**Question 3 (moderate) — The shape of the community**
+
+What is the strongest interpretation of the vacancy distribution?
+
+- A) Recruitment is failing across the board.
+- B) The hollows are at associate (40% vacant) and senior (33% vacant) while the analyst tier is nearly full — a shape consistent with weak entry-level recruitment at one end and, at the other, analysts either not progressing or leaving before they do, which the 19-month mean tenure at analyst level supports.
+- C) The community has too many posts.
+- D) Senior recruitment should be prioritised.
+
+**Correct answer: B**
+
+**Explanation:** The two vacancy concentrations have different causes and the full middle tier connects them. A nearly-full analyst tier alongside a third of senior posts vacant means either that analysts are not being promoted or that they leave before they are, and 19 months' mean tenure against 31 at senior points at the second. Option B reads the whole shape. Option A treats it as uniform when it plainly is not. Option D would recruit externally into posts your own analysts could fill, which makes the tenure problem worse.
+
+**Question 4 (moderate) — Cost of a quality assurance requirement**
+
+You are considering requiring a second-analyst review of every report. There are 700 reports a quarter and a review takes about 45 minutes. What is the approximate annual cost in analyst-days?
+
+- A) About 175 days
+- B) About 280 days
+- C) About 70 days
+- D) About 350 days
+
+**Correct answer: B**
+
+**Explanation:** 700 reports × 4 quarters = 2,800 reviews a year. At 45 minutes each that is 2,800 × 0.75 = 2,100 hours, and at a 7.5-hour day, 2,100 / 7.5 = 280 analyst-days — roughly 1.5 full-time equivalents, permanently. That is the figure nobody computes before proposing a universal review requirement, and it is why quality frameworks usually scope review to publication risk rather than applying it to everything.
+
+**Question 5 (moderate) — Scoping the requirement**
+
+If review were required only for the 180 reports a quarter that inform external publications, what is the approximate annual cost?
+
+- A) About 72 analyst-days
+- B) About 140 analyst-days
+- C) About 36 analyst-days
+- D) About 200 analyst-days
+
+**Correct answer: A**
+
+**Explanation:** 180 × 4 = 720 reviews a year × 0.75 hours = 540 hours, divided by 7.5 = 72 analyst-days. Roughly a quarter of the universal figure, for the reports where an error would be most damaging. This pair of calculations is the substance of designing a quality assurance framework: the question is not whether review is good but where the benefit exceeds a cost you have actually computed.
+
+**Question 6 (harder) — A benefits claim**
+
+A business case for an analytics platform claims £900,000 of annual savings from removing 20 full-time equivalent roles. Fully loaded cost per role is £48,000. Is the claim internally consistent?
+
+- A) Yes; 20 × £48,000 = £960,000, close enough.
+- B) No — 20 roles at £48,000 is £960,000, which exceeds the claim, so the case understates rather than overstates and the difference needs explaining before either figure is relied on.
+- C) Yes, and the difference is immaterial.
+- D) There is not enough information.
+
+**Correct answer: B**
+
+**Explanation:** 20 × £48,000 = £960,000 against a claimed £900,000 — a discrepancy of £60,000 in the conservative direction, which is unusual and therefore worth asking about. It may reflect a partial-year assumption, a lower loading for some roles, or a residual cost retained. The habit worth building is checking the internal arithmetic of any business case before engaging with its conclusions; it takes under a minute and it establishes whether the author has been careful.
+
+**Question 7 (harder) — Benefits that would arrive anyway**
+
+The same case notes that 7 of the 20 roles are already vacant and were due to be removed in a planned restructure. What is the strongest assessment?
+
+- A) The saving is unaffected; the roles still go.
+- B) Those 7 would be removed regardless, so they are not attributable to this investment — the attributable saving is 13 roles at £48,000, about £624,000, which is roughly two-thirds of the claim.
+- C) Only the vacant roles should be excluded.
+- D) The case should be rejected.
+
+**Correct answer: B**
+
+**Explanation:** A benefit arriving without the investment is not a benefit of the investment. 13 × £48,000 = £624,000 against a claimed £900,000. This is rarely bad faith — the author sees the roles going and counts them — and it is the commonest inflation in an analytical business case. Option D rejects a case that may well still be worth doing at £624,000, depending on cost.
+
+**Question 8 (harder) — Recruitment arithmetic**
+
+To fill the 4 senior vacancies externally, historical data shows an average of 0.6 appointments per campaign. Roughly how many campaigns are needed, and what does that suggest?
+
+- A) About 7 campaigns, which is likely to take more than a year and makes internal development a serious alternative rather than an aspiration.
+- B) About 4 campaigns.
+- C) About 2 campaigns.
+- D) About 10 campaigns.
+
+**Correct answer: A**
+
+**Explanation:** 4 / 0.6 = 6.7, so about 7 campaigns. Each consumes panel time, advertising and weeks of elapsed time, so filling four senior posts externally is likely to run beyond a year. The value of doing this calculation is that it makes the alternative concrete: promoting four analysts with structured support costs far less than seven campaigns and simultaneously addresses the 19-month analyst tenure that is generating the vacancies.
+
+**Question 9 (harder) — Portfolio interpretation**
+
+Across eight services, completion rates are 91%, 88%, 63%, 90%, 87%, 41%, 89% and 86%. A director asks for the department's average completion rate. What is the strongest response?
+
+- A) 79.4%, the mean of the eight.
+- B) Give the mean with the distribution, because six services sit between 86% and 91% and two sit far below at 63% and 41% — the average describes none of them, and the useful finding is that two services need attention rather than that the department averages 79%.
+- C) 87.5%, the median.
+- D) The figures cannot be averaged.
+
+**Correct answer: B**
+
+**Explanation:** The mean of the eight is 79.4% and it describes no service in the set. The distribution is bimodal — a tight cluster around 88% and two clear outliers — and that structure is the finding. Option B gives the director the number they asked for and the information they actually need. Option C is a better single statistic and still hides the outliers. Option D declines an answer that can be given carefully. Note also that an unweighted mean across services ignores their sizes entirely, which is a further reason to lead with the distribution.
+
+**Question 10 (harder) — Trend against variation**
+
+Quarterly community output over two years: 640, 690, 660, 720, 670, 710, 680, 730 reports. A director asks whether productivity is improving. What is the strongest answer?
+
+- A) Yes; output rose from 640 to 730.
+- B) The series moves between 640 and 730 with a slight upward drift — the first four average 677.5 and the last four 697.5, about 3% — but report counts depend on what was asked for, so the series may reflect demand rather than productivity.
+- C) No; the variation is too large.
+- D) There is insufficient data.
+
+**Correct answer: B**
+
+**Explanation:** Two problems and option B names both. The statistical one is that a 3% difference between halves sits inside the quarter-to-quarter variation. The measurement one is more serious: report count is driven by how much analysis people request, so the series is at least as much a measure of demand as of productivity — which makes it a poor productivity metric regardless of the trend. Flagging that before it becomes a departmental target is worth doing.
+
+**Question 11 (harder) — Capacity for a strategic initiative**
+
+Your community has 38 filled posts averaging 190 productive days a year. Standing reporting consumes 55% of capacity. How many analyst-days remain for strategic and improvement work?
+
+- A) About 3,250
+- B) About 7,220
+- C) About 3,970
+- D) About 1,800
+
+**Correct answer: A**
+
+**Explanation:** Total capacity: 38 × 190 = 7,220 analyst-days. Standing reporting takes 55%, which is 3,971 days, leaving 3,249 for everything else — so about 3,250. The 3,971 days locked into recurring reporting is the number worth interrogating: retiring or automating even 20% of it releases roughly 800 analyst-days, which is more than any realistic recruitment would deliver and considerably faster.
+
+**Question 12 (harder) — Presenting to a board**
+
+You have ten minutes with a departmental board to make the case for investment in analytical capability. Which figure leads best?
+
+- A) The community's vacancy rate.
+- B) The number of analyst-days consumed by recurring reporting that nobody has re-examined, alongside one concrete example of a decision the department made without analysis it could have had.
+- C) The number of reports produced per quarter.
+- D) The cost of the current analytical function.
+
+**Correct answer: B**
+
+**Explanation:** Option B pairs a number that establishes scale with an example that establishes consequence, and boards need both — a capacity figure without an example is abstract, and an example without a figure is anecdote. It also frames the ask around released capacity rather than new money, which is a much easier proposition. Option A is an internal problem the board will read as a recruitment matter. Option C measures activity rather than value. Option D leads with cost, which invites a conversation about reducing it.
+
+### Preparation tips
+
+- **Compute every row before choosing an option.**
+- **Read a vacancy distribution as a shape, not a total.**
+- **Price a quality requirement across the annual volume before setting it.**
+- **Check the internal arithmetic of a business case first.**
+- **Strip out benefits that would arrive without the investment.**
+- **Lead with the distribution when a mean describes nothing.**
+- **Ask whether an output metric measures effort or demand.**
+- **Express capacity in analyst-days and see what recurring work consumes.**
+
+### Common pitfalls
+
+- **Reporting a mean across a bimodal distribution.**
+- **Setting a universal review requirement without its annual cost.**
+- **Counting savings already committed to another initiative.**
+- **Treating report counts as a productivity measure.**
+- **Recruiting externally while internal tenure is short.**
+- **Reporting first-to-last change in a noisy series.**
+- **Leading a board conversation with cost or with vacancies.**
+
+## Workplace job-specific verbal reasoning assessment
+
+### About this assessment
+
+A workplace job-specific verbal reasoning assessment tests whether you can determine exactly what a piece of written material establishes. As head of performance analysis the material is governance and quality frameworks, business cases, employment and recruitment guidance, cross-government agreements, and the reports and summaries your community produces.
+
+The commonest format presents a passage followed by statements to be marked True, False or Cannot Say. True means the passage establishes it, False means it contradicts it, and Cannot Say means it settles neither — regardless of what you know.
+
+Long experience is the main hazard: you will know how these arrangements usually work while the passage describes this one, and your reading tends to become the community's reading.
+
+Three specifics matter particularly at your level.
+
+The first is that governance and employment guidance allocate authority in language that looks interchangeable and is not — approves, endorses, is consulted, may direct, must consult. You manage capability through business planning, development and recruitment, where acting outside your remit is a serious matter rather than a technical one.
+
+The second is that business cases are written persuasively, and separating what is asserted from what is established is a routine part of your job. You are frequently the most senior person in the room able to do it and the one expected to.
+
+The third is that a document naming what it did not examine is telling you where its evidence stops, and the unexamined question is often the one that decides whether its recommendation holds.
+
+### What it measures for your role
+
+- **Reading governance and quality frameworks** maps to defining a framework for quality assurance.
+- **Reading employment and recruitment guidance** maps to managing capability through recruitment and development.
+- **Reading business cases** maps to setting the performance analysis strategy.
+- **Reading cross-government agreements** maps to working with colleagues across government.
+- **Distinguishing evidence from claim** maps to **Analysis and insight**.
+- **Reading and summarising accurately** maps to **Communicating analysis and insight**.
+
+### Practice questions
+
+*Passage A — for Questions 1 to 4*
+
+"Where a post has been advertised twice without a suitable appointment, the recruiting manager may propose a revised specification, an increased pay band subject to approval by the pay committee, or engagement of an interim resource for a period not exceeding twelve months. Interim engagements beyond twelve months require the approval of the director of resources. An interim engagement should not be used where the underlying need is permanent, unless a plan to establish permanent capability accompanies the request. Recruiting managers should consult the head of the relevant profession before advertising a post requiring specialist skills."
+
+**Question 1 (easy)**
+
+Statement: A recruiting manager may propose a revised specification after two unsuccessful advertisements.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly as the first of three options available. Note this is the one route in the list with no approval condition attached, which the next question turns on.
+
+**Question 2 (moderate)**
+
+Statement: A recruiting manager can increase the pay band for such a post.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage says the manager "may propose" an increased band "subject to approval by the pay committee". Proposing is not deciding, and the approval sits elsewhere. The statement asserts a power the passage allocates to another body, which makes it False rather than Cannot Say — the passage does more than omit the manager's power, it assigns the decision away.
+
+**Question 3 (moderate)**
+
+Statement: A recruiting manager must consult the head of profession before advertising a specialist post.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage uses "should consult", not "must". In a document that says "require the approval of" and "subject to approval by" elsewhere, the choice of "should" is deliberate. The statement's "must" overstates it — and as the head of profession being consulted, this tells you something practically useful: a manager who did not consult you departed from good practice rather than breaching a rule, which changes how you raise it with them.
+
+**Question 4 (harder)**
+
+Statement: An eighteen-month interim engagement would require both the director of resources' approval and a plan to establish permanent capability.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The first limb is established: engagements beyond twelve months require the director of resources' approval, and eighteen exceeds twelve. The second is not, because the capability plan is required only where the underlying need is permanent, and the statement says nothing about whether it is — an eighteen-month engagement could cover a time-limited programme. A compound statement is True only if every part is established, so one unestablished conjunct makes the whole Cannot Say.
+
+*Passage B — for Questions 5 to 8*
+
+"The department's analytical quality framework requires that analysis informing an external publication is reviewed by a second analyst before release. Analysis informing internal decisions should be reviewed where the method is novel to the data source. Reviewers must record the review in the analysis log and may not review analysis they contributed to. Heads of analytical professions are responsible for assuring compliance within their community and must report annually on compliance rates. The framework anticipates that all professions will reach 95% compliance on external publications within two years. The framework is reviewed every three years."
+
+**Question 5 (easy)**
+
+Statement: Heads of analytical professions must report annually on compliance rates.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly with "must", and it is an obligation that falls on you personally. Note it is paired with a responsibility for assuring compliance, which is a broader duty than reporting on it — the framework makes you accountable for the number as well as for publishing it.
+
+**Question 6 (moderate)**
+
+Statement: All professions will reach 95% compliance on external publications within two years.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The framework "anticipates" this. An anticipation is a forecast, and the passage establishes that the forecast exists rather than that the outcome will occur. Marking True treats a document's expectation as a fact about the world, which is the specific error framework documents reliably produce — and as the person who will be reporting against it, the distinction between a target and a prediction is one you will need to make in front of other people.
+
+**Question 7 (moderate)**
+
+Statement: An analyst who gave advice on a piece of analysis may review it provided they did not write it.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The framework says reviewers "may not review analysis they contributed to". Contribution is the test, not authorship, so someone who advised on the method is excluded. The passage contradicts the statement. This is a real constraint in small communities, where the only other person who understands a piece of analysis is often the person consulted about it — and the framework has clearly anticipated that.
+
+**Question 8 (harder)**
+
+Statement: The framework requires review of internal analysis using a method novel to the data source.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The framework says such analysis "should be reviewed", not "must". The statement's "requires" overstates it — and the contrast is sharp, since the immediately preceding sentence uses "is reviewed" as a requirement for external publications. As the person defining quality assurance for your own community, this is exactly the space in which you can set a higher local standard than the departmental framework imposes.
+
+*Passage C — for Questions 9 to 12*
+
+"An internal review examined how performance analysis is used across twelve services. It found that analysts were involved in decision-making from the start in four services, consulted after decisions in six, and not involved in two. Services where analysts were involved from the start reported higher confidence in their performance measures. The review did not assess whether decisions in those services were better. Analyst tenure was longer in the four early-involvement services. The review recommends embedding analysts in service teams from inception."
+
+**Question 9 (moderate)**
+
+Statement: Analysts were involved from the start in a third of the services examined.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Four services out of twelve is exactly one third. The passage supplies both figures, so this is established by arithmetic. Worth doing the division rather than eyeballing it — and worth noting the shape of the rest: half the services consulted analysts only after decisions had been made, which is the finding with the most direct implication for how the profession is used.
+
+**Question 10 (moderate)**
+
+Statement: Involving analysts from the start causes higher confidence in performance measures.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage reports an association and does not establish direction. It is at least as plausible that services which already valued measurement involved analysts early, and that the confidence and the involvement share a common cause. The passage also notes longer analyst tenure in those same services, which is a third variable confounded with both. Marking True is the inference the review's own recommendation invites.
+
+**Question 11 (moderate)**
+
+Statement: Decisions were better in the services where analysts were involved from the start.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage states explicitly that the review "did not assess whether decisions in those services were better". Nothing either way — and this is the question that actually matters. Confidence in measures is a proxy; whether the decisions improved is the outcome the recommendation implicitly promises, and the review has left it unexamined while recommending a change.
+
+**Question 12 (harder)**
+
+Statement: Embedding analysts in service teams from inception would improve confidence in performance measures.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** This is the review's recommendation, and a recommendation is not a finding. Whether embedding produces the effect depends on the causal question the review could not answer: if early involvement is a symptom of a service that already values measurement rather than a cause of confidence, embedding analysts into services that do not will not reproduce it. Distinguishing a proposed remedy from a demonstrated one is exactly the judgement required when you are asked to endorse a recommendation about your own profession — and the temptation to endorse it is real, because the recommendation is one you would probably want anyway.
+
+### Preparation tips
+
+- **Distinguish proposing from deciding.**
+- **Read "should" against "must" within the same document.**
+- **Check each limb of a compound statement separately.**
+- **Read "anticipates" as a forecast, not a commitment.**
+- **Check what a condition actually tests — contribution rather than authorship.**
+- **Look for a third variable when two things are associated.**
+- **Read the sentence naming what a review did not assess.**
+- **Treat a recommendation as a proposal, especially one you agree with.**
+
+### Common pitfalls
+
+- **Reading "should consult" as a requirement.**
+- **Treating a framework's projection as an established outcome.**
+- **Marking a compound statement True on one established limb.**
+- **Reading an association as a cause.**
+- **Endorsing a recommendation because you would want it anyway.**
+- **Assuming an adviser can review the analysis they advised on.**
+- **Answering from how these processes usually work.**
+
+## Workplace job-specific situational judgement assessment
+
+### About this assessment
+
+A workplace job-specific situational judgement assessment presents realistic scenarios and asks you to identify effective and ineffective responses. As head of performance analysis the scenarios involve the people in your community, the standards you set for them, your relationship with the business, and the recurring problem that analysis is wanted most when it confirms and needed most when it does not.
+
+The commonest formats ask for the most and least effective response, or for ratings. Scoring is against a key derived from experienced practitioners at comparable levels.
+
+Three patterns run through the strong answers.
+
+The first is that you are the point of contact between the community and the business, which means you absorb pressure that would otherwise land on individual analysts. An analyst who produced an unwelcome finding should not be the person defending it to a director.
+
+The second is that a quality framework is paid for by every analyst, on every piece of work, for as long as it stands. Whether it describes good practice is the easy question; whether the benefit exceeds the distributed cost is the one that decides it, and you are the only person likely to compute that.
+
+The third is that your community watches how you handle the hard cases. Whether you back an analyst whose correct finding was unpopular, whether you withdraw your own standard when the evidence turns, whether you tell a board something it does not want to hear — these set whether anyone brings you a problem early.
+
+### What it measures for your role
+
+- **Championing the community** maps to championing performance analysis and performance analysts.
+- **Setting standards** maps to defining a framework for quality assurance.
+- **Strategy** maps to setting the performance analysis strategy with input from leads and seniors.
+- **Capability management** maps to business planning, development and recruitment.
+- **Escalation** maps to removing blockers and acting as an escalation point.
+- **Influence** maps to **Communicating analysis and insight** and presenting compelling findings.
+
+### Practice questions
+
+**Question 1 (easy) — An analyst under pressure**
+
+A director is pressing one of your analysts to change a finding that reflects badly on their programme. What is the most effective response?
+
+- A) Ask the analyst to review their method.
+- B) Take the conversation with the director yourself, having first checked the analysis is sound — because you can have a robust exchange with a director that an analyst reporting into a delivery team cannot, and an analyst left to defend a correct finding alone will produce a more comfortable one next time.
+- C) Advise the analyst to hold their position.
+- D) Suggest the finding be presented with additional caveats.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** Your role names being the point of contact between the community and the business, and absorbing this pressure is what that means in practice. The check comes first — you should not defend analysis you have not verified. Option D is least effective: adding caveats in response to pressure changes the finding by another route, and once your community sees that pressure produces caveats, findings soften pre-emptively. Option C leaves the analyst exposed to a conversation they cannot win. Option A implies the method is the problem, which is what the director wants implied.
+
+**Question 2 (easy) — A metric proposed as a target**
+
+A directorate proposes a target on the number of cases closed per caseworker per week. What is the most effective response?
+
+- A) Name how the target would be met — the cheapest way to close more cases is to close them without resolving them, which raises reopened cases while the number improves — and propose pairing it with reopened case rate and outcome quality.
+- B) Agree; throughput is a reasonable measure.
+- C) Advise against targets on caseworker throughput.
+- D) Agree, and monitor for unintended effects.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** Option A names the mechanism rather than objecting in principle, which is what persuades people who need a throughput measure for legitimate reasons — and the paired measures are the remedy, since they are hard to move without genuine improvement. Option B is least effective: agreeing without asking how the target will be met is exactly the question your profession exists to ask, and a target starts changing behaviour immediately. Option D detects the damage after real cases have been affected. Option C is a defensible position offered without a route forward.
+
+**Question 3 (moderate) — Setting a quality framework**
+
+You are defining the quality assurance framework for your community. What is the strongest basis?
+
+- A) Require second-analyst review of all analysis.
+- B) Scope review by the consequence of an error — universal review of anything informing an external publication or a ministerial submission, and a lighter, targeted requirement elsewhere — because a universal requirement costs a large permanent share of community capacity and analysts will find ways around it.
+- C) Require review where the analyst requests it.
+- D) Require review of anything a lead analyst judges significant.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Option B applies the right test — where would an error do most damage — and prices the alternative honestly. Option A is least effective: a universal requirement consumes well over a full-time equivalent of your community's capacity, and a framework people cannot follow gets followed nominally, which loses you the visibility of who is actually complying. Option C gets review where it is least needed, since the analysts who request it are the careful ones. Option D is workable and puts an unbounded judgement call on leads without a criterion.
+
+**Question 4 (moderate) — A vacancy that will not fill**
+
+You are asked to recruit a senior analyst into a specialism where the market is thin and the pay band is below market rate. What is the most effective response?
+
+- A) Say plainly that the role as specified is unlikely to fill, and offer the alternatives — reshaping it for a strong analyst who could grow into it, an interim arrangement while capability is built, or a case for the band.
+- B) Run the campaign and see.
+- C) Make the case for a higher band.
+- D) Recommend a contractor.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** The failure mode is slow and invisible: a role that will not fill stays open for months, the work does not happen, and nobody records the cost. Option A names it immediately and offers three routes — of which reshaping the role for someone who can grow into it is the most overlooked and often the best, since scarce specialisms are frequently more reliably built than bought, and it addresses your progression problem at the same time. Option B is least effective: it spends a campaign learning what you already know.
+
+**Question 5 (moderate) — Analysis arriving after the decision**
+
+A service repeatedly makes decisions and then asks your team to produce supporting analysis. What is the most effective response?
+
+- A) Find a decision they are about to make, produce the analysis that would inform it, and bring it before the decision — because the pattern usually reflects analysis having always arrived too late to be useful, and one timely piece changes more than any conversation about it.
+- B) Explain to the service that analysis should inform decisions rather than justify them.
+- C) Decline to produce post-hoc analysis.
+- D) Raise it with the service owner.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** Teams stop using analysis when it consistently arrives after the decision or answers a question nobody asked, and option A breaks the cycle by demonstration. Option B is least effective: telling a service they are using analysis wrongly is heard as a criticism, changes nothing about the timing, and makes the next request less likely. Option C withholds something they will simply obtain elsewhere, probably worse. Option D escalates a relationship problem you are better placed to solve directly.
+
+**Question 6 (moderate) — A lead analyst's judgement you doubt**
+
+A lead analyst you manage has taken an approach to a community-wide issue that you think is wrong, and their reasoning is coherent. What is the most effective response?
+
+- A) Ask what they weighed and what would change their mind, then offer your concern with reasons — because they may hold context you do not, and if not, the reasoning is what transfers rather than the conclusion.
+- B) Tell them to take a different approach.
+- C) Accept it; it is their area.
+- D) Take the decision back yourself.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** "Coherent but different from mine" is the expected outcome of delegating to a lead, and option A tests it without overriding it — the "what would change your mind" question locates the assumption you actually disagree about. Option D is least effective: taking a decision back from a lead removes their authority visibly and tells the whole community that delegation here is provisional. Option B instructs rather than engages. Option C declines the judgement you hold.
+
+**Question 7 (harder) — Pressure to present selectively**
+
+A director preparing a submission asks you to include the measures that improved and omit the one that did not. What is the most effective response?
+
+- A) Include everything relevant, and offer to help present the unfavourable measure accurately — what it shows, why it may have moved, and what is being done — because a submission omitting a known adverse result is one neither of you could defend.
+- B) Include what they asked; it is their submission.
+- C) Refuse to contribute.
+- D) Include everything without discussion.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** The director's underlying concern — not wanting the submission undermined — is legitimate and addressable through framing rather than omission. Option A holds the line on content while helping with presentation, which is both correct and far more likely to be accepted than a refusal. Option B is least effective: a submission omitting an adverse measure misleads whoever reads it, and your profession's name is on the analysis. Option D reaches the right result while turning a solvable conversation into a unilateral act. Option C forgoes the chance to help.
+
+**Question 8 (harder) — Evidence against your own framework**
+
+Data shows the quality assurance framework you introduced consumes substantial capacity and has not measurably reduced errors. What is the most effective response?
+
+- A) Improve the measurement; prevented errors are hard to count.
+- B) Publish the finding, including that it is your framework, and narrow it to where the benefit is demonstrable or withdraw it — because a community paying weekly for an unmeasurable benefit is a real cost, and withdrawing your own framework on evidence makes every remaining standard more credible.
+- C) Retain it; some benefits do not show in data.
+- D) Reduce its scope quietly.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** The cost is certain and distributed; the benefit is unmeasured. Option B allows the right resolution — narrowing rather than abandoning — and gets the credibility that only comes from doing it openly. Option C is least effective because it is unfalsifiable, which makes it the argument that keeps every unproductive standard in place indefinitely. Option D reaches a defensible outcome by a route that looks like concealment once noticed. Option A is legitimate in principle and indistinguishable from motivated reasoning when the person improving the measurement owns the framework.
+
+**Question 9 (harder) — A strong analyst wants to leave**
+
+An excellent senior analyst tells you privately they are considering leaving because there is no progression route. What is the most effective response?
+
+- A) Offer a promotion if one is available.
+- B) Be honest about what is and is not available, and work the routes that exist — stretching scope, a role elsewhere in the department, a cross-government move — because keeping them in government is a far better outcome than losing them, and a head who helps people move internally hears about approaches early.
+- C) Explain that progression takes time.
+- D) Accept it; people move on.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** They have given you information at some cost, and honesty — including unwelcome honesty — is what keeps them longest and keeps the channel open. Option B also widens the frame beyond your own establishment, which is where the opportunities usually are. Option C is least effective: it is the standard deflection, it confirms what they already suspect, and it converts a conversation into a decision. Option A is the reflex and is right only if it is real and deliverable. Option D wastes an opening they created.
+
+**Question 10 (harder) — Presenting an unwelcome portfolio picture**
+
+You are asked to present service performance to a board. Six services perform well and two are performing very poorly. What is the most effective response?
+
+- A) Present the distribution rather than the average, name the two services, and say what would be needed to understand why they differ — because an average of 79% describes none of the twelve and conceals the only finding that matters.
+- B) Present the departmental average.
+- C) Present the average and mention the two if asked.
+- D) Present the six strong services as evidence the approach works.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** A bimodal distribution has a finding in its shape, and averaging it away is a choice to conceal the useful information. Option A gives the board something they can act on. Option D is least effective: presenting only the strong services is selective in a way that will be discovered, and it forfeits your standing as the person whose numbers can be trusted — which is the profession's only real asset. Option B hides the finding behind a statistic that describes nothing. Option C is the same omission with a fallback.
+
+**Question 11 (harder) — Championing across government**
+
+You are asked to speak at a cross-government event about your department's performance analysis. Some work is strong; a major measurement programme was abandoned. What is the most effective approach?
+
+- A) Present all of it, and be specific about why the abandoned programme failed, because that is what the audience can learn from and your own analysts will hear whether you described the year they actually had.
+- B) Present the strong work.
+- C) Present the successes and refer generally to challenges.
+- D) Decline; the picture is mixed.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Two audiences are listening and option A is the only response serving both — the external one gets the transferable material, and your community hears whether their head of profession told the truth. Option C is least effective: vague reference to "challenges" in front of practitioners who know the specifics reads as evasion and costs more credibility than the abandonment itself. Option B omits the useful part. Option D forgoes influence indefinitely, since the picture is always mixed.
+
+**Question 12 (harder) — A defensible finding that turned out wrong**
+
+An analyst produced a well-reasoned finding that later proved incorrect because of a data issue nobody could have known about. Stakeholders are looking for accountability. What is the most effective response?
+
+- A) Take responsibility publicly as head of profession, be clear about what has been learned and what will change in the quality framework, and handle any individual development need privately.
+- B) Explain that the analyst followed the correct process.
+- C) Acknowledge the error and commit to preventing recurrence.
+- D) Review whether the analysis was in fact defensible.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** Option A separates the two things that must not be conflated: the quality of the work, judged on what was knowable, and the outcome, which was not. Taking it publicly protects an analyst who will already feel exposed, and naming a framework change gives stakeholders the accountability they are looking for without it landing on a person. Option B is least effective: it is true, it sounds like a deflection, and it leaves the analyst identifiable as the one whose work was wrong. Option C accepts a framing the facts do not support. Option D second-guesses a premise already established.
+
+### Preparation tips
+
+- **Absorb pressure that would otherwise land on an analyst — after checking the work.**
+- **Ask how a target would be met before agreeing to it.**
+- **Scope a quality framework by the consequence of an error.**
+- **Say early when a role as specified will not fill.**
+- **Change a service's use of analysis by demonstration, not persuasion.**
+- **Present a distribution rather than an average that describes nothing.**
+- **Withdraw your own standards openly when the evidence turns.**
+- **Take public responsibility for your community's work.**
+
+### Common pitfalls
+
+- **Adding caveats to a finding under pressure.**
+- **Requiring universal review without pricing it.**
+- **Running a recruitment campaign you expect to fail.**
+- **Telling a service it is using analysis wrongly.**
+- **Taking a decision back from a lead analyst.**
+- **Contributing to a submission that omits an adverse measure.**
+- **Presenting only the services that perform well.**
+- **Defending an analyst by saying they followed the process.**
+
+## Conclusion
+
+You have worked through four assessments pitched at head of performance analysis, and it is worth drawing the threads together.
+
+The cognitive section was about reasoning across a portfolio and a community rather than a service — reading a pattern for the cause that generates it, distinguishing a measurement artefact from a change in the world, and asking what a figure was designed to show before asking whether it moved.
+
+The numeric section was the arithmetic of running a profession: vacancy distributions read as shapes rather than totals, quality requirements priced across the annual volume that bears them, business cases stripped of benefits that would have arrived anyway, and a mean of 79% across a bimodal distribution that describes none of the twelve services in it.
+
+The verbal section was about the documents that define your obligations and your discretion. Proposing is not deciding. "Should consult" is not "must". "Anticipates" is a forecast. Contribution rather than authorship is what disqualifies a reviewer. And a review that names the question it did not examine has told you why its recommendation cannot yet be relied on — including when the recommendation is one you would have wanted anyway.
+
+The situational judgement section was about the position between a community and a business that mostly wants confirmation. The strong answers absorbed pressure that would otherwise fall on an analyst, priced a quality framework before imposing it, changed a service's behaviour by demonstration rather than advocacy, and took public responsibility for work that turned out wrong while handling the individual privately.
+
+If one thread runs through all four, it is that this profession has exactly one asset, which is that its numbers turn out to be right. Everything else — the influence, the funding, the seat at the table — follows from that and is spent by a single figure softened under pressure or a submission that quietly omitted the measure nobody wanted to see. You are the person who decides how that asset is spent.
+
+Good luck. This is work that shapes what an organisation is able to know about itself, and the care you have given it is exactly right.

@@ -429,4 +429,430 @@ Organic search traffic to a key journey fell 10% in the first quarter after a si
 - **Confusing relative and absolute change.** "Improved by 33%" (relative) and "improved by 20 percentage points" (absolute) describe the same data differently. Know which the question asks for, and which your stakeholder's claim uses.
 - **Trusting small samples with precise claims.** Counts from usability rounds of 5-10 participants support directions, not decimal-point percentages. Challenge precision that outruns the data.
 
-<!-- APPEND -->
+## Workplace job-specific verbal reasoning assessment
+
+### About this assessment
+
+A workplace job-specific verbal reasoning assessment tests whether you can determine exactly what a piece of written material establishes. For a content strategist this is unusually close to the work itself: you spend your days reading policy intent, governance documents, style guidance, research findings and stakeholder correspondence, and turning them into structures other people will rely on.
+
+The commonest format presents a passage followed by statements to be marked True, False or Cannot Say. True means the passage establishes it, False means the passage contradicts it, and Cannot Say means it settles neither — regardless of what you know professionally.
+
+Your expertise is the main hazard. You will frequently know how content governance usually works, what a taxonomy would normally require, or what a piece of policy is obviously driving at, while the passage in front of you is silent on exactly that point.
+
+Three specifics matter particularly at your level.
+
+The first is that governance documents allocate authority in language that looks interchangeable and is not. Approves, endorses, is consulted, may direct and is informed describe genuinely different arrangements, and your role names influencing and negotiating with senior stakeholders — which requires knowing whose agreement is actually needed and whose is courtesy.
+
+The second is that policy intent and policy text are different things, and a large part of your job is the gap between them. A passage that states an aim has not thereby created an obligation, and reading an aspiration as a commitment is how content strategies acquire promises nobody made.
+
+The third is that taxonomy and definition prose is precise by necessity. A term defined in one place governs everywhere it appears, exceptions are narrow, and a category that "may include" something is not a category that contains it.
+
+### How this assessment maps to your role
+
+- **Reading governance precisely** maps to developing governance, processes and workflows based on strategy and policy intent.
+- **Reading definitions and taxonomies** maps to shaping and structuring the architecture of content.
+- **Reading policy intent** maps to **Strategic thinking**, where you evaluate strategies and policies against business requirements.
+- **Reading stakeholder correspondence** maps to **Stakeholder relationship management**.
+- **Reading research** maps to **User focus** and **User-centred content design**.
+- **Reading for quality assurance** maps to assuring the quality of content from more junior colleagues.
+
+### Practice questions
+
+*Passage A — for Questions 1 to 4*
+
+"The content governance board approves changes to the departmental content model and to the top two levels of the taxonomy. Changes to lower levels of the taxonomy are made by the content strategist for the relevant domain, who must notify the board where a change creates a new term. The board may direct that a lower-level change be brought to it for approval where in its view the change affects more than one domain. The head of content endorses the board's decisions and may return a decision for reconsideration once, with reasons; a decision returned and reaffirmed by the board stands. The board meets every six weeks."
+
+**Question 1 (easy)**
+
+Statement: Changes to the top two levels of the taxonomy require approval by the content governance board.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly in the first sentence. Note the passage immediately establishes a second, different arrangement for lower levels, so the scope of this approval matters — and the later questions turn on keeping the two straight.
+
+**Question 2 (moderate)**
+
+Statement: The head of content can overturn a decision of the content governance board.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts this. The head of content "endorses" decisions and "may return a decision for reconsideration once, with reasons", and "a decision returned and reaffirmed by the board stands". That is a single power of return rather than a veto, and the final clause exists precisely to close the inference. Reading endorsement as approval-with-power-to-refuse is the natural error, and knowing the difference is what tells you whose agreement you actually need when negotiating a change through.
+
+**Question 3 (moderate)**
+
+Statement: A content strategist making a lower-level taxonomy change that does not create a new term has no obligation to notify the board.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** The notification duty is qualified: notify "where a change creates a new term". A change that does not create one — rewording a definition, moving a term, retiring one — does not meet the condition, so the obligation does not arise. The passage establishes this by the structure of the qualification rather than by stating it. Note this says nothing about whether the board might still call the change in under its cross-domain power, which is an independent mechanism.
+
+**Question 4 (harder)**
+
+Statement: The board can require a lower-level change to come to it for approval only where the change creates a new term.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts the word "only". The call-in power is conditioned on the board's view that the change "affects more than one domain" — a different and independent test from creating a new term. A change could create a new term confined to one domain, or affect several domains without creating any new term. The statement imports the condition attached to the notification duty and applies it to the call-in power. Conflating conditions attached to two different mechanisms is the commonest misreading of governance text, and for someone designing governance it is worth being alert to, because it is also the commonest way governance you write gets misapplied.
+
+*Passage B — for Questions 5 to 8*
+
+"The department's content strategy states that content will be organised around user tasks rather than around organisational structure. Where an existing content set cannot be reorganised without disrupting a live service, the reorganisation may be deferred until the service's next major release. The strategy anticipates that the majority of guidance content will be task-organised within two years. Content owned by arm's length bodies is out of scope. Teams are encouraged to align local taxonomies with the departmental model and to record where they diverge. The strategy is reviewed annually."
+
+**Question 5 (easy)**
+
+Statement: Content owned by arm's length bodies is within the scope of the strategy.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage states directly that such content "is out of scope", which contradicts the statement. A short one, and worth reading carefully — scope exclusions are the sentences most often skimmed, and they determine what a strategy actually covers.
+
+**Question 6 (moderate)**
+
+Statement: The majority of guidance content will be task-organised within two years.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage says the strategy "anticipates" this. An anticipation is a forecast, and the passage establishes that the forecast exists rather than that the outcome will occur. Marking True treats a document's expectation as a fact about the world, which is the specific error strategy documents most reliably produce — they are written in a register that makes projections read as commitments, and as the person who writes them, you are also the person best placed to notice when someone quotes one back as a promise.
+
+**Question 7 (moderate)**
+
+Statement: A team must record where its local taxonomy diverges from the departmental model.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage says teams "are encouraged to align ... and to record where they diverge". Encouragement is not obligation, and the single verb "encouraged" governs both the alignment and the recording. The statement's "must" overstates it. In a passage that elsewhere uses "may be deferred" and "is out of scope", the choice of "encouraged" is deliberate.
+
+**Question 8 (harder)**
+
+Statement: A content set that would disrupt a live service if reorganised will be reorganised at the service's next major release.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage says reorganisation "may be deferred until the service's next major release". That establishes a permission to defer up to that point; it does not establish that reorganisation then happens, nor that it must. The next major release is the outer limit of the deferral as drafted, and the passage says nothing about what obliges the work at that point. If you marked True, you supplied the natural completion — that a deferral ends with the thing being done — which is exactly the sort of reasonable gap-filling this format is built to catch, and exactly the sort of drafting weakness worth noticing in a real strategy.
+
+*Passage C — for Questions 9 to 12*
+
+"A study of 36 participants tested two navigation structures for a guidance section. Structure A grouped content by the life event prompting the user's visit; structure B grouped content by the type of document. Participants using structure A located the correct guidance more often, at 78% against 53%. Participants who described themselves as familiar with the subject showed no difference between structures. The study did not measure how long participants took. Participants were recruited from people who had contacted the department's helpline in the previous month. The research team recommends structure A."
+
+**Question 9 (moderate)**
+
+Statement: Participants using structure A located the correct guidance more often than those using structure B.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly with figures: 78% against 53%. True. Note the passage immediately qualifies this for one sub-group, which the next question turns on — a well-reported finding usually tells you where it does and does not hold, and it is worth carrying both halves when you cite it.
+
+**Question 10 (moderate)**
+
+Statement: Structure A is better for users who are already familiar with the subject.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage says familiar participants "showed no difference between structures". That is absence of a detected difference, not evidence that A is better for them — and equally not evidence that it is worse. The honest reading is that structure A helps unfamiliar users substantially and appears to cost familiar users nothing, which supports adopting it and does not support the statement as written. That distinction sounds academic until a stakeholder challenges the recommendation, at which point the precise claim is the one that survives.
+
+**Question 11 (moderate)**
+
+Statement: The findings apply to the general population of people seeking this guidance.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** Participants were "recruited from people who had contacted the department's helpline in the previous month" — a group that by definition had already struggled to find what they needed, or had a question the content did not answer. Whether the same pattern holds for people who found what they wanted without calling is not established, and there is a reasonable argument it might not. Checking who was in a study before generalising from it is the habit here, and it matters most when the finding is one you like.
+
+**Question 12 (harder)**
+
+Statement: Structure A takes users less time than structure B.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage states explicitly that "the study did not measure how long participants took". No evidence either way — and it is worth noticing that the intuitive answer is not even clearly right, since a life-event structure may require more reading to identify the right entry point while producing better outcomes. A study that names what it did not measure is telling you where the evidence stops, and reproducing that boundary when you cite it is what stops a recommendation being over-claimed in your name.
+
+### Preparation tips
+
+- **Distinguish approves, endorses, is consulted and may direct.**
+- **Check whether a condition attached to one mechanism has been imported into another.**
+- **Read "anticipates" and "expects" as forecasts, not commitments.**
+- **Read "encouraged" as governing everything in its sentence.**
+- **Read a permission to defer as a permission, not a schedule.**
+- **Read "no difference" as absence of evidence, not evidence of equivalence.**
+- **Check who was recruited before generalising a finding.**
+- **Reproduce a study's stated limits when citing it.**
+
+### Common pitfalls to avoid
+
+- **Reading endorsement as a power of refusal.**
+- **Applying a notification condition to a separate call-in power.**
+- **Treating a strategy's projection as an established outcome.**
+- **Reading "encouraged to record" as a recording duty.**
+- **Skimming past a scope exclusion.**
+- **Completing a deferral into an obligation the passage does not create.**
+- **Turning "no difference for group X" into "better for group X".**
+- **Answering from content strategy experience rather than from the passage.**
+
+## Workplace job-specific situational judgement assessment
+
+### About this assessment
+
+A workplace job-specific situational judgement assessment presents realistic scenarios and asks you to identify effective and ineffective responses. For a content strategist the scenarios involve senior stakeholders with competing interests, governance that people find inconvenient, taxonomies that outlive the assumptions they were built on, and content teams you influence but frequently do not manage.
+
+The commonest formats ask for the most and least effective response, or for ratings. Scoring is against a key derived from experienced practitioners in comparable roles, so the target is professional consensus.
+
+Three patterns run through the strong answers at this level.
+
+The first is that governance you design is paid for by everyone who works within it, every day, for as long as it stands. The useful question about a process is not whether it describes good practice but whether the benefit exceeds the distributed cost — and you are usually the only person who will compute that.
+
+The second is that adoption is a design problem rather than a compliance problem. A workflow that is better and harder to follow loses to one that is worse and easier, every time, and treating that as a discipline failure is the characteristic error in this role.
+
+The third is that you work almost entirely through influence. Your skills description names influencing and negotiating with senior stakeholders to resolve issues and enable progress, and that only works if people believe you apply the same standards to your own structures as to theirs.
+
+### How this assessment maps to your role
+
+- **Governance design** maps to developing governance, processes and workflows.
+- **Stakeholder negotiation** maps to **Stakeholder relationship management**.
+- **Taxonomy judgement** maps to shaping and structuring the architecture of content.
+- **Quality assurance and coaching** maps to **User-centred content design**.
+- **Prioritisation and delivery** maps to **Agile working**.
+- **Evidence judgement** maps to **User focus**.
+
+### Practice questions
+
+**Question 1 (easy) — A stakeholder wants their own section**
+
+A senior stakeholder asks for a top-level section of the site dedicated to their directorate's work. What is the most effective response?
+
+- A) Explain that content is organised by user task, not by organisational structure.
+- B) Find out what they need that is not currently happening — usually that their content is hard to find, or that they cannot show anyone what their directorate has published — and propose how to meet that within a task-based structure, because the underlying need is nearly always achievable and the top-level section almost never is.
+- C) Agree to the section; the stakeholder is senior.
+- D) Offer a landing page instead.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** "We need our own section" is a solution somebody arrived at before speaking to you, and the need behind it is usually findability or visibility — both of which have answers that do not require restructuring the site around the organisation chart. Option B recovers the need and keeps you working towards their goal rather than against it. Option C is least effective because a top-level section granted on seniority establishes a precedent every other directorate will invoke, and the structure degrades permanently. Option D is often the right landing point and, offered first, concedes the framing before understanding the need. Option A leads with the rule.
+
+**Question 2 (easy) — A workflow nobody follows**
+
+A content review workflow you introduced six months ago is widely ignored. What is the most effective response?
+
+- A) Remind teams of the workflow.
+- B) Find out why before doing anything, because a workflow ignored by capable people for six months is usually unworkable, unclear, or more expensive than the alternative — and each of those has a different fix.
+- C) Add it to the governance board's assurance criteria.
+- D) Withdraw it.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Widespread non-compliance over that period is evidence about the workflow rather than about anyone's discipline. Option B investigates first, and the three candidate causes lead somewhere different: an unclear process needs rewriting, an unworkable one needs relaxing, and an expensive one needs the cost removing, usually by supplying tooling or templates that make the compliant path the easy one. Option A is least effective — a reminder about an unworkable process buys a fortnight of compliance and teaches everyone that your governance is advisory. Option C enforces before diagnosing. Option D discards a real need without testing a lighter version.
+
+**Question 3 (moderate) — Two teams, two taxonomies**
+
+Two content teams in the same domain have developed different taxonomies for overlapping material. Both defend theirs. What is the most effective response?
+
+- A) Decide which is better and require both to adopt it.
+- B) Get them together and establish what each taxonomy was built to do, because two teams defending structures usually have two different sets of user needs that were never compared — and put the user encountering both in the room, since neither team sees that from inside their own material.
+- C) Let each keep its own; both work locally.
+- D) Escalate to the content governance board.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** Moving parties from positions to requirements is the technique that resolves this, and the second half of option B supplies the argument neither team is making — someone moving between the two sets experiences the inconsistency, and that is a real cost neither team can see. Option C is least effective because it accepts a permanent user-facing incoherence in exchange for avoiding a conversation, and the divergence compounds. Option A resolves by fiat and creates a losing team who will comply without conviction. Option D escalates something your role exists to resolve.
+
+**Question 4 (moderate) — Governance that is slowing delivery**
+
+A delivery manager tells you your content governance is delaying releases. What is the most effective response?
+
+- A) Explain that governance exists for good reasons.
+- B) Find out where the delay actually sits — a board that meets every six weeks, a review step with one available reviewer, an approval required for changes that do not need it — because the delay is nearly always in a queue rather than in the review itself, and queues can usually be removed without losing the control.
+- C) Reduce the governance requirements.
+- D) Ask them to plan further ahead.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** Governance processes are almost never slow because the reviewing takes long; they are slow because work waits for a meeting, a person, or a slot. Option B looks for that, and the fixes — delegating low-risk approvals, meeting more often, adding reviewers — preserve the control while removing the wait. Option D is least effective: telling a delivery manager to plan around your queue accepts the delay as permanent and puts the cost on them, which is also how governance acquires a reputation that outlives any particular process. Option A defends without examining. Option C concedes control before locating the problem.
+
+**Question 5 (moderate) — Research that undercuts your structure**
+
+Research suggests the content architecture you designed last year is not matching how users think about the domain. What is the most effective response?
+
+- A) Present the finding and what it means, including the cost of restructuring and the cost of leaving it, and let the decision be made explicitly with both in view.
+- B) Present the finding and recommend restructuring.
+- C) Ask for further research before raising it.
+- D) Note it for the next annual review.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** Option A gives the decision-maker the two figures they need and frames it as a live choice, which is what allows people — including you — to change position without it being a verdict on the original work. Option D is least effective: deferring a finding about how users think to an annual review means a year of people not finding things, and it looks like burying evidence about your own design. Option C delays a real signal and can read as building a case against it. Option B is honest and reaches a recommendation before the organisation has weighed costs that are not yours alone to weigh.
+
+**Question 6 (moderate) — Quality assurance on a junior colleague's work**
+
+Reviewing a junior content designer's work, you find the structure sound but the terminology inconsistent with the taxonomy. What is the most effective response?
+
+- A) Correct the terms yourself before it publishes.
+- B) Show them the inconsistencies against the taxonomy, explain why the consistency matters for findability and reuse, and ask them to make the changes — because the reason is the transferable part, and a colleague who understands why will catch the next instance unaided.
+- C) Tell them which terms to change.
+- D) Approve it; the structure is what matters.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Your skills description names assuring quality *and* coaching and guiding more junior colleagues to improve, and option B does both in one pass. The findability and reuse reasoning is what makes taxonomy consistency feel like something other than pedantry. Option A is least effective — correcting it yourself removes the work, teaches nothing, and means you will make the same corrections indefinitely. Option C transfers a list rather than a principle. Option D lets an inconsistency into a structure whose whole value is consistency.
+
+**Question 7 (harder) — Competing senior stakeholders**
+
+Two directors want incompatible things from the same content set, and both have escalated to you. What is the most effective response?
+
+- A) Establish what each needs the content to achieve rather than what structure they want, and look for an arrangement serving both — and if the needs are genuinely incompatible, put the choice, with its consequences for users, to whoever is accountable for the content set.
+- B) Propose a compromise structure combining both.
+- C) Take the decision yourself on user-centred grounds.
+- D) Escalate to the content governance board.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** Incompatible requests are frequently compatible needs, and option A tests that before treating the conflict as real. Where it is real, it names who decides — which is the part that stops the dispute recurring. Option B is least effective: a structure combining two incompatible approaches typically acquires the weaknesses of both and the coherence of neither, and coherence is most of what a content architecture provides. Option C may reach the right answer and leaves two directors unpersuaded, which will resurface. Option D is available once the direct routes are exhausted.
+
+**Question 8 (harder) — A taxonomy that has aged**
+
+A taxonomy you designed three years ago no longer fits how the department's services are organised, and teams are working around it. What is the most effective response?
+
+- A) Defend it; the workarounds are the problem.
+- B) Treat the workarounds as evidence and say plainly that the original assumptions no longer hold — what has changed, what the workarounds cost, and what revising it would take — because your visible willingness to have your own structures revisited is what makes it safe for anyone to raise the next one.
+- C) Require teams to stop working around it.
+- D) Revise it to match what teams are doing.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** Workarounds by capable teams are information about the structure, not about their compliance. Option B reads them that way and handles the awkward part — that this was your design — openly, which is what makes your challenges to other people's structures credible. Option C is least effective: enforcing a taxonomy people cannot work within produces nominal compliance and shadow structures, which is worse than the workarounds because it hides them. Option A is the natural reaction and usually wins on authority while teaching everyone not to bother. Option D over-corrects, since what teams do under pressure is not automatically the right model.
+
+**Question 9 (harder) — Being asked to commit to a timeline**
+
+A programme director asks you to commit to a date for a full content restructure. Your estimates carry wide uncertainty. What is the most effective response?
+
+- A) Commit to the outcome and to the early milestones precisely, give the later stages as ranges with the uncertainty stated, and propose a point at which the timeline firms up.
+- B) Commit to the date; a programme needs a date.
+- C) Commit with heavy caveats.
+- D) Decline until the scope is clearer.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Option A gives the director the certainty that genuinely exists — the early stages and the destination — without manufacturing certainty that does not, and the review point tells them when they will know more, which is usually what they actually need. Option C is least effective: caveats are not heard and the date is, so it commits you to the number while feeling to you like you hedged. Option B buys goodwill now and spends it all when the date slips. Option D declines to help with a decision they need to make today.
+
+**Question 10 (harder) — Evidence against your own process**
+
+Data shows a content review process you introduced consumes significant time across five teams and has not measurably improved content quality. What is the most effective response?
+
+- A) Improve the measurement; content quality is hard to capture.
+- B) Publish the finding, including that it is your process, and narrow it to where the benefit is demonstrable or withdraw it — because five teams paying weekly for an unmeasurable benefit is a real cost, and withdrawing your own process on evidence makes every remaining one more credible.
+- C) Retain it; some benefits do not show in data.
+- D) Reduce its scope quietly.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** The cost is certain and distributed; the benefit is unmeasured. Option B allows the right resolution — narrowing rather than abandoning — and gets the credibility that only comes from doing it in the open. Option C is least effective because it is unfalsifiable, which makes it the argument that keeps every unproductive process in place forever. Option D reaches a defensible outcome by a route that looks like concealment once noticed. Option A is legitimate in principle and indistinguishable from motivated reasoning when the person improving the measurement owns the process.
+
+**Question 11 (harder) — A content team you do not manage**
+
+A content team in another directorate is publishing material that conflicts with the departmental model. You have no authority over them. What is the most effective response?
+
+- A) Approach them directly, show what the conflict causes for users moving between the two content sets, and offer help aligning — because you are asking for cooperation and the case has to be worth their effort, not merely correct.
+- B) Raise it with the content governance board.
+- C) Raise it with their director.
+- D) Correct the affected content yourself.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** Without authority, the only currency is a case worth acting on, and option A supplies one — a user-facing consequence rather than a compliance point — plus help, which lowers the cost of agreeing. Option D is least effective: editing another team's content without asking is both discourteous and likely to undo decisions made for reasons you do not know, and it ends any prospect of cooperation. Option C escalates before trying the direct route and makes an ally into a defendant. Option B is a legitimate later step and slower than a conversation.
+
+**Question 12 (harder) — Prioritising with a team**
+
+A content team you work with has more requests than capacity and is trying to serve all of them partially. What is the most effective response?
+
+- A) Help them establish what each request is actually for and what happens if it waits, then support them in doing fewer things completely and telling the rest explicitly what that means for them.
+- B) Ask them to work faster.
+- C) Advise them to prioritise by stakeholder seniority.
+- D) Escalate the capacity problem.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** Your skills description names helping teams prioritise and adhere to agreed scope, and the core of that is that partial delivery on everything serves nobody — content half-restructured is often worse than content left alone, because it is inconsistent. Option A also names the part teams avoid: telling the requests that will not be served, explicitly, so those people can replan. Option B is least effective: it treats a prioritisation problem as an effort problem and guarantees the same position next quarter. Option C substitutes visibility for value. Option D may be true and does nothing about this quarter.
+
+### Preparation tips
+
+- **Find the need behind a structural request.**
+- **Read long-standing non-compliance as evidence about the process.**
+- **Look for the queue when governance is called slow.**
+- **Move disputing teams from positions to requirements.**
+- **Give ranges with a firming-up point rather than caveated dates.**
+- **Coach by giving the reason, not the list of corrections.**
+- **Withdraw your own processes openly when the evidence says so.**
+- **Make the case worth acting on when you have no authority.**
+
+### Common pitfalls to avoid
+
+- **Granting a structural request on seniority.**
+- **Reminding people about a workflow they cannot follow.**
+- **Telling delivery to plan around your queue.**
+- **Combining two incompatible structures into a compromise.**
+- **Enforcing a taxonomy that teams are working around.**
+- **Correcting a junior colleague's terminology yourself.**
+- **Editing another team's content without asking.**
+- **Serving every request partially.**
+
+## Conclusion
+
+You have worked through four assessments built around the reasoning a content strategist actually uses, and it is worth drawing the threads together.
+
+The cognitive section was about structure — reading a set of inconsistencies for the cause that generates them, following governance rules through several conditions, and distinguishing what a content set is from what it is organised around.
+
+The numeric section was the arithmetic that turns a content argument into a decision: volumes, proportions of a real user base, the cost of a process multiplied across the teams and the frequency that actually bear it, and the recurring point that a percentage of a government service is a number of people.
+
+The verbal section was an exercise in reading precisely the documents you spend your working life inside. Endorsement is not veto. Notification is not approval. "Anticipates" is a forecast. "Encouraged" governs its whole sentence. And a permission to defer is not a schedule for doing the thing.
+
+The situational judgement section circled the position this role puts you in: designing structures everyone else lives inside, with almost no authority to compel and considerable ability to make things worse. The strong answers found the need behind the request, read workarounds as evidence rather than indiscipline, moved disputes from positions to requirements, and subjected your own taxonomy and your own process to exactly the scrutiny you would apply to anyone else's.
+
+If one thread runs through all four, it is that governance works by consent. People follow a workflow they can follow, adopt a taxonomy that helps them, and bring you problems if you have shown that inconvenient evidence changes your mind. Each time a process you own survives past its usefulness, the next one is a little harder to introduce.
+
+Good luck. This is work whose value is mostly invisible when it is done well, and the care you have given this is exactly the kind that shows up later in services that make sense.

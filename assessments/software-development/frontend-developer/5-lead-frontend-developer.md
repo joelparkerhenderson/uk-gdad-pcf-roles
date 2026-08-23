@@ -452,4 +452,430 @@ A stakeholder says: "Overall completion fell from 66.7% to 55.3% — the redesig
 - **Mislabelling points and percentages.** Nine points from 72% is 12.5% relative. State both, labelled, in tests and in board papers alike.
 - **Answering the right calculation's wrong question.** Intermediate values (the old total, the new rate, one team's count) populate the distractors. Re-read what is asked after you finish computing.
 
-<!-- APPEND -->
+## Workplace job-specific verbal reasoning assessment
+
+### About this assessment
+
+A workplace job-specific verbal reasoning assessment tests whether you can determine exactly what a piece of written material establishes. At lead level the material is accessibility regulation, design system and technical governance, service standards, supplier documentation and research reports — writing that allocates obligations and authority, and that you are frequently the person others rely on to read correctly.
+
+The commonest format presents a passage followed by statements to be marked True, False or Cannot Say. True means the passage establishes it, False means it contradicts it, Cannot Say means neither — regardless of what you know professionally.
+
+Your expertise is the principal hazard. You will know the right answer about accessibility, browsers and web standards while the passage in front of you is silent, and a confident wrong answer in this format is the same shape as a confident wrong answer in a governance meeting.
+
+Three specifics matter at your level.
+
+The first is that "must", "should" and "may" are terms of art in service standards and specifications, and your role includes advising on how standards apply. Reading "should" as mandatory means blocking work that was permitted; reading "must" as advisory means waiving something that was not.
+
+The second is that governance documents allocate authority precisely. Approves, endorses, is consulted, may direct and is informed describe genuinely different arrangements, and your skills description names building consensus between independent stakeholders — which requires knowing whose agreement is actually needed.
+
+The third is that exceptions define boundaries. An exception for one thing establishes that the rule applies to everything else, and says nothing about the neighbouring case.
+
+### How this assessment maps to your role
+
+- **Reading accessibility regulation precisely** maps to **Accessibility**, where you champion it to internal and external stakeholders.
+- **Reading standards** maps to **Modern development standards**, where you advise on how standards apply.
+- **Reading governance and authority** maps to **Leadership and guidance (frontend developer)**.
+- **Reading supplier and interface documentation** maps to **Systems integration (frontend developer)**.
+- **Reading strategy** maps to **Strategic thinking**.
+- **Reading research** maps to **User focus (frontend developer)**.
+
+### Practice questions
+
+*Passage A — for Questions 1 to 4*
+
+"Services must work without JavaScript for all essential functions, unless the departmental technical design authority has agreed an exemption. Where an exemption is agreed, the service must still work with assistive technologies and must degrade gracefully when JavaScript fails to load. Services should be tested on the browsers used by at least 95% of the service's users, and must be tested with at least one screen reader on at least one desktop and one mobile platform. Testing on a physical device is preferred to emulation. Where a service is used predominantly on mobile, mobile testing should be prioritised accordingly."
+
+**Question 1 (easy)**
+
+Statement: A service with an agreed exemption need not work when JavaScript fails to load.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts this. Even with an exemption, the service "must degrade gracefully when JavaScript fails to load". The exemption releases the service from working *without* JavaScript for essential functions; it does not release it from behaving acceptably when the script fails. The second sentence exists precisely to close that inference, and the distinction between "works without JavaScript" and "degrades gracefully when JavaScript fails" is one worth being able to articulate, because teams routinely treat an exemption as covering both.
+
+**Question 2 (moderate)**
+
+Statement: A service must be tested on the browsers used by at least 95% of its users.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage uses "should" for the 95% browser coverage and "must" for screen reader testing in the very next clause. The contrast within one sentence is deliberate, and the statement's "must" overstates the obligation. This matters practically: browser coverage is negotiable under delivery pressure and screen reader testing is not, and a lead who reads them as equivalent will trade away the wrong one.
+
+**Question 3 (moderate)**
+
+Statement: Emulated device testing does not satisfy the mobile screen reader requirement.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage says physical device testing "is preferred to emulation". A preference ranks two acceptable options; it does not establish that the lesser one fails to satisfy the requirement. Professionally you would be right that emulated screen reader testing is close to worthless — and the passage has not said so, which is the whole exercise.
+
+**Question 4 (harder)**
+
+Statement: A service used predominantly on desktop must still be tested with a mobile screen reader.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** The screen reader requirement is unconditional: at least one screen reader on "at least one desktop and one mobile platform". The final sentence about prioritising mobile testing where usage is predominantly mobile adjusts emphasis between two required activities; it does not create an exemption from either. Reading a prioritisation clause as a conditional release is the trap, and it is the same shape as reading a preference as a prohibition in Question 3 — in both cases the passage is ranking rather than excluding.
+
+*Passage B — for Questions 5 to 8*
+
+"The technical design authority approves architectural decisions affecting more than one service. Decisions confined to a single service are made by that service's lead developer, who must notify the authority where the decision departs from a published pattern. The authority may direct that a single-service decision be brought to it for approval where in its view the decision sets a precedent. The head of engineering endorses the authority's decisions and may return a decision for reconsideration once, with reasons; a decision returned and reaffirmed by the authority stands."
+
+**Question 5 (easy)**
+
+Statement: A decision confined to a single service is made by that service's lead developer.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly. Two qualifications follow — a notification duty for pattern departures, and the authority's power to call a decision in — and neither changes who makes the decision by default.
+
+**Question 6 (moderate)**
+
+Statement: The head of engineering can overturn a decision of the technical design authority.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts this. The head of engineering "endorses" decisions and "may return a decision for reconsideration once, with reasons", and "a decision returned and reaffirmed by the authority stands". That is a single power of return rather than a veto, and the final clause closes the inference explicitly. Reading endorsement as approval-with-power-to-refuse is the natural error.
+
+**Question 7 (moderate)**
+
+Statement: A lead developer making a single-service decision that follows a published pattern has no obligation to notify the authority.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** The notification duty is qualified — notify "where the decision departs from a published pattern". Following the pattern means the condition is not met, so the obligation does not arise. The passage establishes this through the structure of the qualification. Note it says nothing about whether the authority might still call the decision in under its precedent power, which is an independent mechanism not dependent on notification.
+
+**Question 8 (harder)**
+
+Statement: The authority can require a single-service decision to come to it only where the decision departs from a published pattern.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts the word "only". The call-in power is conditioned on the authority's view that the decision "sets a precedent" — a different and independent test from departing from a published pattern. A decision could follow every pattern and still set a precedent, or depart from one without setting any. The statement imports the condition attached to the notification duty and applies it to the call-in power. Conflating conditions attached to two different mechanisms is a common and consequential misreading of governance text, and at your level it is the kind of error that produces confident wrong advice.
+
+*Passage C — for Questions 9 to 12*
+
+"A study of 62 participants compared two error-handling patterns on a benefits application form. Pattern A displayed errors inline beside each field; pattern B displayed an error summary at the top of the page with links to each field, and also displayed errors inline. Screen reader users completed the form more often with pattern B, at 88% against 61%. Sighted users showed no significant difference between patterns. The study did not measure completion time. Participants were recruited to include a range of assistive technology users. The research team recommends pattern B."
+
+**Question 9 (moderate)**
+
+Statement: Screen reader users completed the form more often with pattern B.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly with figures: 88% against 61%. True. Note the passage reports this for screen reader users specifically and separately reports no significant difference for sighted users, which is a well-structured finding — the next questions turn on respecting that separation.
+
+**Question 10 (moderate)**
+
+Statement: Pattern B is better for all users.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage establishes a large benefit for screen reader users and no significant difference for sighted users. "No significant difference" is not evidence of benefit, so the passage does not support "better for all users" — though it does support pattern B overall, since one group benefits substantially and the other is unaffected. That is a stronger and more precise thing to say than the statement claims, and being precise about it is what makes the recommendation credible when someone challenges it.
+
+**Question 11 (moderate)**
+
+Statement: Pattern B takes longer to complete than pattern A.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage states explicitly that "the study did not measure completion time". No evidence either way. A study that names what it did not measure is telling you where the evidence stops, and the useful professional habit is to reproduce that boundary when you cite the finding rather than letting it quietly disappear.
+
+**Question 12 (harder)**
+
+Statement: The 27-point difference for screen reader users was statistically significant.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage reports significance testing for the sighted-user comparison ("no significant difference") and reports the screen reader figures as raw percentages without any such statement. So significance is established for one comparison and not the other. The difference is large and the sub-group is smaller than 62, which cuts both ways — a large effect in a small group may or may not reach significance. Noticing that a passage applied a test to one comparison and not another is the kind of asymmetry worth catching, because it is exactly where an over-strong claim gets built.
+
+### Preparation tips
+
+- **Treat must, should and may as distinct obligations.**
+- **Read a preference as ranking, not excluding.**
+- **Read a prioritisation clause as emphasis, not exemption.**
+- **Distinguish endorsement from veto and notification from approval.**
+- **Check whether a condition attached to one mechanism has been imported into another.**
+- **Read "no significant difference" as absence of evidence, not evidence of equivalence.**
+- **Note which comparisons a study tested and which it merely reported.**
+- **Reproduce a study's stated boundaries when citing it.**
+
+### Common pitfalls to avoid
+
+- **Treating an exemption from one obligation as an exemption from all.**
+- **Reading "should" as mandatory in a passage that uses both.**
+- **Reading "is preferred to" as prohibiting the alternative.**
+- **Reading endorsement as a power of refusal.**
+- **Applying the notification condition to a separate call-in power.**
+- **Turning "no difference for group X" into "better for everyone".**
+- **Assuming a reported percentage difference was significance tested.**
+- **Answering from web standards knowledge rather than from the passage.**
+
+## Workplace job-specific situational judgement assessment
+
+### About this assessment
+
+A workplace job-specific situational judgement assessment presents realistic scenarios and asks you to identify effective and ineffective responses. At lead level the scenarios involve setting direction across teams you do not manage, assuring quality without becoming a bottleneck, mentoring, resolving disputes among peers, and advocating for users who are not in the room.
+
+The commonest formats ask for the most and least effective response, or for ratings. Scoring is against a key derived from experienced practitioners at comparable levels, so the target is professional consensus.
+
+Three patterns run through the strong answers at this level.
+
+The first is that your authority is largely borrowed. Teams follow your direction because they respect the reasoning, and every time you spend that credibility on a preference you have less of it for something that matters.
+
+The second is that you are frequently the most senior person present who understands what a design decision does to users with access needs. Silence from you is read as professional endorsement, and the people affected are never in the room to notice.
+
+The third is that assurance across teams fails in one of two ways: too light and it changes nothing, too heavy and you become the queue everything waits in. The strong answers consistently look for the version that catches what matters without routing every decision through you.
+
+### How this assessment maps to your role
+
+- **Setting direction across teams** maps to setting direction and assuring quality of development across teams.
+- **Resolving disputes** maps to **Leadership and guidance (frontend developer)**, where you build consensus among independent stakeholders.
+- **Mentoring and community** maps to **Community collaboration** and providing coaching and mentoring.
+- **Accessibility advocacy** maps to **Accessibility**.
+- **Technology judgement** maps to identifying appropriate technology and approaches.
+- **Strategy** maps to **Strategic thinking**.
+
+### Practice questions
+
+**Question 1 (easy) — Accessibility under a deadline**
+
+Two days before release, you find a component across three services is not keyboard operable. Fixing it properly means restructuring it. What is the most effective response?
+
+- A) Release and fix in the next sprint.
+- B) State plainly what it means — keyboard and screen reader users cannot use this part of three services — and put the options to the service owners, including releasing without the component, releasing a simpler accessible version, or delaying.
+- C) Refuse to release.
+- D) Add keyboard handlers as a quick patch.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** The decision belongs to the service owners and your job is to ensure it is made knowingly, in plain terms rather than as a technical finding. Option B also brings the middle option, which is frequently available and frequently unconsidered under time pressure. Option A is least effective because it releases a known barrier across three services, and next-sprint accessibility fixes have a poor record. Option C removes the owners from their own decision. Option D risks a patch that appears to work and fails for actual assistive technology users, which is worse than a visible gap because nobody looks again.
+
+**Question 2 (easy) — A team's technology choice**
+
+A team you set direction for wants to adopt a framework you would not have chosen. Their reasoning is sound. What is the most effective response?
+
+- A) Direct them to the organisation's usual choice.
+- B) Ask what problem it solves that the usual choice does not, and weigh the answer against the costs that fall on others — recruitment, shared components, support at 3am — because a defensible decision made by the team that will live with it is a good outcome even when it differs from yours.
+- C) Let them proceed; it is their service.
+- D) Ask them to trial it first.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** "Defensible but different" is the normal and desired outcome of delegated technical judgement, and option B tests the one thing that is genuinely your business — the costs that land outside their team. Option A is least effective: overruling sound reasoning with the default teaches the team that your direction means guessing what you would have picked, and you will get less honest reasoning next time. Option C abandons the assurance role your level names. Option D is a reasonable step and does not by itself surface the cross-team costs.
+
+**Question 3 (moderate) — Becoming the bottleneck**
+
+Teams have started routing every frontend decision through you for approval, and you are the delay in several. What is the most effective response?
+
+- A) Work through the queue faster.
+- B) Define what genuinely needs your involvement and what does not — usually cross-cutting patterns, accessibility-critical components and shared code, and not internal implementation choices — and publish that, so teams can proceed on their own for most decisions.
+- C) Delegate approvals to senior developers in each team.
+- D) Stop approving and let teams decide.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Being consulted on everything is a structural problem and no amount of personal throughput fixes it. Option B addresses the cause by making the boundary explicit, which also tells teams what they are trusted with — the thing they usually want to know. Option A is least effective: working faster confirms the arrangement, and the queue reforms at your new speed. Option C is a good complement and, alone, distributes the bottleneck without defining what needs approving. Option D removes assurance rather than scoping it.
+
+**Question 4 (moderate) — A dispute between two teams**
+
+Two teams have built different components for the same purpose and each defends theirs. It has become slightly personal. What is the most effective response?
+
+- A) Pick the better component and require both to use it.
+- B) Get them together and establish what each component was built to do, because two teams defending positions usually have two different requirements that were never compared — and address the personal element separately, since it does not become acceptable because the technical disagreement was real.
+- C) Let each keep its own.
+- D) Escalate to their delivery managers.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** There are two problems and option B is the only response that treats both. Components that look identical from outside frequently differ in the requirements that drove them, and comparing requirements usually either dissolves the dispute or makes it tractable. The conduct is a separate matter needing its own conversation. Option C is least effective: it accepts permanent duplication and leaves the relationship damaged. Option A resolves by fiat and creates a losing team. Option D escalates something your level exists to resolve.
+
+**Question 5 (moderate) — Adapting feedback**
+
+A developer you mentor has not acted on feedback you have given twice. What is the most effective response?
+
+- A) Give the feedback again more firmly.
+- B) Ask what has made it hard to act on — they may disagree and not have said so, may not have understood what you meant concretely, or may be constrained by something in their team — because feedback given twice without effect is usually a problem with the feedback rather than with their willingness.
+- C) Raise it with their line manager.
+- D) Stop giving that feedback.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** Your skills description names adapting feedback to ensure it is effective and lasting, and this is what that means: the second failure is information about how you are giving it. Option B names the three realistic causes, each with a different remedy — disagreement needs discussion, vagueness needs an example, and a team constraint needs removing. Option C is least effective: escalating a mentoring conversation to a line manager converts a developmental relationship into a performance issue, and ends the mentoring. Option A repeats what has already not worked. Option D gives up on something you thought mattered.
+
+**Question 6 (moderate) — A design that cannot be built accessibly**
+
+A designer has produced an interaction that would be difficult to make accessible. What is the most effective response?
+
+- A) Build it as specified and note the accessibility risk.
+- B) Go to them early with the specific problem — which users would struggle and why — and work on an alternative together, because the interaction is usually achievable in a different form and a change to a design costs a fraction of a change to built code.
+- C) Build a different interaction that is accessible.
+- D) Ask them to redesign it.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Option B is early, specific and collaborative, which is the combination that gets designs changed. The cost argument is the practical one: the same change is cheap now and expensive after build. Option A is least effective because it knowingly builds a barrier and records the fact, which changes nothing for users and reads as covering yourself. Option C makes a design decision unilaterally, which is not yours and damages a relationship you need. Option D hands back a problem without the information that would let them solve it.
+
+**Question 7 (harder) — Assuring a decision you disagree with**
+
+A team's approach meets every standard you set but is not what you would have done. What is the most effective response?
+
+- A) Pass it and record your concerns.
+- B) Pass it, because assurance is against the standard and using it to enforce preference destroys the distinction between what is required and what you would prefer — and separately consider whether the gap means the standard is missing something worth adding.
+- C) Pass it conditionally.
+- D) Ask them to change it.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** The integrity of assurance depends on predictability. A lead who fails or pressures compliant work on judgement makes the standard meaningless, and teams then optimise for the reviewer rather than the standard. Option B holds that line and does the genuinely useful thing with the disagreement — asking whether the standard should say something it does not. Option D is least effective as it uses assurance authority to impose preference. Option A registers displeasure on a pass, which pressures informally while changing nothing. Option C invents a category that does not exist.
+
+**Question 8 (harder) — Pressure to drop a standard**
+
+A delivery manager asks whether teams could move faster by dropping the progressive enhancement baseline, noting that "almost everyone has JavaScript". What is the most effective response?
+
+- A) Explain that it is a government service standard requirement.
+- B) Answer the speed question honestly — for some components the baseline costs real time, for many it costs almost nothing — and set against it the sessions where scripts fail for reasons unrelated to whether users "have JavaScript", with what those users would be unable to do.
+- C) Explain that JavaScript fails more often than people think.
+- D) Agree, provided critical journeys keep a baseline.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** The delivery manager asked a reasonable question and deserves a real answer, including the part that concedes ground — the baseline genuinely does cost time on some components, and pretending otherwise is why these conversations go badly. Option B also reframes the risk correctly: script failure is about networks, proxies and errors rather than user choice. Option A is least effective because answering a cost question with an authority claim invites someone to go and seek an exemption. Option C is true and unquantified. Option D concedes the structure before the discussion has happened.
+
+**Question 9 (harder) — Evidence against your own standard**
+
+Data suggests a testing standard you introduced across four teams costs significant time and has not measurably reduced defects. What is the most effective response?
+
+- A) Improve the measurement; some benefits are hard to capture.
+- B) Publish the finding, including that it is your standard, and narrow it to where the benefit is demonstrable or withdraw it — because four teams paying daily for an unmeasurable benefit is a real cost, and withdrawing your own standard on evidence makes every remaining one more credible.
+- C) Retain it; testing standards prevent problems that never appear in defect data.
+- D) Reduce its scope quietly.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** The cost is certain, distributed and daily; the benefit is unmeasured. Option B allows the right resolution — narrowing rather than abandoning — and gets the credibility benefit that only comes from doing it openly. Option C is least effective because it is unfalsifiable, which makes it the argument that keeps every unproductive standard in place indefinitely. Option D reaches a defensible outcome by a route that looks like concealment when noticed. Option A is legitimate in principle and indistinguishable from motivated reasoning when the person improving the measurement owns the standard.
+
+**Question 10 (harder) — Contradicting a senior stakeholder**
+
+In a large meeting, a director makes a technical claim that is wrong and that will lead to a poor decision. What is the most effective response?
+
+- A) Correct it immediately; the decision matters.
+- B) Add the correcting information without framing it as a correction — supplying the relevant fact and its implication — and follow up directly afterwards if the decision is still heading the wrong way, because the goal is the decision rather than the record of who was right.
+- C) Say nothing and raise it afterwards.
+- D) Ask a question that leads them to the correct position.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** Option B gets the information into the room, which is necessary, without a public contradiction that makes retreat costly and hardens the position. The phrasing difference does most of the work: "worth noting that X, which would mean Y" lands where "that's not right" does not. Option C is least effective because large meetings are frequently where decisions are actually made, and afterwards means reopening something settled. Option D is a legitimate technique that can read as manipulative and often fails to get the fact stated. Option A prioritises correctness over outcome.
+
+**Question 11 (harder) — A community that has stopped sharing**
+
+The frontend community of practice you convene has become quiet, with few people contributing. What is the most effective response?
+
+- A) Ask people to contribute more.
+- B) Find out what changed — whether the sessions stopped being useful, whether the format rewards a few confident voices, or whether people are too busy to prepare something — because a community that was active and went quiet has a cause, and each of those has a different fix.
+- C) Reduce the frequency of sessions.
+- D) Present more yourself to restart momentum.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Your skills description names using the community to identify problems in team dynamics and stimulate the right responses, and that starts with diagnosing your own forum. Option B names the three usual causes: sessions that stopped being relevant, a format where preparing something feels high-stakes, and simple capacity. Option A is least effective — asking busy people to contribute more without changing anything produces guilt rather than contributions. Option D is a reasonable short-term measure that, sustained, converts a community into an audience. Option C may follow from the diagnosis and pre-empts it.
+
+**Question 12 (harder) — Your own architectural decision has aged**
+
+A frontend architecture you set two years ago is now the main source of friction for three teams. A newer developer proposes replacing it. What is the most effective response?
+
+- A) Defend it; it was right at the time.
+- B) Engage with the proposal on its merits, say plainly that the original assumptions have not held, quantify what the friction is costing, and get someone other than you to assess the options — because your view of your own architecture carries a discount you cannot argue away.
+- C) Agree to the replacement.
+- D) Ask them to write a full proposal.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** The decision may well have been right when made and be wrong now, and both can be true without either being a defence. Option B does the analysis, is honest about it, and handles the credibility problem by removing yourself from the recommendation. Option A is least effective: it is the natural reaction, it usually wins because you have the authority, and it teaches three teams that the friction is permanent and that raising things is pointless. Option C over-corrects without the cost analysis. Option D is a fair process step that reads as delay if it substitutes for a view.
+
+### Preparation tips
+
+- **Put accessibility decisions to the owner in plain terms, with options.**
+- **Define what needs your approval and publish it.**
+- **Move disputing teams from positions to requirements.**
+- **Treat feedback that did not land twice as a problem with the feedback.**
+- **Assure against the standard; change the standard if it is wrong.**
+- **Answer cost questions with costs, not with authority.**
+- **Withdraw your own standards openly when the evidence says so.**
+- **Get an independent assessment when the subject is your own past decision.**
+
+### Common pitfalls to avoid
+
+- **Patching an accessibility failure so it appears fixed.**
+- **Overruling sound reasoning with the default choice.**
+- **Working through an approval queue faster instead of scoping it.**
+- **Accepting duplicate components to end a dispute.**
+- **Escalating a mentoring conversation to a line manager.**
+- **Recording an accessibility risk instead of preventing it.**
+- **Defending a standard on unmeasurable benefits.**
+- **Contradicting a senior stakeholder publicly.**
+
+## Conclusion
+
+You have worked through four assessments pitched at lead frontend developer, and the threads are worth drawing together.
+
+The cognitive section kept returning to structure and failure: whether a problem is an instance or a pattern, what happens when the script does not run, and why effort spent reconstructing native behaviour is a signal that an earlier decision was wrong.
+
+The numeric section was about not being misled by your own metrics — weighting by traffic, converting percentages into people, scaling sampled counts, and the asymmetry that makes bytes of JavaScript far more expensive than bytes of image data on the devices your users actually hold.
+
+The verbal section was an exercise in reading precisely the documents that define what is required of you and what you may decide. "Should" is not "must". A preference is not a prohibition. Endorsement is not a veto. And "no significant difference for sighted users" supports a careful claim rather than a sweeping one.
+
+The situational judgement section circled the particular position of a lead: enough standing to set direction, not enough authority to compel, and frequently the only person present who can see what a decision does to users with access needs. The strong answers scoped assurance rather than accelerating it, moved disputes from positions to requirements, treated unheeded feedback as a problem with the feedback, and — twice — subjected the lead's own standard and own architecture to the same scrutiny as everyone else's.
+
+If one thread runs through all four, it is that this role runs on being believed. Teams accept direction from someone whose reasoning they can check. Delivery managers accept a standard from someone who concedes its cost honestly. That credibility takes years to build and one preference enforced as a requirement to start spending.
+
+Good luck. You are in a role where careful reasoning compounds across teams and services, and the time you have given this is well spent.

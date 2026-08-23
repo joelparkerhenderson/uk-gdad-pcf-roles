@@ -878,4 +878,20 @@ A member of the public emails the general feedback inbox, which you help monitor
 - **Sacrificing honesty for a good story.** Selective reporting, hidden mistakes and quiet non-compliance are heavily penalised in scoring, because they are the behaviours that most damage real teams.
 - **Forgetting the relationship after the decision.** The best options usually include a human step — thanking the researcher, apologising to the user, looping back to the stakeholder. If two options differ only in that step, choose the one that includes it.
 
-<!-- APPEND -->
+## Conclusion
+
+You have worked through four assessments built around the reasoning a junior content designer actually uses, and it is worth drawing them together.
+
+The cognitive section was about working carefully from evidence — weighting findings by severity rather than counting heads, following a rule through its conditions, and noticing what a piece of research does and does not show.
+
+The numeric section was ordinary arithmetic done accurately: reading rates and volumes, percentages of a real user base, and the reminder that a small proportion of a government service is a large number of people.
+
+The verbal section asked for precision about what a passage establishes, and the practical warning was to slow down at the end — clear-writing questions often place the best rewrite beside a very plausible near-miss, and the final options are where rushing costs most.
+
+The situational judgement section came back to a small number of habits. Anchor on the user when two options both seem reasonable. Know your escalation lines, in both directions — fixing your own typo does not need a senior, and absorbing a stakeholder conflict quietly does. Look for the third option when a scenario offers a false either/or. And include the human step: the strongest responses usually did the right thing *and* told the person affected.
+
+The weak options were consistent too. The heroic one, where you rewrite the whole page unasked. The conflict-avoidant one, where you say nothing to keep the peace. And the selectively honest one, where a mistake quietly disappears into the next version.
+
+If one thing is worth carrying away, it is that honesty and diplomacy are not alternatives. Almost every strong answer above was both, and the scoring keys in this profession consistently reward people who can be straight about a problem while being easy to work with.
+
+Good luck. You are at the stage where habits form fastest and matter longest, and working through all of this says something good about how you approach the craft.

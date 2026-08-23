@@ -852,4 +852,18 @@ You are eighteen months from a planned move — your successor unknown. An organ
 - **Speed without protection, protection without speed.** Forwarding the whistleblower's email is fast and fatal; verifying in total silence is safe and corrosive. The strong responses move on facts quickly and shield people explicitly — the pairing is the skill, and either half alone fails.
 - **Answering the moment instead of the precedent.** Every response you choose — in the test and in the role — becomes the reference case for your community's next hundred decisions. When two options seem close, choose the one you want quoted back to you; at head level, it will be.
 
-<!-- APPEND -->
+## Conclusion
+
+You have worked through four assessments pitched at head of portfolio, and the threads are worth drawing together.
+
+The cognitive section was about reading a portfolio as a system — distinguishing an instance that needs rescuing from an institution that needs repairing, and noticing that the same signal read across three suppliers and two exit interviews deserves the same rigour in both directions.
+
+The numeric section was the arithmetic that governs portfolio decisions: thresholds and the exceptions attached to them, benefits stripped of what would have arrived anyway, costs of delay computed before a delay is discussed, and forecasts distinguished from the events that actually gate a decision.
+
+The verbal section was an exercise in reading governing documents at their exact word. Certification is not endorsement. A target is not a commitment. "Expected in the second quarter" gates nothing. And a scrutiny letter says precisely what it alleges and precisely what it does not — which is the sentence you will be asked to brief upward, where dropping a qualifier changes what your organisation has conceded.
+
+The situational judgement section was about the particular exposure of a head-level role. The hardest items put your own framework, your own appointment, your own assurance judgement under the same scrutiny you apply elsewhere, and the strong answers accepted that symmetry. They priced decisions rather than answering yes or no, protected people without removing their agency, and chose the institutional repair over the visible rescue.
+
+If one thread runs through all of it, it is that every response you choose sets a precedent as well as settling a case. Deference dressed as respect, a risk register used as a private conscience, protection that quietly removes someone's agency — each solves the moment and teaches the organisation something you did not intend to teach.
+
+Good luck. This is a role where the good decisions are largely invisible and the compounding is real, and the care you have given this is well placed.

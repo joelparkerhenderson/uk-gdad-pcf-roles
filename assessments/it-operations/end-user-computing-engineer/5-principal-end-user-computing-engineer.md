@@ -401,4 +401,429 @@ Five-year data for your estate: laptops per 100 users: 108, 106, 105, 103, 102; 
 - **Letting expected value decide alone.** Low-frequency, high-severity risks are insurance decisions, not averages. Present the expectation and the variance; let governance own the appetite.
 - **Answering benchmarks before decomposing them.** "18% over" dissolves into named service choices under itemised adjustment — or it doesn't, and you learn something real. Either way, decompose first; accept or concede never.
 
-<!-- APPEND -->
+## Workplace job-specific verbal reasoning assessment
+
+### About this assessment
+
+A workplace job-specific verbal reasoning assessment tests whether you can determine exactly what a piece of written material establishes. At principal level in end user computing the material is service level agreements, incident and request policy, licensing and supplier terms, security standards covering devices, and the knowledge articles your teams write and rely on.
+
+The commonest format presents a passage followed by statements to be marked True, False or Cannot Say. True means the passage establishes it, False means it contradicts it, Cannot Say means it settles neither — regardless of what you know from running the service.
+
+Long experience is the main hazard. You will know how request fulfilment usually works and what a device policy normally requires, while the passage in front of you describes this particular one.
+
+Three specifics matter especially at your level.
+
+The first is that priority and target definitions are precise, and they usually combine two variables. Reading one as the whole is the commonest source of misclassification, both in an assessment and on a service desk.
+
+The second is that licensing terms define scope narrowly — by user, by device, by site, by purpose — and a permission granted for one purpose does not stretch to a neighbouring one. You own the strategy roadmap for end user services, which means licence scope is a design constraint rather than an administrative afterthought.
+
+The third is that knowledge articles are written to be relied on by people under time pressure, and reading one for exactly what it covers is a skill you also need to assess in others, since your teams write them.
+
+### How this assessment maps to your role
+
+- **Reading service level definitions** maps to **Service focus** and **Incident management**.
+- **Reading request and change policy** maps to **Change management**.
+- **Reading licensing and supplier terms** maps to owning the strategy roadmap for end user services.
+- **Reading device security standards** maps to **Asset and configuration management**.
+- **Reading knowledge articles** maps to knowledge management and **Technical specialism**.
+- **Reading performance reporting** maps to **IT service reporting**.
+
+### Practice questions
+
+*Passage A — for Questions 1 to 4*
+
+"Incident priority is determined by impact and urgency. Priority 1 requires both high impact and high urgency. Response targets run from the time an incident is logged. Resolution targets are suspended while an incident awaits information from the user, and resume when the information is provided. A workaround that restores the user's ability to work is treated as a resolution for target purposes; the underlying fault is managed as a problem. Service requests are not incidents and are governed by the request catalogue, which sets its own fulfilment targets. A request that cannot be fulfilled from the catalogue is raised as a change."
+
+**Question 1 (easy)**
+
+Statement: An incident with high impact and low urgency is a Priority 1 incident.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts this: Priority 1 "requires both high impact and high urgency". A conjunctive definition is not satisfied by one half. A device fault affecting a whole floor that nobody needs until Monday has high impact and low urgency, and it is not Priority 1 — which is exactly the case service desks misclassify, usually upward, under pressure from the affected users.
+
+**Question 2 (moderate)**
+
+Statement: A service request has the same response target as an incident of equivalent impact.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts this: "Service requests are not incidents and are governed by the request catalogue, which sets its own fulfilment targets." The catalogue's targets are separate, and the passage does not suggest they mirror incident targets. This distinction carries real reporting consequences — mixing requests and incidents in a single performance figure produces a number that means very little, and your role includes making decisions from that data.
+
+**Question 3 (moderate)**
+
+Statement: An incident resolved by a workaround has met its resolution target.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Established directly: "A workaround that restores the user's ability to work is treated as a resolution for target purposes". Note what it does *not* establish — the fault is fixed. Both things hold simultaneously, and a service reporting excellent resolution performance while its problem backlog grows is operating entirely within this policy. Watching for that pattern is part of the job.
+
+**Question 4 (harder)**
+
+Statement: Time spent waiting for a user to supply information counts against the resolution target.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts this: resolution targets "are suspended while an incident awaits information from the user, and resume when the information is provided". The suspension clause exists precisely to exclude that time. Worth noting operationally: this is a legitimate provision and also a route by which a service can appear to be performing well while users wait a long time in real terms, so a target-met figure and a user's experience of elapsed time can diverge substantially.
+
+*Passage B — for Questions 5 to 8*
+
+"The licence grants the customer the right to install the software on devices assigned to named users, up to the number of licences purchased. A named user may install the software on up to two devices for their own use. Licences may be reassigned to a different named user where the original user has left the organisation or changed role, provided reassignment does not occur more frequently than once every 90 days for any individual licence. The software may not be installed on shared or kiosk devices. The supplier will provide security updates for the current and immediately preceding major version."
+
+**Question 5 (easy)**
+
+Statement: A named user can install the software on two devices.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly: "up to two devices for their own use". Note the qualifier "for their own use", which the passage attaches deliberately — the two-device allowance is not a second licence to hand to a colleague, which the shared-device prohibition later reinforces.
+
+**Question 6 (moderate)**
+
+Statement: The software can be installed on a shared meeting room device.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts this: "The software may not be installed on shared or kiosk devices." A meeting room device is shared. This is the kind of restriction that needs to be visible at design time — an end user computing strategy that assumes a common build across all device types may be unlicensable as designed, and finding that out during an audit is considerably more expensive than finding it out now.
+
+**Question 7 (moderate)**
+
+Statement: A licence belonging to someone who left the organisation 30 days ago, and which was reassigned 60 days ago, can be reassigned now.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** Reassignment is permitted where the original user has left — which is satisfied — but "provided reassignment does not occur more frequently than once every 90 days for any individual licence". The last reassignment was 60 days ago, so a further reassignment now would fall inside the 90-day window. Both conditions must hold and the second fails. Tracking a per-licence cooling-off period is the sort of detail that quietly creates non-compliance in a large estate with routine staff turnover.
+
+**Question 8 (harder)**
+
+Statement: Security updates are available for versions two releases behind the current one.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage provides updates for "the current and immediately preceding major version". Two releases behind is neither, so it falls outside supported coverage. The passage contradicts the statement. This one has direct roadmap consequences: it tells you the maximum time you can defer a major upgrade before running unpatched software, which is a constraint on your upgrade cadence rather than a preference.
+
+*Passage C — for Questions 9 to 12*
+
+"The quarterly service report states that first contact resolution rose from 61% to 68%. Over the same period, the number of contacts fell from 12,400 to 9,900 following the introduction of a self-service portal. The report notes that the portal handles password resets, which previously accounted for approximately 30% of contacts. Average user satisfaction, measured by a survey offered at the close of each ticket, was 4.2 out of 5, based on 380 responses. The report recommends extending self-service to software installation requests."
+
+**Question 9 (moderate)**
+
+Statement: First contact resolution improved because the service desk became more effective.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage supplies an entirely sufficient alternative explanation and does not adjudicate. Password resets were roughly 30% of contacts and are among the most reliably first-contact-resolvable of all; removing them to self-service takes a large block of easy resolutions out of the denominator, which would tend to *reduce* the measured rate rather than raise it — so the improvement may be genuine, may be compositional, or may be both. The point is that the passage does not settle it, and reading the headline as evidence of desk performance is exactly the inference the report invites.
+
+**Question 10 (moderate)**
+
+Statement: Contact volume fell by approximately 20%.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** 12,400 to 9,900 is a fall of 2,500, and 2,500 / 12,400 = 20.2%. The passage supplies both figures, so this is established by arithmetic rather than inferred. Worth noticing that the fall is smaller than the 30% of contacts password resets represented, which suggests either that the portal is not capturing all of them or that other contact volume grew — a question the report does not address and you would want to ask.
+
+**Question 11 (moderate)**
+
+Statement: The satisfaction figure represents the views of users whose tickets were not resolved.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The survey was "offered at the close of each ticket", so it reaches users whose tickets were closed. The passage contradicts a claim that it represents users whose tickets were not resolved. Note also that 380 responses against roughly 9,900 contacts is a response rate under 4%, and people who respond to satisfaction surveys are not a random sample — neither point is needed for this answer, and both matter when you use the figure.
+
+**Question 12 (harder)**
+
+Statement: Extending self-service to software installation requests would reduce contact volume further.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** This is the report's recommendation, and a recommendation is not a finding. The passage gives no data on how many contacts concern software installation, how amenable they are to self-service, or whether users would adopt a portal for a less routine task than a password reset. The precedent is encouraging and the inference is not established. Distinguishing a report's evidence from its recommendation is a core discipline for anyone making roadmap decisions from service reporting — and you are the person expected to make it.
+
+### Preparation tips
+
+- **Read priority definitions as conjunctions of impact and urgency.**
+- **Check when a clock starts and when it is suspended.**
+- **Distinguish a workaround-as-resolution from a fault that is fixed.**
+- **Check every condition in a licence permission, including cooling-off periods.**
+- **Read supported-version clauses as constraints on your upgrade cadence.**
+- **Look for a compositional explanation before accepting a rate improvement.**
+- **Ask who a satisfaction survey reaches and what the response rate was.**
+- **Separate a report's evidence from its recommendation.**
+
+### Common pitfalls to avoid
+
+- **Treating high impact alone as Priority 1.**
+- **Comparing request targets with incident targets.**
+- **Counting user-wait time against a suspended target.**
+- **Assuming a two-device allowance covers shared devices.**
+- **Missing a per-licence reassignment window.**
+- **Reading a first contact resolution rise as evidence of desk performance.**
+- **Treating a recommendation as an established finding.**
+
+## Workplace job-specific situational judgement assessment
+
+### About this assessment
+
+A workplace job-specific situational judgement assessment presents realistic scenarios and asks you to identify effective and ineffective responses. At principal level in end user computing the scenarios involve the strategy roadmap, resourcing and development of your team, supplier and licence decisions, and the permanent tension between a service that must feel responsive to every individual and one that must be sustainable at scale.
+
+The commonest formats ask for the most and least effective response, or for ratings. Scoring is against a key derived from experienced practitioners at comparable seniority.
+
+Three patterns run through the strong answers.
+
+The first is that end user computing is judged by individual experiences and managed by aggregates, and the two pull in different directions. A senior person whose laptop is broken does not care about your first contact resolution rate. The strong answers usually find a way to serve the individual without setting a precedent that breaks the aggregate.
+
+The second is that demand is designed, not given. Contacts arrive because something upstream generates them — a confusing process, a fragile build, an unclear communication — and the highest-value work in this function is usually removing the cause rather than handling the contact faster.
+
+The third is that your role names resourcing, learning and development for your team. Service desk and end user computing roles have a reputation as somewhere people pass through, and whether that is true in your team is largely determined by what you do about it.
+
+### How this assessment maps to your role
+
+- **Strategy and roadmap** maps to owning the strategy roadmap and understanding business trends.
+- **Team development** maps to leading on resourcing, learning and development.
+- **Demand management** maps to **Incident management** and **Problem management**.
+- **Service reporting** maps to **IT service reporting**, using data to make decisions.
+- **Change judgement** maps to **Change management**.
+- **User perspective** maps to **User focus** and **Service focus**.
+
+### Practice questions
+
+**Question 1 (easy) — A senior user demanding priority**
+
+A director's laptop has failed and they are demanding immediate replacement, ahead of others in the queue. What is the most effective response?
+
+- A) Replace it immediately; they are a director.
+- B) Establish what they actually cannot do and for how long, then decide on that basis — if they have a board paper due this afternoon the urgency is real and the queue should move, and if it is not, offer a loan device now so they can work while the queue runs normally.
+- C) Explain the queue and ask them to wait their turn.
+- D) Escalate the decision to your manager.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Priority is impact and urgency, and seniority is a proxy for impact that is often wrong in both directions. Option B assesses the real position and offers the move that resolves most of these situations — a loan device costs almost nothing and removes the urgency entirely. Option A is least effective because a queue that reorders on seniority stops being a queue, and every subsequent director learns that escalation works. Option C applies process without addressing the need. Option D hands upward a decision you are well placed to make.
+
+**Question 2 (easy) — A recurring contact type**
+
+Analysis shows one contact type accounts for a large share of your team's workload. What is the most effective response?
+
+- A) Add staff to handle the volume.
+- B) Find out what generates it — a confusing step in a process, a fragile part of the build, a change nobody communicated — because the highest-value work is usually removing the cause, and handling a self-inflicted contact type efficiently forever is the expensive option.
+- C) Write a knowledge article so contacts are resolved faster.
+- D) Move it to self-service.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Demand in end user computing is mostly generated by something upstream, and option B looks for it. Option A is least effective: staffing to meet self-inflicted demand makes the cost permanent and grows it as the estate grows. Options C and D are both genuinely useful and both accept the demand as given — a knowledge article makes a contact cheaper and a portal makes it self-served, while the thing causing it continues. Either is a reasonable step after the diagnosis.
+
+**Question 3 (moderate) — A roadmap decision with a licence constraint**
+
+Your device strategy would be simpler with a single common build, but a key application's licence prohibits installation on shared devices, and a proportion of your estate is shared. What is the most effective response?
+
+- A) Adopt the single build; the simplification is worth it.
+- B) Design around the constraint explicitly — a common core build with the licensed application deployed only to assigned devices — and check whether the supplier offers terms covering shared use, because a strategy that is unlicensable as designed will be discovered by an audit rather than by you.
+- C) Abandon the single build.
+- D) Adopt the single build and manage the risk.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** Option B keeps most of the simplification while respecting the constraint, and adds the step people skip — asking the supplier, who frequently has terms for shared or kiosk use that are not on the standard price list. Option D is least effective: "manage the risk" on a licence prohibition means knowingly operating in breach across an estate, which is not a risk that can be managed downwards, and licence audits are how it surfaces. Option A does the same thing without acknowledging it. Option C discards a worthwhile simplification for a solvable constraint.
+
+**Question 4 (moderate) — A team that people leave**
+
+Your team has high turnover, with people moving on within eighteen months. What is the most effective response?
+
+- A) Improve recruitment to fill vacancies faster.
+- B) Find out why people leave — usually that the role has no visible progression and the work is seen as a stepping stone — and address that with real routes: specialisms people can grow into, involvement in the roadmap work, and a path towards infrastructure or engineering roles that keeps people in the organisation.
+- C) Accept it; this is a role people pass through.
+- D) Increase pay bands.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** Your role names leading on resourcing, learning and development, and option B treats turnover as a design problem rather than a fact of life. The framing matters: people leaving your team for engineering roles elsewhere in the organisation is a good outcome that you can offer deliberately, and offering it openly is what keeps them for three years rather than eighteen months. Option C is least effective because it accepts a permanent capability drain and becomes self-fulfilling — a team known as a stepping stone attracts people who intend to step. Option A treats the symptom. Option D may help and is rarely the main driver.
+
+**Question 5 (moderate) — A change with wide user impact**
+
+A change to the standard build would improve security but alter something users interact with daily. What is the most effective response?
+
+- A) Implement it; the security improvement justifies it.
+- B) Implement it with the user impact planned for — advance communication describing what changes and why, a knowledge article ready before rather than after, and desk capacity for the contact spike — because the change will generate contacts regardless, and the only variable is whether you chose the timing.
+- C) Implement it quietly to avoid alarming users.
+- D) Defer it until a quieter period.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** A visible change to a daily interaction produces contacts whatever you do, so the work is in shaping and absorbing them. Option B does all three things that matter, and having the knowledge article ready in advance is the specific detail that separates a managed spike from a bad week. Option C is least effective: unexplained changes to something people use daily generate more contacts, not fewer, and they generate suspicion as well. Option D is sometimes right and, used as a default, means security changes never happen. Option A takes the benefit without planning the cost.
+
+**Question 6 (moderate) — Reporting that flatters**
+
+Your service report shows first contact resolution improving. You know most of the improvement comes from simple contacts moving to self-service. What is the most effective response?
+
+- A) Report the improvement; the figure is accurate.
+- B) Report the figure with the explanation, because a rate that moved for compositional reasons is not evidence of improved performance, and presenting it as such means the next decision is made on a false picture — including decisions about your own team's resourcing.
+- C) Report the figure and the volume reduction separately.
+- D) Change the metric.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Your role names using data analytics to make decisions that enhance business performance, and that is undermined at source if the data is presented without what it means. Option B is honest and self-interested in the right way: a rate improvement attributed to your team's performance invites the conclusion that the team could be smaller. Option A is least effective because it banks a short-term credit and sets up a worse conversation later. Option C is better and leaves the reader to make the connection, which they will not. Option D discards a useful measure rather than explaining it.
+
+**Question 7 (harder) — A supplier missing targets**
+
+Your device supplier is consistently late on replacements, and users are waiting. The contract provides service credits. What is the most effective response?
+
+- A) Claim the credits.
+- B) Establish why — stock, logistics, or a contract that pays for something other than speed — and address that, because credits compensate you for a failure without changing it, and users are still waiting.
+- C) Escalate to the supplier's account director.
+- D) Hold more stock locally as a buffer.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Option B diagnoses before acting, and the commercial cause is common and unmoved by escalation or credits. Option A is least effective as the whole response: credits are money, users are still without devices, and nothing about the arrangement changes. Option D is a genuinely good mitigation and often part of the answer, though it has a cost in capital and obsolescence, so it belongs after you know whether the supply problem is temporary. Option C is reasonable once you know what the escalation concerns.
+
+**Question 8 (harder) — Understanding a business trend**
+
+You notice that contact volume from one directorate has risen sharply over two quarters. What is the most effective response?
+
+- A) Allocate more desk capacity to that directorate.
+- B) Find out what changed there — new staff, a new system, a reorganisation, a change to how they work — because a sharp local rise almost always has a specific cause, and your role includes seeing the bigger picture and understanding trends in the business.
+- C) Ask the directorate to reduce its contacts.
+- D) Analyse the contact types to see what they are about.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** Option B looks for the cause, which is where the fix is — a directorate that has onboarded fifty people needs different help from one that has adopted a new application. Option D is a genuinely good and closely-related move, and it is the first step *within* option B rather than an alternative to it; on its own it tells you what the contacts are about without telling you why they started. Option C is least effective: asking users to generate fewer contacts addresses nothing and signals that the service exists for its own convenience. Option A absorbs the demand permanently.
+
+**Question 9 (harder) — Pressure to skip testing**
+
+A programme needs a software package deployed to 4,000 devices urgently and asks you to skip the pilot. What is the most effective response?
+
+- A) Refuse; piloting is standard.
+- B) State what the pilot protects against — a package that breaks something on a fraction of the estate becomes hundreds of incidents in an afternoon — and offer the smallest pilot that would catch it, such as a few dozen devices across the main build variants over 24 hours.
+- C) Deploy without the pilot; the programme owns the risk.
+- D) Deploy to half the estate first.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** Option B is the strongest because it concedes the time pressure and finds the version of the control that fits it — a 24-hour pilot across build variants catches the great majority of what a longer one would, and is usually accepted. Option C is least effective: a bad deployment to 4,000 devices lands on your team, your users and your service figures, so the risk is not the programme's to own alone. Option D is a reasonable staged approach and 2,000 devices is a large blast radius for a first exposure. Option A defends the process without engaging with the constraint.
+
+**Question 10 (harder) — Knowledge that lives in people**
+
+Your team resolves many issues from experience rather than from documented knowledge, and two experienced people are due to leave. What is the most effective response?
+
+- A) Ask them to write knowledge articles before they go.
+- B) Have them work through live tickets alongside colleagues and write up what emerges, because what people know without being asked is invisible to them — a leaver asked to document their knowledge writes what they can think of, which is systematically the wrong subset.
+- C) Record training sessions with them.
+- D) Delay their departure if possible.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** The problem with option A is not that documentation is useless but that experts cannot see which of their own actions are non-obvious, so a leaver's article covers the things they remember finding hard once, not the things they now do automatically. Option B surfaces the tacit knowledge by exercising it on real work. Option D is least effective — it is rarely available, it treats a structural knowledge problem as a scheduling one, and it does nothing except postpone. Option C is a reasonable supplement with the same blind spot as A.
+
+**Question 11 (harder) — A metric that will be gamed**
+
+You are considering setting the team a target on average handling time. What is the most effective observation?
+
+- A) It is a good measure; faster handling means better service.
+- B) A handling time target creates pressure on the cheapest thing to change, which is closing contacts quickly rather than resolving them — so it tends to reduce first contact resolution and increase repeat contacts, and pairing it with those two measures makes it much harder to move without genuine improvement.
+- C) It should be combined with other measures.
+- D) Handling time should not be measured.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Average handling time is one of the most reliably counterproductive targets in service desk management, for exactly the mechanism option B names: the fastest way to reduce it is to close contacts before they are resolved, which produces repeat contacts and worse service while the target improves. Option B also names the specific counterweights. Option A is least effective because it adopts the target without asking how it will be met. Option C is the same idea without the mechanism, which matters. Option D discards a metric that is useful for capacity planning when it is not a target.
+
+**Question 12 (harder) — Reporting to a board**
+
+A director asks for a summary of end user computing performance for a board paper. Targets are being met; user satisfaction with the device refresh experience is poor. What is the most effective response?
+
+- A) Report against targets; that is what was asked for.
+- B) Report both and interpret them — targets are being met and the experience users actually have of getting a device is poor, which is a specific and addressable gap between what is measured and what is felt — because a board given only the target figures will not fund the work the satisfaction data points at.
+- C) Report against targets and mention satisfaction if asked.
+- D) Describe performance as mixed.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** The gap between meeting targets and satisfying users is the most useful thing you can tell a board about this function, because it points at something fixable and explains why people complain about a service that reports green. Option B does that. Option A is least effective: it earns approval now and guarantees that the first serious complaint from a senior user arrives as a surprise, with your own reporting cited as evidence that everything was fine. Option C is the same omission with a fallback. Option D characterises without informing.
+
+### Preparation tips
+
+- **Assess real urgency rather than seniority, and offer a loan device.**
+- **Look for what generates a recurring contact type.**
+- **Design around a licence constraint and ask the supplier about terms.**
+- **Treat turnover as a design problem with real progression routes.**
+- **Have the knowledge article ready before a visible change lands.**
+- **Explain a rate that moved for compositional reasons.**
+- **Offer the smallest version of a control that still catches the failure.**
+- **Transfer tacit knowledge on live work, not through exit documentation.**
+
+### Common pitfalls to avoid
+
+- **Reordering the queue on seniority.**
+- **Staffing to meet self-inflicted demand.**
+- **Managing a licence prohibition as a risk.**
+- **Accepting turnover as inherent to the role.**
+- **Making a visible change quietly.**
+- **Reporting a compositional improvement as a performance improvement.**
+- **Asking leavers to document what they know.**
+- **Setting a target on average handling time alone.**
+
+## Conclusion
+
+You have worked through four assessments pitched at principal end user computing engineer, and the threads are worth drawing together.
+
+The cognitive section kept returning to causes rather than instances. A contact type that dominates the workload is generated by something upstream. A pattern across a directorate has a specific origin. And handling demand efficiently is a different objective from reducing it — the first makes a cost permanent, the second removes it.
+
+The numeric section was the arithmetic that runs this function: volumes and rates, the difference between a count and a rate when the denominator changes, response rates behind satisfaction figures, and the cost of a process multiplied across an estate rather than considered per device.
+
+The verbal section was about the documents that define what you owe and what you may do. Priority is impact *and* urgency. A suspended target excludes user-wait time that users still experience. A two-device allowance is not a shared-device permission. And supported-version clauses are constraints on your upgrade cadence rather than background information.
+
+The situational judgement section was about a service judged by individual experiences and managed by aggregates. The strong answers found the loan device that dissolved the urgency, offered the smallest control that fitted the time pressure, explained the metric that had moved for the wrong reason, and treated turnover in a team people pass through as something you can actually change.
+
+If one thread runs through all four, it is that this function's reputation is set by the gap between what it measures and what people feel. Targets can be green while the experience of getting a working laptop is poor, and you are the person who can see both. Closing that gap — and reporting it honestly while it is still open — is most of what the principal in your title is for.
+
+Good luck. This is a service everyone in the organisation depends on and few think about until it fails, and the care you have given this is exactly the kind it deserves.

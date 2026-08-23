@@ -415,4 +415,429 @@ Your organisation can fund exactly one of three product investments next year, a
 - Double counting at portfolio scale — the same released budget line claimed by two cases, the same deflected contact claimed by two teams. Savings belong to budget lines, booked once; the register is the fix.
 - Treating the modelled as the valuable and the unmodelled as worthless — or the reverse. The head-level discipline is naming the boundary and building the structure that narrows it, cycle by cycle, so the organisation's arithmetic grows more honest under your signature than it was before it.
 
-<!-- APPEND -->
+## Workplace job-specific verbal reasoning assessment
+
+### About this assessment
+
+A workplace job-specific verbal reasoning assessment tests whether you can determine exactly what a piece of written material establishes. As a head of product the material is business cases, spending approvals, governance frameworks, employment and recruitment guidance, cross-government agreements and the research and performance reporting your community produces.
+
+The commonest format presents a passage followed by statements to be marked True, False or Cannot Say. True means the passage establishes it, False means it contradicts it, and Cannot Say means it settles neither — regardless of what you know.
+
+Your experience is the main hazard. You will know how funding approvals usually work, what a business case normally has to show, and how these arrangements are typically operated, while the passage in front of you describes this one.
+
+Three specifics matter particularly at your level.
+
+The first is that funding and approval documents attach conditions with precise scope, and a condition attached to one tranche, product or stage does not travel to another. Reading a condition as general when it is specific is how a product gets committed to something nobody required.
+
+The second is that governance and employment guidance allocate authority in language that looks interchangeable and is not — approves, endorses, is consulted, may direct, must consult — and you are responsible for people's development, pay, moves and exits, where acting outside your remit is a serious matter rather than a technical one.
+
+The third is that business cases and strategies are written persuasively. Separating what is asserted from what is established is a routine requirement of your job, not an academic exercise, and you are frequently the most senior person able to do it.
+
+### How this assessment maps to your role
+
+- **Reading funding and approval conditions** maps to **Creating value for money** and **Strategic ownership**.
+- **Reading governance** maps to **Product leadership** and ensuring teams comply with appropriate standards.
+- **Reading employment and recruitment guidance** maps to managing recruitment, development, moves and exits.
+- **Reading business cases** maps to **Managing product outcomes**.
+- **Reading research and performance reporting** maps to **Applying user-centred insights**.
+- **Reading cross-government agreements** maps to representing product community interests.
+
+### Practice questions
+
+*Passage A — for Questions 1 to 4*
+
+"Funding for the programme is approved in two tranches. The first tranche is released on approval of the outline business case. The second tranche is released on approval of the full business case, and is conditional on the programme demonstrating that the benefits identified in the outline case remain achievable. Where the full business case identifies benefits lower than those in the outline case, the second tranche may be reduced proportionately at the discretion of the investment committee. Funding not drawn within the financial year in which it is released lapses and must be re-approved. The investment committee meets quarterly and may, in exceptional circumstances, approve funding out of cycle."
+
+**Question 1 (easy)**
+
+Statement: The first tranche is released on approval of the outline business case.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly, and worth noting that no further condition is attached to the first tranche — the benefits-remain-achievable test applies to the second. Keeping straight which condition attaches to which tranche is what the next three questions turn on.
+
+**Question 2 (moderate)**
+
+Statement: If the full business case identifies lower benefits, the second tranche will be reduced.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage says the tranche "may be reduced proportionately at the discretion of the investment committee". Two separate signals of discretion appear in one clause — "may" and "at the discretion of" — which is a drafter telling you emphatically that this is a judgement rather than a consequence. The statement's "will" asserts automaticity the passage contradicts. This is a distinction with real money attached, and getting it wrong in either direction misinforms a programme board.
+
+**Question 3 (moderate)**
+
+Statement: Funding released in one financial year and left unspent must be re-approved before use.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly: funding not drawn within the financial year in which it is released "lapses and must be re-approved". Note the trigger is the year of *release* rather than the year of approval — a tranche approved in March and released in April has the following twelve months, not one. That detail decides real spending plans and is easy to read past.
+
+**Question 4 (harder)**
+
+Statement: The programme cannot receive funding between quarterly investment committee meetings.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts this: the committee "may, in exceptional circumstances, approve funding out of cycle". The statement's "cannot" is defeated by the existence of that route, even though it is discretionary and conditional. Note the asymmetry with Question 2 — there, "may" defeated a statement asserting something *will* happen; here it defeats a statement asserting something *cannot*. A discretionary power establishes possibility, so it refutes absolute claims in both directions.
+
+*Passage B — for Questions 5 to 8*
+
+"Where a post has been advertised twice without a suitable appointment, the recruiting manager may propose a revised specification, an increased pay band subject to approval by the pay committee, or engagement of an interim resource for a period not exceeding twelve months. Interim engagements beyond twelve months require the approval of the director of resources. An interim engagement should not be used where the underlying need is permanent, unless a plan to establish permanent capability accompanies the request. Recruiting managers should consult the head of the relevant profession before advertising a post requiring specialist skills."
+
+**Question 5 (moderate)**
+
+Statement: A recruiting manager can increase the pay band for a post advertised twice without success.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage says the manager "may propose" an increased pay band "subject to approval by the pay committee". Proposing is not deciding, and the approval sits elsewhere. The statement asserts a power the passage allocates to another body, which makes it False rather than Cannot Say. Note the same sentence gives the manager one genuinely unilateral option — revising the specification — so the drafting deliberately distinguishes which routes need approval.
+
+**Question 6 (moderate)**
+
+Statement: An interim engagement can never be used where the underlying need is permanent.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts "never": an interim engagement "should not be used where the underlying need is permanent, **unless** a plan to establish permanent capability accompanies the request". The exception provides a route. Note also that the base obligation is "should not" rather than "must not", which independently softens it — two reasons the statement fails, either sufficient.
+
+**Question 7 (moderate)**
+
+Statement: A recruiting manager must consult the head of profession before advertising a specialist post.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage uses "should consult", not "must". In a passage that elsewhere says "require the approval of" and "subject to approval by", the choice of "should" here is deliberate and marks a strong expectation rather than a requirement. The statement's "must" overstates it — which matters when you are the head of profession being consulted, because it tells you whether a manager who did not consult you breached something or simply did not follow good practice.
+
+**Question 8 (harder)**
+
+Statement: An eighteen-month interim engagement would require both the director of resources' approval and a plan to establish permanent capability.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The first limb is established: engagements beyond twelve months require the director of resources' approval, and eighteen months exceeds twelve. The second is not, because the capability plan is required only where the underlying need is permanent, and the statement says nothing about whether it is — an eighteen-month engagement could cover a temporary programme. A compound statement is True only if every part is established, so one unestablished conjunct makes the whole Cannot Say. Checking each limb separately is the discipline here.
+
+*Passage C — for Questions 9 to 12*
+
+"The product's quarterly report states that user satisfaction rose from 71% to 78% following the redesign. The sample comprised 340 responses to a survey offered at the end of the transaction. Completion rate over the same period rose from 62% to 64%. The report notes that a concurrent change reduced the number of questions in the transaction from 24 to 17. The report recommends applying the redesign to two further products. It does not report satisfaction among users who abandoned the transaction."
+
+**Question 9 (moderate)**
+
+Statement: User satisfaction rose following the redesign.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** The passage states this directly — 71% to 78% — and the statement claims only that satisfaction rose *following* the redesign, which is a temporal claim rather than a causal one. True as worded. Note how little work "following" is doing compared with what a reader will hear, which the next question addresses.
+
+**Question 10 (moderate)**
+
+Statement: The redesign caused the increase in satisfaction.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage records a concurrent change — questions reduced from 24 to 17 — which is an entirely sufficient explanation on its own and is confounded with the redesign. The passage establishes an association and identifies a rival cause without adjudicating between them. Marking True is exactly the inference the report's own recommendation invites, which is why noticing the confound is the substance of the question and of your role: a recommendation to roll out a redesign to two further products may in fact be a recommendation to ask fewer questions.
+
+**Question 11 (moderate)**
+
+Statement: The satisfaction figures represent all users of the transaction.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage says the survey was "offered at the end of the transaction" and that it "does not report satisfaction among users who abandoned the transaction". So the figures represent people who completed, which is by definition not all users — and with completion at 64%, roughly a third of users are excluded. The passage contradicts the statement, and the direction of the bias is worth naming: the excluded group is the one most likely to be dissatisfied.
+
+**Question 12 (harder)**
+
+Statement: The completion rate improvement was small relative to the satisfaction improvement.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Satisfaction rose 7 percentage points (71 to 78); completion rose 2 (62 to 64). Two is small relative to seven on any reading, whether you compare percentage points or proportional change (about 3% against about 10%). The passage supplies both figures, so this is established rather than inferred. It is also the most useful observation in the passage: a large satisfaction movement among completers alongside a small completion movement is consistent with the redesign helping people who were already going to finish, which is a considerably weaker result than the report's recommendation implies.
+
+### Preparation tips
+
+- **Track which condition attaches to which tranche or stage.**
+- **Read "may" as defeating both "will" and "cannot".**
+- **Distinguish proposing from deciding.**
+- **Read "should" against "must" within the same passage.**
+- **Look for the "unless" that supplies a route.**
+- **Check each limb of a compound statement separately.**
+- **Look for a concurrent change before accepting a causal claim.**
+- **Ask who the sample excludes, and which way that biases it.**
+
+### Common pitfalls to avoid
+
+- **Reading a discretionary reduction as automatic.**
+- **Treating a recommendation's implied cause as established.**
+- **Reading "should consult" as a requirement.**
+- **Marking a compound statement True on one established limb.**
+- **Accepting end-of-transaction satisfaction as representing all users.**
+- **Missing that lapsing runs from release, not approval.**
+- **Answering from how these processes usually work.**
+
+## Workplace job-specific situational judgement assessment
+
+### About this assessment
+
+A workplace job-specific situational judgement assessment presents realistic scenarios and asks you to identify effective and ineffective responses. As a head of product the scenarios involve the people in your community — their development, performance, moves and exits — alongside product strategy, senior stakeholders, and the standards you set for a profession you lead but do not deliver.
+
+The commonest formats ask for the most and least effective response, or for ratings. Scoring is against a key derived from experienced practitioners at comparable levels, so the target is professional consensus.
+
+Three patterns run through the strong answers at this level.
+
+The first is that you are responsible for people whose work you no longer do. Your judgements about their performance are formed from second-hand evidence, filtered through delivery managers, stakeholders and outcomes that are heavily confounded — and the strong responses consistently include a step to check the picture rather than acting on the version that reached you.
+
+The second is that you set standards for a profession, and a standard is paid for by every product manager, on every product, for as long as it stands. Whether it describes good practice is the easy question; whether the benefit exceeds the distributed cost is the one that decides it.
+
+The third is that your community watches how you handle the hard cases. Whether you defend a product manager who made a defensible call that went wrong, whether you are honest about a product that failed, whether you hold a standard when a director wants it waived — these determine whether anyone brings you a problem early.
+
+### How this assessment maps to your role
+
+- **People leadership** maps to overseeing every member of the community, including development, pay and performance.
+- **Recruitment and mobility** maps to managing recruitment, development, moves and exits.
+- **Coaching** maps to coaching others in product management and **Agile and Lean practices**.
+- **Standards** maps to setting and raising standards for product management.
+- **Senior stakeholder work** maps to **Stakeholder relationship management** and **Strategic ownership**.
+- **Evidence judgement** maps to **Applying user-centred insights** and **Managing product outcomes**.
+
+### Practice questions
+
+**Question 1 (easy) — A product manager described as difficult**
+
+A delivery director tells you one of your product managers is "blocking progress" on a programme. What is the most effective first step?
+
+- A) Speak to the product manager about unblocking it.
+- B) Get their account before doing anything, because "blocking" is what it looks like from outside when a product manager is declining to commit to something they believe is wrong for users — and if that is what is happening, the useful response is the opposite of unblocking them.
+- C) Ask the director what specifically is blocked.
+- D) Observe the next programme board.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** "Blocking" describes an effect, not a cause, and the two commonest causes point in opposite directions: a product manager being unreasonable, or one holding a line they are right to hold. Acting before you know which is how a head of profession undermines their own people, and word of it travels quickly. Option C is a fair question that gets the same account from the same source. Option A is least effective because it accepts the framing and instructs accordingly. Option D is useful and slower than a conversation.
+
+**Question 2 (easy) — Coaching a lead product manager**
+
+A lead product manager you line manage presents a prioritisation you think is wrong, but their reasoning is coherent. What is the most effective response?
+
+- A) Ask what they weighed and what would change their mind, then offer your concern with reasons — because they may hold context you do not, and if they do not, the reasoning is what transfers rather than the conclusion.
+- B) Tell them to reprioritise.
+- C) Accept it; prioritisation is their job.
+- D) Ask them to take it to their stakeholders and see what they say.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** "Coherent but different from mine" is the normal and desirable result of delegating prioritisation to a lead, and option A tests it without overriding it. The "what would change your mind" question is the useful part, because it locates the assumption the two of you actually disagree about. Option B is least effective — instructing a lead to reprioritise on your preference teaches them that their judgement is decorative, and you will get compliance rather than thinking. Option C declines the coaching your role names. Option D outsources your judgement to stakeholders with narrower interests.
+
+**Question 3 (moderate) — Setting a standard**
+
+You are considering requiring every product in the organisation to publish a quarterly benefits report. What is the most effective analysis?
+
+- A) Require it; benefits tracking is good practice.
+- B) Price it across the community — twenty products, four reports a year, a day or two each is forty to eighty product-manager days annually — and ask whether the same benefit is available more cheaply, such as reporting only where a benefits claim was used to secure funding.
+- C) Require it for major products only.
+- D) Recommend rather than require it.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** The premise in option A is true and does not settle it, because the recurring cost is substantial and nobody has computed it. Option B computes it and then asks where the reporting actually earns its keep — which is usually where a benefits claim underpinned an investment decision, and rarely everywhere. Option D is least effective: a recommended report is produced by the product managers who least need to produce it, so you get the cost without the coverage and no way to tell who has done it. Option C is a reasonable refinement needing a definition of major.
+
+**Question 4 (moderate) — A performance concern reported second-hand**
+
+Two stakeholders separately tell you a product manager is not performing. Their product is behind. What is the most effective response?
+
+- A) Begin a performance conversation with the product manager.
+- B) Establish what is actually happening before characterising it, because a product behind schedule with unhappy stakeholders is equally consistent with a product manager holding a difficult line, an under-resourced team, or a genuine performance problem — and these need entirely different responses.
+- C) Ask their line manager for an assessment.
+- D) Wait for the next performance cycle.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** The three causes look identical from where you sit and diverge completely in what you should do — and the first is common, because a product manager saying no to a stakeholder is exactly what generates this pattern. Option B distinguishes them. Option D is least effective: a genuine performance problem left until a cycle boundary gets worse and becomes harder to address fairly, and a wrongly-accused product manager spends months under a cloud. Option C is a sensible input rather than a substitute for looking. Option A acts on the least reliable evidence available.
+
+**Question 5 (moderate) — A strong product manager wants to leave**
+
+An excellent senior product manager tells you privately they are considering leaving because there is no progression route. What is the most effective response?
+
+- A) Offer a promotion if you can.
+- B) Be honest about what is and is not available, and work the routes that exist — stretching scope, a role elsewhere in the organisation, a cross-government move — because keeping them in government is a far better outcome than losing them, and a head who helps people move internally hears about approaches early.
+- C) Explain that progression takes time.
+- D) Accept it; people move on.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** They have given you information at some personal cost, and honesty — including unwelcome honesty — is what keeps them longest and keeps the channel open. Option B also widens the frame beyond your own establishment, which is where the opportunities usually are. Option C is least effective: it is the standard deflection, it confirms exactly what they suspect, and it converts a conversation into a decision. Option A is the reflex and is right only if it is real and deliverable. Option D wastes an opening they created.
+
+**Question 6 (moderate) — A director wants a standard waived**
+
+A director asks you to waive the discovery phase for a product they want delivered quickly. What is the most effective response?
+
+- A) Refuse; discovery is a standard.
+- B) Establish what they are actually short of — usually time to a visible outcome — and offer what meets that within the standard, such as a shortened discovery with a defined question, or an early alpha on the part of the problem that is already understood.
+- C) Waive it; the director is accountable for the outcome.
+- D) Waive it and record the risk.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** The pressure is nearly always about time to something visible rather than about discovery itself, and option B meets that need without abandoning the practice — a two-week discovery with one clear question is a real discovery and answers most of what they want. Option D is least effective: waiving the standard and recording a risk gets you the worst of both, since the product proceeds without the evidence and the record changes nothing while looking like diligence. Option C concedes without testing. Option A leads with the rule and invites the director to route around you.
+
+**Question 7 (harder) — A product that should be stopped**
+
+A product in your community is consuming significant resource and the evidence suggests it will not achieve its outcomes. Its senior sponsor is committed to it. What is the most effective response?
+
+- A) Set out what the evidence shows, what continuing costs and what the alternatives for that resource are, and put the decision to whoever is accountable for the investment — because stopping is a legitimate outcome and the decision needs to be made explicitly rather than by drift.
+- B) Recommend stopping it.
+- C) Raise it with the sponsor privately and leave it with them.
+- D) Continue; the sponsor is committed.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** Your skills description names **Life cycle management**, and the end of a life cycle is part of it. Option A gives the accountable decision-maker the three things they need — evidence, continuing cost, and what else the resource could do — and frames stopping as a normal option rather than an accusation. Option D is least effective: products that should stop and do not are among the most expensive things in a portfolio, and drift is the mechanism. Option B reaches the conclusion before the organisation has weighed the alternatives. Option C is a good first move and, left there, relies on the person least able to be objective.
+
+**Question 8 (harder) — Evidence against a decision you supported**
+
+A product direction you backed a year ago is now showing worse outcomes than the approach it replaced. What is the most effective response?
+
+- A) Raise it yourself, including that you supported it, and propose how to establish whether the direction caused the difference.
+- B) Examine the data carefully first; correlation is not causation.
+- C) Investigate quietly and act if it holds up.
+- D) Note it alongside the other benefits of the direction.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** Option B is methodologically right and incomplete, because it is also precisely what someone defending a position would say — the difference between rigour and defensiveness is visible only in whether you raise the data or wait to be shown it. Option A does the same analysis in the open, and doing so is what makes it safe for anyone in your community to raise contrary evidence about their own products. Option D is least effective: changing the subject to offsetting benefits is the move that, once noticed, discounts everything you say afterwards. Option C looks like concealment if discovered.
+
+**Question 9 (harder) — Recruiting into a thin market**
+
+You are asked to recruit a senior product manager into a specialism where the market is thin and the pay band is below market rate. What is the most effective response?
+
+- A) Say plainly that the role as specified is unlikely to fill, and offer the alternatives — reshaping it for a strong generalist who can grow into it, an interim arrangement while capability is built, or a case for the band.
+- B) Run the campaign and see.
+- C) Make the case for a higher band.
+- D) Recommend a contractor.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** The failure mode here is slow and invisible: a role that will not fill stays open for months, the work does not happen, and nobody records the cost. Option A names it immediately and offers three routes — of which the first, reshaping the role for someone who can grow into it, is the most overlooked and frequently the best, since deep specialism in a thin market is often more reliably built than bought. Option B is least effective because it spends a campaign to learn what you already know. Options C and D are single remedies offered without the analysis.
+
+**Question 10 (harder) — A standard you set is not being followed**
+
+Eighteen months after you set a standard for product performance reporting, most teams are not doing it. What is the most effective response?
+
+- A) Enforce it through governance.
+- B) Establish why — whether teams do not know it, do not find it applicable, or find compliance more expensive than the alternative — because a standard widely ignored by capable people is more often unusable than defied, and each cause has a different remedy.
+- C) Rewrite the standard to match what teams do.
+- D) Escalate the non-compliance to their directors.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** Widespread non-compliance by capable people is evidence about the standard. Option B names the three realistic causes, which diverge sharply: an unknown standard needs communicating, an inapplicable one needs scoping, and an expensive one needs the cost removing — usually by supplying the tooling or template that makes compliance the easy path. Option D is least effective: escalating your own community's non-compliance to their line directors damages your relationship with the community and treats a systemic signal as a discipline matter. Option A enforces before diagnosing. Option C abandons the intent.
+
+**Question 11 (harder) — Representing the community**
+
+You are asked to speak at a cross-government event about your organisation's product practice. The reality is mixed — some strong work and one significant failure. What is the most effective approach?
+
+- A) Present all of it, and be specific about what went wrong in the failure and why, because that is the part the audience can learn from and your own community will hear whether you described the organisation they work in.
+- B) Present the strong work.
+- C) Present the successes and refer generally to challenges.
+- D) Decline until the picture improves.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Two audiences are listening, and option A is the only response that serves both — the external one gets the transferable material, and your community hears whether their head of profession told the truth about the year they had. Option C is least effective: vague reference to "challenges" in front of practitioners reads as evasion and costs more credibility than the failure itself. Option B omits the useful part. Option D forgoes influence indefinitely, since the picture is always mixed.
+
+**Question 12 (harder) — A defensible decision that went wrong**
+
+A product manager made a well-reasoned call that turned out badly, and stakeholders are looking for accountability. What is the most effective response?
+
+- A) Back the decision publicly on the reasoning available at the time, be clear about what has been learned, and handle any genuine development need privately — because a community that watches a defensible decision punished will stop making decisions.
+- B) Support them privately and let the process take its course.
+- C) Acknowledge the error and commit to preventing recurrence.
+- D) Review whether the decision was in fact defensible.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** The scenario stipulates the reasoning was sound, which makes this a question about what your community learns. Option A separates the two things that must not be conflated: the quality of the decision, judged on what was knowable, and the outcome, which was not. The private handling of any development need is what stops public backing becoming a refusal to learn. Option B is least effective — private support with public silence is read by everyone as abandonment, and it is the version that most reliably makes people stop deciding. Option C accepts a framing the facts do not support. Option D is prudent in general and, offered here, second-guesses a premise you have already established.
+
+### Preparation tips
+
+- **Get the missing account before acting on a characterisation.**
+- **Price a standard across the community before setting it.**
+- **Distinguish a difficult line from a performance problem.**
+- **Find what a director is actually short of before waiving a standard.**
+- **Treat stopping a product as a normal option.**
+- **Raise contrary evidence about decisions you backed yourself.**
+- **Say early when a role as specified will not fill.**
+- **Back a defensible decision publicly; develop privately.**
+
+### Common pitfalls to avoid
+
+- **Instructing a lead to reprioritise on your preference.**
+- **Waiving a standard and recording a risk.**
+- **Letting a failing product continue because its sponsor is committed.**
+- **Running a recruitment campaign you expect to fail.**
+- **Escalating your community's non-compliance to their directors.**
+- **Deferring a performance question to the next cycle.**
+- **Supporting someone privately while staying publicly silent.**
+- **Referring to "challenges" in front of an audience that knows the specifics.**
+
+## Conclusion
+
+You have worked through four assessments pitched at head of product, and the threads are worth drawing together.
+
+The cognitive section was about systems rather than instances — reading a pattern across products for the cause that generates it, weighing decisions by reversibility rather than size, and asking what a request is actually for before pricing the thing that was asked for.
+
+The numeric section was the arithmetic that decides portfolio questions: benefits normalised and stripped of what would have arrived anyway, costs multiplied across the community that bears them, and the difference between a metric moving and an outcome changing.
+
+The verbal section was about the documents that govern your money and your people. A discretionary "may" defeats both "will" and "cannot". Proposing is not deciding. "Should consult" is not "must". And a satisfaction figure gathered at the end of a transaction excludes precisely the people most likely to be dissatisfied.
+
+The situational judgement section circled what makes this role distinctive: you are accountable for a profession you no longer practise, judged through second-hand evidence, with almost all of your effect running through other people's willingness. The strong answers checked the picture before acting on it, distinguished a product manager holding a difficult line from one performing badly, treated stopping a product as a normal outcome, and backed a defensible decision in public while handling development in private.
+
+If one thread runs through all four, it is the quality of information reaching you. Almost everything else in this role gets easier when product managers tell you early that a product is failing, that they have been approached by another organisation, or that a standard you set does not work. That flow is set entirely by what happened the last few times someone told you something you did not want to hear.
+
+Good luck. This is a role where the good decisions are mostly invisible and the compounding is real, and the care you have given this is well placed.

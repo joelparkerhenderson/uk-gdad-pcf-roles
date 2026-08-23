@@ -886,4 +886,20 @@ Your team's retrospective agreed the pattern library documentation is badly out 
 - **Over-escalation as virtue.** Skipping the direct conversation to reach a lead, a vote, or a head of profession reads as poor judgement, not high standards. Escalate after the direct route, transparently, to the nearest appropriate level.
 - **Polishing "most effective" and guessing "least".** The least-effective half of questions is quick once you look for concealment, irreversibility, information loss, and user harm. Answer it with the same care — it carries the same marks.
 
-<!-- APPEND -->
+## Conclusion
+
+You have worked through four assessments built around the reasoning a junior frontend developer actually uses, and it is worth drawing them together.
+
+The cognitive section was about working carefully from what is in front of you — following a rule through its conditions, spotting the pattern across a set of defects, and checking details rather than trusting a first impression.
+
+The numeric section was ordinary arithmetic done accurately under mild time pressure: ratios, spacing, percentages of a real user base, and the reminder that a small percentage of a government service is a large number of people.
+
+The verbal section asked for something slightly counterintuitive — reading exactly what a standard or a specification says, and setting aside what you know. The decisive clause is usually in the second half of the passage, which is precisely where people start skimming.
+
+The situational judgement section came back to a handful of habits that matter more early on than almost anything technical. Attach help to every objection, so a "no" arrives with an offer. Look for the response that fixes the immediate problem and prevents the next one. Act and then inform for normal work, and check first when something is irreversible or user-facing. And be honest consistently rather than selectively — no guessed dates, no quiet workarounds, no staying silent in a demo.
+
+The weak options clustered just as reliably: deference dressed as respect, kindness dressed as avoidance, initiative dressed as unilateralism. Each feels defensible in the moment and each is the option experienced practitioners rank lowest.
+
+If one thing is worth carrying away, it is that raising things early almost never costs you what you fear it will. Colleagues read an early question as a sign that someone will be reliable, and they read silence discovered late as the thing that cost everybody time.
+
+Good luck. You are at the stage where habits form fastest and matter longest, and working through all of this says something good about how you approach the job.

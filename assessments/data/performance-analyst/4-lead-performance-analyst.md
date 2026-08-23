@@ -422,3 +422,542 @@ Unique visitors to a guidance page fell 20% in April, then rose 20% in May. If M
 
 **Explanation:** April = 150,000 x 0.80 = 120,000. May = 120,000 x 1.20 = 144,000. Sequential percentage changes do not cancel: -20% then +20% nets to -4%, because the second change applies to a smaller base. Option A is the intuitive trap. This matters whenever a team claims "we recovered the drop" - a 20% fall needs a 25% rise to recover (120,000 x 1.25 = 150,000). Correcting exactly this misreading in draft reports is part of being responsible for how analysis is used.
 
+
+**Question 7 (moderate) - Rate against volume**
+
+A service reports its completion rate rose from 58% to 66% after a change. Transactions started fell from 24,000 to 18,000 in the same period. Did more or fewer people complete?
+
+- A) More: 11,880 against 13,920
+- B) Fewer: 11,880 against 13,920
+- C) More: 13,920 against 11,880
+- D) The figures do not allow a comparison
+
+**Correct answer: B.**
+
+**Explanation:** Before: 24,000 x 0.58 = 13,920 completions. After: 18,000 x 0.66 = 11,880. So roughly 2,040 fewer people completed, despite an eight-point rise in the rate. This is the single most valuable calculation in performance analysis and the one most often skipped, because the rate is what appears in the headline. As the person responsible for how analysis is used, spotting a rate improvement that conceals a volume fall - and saying so before the slide is built - is a large part of what your role adds.
+
+**Question 8 (moderate) - Weighted average across teams**
+
+Four analyst teams report mean time to produce a standard report: Team A 6 hours across 40 reports, Team B 9 hours across 90 reports, Team C 4 hours across 20 reports, Team D 12 hours across 50 reports. What is the approximate overall mean?
+
+- A) 7.8 hours
+- B) 8.8 hours
+- C) 9.4 hours
+- D) 6.5 hours
+
+**Correct answer: B.**
+
+**Explanation:** Weight by volume: (40 x 6) + (90 x 9) + (20 x 4) + (50 x 12) = 240 + 810 + 80 + 600 = 1,730 report-hours, across 40 + 90 + 20 + 50 = 200 reports. 1,730 / 200 = 8.65, so about 8.8 hours as the nearest option. The unweighted mean of the four team figures is (6 + 9 + 4 + 12) / 4 = 7.75, which is option A and the standard trap - it treats Team C's 20 reports as equal in weight to Team B's 90. Whenever you aggregate across units of different sizes, weight by the size.
+
+**Question 9 (moderate) - Sampling**
+
+Your analytics platform samples at 10% above a threshold. In a sampled period it recorded 480 conversions for a small segment. What is the estimated true figure, and what is the main caution?
+
+- A) 4,800, and the estimate is less reliable for small segments because the sample contains few of their events
+- B) 4,800, with no particular caution
+- C) 48, and the estimate is unreliable
+- D) 480, since conversions are counted exactly
+
+**Correct answer: A.**
+
+**Explanation:** A 10% sample scaled up multiplies by 10: 480 x 10 = 4,800. The caution matters more than the arithmetic. Sampling error scales with the inverse square root of the sample count, so a segment contributing a few hundred sampled events carries a much wider margin than the headline total does - and the scaled figure looks just as precise in a dashboard. Coaching analysts to check whether a figure is sampled before slicing it finely is worth doing early, because the error is invisible in the output.
+
+**Question 10 (harder) - Statistical significance and practical significance**
+
+An A/B test on 90,000 users finds a completion rate difference of 0.4 percentage points, reported as statistically significant at p < 0.01. What is the strongest reading?
+
+- A) The difference is real and large
+- B) The difference is probably real, and 0.4 points is small enough that whether it justifies the change depends on the implementation and maintenance cost - a very large sample detects real but trivial differences
+- C) The difference is not meaningful because it is small
+- D) The test is flawed; 0.4 points cannot be significant
+
+**Correct answer: B.**
+
+**Explanation:** Statistical significance answers whether an effect is distinguishable from zero; it says nothing about whether the effect is worth having. With 90,000 users a test has enough power to detect differences far below the level at which anyone should act. Option B separates the two questions correctly and names the criterion that decides the second. Option D misunderstands power - large samples make small effects detectable, which is exactly why this situation arises. Explaining this distinction to delivery teams is a recurring part of a lead's job, because "statistically significant" is heard as "important".
+
+**Question 11 (harder) - Capacity planning for an analyst team**
+
+Your team of 6 analysts each has about 190 productive days a year after leave, training and non-project time. Standing reporting commitments consume 40% of that capacity. How many analyst-days remain for project and improvement work?
+
+- A) About 456
+- B) About 684
+- C) About 1,140
+- D) About 380
+
+**Correct answer: B.**
+
+**Explanation:** Total productive capacity: 6 x 190 = 1,140 analyst-days. Standing reporting takes 40%, which is 456 days, leaving 684 for everything else. Producing this figure is what turns "we are stretched" into a planning conversation - and the 456 days spent on standing reporting is the number worth interrogating, since automating or retiring even a quarter of that recurring load releases more capacity than any realistic recruitment. Your role names removing blockers, and a recurring commitment nobody has re-examined is one of the commonest.
+
+**Question 12 (harder) - Payback on automation**
+
+Automating a recurring report would take about 12 analyst-days. The report currently takes 3 hours a week to produce. Assuming a 7.5-hour day and 46 working weeks, how long until it pays back?
+
+- A) About 8 months
+- B) About 15 months
+- C) About 2 years
+- D) About 3 months
+
+**Correct answer: A.**
+
+**Explanation:** Convert both sides to hours before dividing. Cost: 12 days x 7.5 hours = 90 hours. Saving: 3 hours x 46 weeks = 138 hours a year. Payback: 90 / 138 = 0.65 of a year, or roughly 8 months. The discipline that matters is putting both sides in the same unit first - mixing days and weekly hours is where these calculations go wrong. The professional point is that a recurring report with a sub-year payback is almost always worth automating, and producing this figure is what turns "we should automate that" into a decision someone can approve.
+
+**Question 13 (harder) - Detecting a real change against normal variation**
+
+Weekly completions over ten weeks: 940, 1,010, 970, 1,120, 890, 1,050, 980, 1,240, 1,000, 960. A stakeholder asks whether week 8 shows a real improvement. What is the strongest answer?
+
+- A) Yes; 1,240 is the highest figure in the series
+- B) The series varies between 890 and 1,240 with no trend, so a single high week sits within the normal range - it is not evidence of improvement, and a control chart or several more weeks would be needed to distinguish a shift from ordinary variation
+- C) No; the change is not statistically significant
+- D) There is not enough data to comment
+
+**Correct answer: B.**
+
+**Explanation:** The spread across ten weeks is 350 completions, and week 8 exceeds the mean of roughly 1,016 by about 224 - well inside the observed range. A single point above the previous maximum is the weakest possible evidence of a shift, because in any varying series some week has to be the highest. Option B characterises the variation and says what would settle it. Option C reaches for significance language without a test. Option D declines to characterise data that can be characterised. Teaching analysts and stakeholders to ask "is this outside normal variation?" before explaining a movement is one of the highest-value habits a lead can instil.
+
+### Preparation tips
+
+- **Multiply a rate by its volume before believing a rate improvement.**
+- **Weight averages by the size of each unit.**
+- **Check whether a figure is sampled before slicing it into segments.**
+- **Separate statistical significance from practical significance.**
+- **Convert both sides of a payback calculation to the same unit before dividing.**
+- **Express team capacity in analyst-days and see what recurring work consumes.**
+- **Characterise the normal range before explaining a single high week.**
+- **Recompute rather than estimate when the options are close.**
+
+### Common pitfalls
+
+- **Reporting a rate rise while completions fall.**
+- **Taking the unweighted mean of team-level averages.**
+- **Treating a scaled sampled figure as precise for a small segment.**
+- **Reading "statistically significant" as "important".**
+- **Explaining a data point that sits inside normal variation.**
+- **Estimating a payback period instead of dividing.**
+- **Treating a recurring reporting commitment as fixed.**
+
+## Workplace job-specific verbal reasoning assessment
+
+### About this assessment
+
+A workplace job-specific verbal reasoning assessment tests whether you can determine exactly what a piece of written material establishes. As a lead performance analyst the material is measurement frameworks and metric definitions, data architecture and implementation documentation, supplier terms, governance papers, and the reports your analysts write and that others summarise.
+
+The commonest format presents a passage followed by statements to be marked True, False or Cannot Say. True means the passage establishes it, False means it contradicts it, and Cannot Say means it settles neither - regardless of what you know professionally.
+
+Long experience is the main hazard. You will know how a metric is usually defined and what a movement usually means, while the passage in front of you describes this particular case.
+
+Three specifics matter at your level.
+
+The first is that you are the escalation point for questions about what a number means. When a definition is ambiguous, your reading becomes the organisation's reading, so the difference between what a document establishes and what it implies has consequences beyond your own work.
+
+The second is that claims are routinely attributed rather than established. "The supplier states", "the review found", "the report recommends" - each tells you something about the source and nothing about the truth of what was said, and distinguishing them is a habit worth teaching as well as practising.
+
+The third is that governance and framework documents allocate responsibility precisely, and your role names accountability for the accuracy and quality of data and analysis and for how they are used. Knowing exactly what you own is part of doing it.
+
+### What it measures for your role
+
+- **Reading metric definitions precisely** maps to **Performance measurement**.
+- **Reading quality frameworks** maps to **Quality assurance of data and analysis**.
+- **Reading data architecture documentation** maps to influencing strategy including data implementation and architecture.
+- **Reading supplier terms** maps to tool procurement and validation.
+- **Distinguishing evidence from claim** maps to **Analysis and insight**.
+- **Reading and summarising accurately** maps to **Communicating analysis and insight**.
+
+### Practice questions
+
+*Passage A - for Questions 1 to 4*
+
+"The departmental quality assurance framework requires that all analysis informing a ministerial submission is reviewed by a second analyst before publication. Analysis informing internal operational decisions should be reviewed where it is novel or where the analyst requests it. The framework defines novel analysis as analysis using a method not previously applied to the data source in question. Reviewers must record the review in the analysis log. Where a reviewer identifies a material error, the analysis must not be published until the error is corrected and the corrected analysis re-reviewed. The framework is reviewed every two years."
+
+**Question 1 (easy)**
+
+Statement: Analysis informing a ministerial submission must be reviewed by a second analyst.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly with "must". Note the contrast established immediately afterwards for internal operational analysis, which uses "should" and attaches conditions - the framework is deliberate about which obligations are absolute, and the next questions turn on that.
+
+**Question 2 (moderate)**
+
+Statement: Analysis informing an internal operational decision must be reviewed if it is novel.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The framework says such analysis "should be reviewed where it is novel or where the analyst requests it". "Should" is a strong expectation from which departure is possible with justification, and the statement's "must" overstates it - particularly in a passage that uses "must" three times elsewhere. As the person responsible for quality assurance in your area, the practical significance is that you can require this locally, and the framework does not.
+
+**Question 3 (moderate)**
+
+Statement: Applying a well-established method to a data source it has not previously been applied to counts as novel analysis.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** The framework defines novel as "analysis using a method not previously applied to the data source in question". The definition is about the pairing of method and source, not about whether the method is new in itself - so a standard technique applied to an unfamiliar source is novel under this definition. The passage establishes it. This is a sensible definition, since most analytical errors come from a method meeting a source whose quirks nobody has yet encountered.
+
+**Question 4 (harder)**
+
+Statement: Analysis in which a reviewer found a material error that was subsequently corrected can be published once the analyst confirms the correction.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The framework contradicts this: the analysis "must not be published until the error is corrected **and** the corrected analysis re-reviewed". Two conditions, joined conjunctively, and the statement satisfies only the first - the analyst's own confirmation is not a re-review, which by the framework's own structure means a second analyst. Reading a two-part condition as a one-part condition is the commonest way quality frameworks get short-circuited under deadline pressure.
+
+*Passage B - for Questions 5 to 8*
+
+"The data platform ingests service event data on an hourly schedule. Records arriving more than 48 hours after the event timestamp are written to a late-arrival table and are not included in the standard reporting tables. A weekly reconciliation job merges the late-arrival table into the reporting tables and republishes affected daily figures. Dashboards read from the reporting tables and are not versioned. The platform team states that late arrivals typically account for under 1% of records. Historical figures may therefore change after republication."
+
+**Question 5 (easy)**
+
+Statement: Records arriving 60 hours after the event are excluded from the standard reporting tables when they arrive.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Records arriving more than 48 hours after the event timestamp go to the late-arrival table and are not included in the standard reporting tables. 60 exceeds 48, so the record is excluded at the point of arrival. The passage establishes this - and the word "when they arrive" matters, because the weekly reconciliation later brings them in, which the following questions explore.
+
+**Question 6 (moderate)**
+
+Statement: A daily figure read from a dashboard on Tuesday may differ from the same daily figure read on the following Monday.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** The weekly reconciliation merges late arrivals and "republishes affected daily figures", dashboards read from the reporting tables, and the passage states directly that "historical figures may therefore change after republication". So the same historical day can show different values before and after reconciliation. This is an important operational fact for anyone quoting figures in a document - a number taken from a dashboard mid-week and quoted in a submission may no longer match the dashboard when someone checks it.
+
+**Question 7 (moderate)**
+
+Statement: Late arrivals account for under 1% of records.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage says "the platform team states" that late arrivals "typically" account for under 1%. Two things stop this being established: it is an attributed claim rather than a verified measurement, and "typically" explicitly allows for periods when it is higher. The most likely such periods are the ones you care about most - an outage or an integration failure would produce a spike in late arrivals precisely when figures are being scrutinised.
+
+**Question 8 (harder)**
+
+Statement: A figure quoted from a dashboard can be reproduced later by returning to the dashboard.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** Dashboards "are not versioned" and read from tables whose historical figures are republished weekly. So a figure quoted at one point cannot reliably be reproduced later from the same source - there is no version to return to. The passage contradicts the statement through the combination of two clauses. As a lead this has a direct practical consequence worth acting on: analysis quoted externally needs its underlying figures captured and dated at the time, not left as a dashboard reference.
+
+*Passage C - for Questions 9 to 12*
+
+"An internal review of the department's performance reporting examined 22 published dashboards. It found that 14 lacked documented metric definitions and that 6 of those 14 contained metrics with the same name but different definitions from equivalent metrics elsewhere in the department. The review did not assess whether the figures reported were accurate. It recommends a central metric register. The review notes that dashboard usage data was available for 9 of the 22 dashboards. Of those 9, 4 had been opened fewer than five times in the preceding quarter."
+
+**Question 9 (moderate)**
+
+Statement: Fourteen of the 22 dashboards contained inaccurate figures.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The 14 dashboards lacked *documented metric definitions*, which is a documentation finding, and the review states explicitly that it "did not assess whether the figures reported were accurate". So the passage both fails to establish inaccuracy and tells you the question was not examined. Marking True conflates undocumented with wrong, which is the specific error - undocumented metrics may be perfectly correct and simply unexplained.
+
+**Question 10 (moderate)**
+
+Statement: Most of the department's dashboards are barely used.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** Usage data was available for 9 of 22 dashboards, and 4 of those 9 had been opened fewer than five times. That is 4 of 22 known to be barely used, with 13 dashboards on which there is no information at all. "Most" would require more than 11, and the passage cannot support a claim either way. Note also that dashboards with usage data available may not be a random subset of the 22, which is a further reason for caution.
+
+**Question 11 (moderate)**
+
+Statement: The department has metrics with the same name but different meanings.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** The review found that 6 dashboards "contained metrics with the same name but different definitions from equivalent metrics elsewhere in the department". The passage establishes this directly, and it is the finding with the greatest practical consequence - two teams reporting "completion rate" and meaning different things produces disagreements that look like disputes about performance and are actually disputes about definitions.
+
+**Question 12 (harder)**
+
+Statement: A central metric register would resolve the inconsistent definitions.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The review "recommends" a central register, and a recommendation is not evidence of its effect. Whether a register resolves the problem depends on things the passage does not address - whether teams are required to use it, whether existing dashboards are reconciled to it, whether anyone maintains it. Registers that nobody is obliged to consult are a well-known way of documenting an inconsistency rather than removing it. Distinguishing a proposed remedy from a demonstrated one is exactly the judgement your role requires when you are asked to endorse a recommendation.
+
+### Preparation tips
+
+- **Read "must" and "should" as different obligations, especially in the same document.**
+- **Check whether a definition turns on a pairing rather than a property.**
+- **Treat conjunctive conditions as all required.**
+- **Note when a claim is attributed rather than established.**
+- **Watch qualifying words like "typically" that allow for exceptions.**
+- **Check what proportion of a population a finding actually covers.**
+- **Distinguish undocumented from incorrect.**
+- **Read a recommendation as a proposal, not a demonstrated remedy.**
+
+### Common pitfalls
+
+- **Reading "should be reviewed" as a requirement.**
+- **Treating an analyst's own confirmation as a re-review.**
+- **Accepting a platform team's estimate of its own data quality.**
+- **Generalising a finding from 9 cases to 22.**
+- **Conflating missing documentation with wrong figures.**
+- **Assuming a dashboard figure can be reproduced later.**
+- **Endorsing a recommended remedy as an established one.**
+
+## Workplace job-specific situational judgement assessment
+
+### About this assessment
+
+A workplace job-specific situational judgement assessment presents realistic scenarios and asks you to identify effective and ineffective responses. As a lead performance analyst the scenarios involve coaching analysts at several levels, acting as an escalation point, defending analysis under pressure, and promoting a data-driven culture in an organisation that mostly wants confirmation.
+
+The commonest formats ask for the most and least effective response, or for ratings. Scoring is against a key derived from experienced practitioners at comparable levels.
+
+Three patterns run through the strong answers.
+
+The first is that you are accountable for the accuracy and quality of data and analysis *and for how they are used*. That last clause is doing work: a correct number that is being misread is still your problem, and much of the role is intervening at the point of interpretation rather than the point of calculation.
+
+The second is that you coach rather than correct. Your role names coaching senior, mid-level and associate analysts, and the difference between giving someone a corrected figure and giving them the reasoning is the difference between fixing one analysis and improving an analyst.
+
+The third is that you are an escalation point, which means the problems that reach you are the ones that could not be resolved below. Reaching for the answer yourself is usually faster and usually the wrong move, because it removes the reason anyone would learn to resolve the next one.
+
+### What it measures for your role
+
+- **Coaching and supervision** maps to coaching and mentoring analysts at all levels.
+- **Escalation and unblocking** maps to removing blockers and acting as an escalation point.
+- **Assurance** maps to **Quality assurance of data and analysis**.
+- **Influence and advocacy** maps to being an ambassador for analytics across communities and departments.
+- **Communicating findings** maps to **Communicating analysis and insight**.
+- **Strategy** maps to influencing the strategy set by the head of performance analysis.
+
+### Practice questions
+
+**Question 1 (easy) - An analyst brings you a problem**
+
+An analyst brings you a data question they have been stuck on for a day. You can see the answer immediately. What is the most effective response?
+
+- A) Tell them the answer; it saves everyone time.
+- B) Ask what they have tried and where their reasoning stopped, then walk them to the answer rather than handing it over - because you will see this question again from someone else, and an analyst who worked it out with you can answer it next time.
+- C) Tell them the answer and explain it afterwards.
+- D) Ask them to keep trying.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** Option B costs a few more minutes and produces an analyst who can handle the class of problem, which is what coaching means at your level. Option D is least effective: they have already spent a day, and sending them back without help is the response most likely to stop them asking next time - which is the worst outcome for someone in an escalation role. Option C is close and weaker in one specific way: once someone has the answer, they listen to the explanation much less carefully. Option A is efficient once.
+
+**Question 2 (easy) - A number being misused**
+
+In a meeting, a director cites your team's analysis as showing that a change worked. It shows an association with a confounding factor. What is the most effective response?
+
+- A) Say briefly what the analysis supports and what it does not, in the meeting.
+- B) Correct it afterwards in writing.
+- C) Let it stand; the broad direction is right.
+- D) Correct the director directly.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Your accountability covers how analysis is used, and a misinterpretation stated in a meeting becomes the room's shared understanding immediately. Option A gets the correction in without a confrontation - "worth being clear about what this can and can't tell us" does the job. Option C is least effective: letting a causal claim stand because the direction feels right is how your team's analysis ends up supporting a conclusion it does not support, and you will be asked about it later. Option B reaches fewer people than were in the room. Option D achieves the right outcome in a form that invites defensiveness.
+
+**Question 3 (moderate) - A senior analyst's method you doubt**
+
+A senior analyst you manage has used an approach you think is wrong, and they have thought about it carefully. What is the most effective response?
+
+- A) Ask what led them to it and what alternatives they considered, then set out your concern with reasons - because they may have a constraint you cannot see, and if not, the reasoning is what transfers.
+- B) Tell them to use the approach you would have used.
+- C) Accept it; they are senior and it is their analysis.
+- D) Ask a third analyst to arbitrate.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** A senior analyst who has thought carefully deserves the question before the correction, and quite often the constraint they hit is real. Option A also leaves them owning the decision, which is what senior means. Option B is least effective: instructing a senior analyst on method teaches them that their judgement is decorative, and you will get compliance in place of thinking. Option C declines the assurance role you hold. Option D escalates a conversation the two of you should have.
+
+**Question 4 (moderate) - Escalated to you unresolved**
+
+Two teams disagree about which of two conflicting figures for the same measure is correct, and it has come to you. What is the most effective response?
+
+- A) Get both definitions side by side and establish where they diverge - almost always a date range, a filter, an inclusion rule, or a different source - and then decide which the organisation should use and publish the reasoning.
+- B) Decide which figure is correct.
+- C) Ask the teams to agree between themselves.
+- D) Report both figures with a note.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** Conflicting figures for the same measure almost never mean one is wrong; they mean two definitions are in use, and finding the divergence is quick once the definitions are side by side. Option A resolves it and publishes the reasoning, which prevents the recurrence. Option D is least effective: publishing two figures for one measure with a note transfers the confusion to every reader and makes the organisation's own reporting unusable. Option C returns a problem to people who have already failed to resolve it. Option B decides without diagnosing.
+
+**Question 5 (moderate) - Pressure on a finding**
+
+A programme director asks you to reconsider a finding that reflects badly on their programme, suggesting the method may be flawed. What is the most effective response?
+
+- A) Take the methodological challenge seriously and check it properly, then report what you find - whether that confirms, qualifies or overturns the original finding - because the challenge may be right and treating it seriously is what makes the confirmation credible.
+- B) Defend the finding; the analysis was sound.
+- C) Soften the finding's presentation.
+- D) Add caveats acknowledging uncertainty.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** A methodological challenge from an interested party may still be correct, and checking costs little compared with the credibility of being able to say you did. Option A is the response that leaves you in the strongest position whichever way it goes. Option C is least effective: softening the presentation of a finding you believe is right, in response to pressure, is a change to the analysis by another route, and it is how findings quietly stop meaning anything. Option D does the same more subtly. Option B may be correct and forgoes the check that would demonstrate it.
+
+**Question 6 (moderate) - A recurring reporting burden**
+
+Your team spends a large share of its capacity producing standing reports, several of which you suspect nobody reads. What is the most effective response?
+
+- A) Find out which are actually used - through access data and by asking recipients what decisions they inform - and propose retiring or automating those that are not, with the capacity released stated explicitly.
+- B) Continue; they were requested.
+- C) Stop producing the ones with low access figures.
+- D) Automate all of them.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Your role names removing blockers, and a recurring commitment nobody has re-examined is one of the largest. Option A gathers the evidence and, crucially, states the capacity released, which is what makes retiring a report a decision rather than a request. Option C is least effective: stopping a report unilaterally means it breaks silently for whoever did rely on it, usually at the worst moment, and it costs you the relationship. Option D spends effort automating things that should not exist. Option B accepts a permanent cost.
+
+**Question 7 (harder) - An analyst's error already published**
+
+An analyst you manage produced a figure now used in a published document, and you discover it is wrong. What is the most effective response?
+
+- A) Take responsibility for the correction yourself, notify the users of the figure immediately with the corrected version and what it means for their decisions, and handle the analyst's learning separately and privately.
+- B) Ask the analyst to notify the users.
+- C) Correct it in the next publication.
+- D) Establish first whether the error changes any conclusion.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Two things need separating, and option A separates them: the correction is urgent and organisational, and the analyst's development is neither. Fronting the correction yourself is right because you are accountable for your team's output and because it protects an analyst who will already feel exposed. Option C is least effective: leaving a wrong figure in a published document while you wait for a scheduled cycle is indefensible if anyone finds it. Option D is a sensible thing to work out and belongs inside the notification, not before it. Option B puts the most exposed person in front of the disclosure.
+
+**Question 8 (harder) - Promoting a data-driven culture**
+
+A delivery team makes decisions largely on opinion and treats your analysis as a formality. What is the most effective response?
+
+- A) Find a decision they are about to make anyway, do the analysis that would inform it, and bring it before the decision rather than after - because a data-driven culture is built by analysis arriving in time to be useful, not by advocacy about its value.
+- B) Raise it with the team's delivery manager.
+- C) Explain the value of evidence-based decision making to the team.
+- D) Escalate to the head of performance analysis.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Teams stop using analysis when it consistently arrives after the decision, or answers a question nobody asked. Option A changes that by demonstration rather than persuasion, and one useful, timely piece of analysis does more than any number of conversations about the value of evidence. Option C is least effective: telling a team they should value evidence more is heard as a criticism and changes nothing about the timing problem that caused it. Option B and option D both escalate a relationship problem you are better placed to solve directly.
+
+**Question 9 (harder) - Strategy you disagree with**
+
+The head of performance analysis has set a strategic direction you think is wrong for your area. What is the most effective response?
+
+- A) Set out your concern with the specific evidence - what would go wrong, in what circumstances, and what you would propose instead - and if the direction stands, implement it properly while recording what you observe.
+- B) Implement it; the strategy is set.
+- C) Implement it in your area with local adjustments.
+- D) Continue to make the case until it changes.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Your role names assisting, taking forward *and influencing* the strategy, which means the challenge is expected and so is the implementation once it is settled. Option A does both, and recording what you observe is the part that makes the next review evidence-based rather than another exchange of opinions. Option C is least effective: quietly adjusting a strategy locally means the organisation believes it has one thing and has another, and it is discovered at the worst moment. Option D spends credibility relitigating a settled decision. Option B forgoes the influence you are meant to exercise.
+
+**Question 10 (harder) - A metric that will drive bad behaviour**
+
+A directorate proposes a target on the number of cases closed per caseworker per week. What is the most effective response?
+
+- A) Name how the target would be met - the cheapest way to close more cases is to close them without resolving them, which increases reopened cases and complaints while the number improves - and propose pairing it with reopened case rate and outcome quality.
+- B) Agree; throughput is a reasonable measure.
+- C) Advise against setting targets on caseworker throughput.
+- D) Agree, and monitor for unintended effects.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** Option A names the mechanism rather than objecting in principle, which is what makes the argument persuasive to people who need a throughput measure for legitimate reasons - and the paired measures are the practical remedy, because they are hard to move without genuine improvement. Option B is least effective: agreeing without asking how the target will be met is precisely the question your profession exists to ask, and once a target is set it drives behaviour immediately. Option D detects the damage after it has been done to real cases. Option C is a defensible position offered without a route forward.
+
+**Question 11 (harder) - Being an ambassador**
+
+You are asked to present your department's analytics work at a cross-government event. Some of it is strong; one major measurement programme was abandoned. What is the most effective approach?
+
+- A) Present all of it, and be specific about why the abandoned programme did not work, because that is the part the audience can learn from and your own analysts will hear whether you described the year they had.
+- B) Present the strong work.
+- C) Present the successes and refer generally to challenges.
+- D) Decline; the picture is mixed.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Successes are hard to transfer between contexts and failures are instructive, so the abandoned programme is disproportionately the useful material. Option A also serves the audience nobody plans for - your own team, who will know immediately whether the account was honest. Option C is least effective: vague reference to "challenges" in front of practitioners who know the specifics reads as evasion and costs more credibility than the abandonment. Option B omits the useful part. Option D forgoes influence indefinitely.
+
+**Question 12 (harder) - Evidence against your own recommendation**
+
+A measurement approach you introduced last year is producing figures the delivery teams do not trust and largely ignore. What is the most effective response?
+
+- A) Raise it yourself, including that it was your recommendation, establish why the figures are not trusted, and change or withdraw the approach on what you find.
+- B) Explain the approach again so teams understand it.
+- C) Require teams to use the figures.
+- D) Investigate quietly and adjust.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Distrust of a measure among the people closest to the work is usually informative - the figures may genuinely not reflect what teams see, or the definitions may not match their operational reality. Option A investigates and is honest about the ownership, which is what makes it safe for anyone else to raise a problem with something you introduced. Option C is least effective: mandating the use of figures people do not believe produces compliance without belief and cements the distrust. Option B assumes the problem is comprehension, which is the least likely of the explanations. Option D reaches a reasonable outcome by a route that looks like concealment.
+
+### Preparation tips
+
+- **Coach to the reasoning rather than the answer.**
+- **Correct a misinterpretation in the room where it was made.**
+- **Put two conflicting definitions side by side before deciding.**
+- **Take a methodological challenge seriously even from an interested party.**
+- **State the capacity released when proposing to retire a report.**
+- **Front your team's corrections yourself.**
+- **Ask how a target would be met before agreeing to it.**
+- **Raise problems with your own initiatives before anyone else does.**
+
+### Common pitfalls
+
+- **Handing an analyst the answer.**
+- **Publishing two figures for one measure.**
+- **Softening a finding's presentation under pressure.**
+- **Stopping a report without telling its recipients.**
+- **Putting the analyst who made an error in front of the correction.**
+- **Adjusting an organisational strategy locally and quietly.**
+- **Explaining a measure again when the problem is that it is not trusted.**
+- **Advocating for a data-driven culture instead of demonstrating one.**
+
+## Conclusion
+
+You have worked through four assessments pitched at lead performance analyst, and the threads are worth drawing together.
+
+The cognitive section was about reasoning structurally - reading a pattern for the cause that generates it, distinguishing a measurement artefact from a change in the world, and asking what a figure was designed to show before asking whether it has moved.
+
+The numeric section was the arithmetic that this role runs on, and one calculation in particular: a completion rate rising from 58% to 66% while starts fall from 24,000 to 18,000 means roughly two thousand fewer people completed. Rates and counts answer different questions, and a great deal of misleading reporting lives in the space between them.
+
+The verbal section was about reading definitions, frameworks and attributed claims exactly. "Should" is not "must". A correction plus a re-review is two conditions. A platform team's estimate of its own data quality is a claim. And a dashboard that is not versioned cannot be used to reproduce a figure you quoted last month.
+
+The situational judgement section circled the two halves of your role. You coach, which means walking an analyst to an answer rather than handing it over, and fronting your team's corrections yourself while handling the learning privately. And you are accountable for how analysis is used, which is why the strong answers intervened at the point of interpretation - correcting the misreading in the room, asking how a target would be met before it was set, and investigating why teams do not trust a measure rather than explaining it again.
+
+If one thread runs through all four, it is that your influence rests on being believed. Teams accept an unwelcome finding from someone who checked the challenge to it properly. Analysts bring you problems if the last one was met with a question rather than an answer. And the whole profession's standing in an organisation is set by whether its numbers turn out to be right.
+
+Good luck. This is work that quietly determines what an organisation believes about itself, and the care you have given it is exactly right.

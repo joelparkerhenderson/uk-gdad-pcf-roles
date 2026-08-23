@@ -221,4 +221,643 @@ An hour before a governance board meets to approve a service's public beta, you 
 - **Preserving summaries over data.** When a summary and its detail disagree, the instinct to make the tidy number win is exactly wrong. Trust the detail, fix the summary, and investigate the gap.
 - **Speed-reading conditional rules.** Framework rules interlock through definitions ("completed", "verified", "critical"). Misreading one definition cascades through every dependent answer.
 
-<!-- APPEND -->
+## Workplace job-specific numeric reasoning assessment
+
+### About this assessment
+
+A workplace job-specific numeric reasoning assessment tests whether you can draw a defensible conclusion from data under time pressure. For an accessibility specialist the data is audit results, contrast ratios and other measured thresholds, service volumes translated into affected users, remediation effort estimates, and the assistive technology usage figures people quote at you.
+
+The format is typically fifteen to twenty-five minutes with a calculator permitted, presenting tables and charts followed by multiple-choice items. Some questions are computational; others ask what the data does and does not support.
+
+Three habits matter particularly in this role.
+
+The first is that percentages of a service's user base are people, and converting them is the single most persuasive thing you can do with a number. A screen reader user population of 0.5% sounds negligible until you say it is four thousand people a year who cannot complete the form.
+
+The second is that WCAG thresholds are precise numbers and you need them instantly — 4.5:1 for normal text, 3:1 for large text and for interface components, with large text defined as 24px regular or 18.66px bold. Being fast and exact here is what lets you settle a design disagreement in one sentence.
+
+The third is that audit findings need normalising before they are compared. A service with more pages audited will produce more findings at the same quality, and comparing raw counts across services rewards small audits.
+
+### How this assessment maps to your role
+
+- **Threshold arithmetic** maps to **Technical understanding (accessibility)** and performing audits.
+- **Converting rates into people** maps to **User focus** and bringing the voice of disabled users.
+- **Normalising audit findings** maps to **Governance and assurance (accessibility)**.
+- **Effort estimation** maps to **Consultancy**, where you advise teams on remediation.
+- **Interpreting research** maps to **Testing**.
+- **Presenting figures** maps to **Communicating information**.
+
+### Practice questions
+
+*Table 1 — Accessibility audit results across five services*
+
+| Service | Annual users | Pages audited | Critical | Serious | Moderate |
+|---|---|---|---|---|---|
+| Apply | 940,000 | 28 | 4 | 17 | 26 |
+| Book | 210,000 | 11 | 1 | 5 | 9 |
+| Check | 1,600,000 | 44 | 9 | 33 | 41 |
+| Report | 85,000 | 16 | 5 | 12 | 14 |
+| Update | 430,000 | 13 | 2 | 6 | 11 |
+
+**Question 1 (easy) — Reading a table**
+
+Which service has the most critical issues?
+
+- A) Apply
+- B) Check
+- C) Report
+- D) Update
+
+**Correct answer: B**
+
+**Explanation:** Check has 9 critical issues, ahead of Report's 5 and Apply's 4. Note before drawing conclusions that Check also has the largest audit — 44 pages — so a larger surface produced more findings, which the next questions address.
+
+**Question 2 (easy) — Total exposure**
+
+Approximately how many annual users are served by services with at least one critical issue?
+
+- A) About 2.5 million
+- B) About 3.3 million
+- C) About 1.6 million
+- D) About 2.0 million
+
+**Correct answer: B**
+
+**Explanation:** All five services have at least one critical issue: 940,000 + 210,000 + 1,600,000 + 85,000 + 430,000 = 3,265,000, so about 3.3 million. That sentence — three and a quarter million people using services with known critical accessibility barriers — is more useful in a governance meeting than any count of findings, because it is the number that makes the problem feel like a problem.
+
+**Question 3 (moderate) — Normalising by audit size**
+
+Which service has the highest rate of critical issues per page audited?
+
+- A) Apply
+- B) Check
+- C) Report
+- D) Update
+
+**Correct answer: C**
+
+**Explanation:** Apply 4/28 = 0.14; Book 1/11 = 0.09; Check 9/44 = 0.20; Report 5/16 = 0.31; Update 2/13 = 0.15. Report has the highest rate at 0.31 per page, ahead of Check's 0.20. Normalising by pages audited is the right correction, since a larger audit finds more at the same quality — and it changes the answer from Question 1, which is the point. Note the tension it creates: the service with the worst rate serves the fewest users.
+
+**Question 4 (moderate) — Prioritising remediation**
+
+Which service should be prioritised, and on what basis?
+
+- A) Report, because it has the worst defect rate.
+- B) Check, because it combines the second-highest defect rate with 1.6 million users — so far more people encounter a critical barrier there than anywhere else — although neither the counts nor the rates tell you which journeys are blocked, and one critical issue on a mandatory step matters more than five on a rarely-visited page.
+- C) Apply, because it has the second-most users.
+- D) All five equally.
+
+**Correct answer: B**
+
+**Explanation:** The right basis combines rate with exposure, and Check dominates on the combination: a defect rate close to the worst applied to a user base nineteen times larger than Report's. Option B reaches that and then names the limitation that should shape what you ask for next — a journey-level rather than page-level view. Option A picks the rate alone. Option C picks users alone. Option D declines to prioritise, which is what happens when nobody does this arithmetic.
+
+**Question 5 (moderate) — Contrast thresholds**
+
+A designer proposes body text at 4.4:1, a 24px bold heading at 3.2:1, and a button border at 2.8:1. Which fail WCAG 2.2 AA?
+
+- A) All three.
+- B) The body text and the button border.
+- C) Only the body text.
+- D) Only the button border.
+
+**Correct answer: B**
+
+**Explanation:** Body text needs 4.5:1 and 4.4 falls short. The heading at 24px bold is large text, needing 3:1, and 3.2 passes. Interface components need 3:1 against adjacent colours, and a button border at 2.8 fails. So two of the three fail. Knowing these numbers instantly is what lets you resolve a design question in one sentence — and note how close two of the three are to their thresholds, which is worth flagging to a designer, since a later tweak to either colour would push them over.
+
+**Question 6 (moderate) — Remediation effort**
+
+Across the five services there are 21 critical, 73 serious and 101 moderate issues. Critical and serious average 90 minutes each to fix; moderate average 25 minutes. What is the approximate total effort?
+
+- A) About 100 hours
+- B) About 183 hours
+- C) About 210 hours
+- D) About 145 hours
+
+**Correct answer: B**
+
+**Explanation:** Critical and serious: 21 + 73 = 94 issues × 90 minutes = 8,460 minutes. Moderate: 101 × 25 = 2,525 minutes. Total 10,985 minutes = 183 hours, roughly five weeks of one person's time. That figure is what turns "we should fix the audit findings" into something that can be planned and funded — and note the concentration: the 94 higher-severity issues account for 77% of the effort.
+
+**Question 7 (harder) — Users behind a percentage**
+
+Roughly 2% of a service's users rely on screen magnification. The service has 940,000 annual users. A proposed change would make one journey difficult at high magnification. How should you frame this?
+
+- A) 2% is a small proportion of users.
+- B) About 18,800 people a year use magnification on this service, so the question is what "difficult" means for them — if the journey becomes unusable, that is 18,800 people a year unable to complete it, and the percentage is the least informative way to describe that.
+- C) 18,800 users; the change must be rejected.
+- D) The figure cannot be estimated.
+
+**Correct answer: B**
+
+**Explanation:** 940,000 × 0.02 = 18,800. The arithmetic is the smaller half of the item. What decides the response is the severity — difficult and unusable are very different — and option B holds both facts while making the count the headline. Option A uses the framing that makes the problem disappear. Option C converts a count into a verdict without establishing severity, which is the error that gets accessibility specialists characterised as obstructive.
+
+**Question 8 (harder) — Interpreting an assistive technology statistic**
+
+A stakeholder says "only 0.3% of our users use screen readers, so this is low priority". What is the strongest response?
+
+- A) Accept it; 0.3% is small.
+- B) Challenge what the figure measures: screen reader use is difficult to detect reliably, users who cannot complete a service leave and are undercounted, and the figure describes people who got far enough to be measured — so a low observed percentage is partly a consequence of the barriers, not a reason to leave them.
+- C) Point out that 0.3% of 1.6 million is 4,800 people.
+- D) Explain that accessibility is a legal requirement.
+
+**Correct answer: B**
+
+**Explanation:** The statistic is circular in a way that is easy to miss and important to name: a service that is hard to use with a screen reader will show few screen reader users, which then justifies not fixing it. Option B explains the mechanism. Option C is a genuinely good move and is stronger *combined* with B than alone, since a stakeholder who accepts the count may still believe the sample is representative. Option D is true and answers a prioritisation argument with an authority claim, which invites someone to look for the minimum compliance position.
+
+**Question 9 (harder) — What the data supports**
+
+An audit of a redesigned service finds 40% fewer issues than the previous audit. What is the strongest conclusion?
+
+- A) The redesign improved accessibility by 40%.
+- B) Fewer issues were found, which is consistent with improvement — but the comparison depends on both audits covering the same pages with the same method and auditor, and a smaller or differently-scoped audit produces fewer findings regardless.
+- C) The redesign had no effect.
+- D) Accessibility improved but not by 40%.
+
+**Correct answer: B**
+
+**Explanation:** Issue counts measure what was found, which is a function of what is there *and* how much was looked at and by whom. Option B states what the data supports and names the three things that would have to hold for the comparison to be valid. Option A treats a count difference as a measured improvement percentage, which is the version that appears in a slide deck. Option D asserts a smaller improvement with no more evidence than A had.
+
+**Question 10 (harder) — Testing coverage**
+
+An automated accessibility tool reports that a service passes all its checks. What proportion of WCAG success criteria can such tools typically verify, and what follows?
+
+- A) Nearly all; the service is likely compliant.
+- B) Automated tools reliably test only a minority of success criteria — commonly cited as around a third — because most criteria require judgement about whether something is meaningful, equivalent or in a logical order, so a clean automated result establishes the absence of one class of problem and says nothing about the rest.
+- C) About half; further testing is optional.
+- D) None; automated tools are unreliable.
+
+**Correct answer: B**
+
+**Explanation:** This is one of the most consequential facts in your role, because a clean automated report is routinely presented as evidence of compliance. Option B gives the proportion and, more importantly, the reason — criteria about meaningful alt text, logical focus order, and equivalent alternatives require a human judgement no tool can make. Option D overstates in the other direction; automated tools are genuinely valuable for the class of issue they catch. Option A is the belief you will spend a lot of your career correcting.
+
+**Question 11 (harder) — Presenting to a governance board**
+
+You have five minutes with a governance board to make the case for accessibility remediation. Which figure leads best?
+
+- A) The number of outstanding critical and serious issues.
+- B) The number of people using services with known critical barriers — around 3.3 million a year — alongside one concrete description of what a specific barrier means for one person trying to complete one task.
+- C) The average audit score across services.
+- D) The legal risk of non-compliance.
+
+**Correct answer: B**
+
+**Explanation:** Option B pairs the number that establishes scale with the example that establishes meaning, and boards need both — a count of people without an example is abstract, an example without a count is anecdote. Option A counts defects, which requires the board to know what a critical issue is. Option C averages away the finding. Option D is real and belongs later: leading with legal risk invites a compliance-minimising response, whereas leading with users invites a service-improving one, and you get the compliance benefit either way.
+
+**Question 12 (harder) — Estimating from a small test**
+
+Usability testing with 6 disabled participants found that 4 could not complete a task. What is the strongest statement?
+
+- A) 67% of disabled users cannot complete the task.
+- B) Four of six participants could not complete it, which is a strong signal that something is badly wrong — small qualitative samples are good at showing that a problem exists and poor at estimating how many people it affects, so the finding justifies investigation and fixing, not a percentage.
+- C) The sample is too small to draw conclusions.
+- D) About two-thirds of disabled users are affected.
+
+**Correct answer: B**
+
+**Explanation:** Six participants is a normal and appropriate size for this kind of testing, and it does a specific job: demonstrating that a barrier exists and showing you what it looks like. What it cannot do is support a population estimate, which is what options A and D attempt. Option C is least useful — it dismisses a finding that is actually very strong, since four failures out of six would be an extraordinary coincidence if the task were broadly usable. Knowing what a small qualitative sample proves and what it does not is central to using research credibly.
+
+### Preparation tips
+
+- **Convert percentages into annual user counts before discussing them.**
+- **Know the WCAG thresholds cold.** 4.5:1 text, 3:1 large text and components.
+- **Normalise audit findings by pages audited before comparing services.**
+- **Combine rate and exposure when prioritising.**
+- **Name the circularity in assistive technology usage statistics.**
+- **Treat issue counts as a function of the audit as well as the service.**
+- **Know what automated tools can and cannot verify.**
+- **Use small qualitative samples to establish existence, not prevalence.**
+
+### Common pitfalls to avoid
+
+- **Comparing raw issue counts across audits of different sizes.**
+- **Accepting a low assistive technology percentage at face value.**
+- **Reading a clean automated report as compliance.**
+- **Turning a six-participant finding into a population percentage.**
+- **Reporting a 40% drop in findings as a 40% improvement.**
+- **Leading a board conversation with legal risk.**
+- **Describing thousands of affected people as a fraction of a percent.**
+
+## Workplace job-specific verbal reasoning assessment
+
+### About this assessment
+
+A workplace job-specific verbal reasoning assessment tests whether you can determine exactly what a piece of written material establishes. For an accessibility specialist this is unusually close to the work itself: reading WCAG success criteria, the accessibility regulations, procurement documentation and vendor conformance claims, and saying precisely what they require.
+
+The commonest format presents a passage followed by statements to be marked True, False or Cannot Say. True means the passage establishes it, False means it contradicts it, and Cannot Say means it settles neither — regardless of what you know.
+
+Your expertise is the principal hazard, and more so in this role than most, because you will frequently know the right professional answer while the passage is silent. It is worth noticing that this is also the discipline the job requires: the difference between what a standard requires and what is good practice is one you are asked to explain constantly.
+
+Three specifics matter particularly.
+
+The first is that success criteria have precise objects and narrow exceptions. A criterion about functionality is not a criterion about interaction method, and an exception that names one category does not stretch to a neighbouring one.
+
+The second is that the regulations attach obligations with scope, timing and conditions — and your role includes governance and assurance, so a misread exemption becomes an organisational position rather than a personal error.
+
+The third is that conformance claims are claims. A vendor accessibility statement, a supplier's conformance report, an audit summary — each tells you what someone asserted, and what was actually tested is a separate question.
+
+### How this assessment maps to your role
+
+- **Reading success criteria precisely** maps to **Technical understanding (accessibility)**.
+- **Reading the regulations** maps to **Governance and assurance (accessibility)**.
+- **Reading conformance claims** maps to **Consultancy** and advising on procurement.
+- **Reading audit and test reports** maps to **Testing**.
+- **Reading research about users** maps to **User focus**.
+- **Explaining precisely** maps to **Communicating information**.
+
+### Practice questions
+
+*Passage A — for Questions 1 to 4*
+
+"Public sector bodies must ensure their websites meet accessibility requirements and must publish an accessibility statement. Where meeting a particular requirement would impose a disproportionate burden, a body may rely on that exemption, provided it has carried out and documented an assessment of the burden and has stated the reliance in its accessibility statement. The disproportionate burden exemption does not apply to content essential to the use of the service. Pre-recorded time-based media published before 23 September 2020 is exempt. An assessment of disproportionate burden must consider the body's size and resources, the estimated costs and benefits, and the needs of disabled users."
+
+**Question 1 (easy)**
+
+Statement: A body relying on the disproportionate burden exemption must say so in its accessibility statement.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly as one of the two conditions attached to the exemption. Note the exemption reinforces the accessibility statement obligation rather than reducing it — the statement is where reliance has to be declared, which is what makes the exemption auditable.
+
+**Question 2 (moderate)**
+
+Statement: A body may rely on the exemption if it has documented an assessment, even without declaring it in the accessibility statement.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts this: the exemption is available "provided it has carried out and documented an assessment ... **and** has stated the reliance". Both conditions are required, joined conjunctively. The statement treats one as sufficient, and in practice this is exactly the difference between a defensible reliance and an indefensible one — an undeclared exemption is invisible to the disabled users it affects, which is why the declaration is mandatory.
+
+**Question 3 (moderate)**
+
+Statement: A body can rely on disproportionate burden for the payment step of a transactional service.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The exemption "does not apply to content essential to the use of the service", and the payment step of a transactional service is essential by definition — without it the service cannot be completed. This is the most consequential clause in the passage and the one most often overlooked, because disproportionate burden is invoked precisely when something core is expensive to fix, which is the case the clause excludes.
+
+**Question 4 (harder)**
+
+Statement: A pre-recorded video published in 2019 and re-published in 2022 is exempt.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The exemption applies to media "published before 23 September 2020", and the passage does not say how re-publication is treated — whether the original publication date governs or the later one does. A reasonable reading is that re-publishing constitutes publishing, which would defeat the exemption; another is that the content was published in 2019 and remains so. The passage genuinely does not settle it, and this is the sort of ambiguity worth resolving with your legal or assurance colleagues rather than by your own preferred reading, since your answer becomes the organisation's position.
+
+*Passage B — for Questions 5 to 8*
+
+"Success criterion 1.3.1 requires that information, structure and relationships conveyed through presentation can be programmatically determined, or are available in text. Success criterion 1.4.3 requires a contrast ratio of at least 4.5:1 for text, with exceptions for large-scale text at 3:1, incidental text, and logotypes. Incidental text is text that is part of an inactive user interface component, that is pure decoration, that is not visible to anyone, or that is part of a picture containing significant other visual content. Criterion 1.4.11 requires a contrast ratio of at least 3:1 for user interface components and graphical objects required to understand content."
+
+**Question 5 (easy)**
+
+Statement: Text on a disabled button is exempt from the 4.5:1 contrast requirement.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** The passage defines incidental text as including "text that is part of an inactive user interface component", and incidental text is one of the stated exceptions to 1.4.3. A disabled button is inactive, so its label is exempt. The passage establishes it. This is the item where professional judgement pulls hardest against the text — low-contrast disabled states are a genuine usability problem and many teams deliberately exceed the requirement — and both things are true simultaneously: the exemption exists, and relying on it is often a poor choice. Being able to say exactly that is what the role requires.
+
+**Question 6 (moderate)**
+
+Statement: A visual grouping of related form fields satisfies criterion 1.3.1 if it is visually obvious.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The criterion requires that relationships conveyed through presentation "can be programmatically determined, or are available in text". Visual obviousness is presentation, which is the thing the criterion exists to supplement — a grouping conveyed only by proximity and a border is unavailable to someone who cannot see it. So visual obviousness does not satisfy it; a fieldset and legend, or equivalent, would. The passage contradicts the statement.
+
+**Question 7 (moderate)**
+
+Statement: An icon that conveys information must have a contrast ratio of at least 4.5:1.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** Criterion 1.4.11 sets 3:1 for "graphical objects required to understand content", and an informational icon is such an object rather than text. The statement applies the text threshold to a non-text element. Note that an icon *at* 4.5:1 would comfortably satisfy 3:1 — the statement fails because it asserts 4.5:1 is required, which is not what the passage says. Applying the text ratio universally is a common error and it leads to rejecting compliant designs, which costs you credibility with teams.
+
+**Question 8 (harder)**
+
+Statement: Text within a photograph of a street scene must meet 4.5:1.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** Incidental text includes text "that is part of a picture containing significant other visual content", and a street photograph plainly contains significant other visual content. So text within it is exempt from the contrast requirement. The passage contradicts the statement. Note the exemption is about the text being incidental to a picture, not about it being unimportant — if the picture is being used to convey information, that raises a different criterion entirely, which the passage does not address.
+
+*Passage C — for Questions 9 to 12*
+
+"The supplier's accessibility conformance report states that the product conforms to WCAG 2.1 AA, with three criteria marked 'partially supports'. The report covers the product's default configuration. Testing was carried out by the supplier's internal team using automated tools and manual keyboard testing. No testing with screen readers was carried out. The report is dated 14 months ago. The supplier states that subsequent releases have not reduced conformance. Two of the three partially supported criteria relate to the reporting module."
+
+**Question 9 (moderate)**
+
+Statement: The product conforms to WCAG 2.1 AA.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The report *states* conformance and simultaneously marks three criteria as "partially supports", which is not conformance for those criteria — and the testing that produced the claim included no screen reader testing at all. So the passage establishes what was claimed, not that the claim is true, and gives you specific reasons for doubt. Reading a conformance report as evidence of conformance rather than as an assertion is the central skill in assessing procurement documentation.
+
+**Question 10 (moderate)**
+
+Statement: The product has accessibility problems with screen readers.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** No screen reader testing was carried out, which establishes the absence of evidence rather than the presence of problems. The product might work well with screen readers; nobody has looked. This is the mirror image of the mistake in Question 9 — a report that omits a test tells you nothing in either direction, and asserting problems on that basis is as unsupported as asserting conformance.
+
+**Question 11 (moderate)**
+
+Statement: Conformance has not been reduced by releases since the report.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage says "the supplier states" this. That establishes the assertion, not its truth — and the supplier is not a neutral party on whether their own releases affected conformance, particularly given that the original testing was also carried out internally and omitted screen readers. Fourteen months is a long time in a product's life. The professional response is to ask for a current report or test the current version.
+
+**Question 12 (harder)**
+
+Statement: A deployment using a configuration other than the default is covered by the report.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The report "covers the product's default configuration", which by its own scope statement excludes other configurations. So a customised deployment — which is what almost every government implementation is — falls outside what was tested. The passage contradicts the statement. This is the scope limitation most often missed in procurement, and it matters practically: the conformance report you were given may describe a configuration your organisation will never run.
+
+### Preparation tips
+
+- **Treat conjunctive conditions as all required.**
+- **Read "essential to the use of the service" as a hard limit on burden exemptions.**
+- **Check whether a threshold applies to text, large text, or components.**
+- **Read the incidental text definition before deciding a contrast rule applies.**
+- **Read a conformance report as an assertion, with a scope and a date.**
+- **Note what a report says it did not test.**
+- **Distinguish absence of evidence from evidence of a problem.**
+- **Check whether a scope statement excludes the configuration you will run.**
+
+### Common pitfalls to avoid
+
+- **Applying the 4.5:1 text ratio to icons, borders and components.**
+- **Treating a conformance report as conformance.**
+- **Reading "no screen reader testing" as evidence of screen reader problems.**
+- **Accepting a supplier's statement about their own subsequent releases.**
+- **Assuming a default-configuration report covers your deployment.**
+- **Applying a burden exemption to an essential step.**
+- **Answering from good practice rather than from what the criterion requires.**
+
+## Workplace job-specific situational judgement assessment
+
+### About this assessment
+
+A workplace job-specific situational judgement assessment presents realistic scenarios and asks you to identify effective and ineffective responses. For an accessibility specialist the scenarios involve advising teams who did not ask for advice, delivering audit findings people find inconvenient, coaching colleagues, and representing users who are never in the room.
+
+The commonest formats ask for the most and least effective response, or for ratings. Scoring is against a key derived from experienced practitioners in comparable roles.
+
+Three patterns run through the strong answers.
+
+The first is that you work almost entirely by influence. You audit, advise and coach; you rarely decide. That makes how you deliver a finding as consequential as the finding, because a team that experiences accessibility as an obstacle will route around you, and a team that experiences it as help will bring you problems early.
+
+The second is that accessibility failures are facts, not opinions. A contrast ratio either meets the threshold or it does not, and grounding a conversation in the measurement takes it out of the realm of taste — which protects both you and the team.
+
+The third is that you represent people who are not present. Silence from you in a meeting is read as professional endorsement, and nobody affected is there to notice.
+
+### How this assessment maps to your role
+
+- **Advising teams** maps to **Consultancy** and providing support, advice and guidance.
+- **Delivering audit findings** maps to performing accessibility audits and **Governance and assurance (accessibility)**.
+- **Coaching** maps to coaching and mentoring more junior colleagues and **Leadership and guidance**.
+- **Representing users** maps to **User focus** and bringing the voice of disabled users.
+- **Working in multidisciplinary teams** maps to **Communicating information**.
+- **Community contribution** maps to engaging with the cross-government accessibility community.
+
+### Practice questions
+
+**Question 1 (easy) — Delivering an audit finding**
+
+Your audit of a team's service found twelve issues, several serious. How should you present them?
+
+- A) Send the report with all twelve listed by severity.
+- B) Send the report and talk it through — grouping issues by root cause where several share one, explaining what each means for a user trying to do something, and being clear which block a task and which degrade it.
+- C) Send the report and offer to answer questions.
+- D) Present only the serious issues to avoid overwhelming the team.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** A list of twelve findings sends a team to fix twelve symptoms; grouping by root cause frequently reduces it to three or four actual changes, which is both more efficient and much less demoralising. Explaining the user impact is what makes a finding feel worth fixing rather than a rule being enforced. Option D is least effective: withholding findings means the team cannot plan remediation and will discover the rest later, which damages trust in the audit. Options A and C are reasonable and leave the interpretation to people less equipped to do it.
+
+**Question 2 (easy) — A design that fails contrast**
+
+You notice a designer's proposed palette fails contrast for body text. What is the most effective response?
+
+- A) Raise it with the measured ratio, the required ratio, and one or two nearby colours that pass.
+- B) Say the contrast looks too low.
+- C) Raise it at the next design review.
+- D) Note it for the audit.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** Option A turns an observation into something immediately actionable and takes the conversation out of the realm of preference — a ratio either meets 4.5:1 or it does not. Bringing passing alternatives makes it collaborative rather than critical. Option D is least effective: saving a fixable problem for a formal audit means it gets built, costs far more to change, and makes the audit feel adversarial. Option C delays something that takes two minutes now. Option B is the right instinct expressed too vaguely to act on.
+
+**Question 3 (moderate) — A team that did not ask for you**
+
+You are assigned to advise a team who clearly regard accessibility work as an imposition. What is the most effective approach?
+
+- A) Find something that makes their life easier early — a component that fixes several issues at once, a testing shortcut, an answer to a question they have been stuck on — because a team that experiences you as useful will bring you things, and one that experiences you as an inspection will hide them.
+- B) Explain the legal obligations and the standards they must meet.
+- C) Audit their service and present the findings.
+- D) Ask their delivery manager to make attendance mandatory.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** The relationship determines everything you can achieve, and option A invests in it deliberately — early usefulness buys the standing to raise difficult things later. Option D is least effective: mandating engagement produces attendance without cooperation and confirms exactly the framing you are trying to change. Option B leads with obligation, which is heard as a threat. Option C is your job and, as an opening move with a hostile team, arrives before you have any credit to spend.
+
+**Question 4 (moderate) — Pressure to sign off**
+
+A team asks you to confirm their service is accessible before launch. You have audited some journeys and not others, and no testing with disabled users has been done. What is the most effective response?
+
+- A) Confirm it; your audit found the issues and they were fixed.
+- B) Say precisely what was tested, against what standard, by what method, and what has not been covered — particularly testing with disabled users — because "is it accessible" is a question no single audit answers, and the team needs an accurate picture for their accessibility statement.
+- C) Say it meets WCAG 2.2 AA.
+- D) Decline to give any assurance.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** An accessibility statement is a published document the organisation is legally required to get right, and it needs an accurate picture rather than a reassuring one. Option B gives them exactly that, including the largest gap. Option A is least effective because it converts your partial audit into an organisational claim you cannot support, and you will be the person asked about it. Option C is a more specific version of the same overreach unless a full audit against that standard was done. Option D withholds information you have and leaves them worse off.
+
+**Question 5 (moderate) — A finding a team disputes**
+
+A developer disputes one of your findings, arguing that the pattern is widely used and works fine. What is the most effective response?
+
+- A) Ask them to show you it working in the assistive technology in question, and test it together — because either they are right and you have learned something, or the demonstration will show the problem more convincingly than any amount of citation.
+- B) Cite the relevant success criterion.
+- C) Accept their view; they know the codebase.
+- D) Escalate to their lead.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** A shared demonstration resolves this faster and better than argument, and it genuinely leaves room for you to be wrong — widely-used patterns are sometimes fine, and sometimes widely-used and broken. Option A also teaches the developer to test in the same way. Option D is least effective: escalating a technical disagreement turns a colleague into an opponent and gets a ruling from someone less able to judge it. Option B is correct and can become a citation exchange. Option C concedes a finding without testing it.
+
+**Question 6 (moderate) — Coaching a junior colleague**
+
+A junior colleague you mentor has written an audit report that lists issues accurately but reads as a series of rule violations. What is the most effective response?
+
+- A) Show them how to reframe findings in terms of what a user cannot do, and explain why that lands better and gets more fixed — then let them rewrite it.
+- B) Rewrite the report yourself.
+- C) Tell them to make it friendlier.
+- D) Send it as it is; the findings are accurate.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** Option A transfers the reasoning, which is the part that generalises to every future report — a finding expressed as "a screen reader user cannot tell what this field wants" gets fixed more often than one expressed as "fails 3.3.2". Option B is least effective: it produces a good report once, teaches nothing, and signals that their work becomes yours when you disagree. Option C gives a direction without the means. Option D lets an accurate but ineffective report go out, and accuracy that does not lead to fixes has not achieved much.
+
+**Question 7 (harder) — An inaccessible product being procured**
+
+A product your organisation is procuring has significant accessibility problems. The procurement is well advanced. What is the most effective response?
+
+- A) Set out the specific failures, what they mean for affected staff or users, and what obligations they create — then work the routes available at this stage: contractual remediation commitments with dates, an accessibility statement reflecting reality, and a documented decision by whoever accepts the risk.
+- B) Recommend the procurement be stopped.
+- C) Accept it; the decision is made.
+- D) Raise it with the procurement team.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Late procurements are rarely stopped by an accessibility objection alone, and option A works the levers that do exist — supplier remediation commitments written into a contract are the most effective, because a supplier facing signature is far more responsive than one holding it. The named risk acceptance ensures the decision is made by someone accountable rather than absorbed silently. Option C is least effective: accepting an unmet legal obligation without recording it leaves nobody accountable and nothing improved. Option B is likely to fail and to be the last time you are consulted early. Option D is a step within A rather than a response.
+
+**Question 8 (harder) — Silence in a meeting**
+
+In a meeting running late, a decision is being taken quickly that will make a journey harder for screen reader users. Nobody else has raised it. What is the most effective response?
+
+- A) Raise it now with the specific consequence and a rough sense of what addressing it would cost — because silence from you is read as professional endorsement, the people affected have no other representative in the room, and a decision is far cheaper to influence now than to revisit.
+- B) Raise it now, briefly.
+- C) Raise it with the decision owner afterwards.
+- D) Note it and address it during implementation.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** Option B is right and option A is stronger for one reason: adding a cost estimate turns an objection into something the meeting can actually decide in the time available, whereas an unquantified concern in a late-running meeting gets deferred. Option D is least effective: addressing during implementation a decision that creates the barrier means designing around it at much greater cost, and frequently means not addressing it at all. Option C loses the moment and requires reopening a settled decision.
+
+**Question 9 (harder) — A team asking for a shortcut**
+
+A team asks whether they can launch with a known accessibility issue and fix it in the next release. What is the most effective response?
+
+- A) Say what the issue means for affected users, whether it blocks a task or degrades it, what the organisation's obligations are, and what would need to be in the accessibility statement — then let the accountable person decide, and offer an interim mitigation if one exists.
+- B) Say no; known issues should not launch.
+- C) Say yes if it is documented.
+- D) Say it is their decision.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** The decision belongs to whoever is accountable for the service, and your job is to ensure it is made knowingly. Option A supplies everything they need — including the accessibility statement consequence, which is often what makes the trade-off real — and offers the mitigation that frequently resolves it. Option D is least effective: it is technically true and abandons the advisory role entirely, leaving a decision to be made without the expertise you were brought in for. Option B removes the decision-maker. Option C treats documentation as sufficient regardless of severity.
+
+**Question 10 (harder) — Findings that recur across teams**
+
+Auditing across several services, you keep finding the same three issue types. What is the most effective response?
+
+- A) Report them to each team as you find them.
+- B) Treat the recurrence as a supply problem — the shared components or design tooling most teams use are probably producing these — and work on fixing them at source, since that removes the issues across every service at once.
+- C) Produce guidance covering the three issue types.
+- D) Propose accessibility training for developers.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** The same three issues across independent teams is a signal about what they are all building with, not about their individual knowledge. Option B fixes the cause: a form component that requires a label to render, a palette without failing colours, a modal that manages focus correctly. Option A is least effective as the whole response — it fixes instances forever while the source keeps producing them, and it is the single most common way accessibility specialists exhaust themselves. Options C and D address knowledge, which is worth doing and does not stop a component that does the wrong thing.
+
+**Question 11 (harder) — A statistic used to deprioritise**
+
+A product manager says the analytics show almost no screen reader users, so the issues are low priority. What is the most effective response?
+
+- A) Explain why the figure is unreliable — screen reader use is hard to detect, and users who cannot complete a service leave and are undercounted, so a low observed number is partly a consequence of the barriers — and convert what is measurable into people, then offer to include disabled participants in the next round of research.
+- B) Explain that accessibility is a legal requirement.
+- C) Point out that the percentage still represents thousands of people.
+- D) Accept the prioritisation.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** The statistic is circular in a way that is easy to miss and important to name — a service that is hard to use with a screen reader shows few screen reader users, which then justifies leaving it hard to use. Option A explains the mechanism, converts what can be converted, and offers the thing that actually settles it, which is research with disabled participants. Option C is a good move and stronger combined with A. Option B answers a prioritisation argument with an authority claim. Option D is least effective: accepting it leaves both the barrier and the reasoning intact for next time.
+
+**Question 12 (harder) — Contributing to the community**
+
+You have developed a testing approach that solved a problem several other departments are likely facing. What is the most effective response?
+
+- A) Write it up and take it to the cross-government accessibility community, including the approaches that did not work, because the dead ends save other people more time than the solution does.
+- B) Mention it to colleagues who ask.
+- C) Keep the notes for your own use.
+- D) Add it to your team's internal documentation.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Your role names engaging with and contributing to the cross-government accessibility community, and option A is the version that produces value — with the specific detail that failed approaches are frequently the most useful part, since they are what other people are about to spend a week on. Option C is least effective: it converts a solved shared problem into a solved private one, and everyone else solves it again. Option D helps your own team and nobody beyond it. Option B relies on other people knowing to ask, which they cannot.
+
+### Preparation tips
+
+- **Group audit findings by root cause and explain them as user impact.**
+- **Bring the measurement and a passing alternative when raising a contrast issue.**
+- **Invest in being useful before you need to be difficult.**
+- **Say precisely what was tested and what was not.**
+- **Resolve a disputed finding by testing together.**
+- **Fix recurring issues at their source, not in each service.**
+- **Name the circularity in assistive technology statistics.**
+- **Attach a cost estimate when raising a concern in a late-running meeting.**
+
+### Common pitfalls to avoid
+
+- **Sending a list of twelve findings with no root-cause grouping.**
+- **Saving a fixable design issue for a formal audit.**
+- **Confirming that a service "is accessible".**
+- **Escalating a disputed finding instead of demonstrating it.**
+- **Rewriting a junior colleague's report yourself.**
+- **Accepting a low assistive technology percentage as a prioritisation argument.**
+- **Reporting the same issue to team after team.**
+- **Staying silent in a meeting where a barrier is being created.**
+
+## Conclusion
+
+You have worked through four assessments built around the reasoning an accessibility specialist actually uses, and it is worth drawing them together.
+
+The cognitive section was about reading patterns and rules precisely — recognising that twelve findings across three pages are one component defect, and that a success criterion's object is functionality rather than gesture.
+
+The numeric section was about turning accessibility into numbers people act on. Convert percentages into annual users. Normalise findings by pages audited. Know the thresholds cold. And understand what a six-participant test proves — that a barrier exists, vividly — and what it does not, which is how many people it affects.
+
+The verbal section was an exercise in reading the documents that define your professional territory. Both limbs of the disproportionate burden condition are required. The exemption does not reach essential content. A disabled button's label is exempt, and relying on that is often a poor choice. And a supplier conformance report is an assertion with a scope, a date, and — here — no screen reader testing behind it.
+
+The situational judgement section was about working entirely through influence. The strong answers grouped findings by root cause and explained them as user impact, invested in being useful before being difficult, resolved a disputed finding by testing together rather than escalating, and fixed recurring issues at source instead of reporting them to team after team.
+
+If one thread runs through all four, it is that your effectiveness is decided by how teams experience you. The same finding delivered as a rule violation and as "a screen reader user cannot tell what this field wants" gets very different responses, and the second one gets fixed. That is not about being agreeable — the standards are not negotiable and the measurements are facts — but about the fact that you cannot decide anything, so everything depends on people wanting to hear from you.
+
+Good luck. You are in a role where the people who most depend on your judgement are never in the room, and the care you have given this is exactly the right kind.

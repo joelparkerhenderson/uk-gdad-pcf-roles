@@ -467,3 +467,430 @@ Producing the monthly performance pack takes you 1.5 days. A proposal would move
 - **Over-calculating.** Sometimes comparison questions resolve by estimation - if one option is obviously an order of magnitude out, do not compute it to three decimal places.
 - **Time sinks.** One brutal multi-stage item can cost you three easy ones. Skip, flag, return - the scoring rewards total correct answers, not heroism on the hardest question.
 - **Ignoring stated uncertainty.** When a margin of error or confidence interval is given, it is given for a reason; answers that treat small differences as definitive are usually wrong, in tests and in performance reporting alike.
+
+## Workplace job-specific verbal reasoning assessment
+
+### About this assessment
+
+A workplace job-specific verbal reasoning assessment tests whether you can determine exactly what a piece of written material establishes. As a performance analyst — frequently the only one on your project — the material is performance frameworks, metric definitions, tool documentation and procurement terms, research reports, and the summaries other people write about your analysis.
+
+The commonest format presents a passage followed by statements to be marked True, False or Cannot Say. True means the passage establishes it, False means the passage contradicts it, and Cannot Say means it settles neither — regardless of what you know professionally.
+
+Your own expertise is the main hazard. You will know how a metric is normally defined, what a survey normally reaches, and what a change normally implies, while the passage in front of you describes this particular case.
+
+Three specifics matter particularly at your level.
+
+The first is that metric definitions are precise and organisations vary them. "Completed", "unique", "per quarter", "excluding resubmissions" — each changes what a number means, and you are responsible for the accuracy of analysis built on them.
+
+The second is that the gap between what was measured and what is claimed is where most misleading reporting lives. A passage that reports an association has not established a cause, and a passage that reports a metric moving has not established that an outcome changed.
+
+The third is that tool and supplier documentation defines capability narrowly. Your role names advising on procurement, implementation and validation of tools, and that advice rests on reading what a product actually commits to rather than what its summary implies.
+
+### What it measures for your role
+
+- **Reading metric definitions** maps to **Performance measurement** and creating measurement frameworks.
+- **Reading data quality documentation** maps to **Quality assurance of data and analysis**.
+- **Reading tool and procurement documentation** maps to advising on procurement, implementation and validation of tools.
+- **Reading research** maps to **User-centred analysis**.
+- **Separating evidence from claim** maps to **Analysis and insight**.
+- **Describing findings precisely** maps to **Communicating analysis and insight**.
+
+### Practice questions
+
+*Passage A — for Questions 1 to 4*
+
+"The service's digital take-up is defined as the proportion of eligible transactions completed through the digital channel, measured quarterly. Transactions completed on a user's behalf by a caseworker using the digital service are counted as digital. Transactions completed by telephone are counted as non-digital, including those where the caseworker subsequently enters the details into the digital service. Paper transactions are counted as non-digital. Transactions from ineligible users are excluded from both the numerator and the denominator. The measure is reported to the nearest whole percentage point."
+
+**Question 1 (easy)**
+
+Statement: A transaction a caseworker completes in the digital service on a user's behalf counts as digital.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly. Note that the very next sentence describes a case that looks almost identical and counts the other way, which is the point of the passage — the distinction is where the transaction originated, not where the data ended up.
+
+**Question 2 (moderate)**
+
+Statement: A telephone transaction whose details a caseworker later enters into the digital service counts as digital.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts this explicitly: telephone transactions are non-digital, "including those where the caseworker subsequently enters the details into the digital service". This clause exists precisely to close the inference, and the reason it matters is practical — without it, a service could improve its digital take-up figure purely through back-office data entry, which would tell you nothing about how people actually transacted.
+
+**Question 3 (moderate)**
+
+Statement: Excluding ineligible users raises the reported digital take-up figure.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** Ineligible transactions are excluded from both the numerator and the denominator, so the effect on the ratio depends entirely on whether ineligible users transacted digitally at a higher or lower rate than eligible ones — which the passage does not say. If they were disproportionately digital, excluding them lowers the figure; if disproportionately paper, it raises it. The instinct that removing something must move a number in a particular direction is worth resisting whenever the exclusion applies to both parts of a ratio.
+
+**Question 4 (harder)**
+
+Statement: A quarter in which digital take-up is reported as 68% had between 67.5% and 68.5% of eligible transactions completed digitally.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** The measure is "reported to the nearest whole percentage point", so a reported 68% corresponds to an underlying value in the interval that rounds to 68 — conventionally 67.5% up to but not including 68.5%. The statement's range matches, and the passage establishes the rounding convention. The boundary at 68.5 is the only quibble, and the statement's "between" is loose enough to accommodate it. Worth noticing because rounding conventions in published measures determine how much of a reported change is real.
+
+*Passage B — for Questions 5 to 8*
+
+"The analytics platform records a page view when the tracking script executes. The script is loaded at the end of the page body. Sessions expire after 30 minutes of inactivity, and a returning user after that period is recorded as a new session. The platform samples traffic above 500,000 events per day, applying a 10% sample and scaling reported figures accordingly. Sampling is indicated in the interface. Users who decline analytics cookies are not tracked. The supplier states that year-on-year comparisons are unaffected by a change to session handling introduced in April."
+
+**Question 5 (easy)**
+
+Statement: A user who declines analytics cookies is not recorded in the platform's figures.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly: such users "are not tracked". Straightforward, and consequential — it means every figure the platform reports describes the subset of users who accepted cookies, which is a limitation that belongs in any report built on it.
+
+**Question 6 (moderate)**
+
+Statement: A page a user visits but leaves before it finishes loading is recorded as a page view.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** A page view is recorded "when the tracking script executes", and the script sits at the end of the page body — so a user leaving before the body finishes would not trigger it. But "before it finishes loading" is not the same as "before the end of the body element loads": images and other assets often load after the script has already run. The passage gives you the mechanism and not enough about what "finishes loading" means here to settle it. Tempting to answer False on a rough mental model of page loading.
+
+**Question 7 (moderate)**
+
+Statement: On a day with 800,000 events, the reported figures are estimates.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** The platform "samples traffic above 500,000 events per day, applying a 10% sample and scaling reported figures accordingly". At 800,000 events the threshold is exceeded, so the figures are scaled from a sample — which makes them estimates rather than counts. The passage establishes this. Practically, this is why the sampling indicator matters: a sampled figure and a counted figure look identical in a dashboard and carry very different precision, especially for small segments.
+
+**Question 8 (harder)**
+
+Statement: Year-on-year comparisons are unaffected by the April change to session handling.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage says "the supplier states" this. That establishes what the supplier has claimed, not that the claim is true — and a supplier is not a neutral party on whether their own change broke comparability. Your role names validation of tools, and this is exactly where it applies: the professional response is to test the claim against data spanning the change rather than to accept or reject it. Marking True treats an attributed claim as an established fact, which is the specific error here.
+
+*Passage C — for Questions 9 to 12*
+
+"Following the redesign, the completion rate rose from 64% to 71%. The number of transactions started fell from 41,000 to 33,000 over the same period. User satisfaction, measured at the end of the transaction, was unchanged at 4.1 out of 5. The redesign coincided with a change to the eligibility guidance published on the service's start page. The report recommends applying the redesign to two related services. The report does not examine whether the fall in transactions started reflects fewer ineligible users beginning applications."
+
+**Question 9 (moderate)**
+
+Statement: The completion rate rose following the redesign.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly, 64% to 71%, and the statement claims only that the rise happened *following* the redesign, which is temporal rather than causal. True as worded. Notice how little that claim actually commits to compared with what a reader will take from it, which the next question addresses.
+
+**Question 10 (moderate)**
+
+Statement: The redesign caused the completion rate to rise.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage records a concurrent change to eligibility guidance on the start page, which is a fully sufficient alternative explanation and is confounded with the redesign. Clearer eligibility guidance would deter ineligible users from starting — which fits the fall in starts — and a population with fewer ineligible applicants completes at a higher rate without anything about the design improving. The passage establishes an association and names a rival cause without adjudicating.
+
+**Question 11 (moderate)**
+
+Statement: Fewer people completed the transaction after the redesign than before.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Worth computing rather than reasoning about. Before: 41,000 × 0.64 = 26,240 completions. After: 33,000 × 0.71 = 23,430. So completions fell by roughly 2,800 despite the rate rising by seven points. The passage supplies both figures, so this is established. It is also the most important fact in the passage and the one the report's headline conceals — a rate improvement alongside a volume fall is the classic shape of a metric moving while the outcome gets worse, and spotting it is the substance of your job.
+
+**Question 12 (harder)**
+
+Statement: The fall in transactions started was caused by fewer ineligible users beginning applications.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage states explicitly that the report "does not examine" this. It is a plausible explanation, consistent with the eligibility guidance change, and it is not established — and the alternative matters a great deal, because if eligible users are being deterred, the service has got worse for exactly the people it exists for. A report that names the question it did not ask is telling you where to look next, and here the unasked question determines whether the recommendation to roll out the redesign is sound.
+
+### Preparation tips
+
+- **Read a metric definition for what counts and what is deliberately excluded.**
+- **Resist directional instincts about exclusions applied to both parts of a ratio.**
+- **Note when a claim is attributed to a supplier rather than established.**
+- **Check whether reported figures are counted or sampled.**
+- **Multiply a rate by its volume before believing a rate improvement.**
+- **Look for a concurrent change before accepting a causal claim.**
+- **Note which question a report says it did not examine.**
+- **Distinguish a temporal claim from a causal one.**
+
+### Common pitfalls to avoid
+
+- **Reading a rate rise as an outcome improvement.**
+- **Accepting a supplier's statement about their own change.**
+- **Treating a sampled figure as a count.**
+- **Assuming an exclusion moves a ratio in a particular direction.**
+- **Attributing a change to the most visible concurrent intervention.**
+- **Answering from how metrics are usually defined.**
+- **Skimming the clause that closes an inference.**
+
+## Workplace job-specific situational judgement assessment
+
+### About this assessment
+
+A workplace job-specific situational judgement assessment presents realistic scenarios and asks you to identify effective and ineffective responses. As a performance analyst — frequently the only one on your project — the scenarios involve setting up measurement with people who have already decided what they want to see, defending an unwelcome finding, and being the person responsible for whether the team's numbers are true.
+
+The commonest formats ask for the most and least effective response, or for ratings. Scoring is against a key derived from experienced practitioners in comparable roles.
+
+Three patterns run through the strong answers.
+
+The first is that your role summary makes you responsible for the accuracy and quality of data and analysis *and how they are used*. That last clause is unusual and does real work: producing a correct number and watching it be misused is not discharging the responsibility.
+
+The second is that measurement frameworks are designed, not discovered. What gets measured shapes what a team does, so a badly chosen metric causes damage regardless of how accurately it is calculated — and you are the person who can see that before it is set.
+
+The third is that you are often the only analyst in the room, which means nobody will catch your errors and nobody else will push back on a misleading interpretation. Both halves of that matter.
+
+### What it measures for your role
+
+- **Framework design** maps to **Performance measurement** and creating frameworks with the wider team.
+- **Assuring analysis** maps to **Quality assurance of data and analysis**.
+- **Presenting findings** maps to **Communicating analysis and insight**.
+- **Tool decisions** maps to advising on procurement, implementation and validation of tools.
+- **Working as the sole analyst** maps to working independently and knowing when to seek guidance.
+- **Community contribution** maps to actively contributing to the performance analysis community.
+
+### Practice questions
+
+**Question 1 (easy) — A metric someone has already chosen**
+
+A product manager asks you to report on the number of page views as the measure of the service's success. What is the most effective response?
+
+- A) Report page views as requested.
+- B) Ask what success looks like for this service and what decision the measure will inform, then propose measures that connect to that — because page views rise when people cannot find things, so it can move in the wrong direction and be reported as good news.
+- C) Explain that page views is a poor metric.
+- D) Report page views alongside better measures.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Your role names creating the measurement framework with the wider team, and option B does that by starting from the decision rather than the metric. The page views point is concrete and persuasive: a confusing service generates more page views, so the measure can reward failure. Option A is least effective because a measure adopted now will drive behaviour for a long time. Option C is right and leads with a criticism rather than a route forward. Option D is a reasonable landing point that risks the weak measure remaining the headline.
+
+**Question 2 (easy) — A figure you cannot check in time**
+
+A senior stakeholder needs a figure for a meeting in an hour. You can produce it but not verify it. What is the most effective response?
+
+- A) Provide it with a clear statement that it is unverified, what specifically you have not checked, and when you can confirm it.
+- B) Provide the figure.
+- C) Say you cannot provide it in the time.
+- D) Provide a rounded approximation.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** Option A gives them what they need to judge how much weight to place on it — an unverified figure clearly labelled is frequently good enough for the decision at hand. Option B is least effective: an unlabelled figure is treated as verified, quoted onward, and becomes very hard to correct once it is in a minute. Option D disguises uncertainty as rounding, which conveys nothing about whether the number is right. Option C withholds something useful over a solvable framing problem.
+
+**Question 3 (moderate) — A finding the team does not want**
+
+Your analysis shows a feature the team spent a quarter building is barely used. What is the most effective response?
+
+- A) Report it plainly, with what the data shows and what it does not — whether low use means low need, poor discoverability, or too little time since launch — because the distinction determines what the team should do next.
+- B) Report the usage figures.
+- C) Wait another month before reporting.
+- D) Report it alongside the features that are performing well.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Low usage is a fact with several possible meanings, and option A reports it in the form that makes it actionable rather than merely disappointing — a discoverability problem and a genuine lack of need call for completely different responses. Option C is least effective: delaying an unwelcome finding costs the team a month of building on a false picture, and the delay is what looks bad afterwards rather than the finding. Option B is honest and stops short of the useful part. Option D is fine as context and becomes a way of burying results if it is how you always report.
+
+**Question 4 (moderate) — A stakeholder's interpretation of your data**
+
+In a meeting, a stakeholder describes your analysis as showing that a change "worked", when it shows an association alongside a confounding factor. What is the most effective response?
+
+- A) Say what the analysis supports and what it does not, in the meeting, briefly and without contradicting them personally.
+- B) Let it go and correct it in the written report.
+- C) Correct them directly.
+- D) Raise it with them afterwards.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** Your responsibility covers how analysis is used, not only whether it is right, and a misinterpretation stated in a meeting becomes the room's shared understanding within minutes. Option A gets the correction in without a confrontation — "worth saying what this can and can't tell us" does the job. Option B is least effective: the written report is read by fewer people than were in the room, and the meeting's version is the one that travels. Option D lets a decision be taken on the wrong basis. Option C achieves the right outcome in a form that makes the stakeholder defensive.
+
+**Question 5 (moderate) — Choosing a tool**
+
+You are asked to recommend an analytics tool for the project. One product's marketing claims capabilities you are unsure about. What is the most effective response?
+
+- A) Test the specific claims that matter against your actual requirements, in a trial or a demonstration with your own data, and recommend on what you verified.
+- B) Recommend the product with the strongest feature list.
+- C) Recommend the tool your organisation already uses.
+- D) Ask the supplier to confirm the claims in writing.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** Your role names validation of tools, and option A is what validation means — testing the specific claims that matter, with your own data, rather than comparing feature lists. Option B is least effective because vendor feature lists are written to be comprehensive rather than accurate, and a capability that exists in some form is not the same as one that works for your case. Option D is a useful supplement and a written confirmation is still a claim. Option C is often the right answer for good reasons — consistency, existing skills, no procurement — and reached without the analysis it is a default rather than a recommendation.
+
+**Question 6 (moderate) — Being the only analyst**
+
+You are the sole performance analyst on your project and are unsure whether your approach to a piece of analysis is sound. What is the most effective response?
+
+- A) Take it to the performance analysis community or a senior analyst elsewhere in the organisation and ask them to sanity-check the approach.
+- B) Proceed; you are the analyst on the project.
+- C) Use a simpler method you are confident in.
+- D) Caveat the analysis heavily.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** Being the only analyst on a project does not mean being the only analyst you have access to, and your role explicitly names contributing to the community — which is where this kind of check comes from. Option A costs a message and removes the risk. Option B is least effective: nobody on your project can catch an error in your method, which is precisely why an external check matters more here than it would in a team of analysts. Option C is sometimes right and can mean answering a different question from the one asked. Option D substitutes hedging for confidence you could actually acquire.
+
+**Question 7 (harder) — Pressure to present selectively**
+
+A stakeholder preparing a submission asks you to include the metrics that improved and leave out the one that did not. What is the most effective response?
+
+- A) Include everything relevant, and offer to help present the unfavourable metric accurately — what it shows, why it may have moved, and what is being done — because a submission that omits a known adverse result is one you cannot stand behind and they cannot defend.
+- B) Include what they asked for; it is their submission.
+- C) Refuse to contribute to the submission.
+- D) Include everything without discussion.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** The stakeholder's underlying concern — not wanting the submission to be undermined — is legitimate and addressable through framing rather than omission. Option A holds the line on content while helping with presentation, which is both correct and much more likely to be accepted than a flat refusal. Option B is least effective: a submission that omits an adverse metric is misleading whoever reads it, and your name is attached to the analysis. Option D achieves the right result while turning a solvable conversation into a unilateral act. Option C forgoes the chance to help.
+
+**Question 8 (harder) — A metric that will drive bad behaviour**
+
+The team proposes a target on average call handling time for the support channel. What is the most effective response?
+
+- A) Point out how the target would be met — the cheapest way to reduce handling time is to close contacts before they are resolved, which increases repeat contacts and worsens service while the number improves — and propose pairing it with first contact resolution and repeat contact rate.
+- B) Agree; handling time is a standard measure.
+- C) Advise against measuring handling time.
+- D) Agree, and monitor for unintended effects.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** This is one of the most reliably counterproductive targets in service measurement, and option A names the mechanism rather than objecting in principle, which is what makes the argument land. The paired measures are the practical remedy, since they are hard to move without genuine improvement. Option B is least effective because it adopts a target without asking how it will be met, which is the question your role exists to ask. Option D is better and detects the damage after it has been done. Option C discards a measure that is useful for capacity planning when it is not a target.
+
+**Question 9 (harder) — Your own error, already used**
+
+You discover a mistake in analysis you provided three weeks ago, which has since informed a decision. What is the most effective response?
+
+- A) Tell the people who used it immediately, with the corrected figures and a clear statement of what the error means for the decision they took.
+- B) Correct it in the next report.
+- C) Establish first whether the corrected figures would have changed the decision.
+- D) Tell your line manager and ask how to handle it.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** People have acted on the wrong number, which makes speed the priority. Option A includes the part that matters most to them — what the correction means for the decision — which is the difference between a useful disclosure and an alarming one. Option C is a genuinely sensible thing to work out and belongs *within* the disclosure rather than before it, since spending a day analysing whether the error mattered delays telling people who are still acting on it. Option B is least effective: leaving a decision standing on a figure you know is wrong is the worst available option. Option D is reasonable in parallel and should not delay the disclosure.
+
+**Question 10 (harder) — Measuring something the team has not defined**
+
+You are asked to report on whether a service is "working well". Nobody has defined what that means. What is the most effective response?
+
+- A) Work with the team to define what good looks like in terms they would recognise — what users should be able to do, how often it should work, at what cost — and build the measures from that, because reporting against an undefined standard produces numbers nobody can act on.
+- B) Report the standard metrics for the service.
+- C) Ask the service owner what they mean.
+- D) Propose a set of measures based on similar services.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** Your role names helping the project team measure and assess outcomes — establishing what good looks like and how it will be measured — and option A is exactly that. Option C is a good and much narrower version of it, and a definition of success reached with the team is more durable than one taken from a single person. Option B is least effective: reporting a default metric set against no standard produces a dashboard nobody uses, which is one of the most common wasted efforts in this profession. Option D is a useful input and imports assumptions from a different context.
+
+**Question 11 (harder) — A colleague's analysis you doubt**
+
+A colleague on another team presents an analysis whose method you think is flawed. Their conclusion is being acted on. What is the most effective response?
+
+- A) Raise the specific concern with them directly, describing what you think the method misses and what would test it — because you may be wrong, and a specific technical point is much easier to receive than a general doubt.
+- B) Raise it with the people acting on the conclusion.
+- C) Say nothing; it is not your project.
+- D) Re-run the analysis your way and compare.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Option A is direct, specific and leaves room for you to be mistaken, which is the combination that gets these conversations to a good outcome. Option C is least effective: your responsibility covers how analysis is used, and a decision being made on a flawed basis is worth a conversation even outside your project — this is also exactly what a professional community is for. Option B goes around your colleague and turns a technical question into a challenge to their competence. Option D is a good supporting step that is slower than asking and can read as building a case.
+
+**Question 12 (harder) — Sharing what you have learned**
+
+You have solved a measurement problem on your project that other teams are likely to face. What is the most effective response?
+
+- A) Write it up and take it to the performance analysis community, including what did not work, because the failed approaches save other people more time than the successful one.
+- B) Mention it to colleagues who ask.
+- C) Keep the notes for your own future use.
+- D) Add it to your project's documentation.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Your role names actively contributing to the community, and option A is the version that produces value — with the specific detail that the dead ends are frequently the most useful part, since they are what other people are about to spend a week on. Option C is least effective: it converts a solved shared problem into a solved private one, and everyone else solves it again. Option D helps your project's successors and nobody else. Option B relies on other people knowing to ask, which they cannot.
+
+### Preparation tips
+
+- **Start from the decision a measure will inform, not the measure.**
+- **Label unverified figures explicitly.**
+- **Report an unwelcome finding with what it does and does not show.**
+- **Correct a misinterpretation in the room where it was made.**
+- **Validate tool claims against your own data.**
+- **Use the community as your check when you are the sole analyst.**
+- **Ask how a target would be met before agreeing to it.**
+- **Share the approaches that failed as well as the one that worked.**
+
+### Common pitfalls to avoid
+
+- **Adopting a metric because it was requested.**
+- **Providing an unlabelled unverified figure.**
+- **Delaying an unwelcome finding.**
+- **Correcting a misinterpretation only in the written report.**
+- **Recommending a tool on its feature list.**
+- **Contributing to a submission that omits an adverse metric.**
+- **Agreeing to a handling time target without paired measures.**
+- **Analysing whether your error mattered before disclosing it.**
+
+## Conclusion
+
+You have worked through four assessments built around the reasoning a performance analyst actually uses, and it is worth drawing them together.
+
+The cognitive section was about reading data structurally — finding the cause behind a pattern, following a definition through its conditions, and distinguishing a measurement artefact from a real change in the world.
+
+The numeric section was the arithmetic this job runs on: percentages and their bases, rates against volumes, weighted figures, and sequential changes that do not cancel. The recurring lesson was that a rate and a count answer different questions, and reporting one without the other is how a service that is getting worse comes to look like it is improving.
+
+The verbal section was an exercise in reading definitions and claims exactly. A telephone transaction typed into the digital service is not digital. A supplier's statement about their own change is a claim. And a completion rate rising from 64% to 71% while starts fall from 41,000 to 33,000 means fewer people completed — which is the single most useful calculation in the whole document.
+
+The situational judgement section came back to the unusual clause in your role summary: you are responsible for the accuracy of analysis *and how it is used*. That is why the strong answers corrected the misinterpretation in the room rather than in the report, questioned the metric before it was adopted rather than after, and disclosed an error to the people still acting on it before working out whether it mattered.
+
+If one thing is worth carrying away, it is that being the only analyst on a project cuts both ways. Nobody will catch your errors, which is a reason to use the community as your check. And nobody else will push back when a number is being misread, which means that if you let it pass, it passes.
+
+Good luck. This is work that quietly determines what a whole team believes about the service it is building, and the care you have given this is exactly right for it.

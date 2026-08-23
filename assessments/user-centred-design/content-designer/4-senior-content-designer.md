@@ -859,4 +859,20 @@ Which response is MOST effective, and which is LEAST effective?
 - **Punishing individuals for system failures.** When an error passed a process, the strong option fixes the process blamelessly. Options that single out the junior person read as leadership failures to assessors, as they do to teams.
 - **Optimising for blamelessness.** Covering emails, documented dissent, and decisions deferred upward protect you rather than users. Assessors — like the colleagues who will one day describe your leadership — can tell the difference.
 
-<!-- APPEND -->
+## Conclusion
+
+You have worked through four assessments pitched at senior content designer, and it is worth drawing the threads together.
+
+The cognitive section was about reasoning from evidence to decisions that hold — reading a set of findings for the cause that generates them, and distinguishing what research establishes from what it makes plausible.
+
+The numeric section was the arithmetic that turns a content argument into a decision: proportions of a real user base, rates against volumes, and the difference between a metric moving and users being better served.
+
+The verbal section was an exercise in exactness. "Most" is not "all", "may" is not "will", and "no increase" is not "a decrease". The trap that catches senior candidates hardest is the summary that improves on the passage — choosing the version you wish the author had written rather than the one they did.
+
+The situational judgement section was about altitude. Senior practitioners fail in two symmetrical ways: doing the junior's job, by quietly rewriting and silently absorbing; and floating above the work, by noting concerns and deferring decisions. The strong answers sat between — diagnosing before escalating, sizing a problem before fighting about it, and choosing responses that solved the immediate issue, addressed what caused it, and preserved the relationship.
+
+Two pitfalls are worth carrying with you. When an error passed through a process, the strong answers fixed the process rather than the individual. And optimising for blamelessness — the covering email, the documented dissent, the decision deferred upward — consistently scored lowest, because it protects you at the expense of the outcome.
+
+If one thread runs through all four, it is that your influence rests on being trusted in both directions: teams trust a senior who is honest about problems, and stakeholders trust one who is straight about constraints. Treating honesty and diplomacy as a choice is what erodes both.
+
+Good luck. This is work whose quality shows up in whether people can understand something at a difficult moment in their lives, and the care you have given this is exactly the right kind.

@@ -456,4 +456,430 @@ You oversee design quality across two services. Service A's support tickets abou
 - Rounding too early in multi-step calculations; keep precision until the final step.
 - Reading a chart's visual impression instead of its values — assessment charts, like dashboard charts, sometimes truncate axes.
 
-<!-- APPEND -->
+## Workplace job-specific verbal reasoning assessment
+
+### About this assessment
+
+A workplace job-specific verbal reasoning assessment tests whether you can determine precisely what a piece of written material establishes. At senior level the material is the writing that governs and justifies design decisions: accessibility regulations, design system governance, brand and identity policy, research reports, and the briefs and agreements you negotiate with service managers and programme directors.
+
+The commonest format presents a passage followed by statements to be marked True, False or Cannot Say. True means the passage establishes it, False means it contradicts it, and Cannot Say means it does neither — regardless of what you know professionally.
+
+Your expertise is the main hazard at this level. You will frequently know the right answer about accessibility, about type, about what research supports, while the passage in front of you is silent.
+
+Three specifics matter particularly.
+
+The first is that accessibility regulation attaches obligations with precise scope, timing and exemptions, and you are often the person others rely on to read them correctly. A misread exemption becomes an organisational position.
+
+The second is that design governance documents allocate authority in language that looks interchangeable and is not — approves, endorses, is consulted, may direct, is informed all describe different arrangements, and your skills description names building consensus, which requires knowing whose agreement is actually needed.
+
+The third is that research reports describe what was observed with particular participants under particular conditions, and your role names making important decisions based on research. Generalising past what a study supports is the commonest way a well-evidenced decision turns out to rest on nothing.
+
+### How this assessment maps to your role
+
+- **Reading accessibility regulation** maps to **Designing for everyone**, where you advise teams on inclusive and accessible design.
+- **Reading governance and authority** maps to **Leading design** and building consensus around an approach.
+- **Reading research precisely** maps to **Evidence-based design** and making decisions based on research.
+- **Reading strategy and policy** maps to **Designing strategically**.
+- **Documenting decisions and risks** maps to **Design communication**, where you document decisions, related risks and unresolved issues.
+- **Reading collaboratively** maps to **Designing together**.
+
+### Practice questions
+
+*Passage A — for Questions 1 to 4*
+
+"Public sector bodies must ensure their websites meet accessibility requirements and must publish an accessibility statement. Where meeting a particular requirement would impose a disproportionate burden, a body may rely on that exemption, provided it has carried out and documented an assessment of the burden and has stated the reliance in its accessibility statement. The disproportionate burden exemption does not apply to content that is essential to the use of the service. Pre-recorded time-based media published before 23 September 2020 is exempt. An assessment of disproportionate burden must consider the body's size and resources, the estimated costs and benefits, and the needs of disabled users."
+
+**Question 1 (easy)**
+
+Statement: A public sector body must publish an accessibility statement.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly with "must", and unconditionally — the disproportionate burden exemption relates to meeting requirements, not to publishing the statement. Indeed the statement is where reliance on the exemption has to be declared, so the exemption reinforces the obligation rather than reducing it.
+
+**Question 2 (moderate)**
+
+Statement: A body relying on the disproportionate burden exemption need not document its assessment, provided it declares the reliance in its accessibility statement.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts this. The exemption is available "provided it has carried out and documented an assessment of the burden **and** has stated the reliance". Both conditions are required, joined conjunctively, and the statement treats one as sufficient. In practice this is the difference between a defensible reliance and an indefensible one, which is why the drafting is explicit.
+
+**Question 3 (moderate)**
+
+Statement: A body can rely on disproportionate burden for a form users must complete to access the service.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage states the exemption "does not apply to content that is essential to the use of the service", and a form users must complete is essential by definition. This is the most consequential clause in the passage and the one most often overlooked, because disproportionate burden is usually invoked precisely when something core is expensive to fix — which is exactly the case the clause excludes.
+
+**Question 4 (harder)**
+
+Statement: A pre-recorded video published in 2021 is exempt if it is not essential to the service.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The time-based media exemption applies to media "published before 23 September 2020", and a 2021 publication falls after it. The statement substitutes a different condition — non-essential — which belongs to the disproportionate burden exemption, a separate route with its own requirements. Merging two exemptions into one is the trap here, and it is a real-world error: teams remember that old video is exempt and that non-essential content has some latitude, then combine the two into a permission that does not exist.
+
+*Passage B — for Questions 5 to 8*
+
+"The design authority approves changes to the departmental design system. Proposals may be submitted by any team and are considered monthly. The head of design endorses the authority's decisions and may return a decision for reconsideration once, with reasons; a decision returned and reaffirmed stands. Teams may depart from the design system for a specific service where they record the reason and the supporting evidence, and notify the design authority. Departures are reviewed annually. The design authority may add a departed pattern to the design system where it judges the pattern has wider application."
+
+**Question 5 (easy)**
+
+Statement: Any team can submit a proposal to change the design system.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly: "Proposals may be submitted by any team." Note the passage separates submission from approval — anyone may propose, and only the design authority approves, which is a distinction the later questions turn on.
+
+**Question 6 (moderate)**
+
+Statement: The head of design can overturn a decision of the design authority.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts this. The head of design "endorses" decisions and "may return a decision for reconsideration once, with reasons", and "a decision returned and reaffirmed stands". That is a single power of return, not a veto, and the final clause exists precisely to close this inference. Reading "endorses" as approval-with-power-to-refuse is the natural error, and here endorsement is a formal step rather than a gate.
+
+**Question 7 (moderate)**
+
+Statement: A team departing from the design system needs the design authority's approval.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage requires a departing team to record the reason and evidence and to *notify* the design authority. Notification is not approval, and the passage assigns approval elsewhere — to changes to the design system itself, which a service-specific departure is not. The distinction matters practically, because a team that believes it needs approval will wait a month it did not need to wait.
+
+**Question 8 (harder)**
+
+Statement: A pattern a team has departed to will be added to the design system if it has wider application.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage says the design authority "may add" such a pattern "where it judges the pattern has wider application". Two sources of discretion sit in that clause: the permissive "may", and the fact that wider application is a matter for the authority's judgement rather than an objective trigger. The statement's "will" asserts an automatic consequence the passage contradicts. If you marked Cannot Say, the reasoning is close — the deciding point is that the passage does establish the power as discretionary, which is enough to contradict an assertion of automaticity.
+
+*Passage C — for Questions 9 to 12*
+
+"A study of 48 participants compared two layouts for a benefits eligibility page. Layout A grouped eligibility criteria under sub-headings; layout B presented them as a single list. Participants using layout A answered comprehension questions correctly more often, with 82% correct against 64% for layout B. The difference was statistically significant. Participants were recruited to reflect the service's age profile. The study did not assess time to completion. The research team recommends layout A, noting that the finding is consistent with earlier work on chunking in the same department."
+
+**Question 9 (moderate)**
+
+Statement: Participants using layout A understood the eligibility criteria better than those using layout B.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** The passage reports 82% against 64% correct on comprehension questions, and states the difference was statistically significant. Comprehension questions are a direct measure of understanding, so the passage establishes this. Note the wording of the statement matches what was measured, which is what makes it True — a statement about a different outcome would not.
+
+**Question 10 (moderate)**
+
+Statement: Layout A is faster to use than layout B.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage states explicitly that "the study did not assess time to completion". So there is no evidence either way — and it is worth noticing that sub-headings could plausibly slow reading while improving comprehension, so the intuitive answer is not even clearly right. A study that names what it did not measure is telling you where the evidence stops, which is a courtesy worth reciprocating when you cite it.
+
+**Question 11 (moderate)**
+
+Statement: The findings are representative of the service's users.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** Participants were "recruited to reflect the service's age profile" — one dimension of representativeness, and only one. Nothing establishes that the sample reflected the service's users in digital confidence, access needs, first language, or circumstances at the point of use. The passage supports a narrower claim than the statement makes, and this is a distinction worth holding when a research finding is being used to justify a decision across a whole service.
+
+**Question 12 (harder)**
+
+Statement: Earlier work in the department found that chunking improves comprehension.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage says this finding "is consistent with earlier work on chunking in the same department". Consistency tells you the two do not conflict; it does not tell you what the earlier work found. That earlier work might have measured something adjacent, or found a weaker effect, or examined chunking in a different context. Treating a claim of consistency as a report of the earlier result is a subtle overreach, and it matters because "there is a body of evidence" is a much stronger thing to say to a programme director than "this is consistent with previous work".
+
+### Preparation tips
+
+- **Treat conjunctive conditions as all required.**
+- **Check the date qualifier on an exemption, not just its subject.**
+- **Do not merge two exemptions into a single permission.**
+- **Distinguish notification from approval, and endorsement from veto.**
+- **Read "may" plus "where it judges" as doubly discretionary.**
+- **Check which outcome a study actually measured.**
+- **Read a stated dimension of representativeness as one dimension.**
+- **Read "consistent with" as compatibility, not corroboration.**
+
+### Common pitfalls to avoid
+
+- **Treating one of two required conditions as sufficient.**
+- **Applying a disproportionate burden exemption to essential content.**
+- **Reading endorsement as a power of refusal.**
+- **Assuming a departure needs approval when it needs notification.**
+- **Inferring speed from a comprehension result.**
+- **Generalising representativeness from one recruitment criterion.**
+- **Citing "consistent with earlier work" as a body of evidence.**
+- **Answering from design knowledge rather than from the passage.**
+
+## Workplace job-specific situational judgement assessment
+
+### About this assessment
+
+A workplace job-specific situational judgement assessment presents realistic scenarios and asks you to identify effective and ineffective responses. At senior level the scenarios involve working with service managers and programme directors, setting direction within teams, mentoring, building consensus where people disagree, and holding accessibility and evidence standards when doing so is inconvenient.
+
+The commonest formats ask for the most and least effective response, or for ratings. Scoring is against a key derived from experienced practitioners at comparable levels, so the target is professional consensus.
+
+Three patterns run through the strong answers at this level.
+
+The first is that your influence is largely earned rather than granted. Your skills description names building consensus by asking difficult questions and challenging assumptions, and that only works if people believe you ask the same difficult questions about your own work.
+
+The second is that you represent users who are not in the room. When a design decision disadvantages people with access needs, silence from the senior designer present is read as professional endorsement, and nobody affected is there to notice.
+
+The third is that your role names documenting decisions, related risks and unresolved issues. That last category is the one most often dropped, and it is the one that matters most — an unresolved issue that nobody wrote down becomes a surprise later, usually to someone junior.
+
+### How this assessment maps to your role
+
+- **Working with senior stakeholders** maps to working with service managers and programme directors to develop design concepts.
+- **Building consensus** maps to **Design communication**, where you challenge assumptions and build agreement.
+- **Setting direction** maps to helping set direction and embed good practice within teams.
+- **Evidence judgement** maps to **Evidence-based design** and making important decisions based on research.
+- **Accessibility advocacy** maps to **Designing for everyone**, where you advise teams.
+- **Mentoring** maps to **Leading design** and influencing others.
+
+### Practice questions
+
+**Question 1 (easy) — A design concept a director likes**
+
+A programme director is enthusiastic about a design concept you believe will not work for users. What is the most effective response?
+
+- A) Explain why the concept will not work.
+- B) Find out what they are responding to in it — the impression it creates, the priority it signals, the problem it seems to solve — and propose how to achieve that in a way that works for users, because the underlying want is usually achievable and this specific concept usually is not.
+- C) Test the concept with users and let the findings decide.
+- D) Implement it and address problems later.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** Enthusiasm for a concept is nearly always enthusiasm for a quality it seems to have, and identifying that quality gives you something to build with. Option B keeps you working towards the same goal rather than opposing them, which is the substance of building consensus. Option D is least effective: implementing something you expect to fail wastes the build and makes the eventual correction more expensive and more embarrassing for everyone. Option C is genuinely strong and slower — it belongs alongside B, particularly where the disagreement is about user behaviour rather than about intent. Option A leads with what cannot happen.
+
+**Question 2 (easy) — Mentoring through a weak decision**
+
+A junior designer presents work with a layout choice you think is poor but that they have clearly thought about. What is the most effective response?
+
+- A) Ask what problem the layout was solving and what they considered, then set out your concern with reasons — because they may have a constraint you cannot see, and if they do not, the reasoning is what transfers.
+- B) Tell them what to change.
+- C) Approve it; it is a matter of judgement.
+- D) Change it yourself before it goes further.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** Option A costs one conversation and buys two things: the possibility that they are right, and a designer who can make the judgement unaided. Option D is least effective — it removes the work, teaches nothing, and tells the team that their decisions become yours when you disagree. Option B transfers a conclusion without the reasoning, which works once. Option C avoids the conversation and lets a weak pattern establish itself, which matters more at your level because others will copy it.
+
+**Question 3 (moderate) — Accessibility against a deadline**
+
+Days before launch, you establish that a component fails an accessibility requirement. Fixing it properly means redesigning it. What is the most effective response?
+
+- A) Launch and fix in the next release.
+- B) State the failure and what it means for affected users in plain terms, and put the options to the service manager — launching without the component, launching with a simpler accessible version, or delaying — because it is their decision and it needs to be made knowingly.
+- C) Refuse to sign off the design.
+- D) Apply a quick visual fix that improves the contrast.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** The launch date belongs to the service manager and the consequence belongs to users, so your role is to make sure the decision is made by the right person with the right information. Option B also offers the middle route that is usually available and usually overlooked under time pressure. Option A is least effective because it launches a known barrier, and next-release accessibility fixes have a poor record. Option C removes the service manager from their own decision. Option D risks a change that looks like a fix and leaves the underlying failure in place, which is worse than a visible gap because nobody looks again.
+
+**Question 4 (moderate) — Research that undercuts a decision already made**
+
+New research suggests a design direction the team committed to three months ago is not working. Rework would be significant. What is the most effective response?
+
+- A) Present the finding and what it means, including the cost of changing course and the cost of not, and let the decision be made explicitly with both in view.
+- B) Present the finding and recommend the rework.
+- C) Note the finding and continue; the direction is committed.
+- D) Ask for further research before raising it.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Option A gives the decision-maker the two figures they need and frames it as a live choice rather than an accusation about a past decision, which is what makes it possible for people to change their minds without loss of face. Option C is least effective: suppressing evidence because a decision is committed is how services ship things their own research said would not work, and the finding will resurface. Option D delays a real signal and can read as building a case. Option B is honest and reaches the recommendation before the organisation has weighed the costs that are not yours to weigh.
+
+**Question 5 (moderate) — Disagreement between two teams**
+
+Two teams in the same programme have adopted different visual treatments for the same type of content. Both defend their choice. What is the most effective response?
+
+- A) Get both teams together and focus on what each treatment is trying to achieve and what the user encountering both would experience — because two teams defending positions usually have two different requirements that were never compared, and the inconsistency is a user problem regardless of which is better.
+- B) Decide which treatment is better and require both to use it.
+- C) Let each team keep its own; both work.
+- D) Escalate to the programme director.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Moving parties from positions to requirements is the technique that resolves this, and the second half of option A supplies the argument neither team is making — a user moving between the two parts of the service experiences the inconsistency, and neither team sees that from inside their own part. Option C is least effective because it accepts a permanent user-facing inconsistency to avoid a conversation. Option B may be the eventual outcome and imposed first it creates a losing team who will comply without conviction. Option D escalates something you are positioned to resolve.
+
+**Question 6 (moderate) — A brand constraint that harms usability**
+
+A communications team requires a typeface that reduces legibility at the sizes your service needs. What is the most effective response?
+
+- A) Establish where the constraint actually binds — whether it applies to all text or only to headings and identity elements — and propose a split that keeps the brand visible where it matters and uses a legible face for body content.
+- B) Use the typeface as required.
+- C) Explain that the typeface harms legibility and decline to use it.
+- D) Use a different typeface and explain afterwards.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** Brand requirements are usually less absolute than they are stated, and the split in option A — identity in the brand face, body text in something legible — is such a common resolution that it is worth proposing before treating the constraint as binding. Option D is least effective: substituting a different typeface without saying so is a decision made on someone else's behalf, discovered later, and it damages a relationship you need. Option B accepts a legibility problem without testing whether it was required. Option C is right about the problem and offers no route.
+
+**Question 7 (harder) — Documenting an unresolved issue**
+
+A design is going into build with one issue you were unable to resolve — a pattern you are not confident works for screen magnification users. What is the most effective response?
+
+- A) Record it explicitly as an unresolved issue with what you know, what you do not, and what would resolve it, and make sure the team and the service manager have seen it.
+- B) Raise it verbally with the developers.
+- C) Leave it; it may not be a problem.
+- D) Record it in your own notes for later.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Your skills description names documenting decisions, related risks *and any unresolved issues*, and this is precisely that. The value of option A is that it survives you: the issue reaches testing, reaches the accessibility statement if it turns out to be real, and does not surprise a junior colleague in six months. The "what would resolve it" clause is what makes it actionable rather than a disclaimer. Option C is least effective — an unrecorded doubt about an access need is exactly the kind of thing that becomes a finding later. Option B is useful and evaporates. Option D keeps the information where nobody can act on it.
+
+**Question 8 (harder) — Being asked to endorse a claim**
+
+A service manager asks you to confirm that the service's design meets accessibility standards, for an accessibility statement. Your team has tested some things and not others. What is the most effective response?
+
+- A) Confirm it; the testing found no problems.
+- B) Say precisely what has been tested, against what standard, with what tools, and what has not been covered — particularly testing with disabled users — because an accessibility statement is a published legal document and an unqualified confirmation is one you cannot support.
+- C) Say it meets WCAG 2.2 AA.
+- D) Decline to confirm.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** An accessibility statement is published and relied upon, and it needs an accurate picture rather than a reassuring one. Option B gives the service manager exactly what they need to write a truthful statement, including the largest gap, which is testing with actual disabled users. Option A is least effective because it converts your team's partial testing into an organisational legal claim. Option C is a more specific version of the same overreach unless a full audit has been done. Option D withholds information you have and leaves them worse off.
+
+**Question 9 (harder) — Evidence against your own recommendation**
+
+Data suggests a design direction you advocated a year ago is performing worse than the pattern it replaced. What is the most effective response?
+
+- A) Raise it yourself, including that it was your recommendation, and propose how to establish whether the direction caused the difference.
+- B) Examine the data carefully first; correlation is not causation.
+- C) Investigate quietly and act if it holds up.
+- D) Note it alongside the other benefits of the direction.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** Option B is methodologically correct and incomplete, because it is also exactly what someone defending a decision would say — the difference between rigour and defensiveness is visible only in whether you raise the data or wait to be shown it. Option A does the same analysis in the open, and doing so is what makes your challenges to other people's work credible. Option D is least effective: changing the subject to offsetting benefits is the move that, once noticed, discounts everything you say afterwards. Option C looks like concealment if the quiet investigation is discovered.
+
+**Question 10 (harder) — Setting direction for a team**
+
+You are asked to embed better design practice in a team that has been working without much design input. What is the most effective approach?
+
+- A) Establish what is currently hard for them and start where the practice would remove a pain they already feel — because practice adopted because it solves a felt problem sticks, and practice introduced as a standard to comply with is followed while you are watching.
+- B) Introduce the design system and a set of standards.
+- C) Run a series of training sessions.
+- D) Review their work and give feedback.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** Option A is the approach most likely to produce lasting change, because it makes the new practice something the team wants rather than something they owe you. It also tells you which practices matter here, which is not always the same list as elsewhere. Option B is least effective as an opening move: arriving with a system and a set of standards for a team that did not ask reads as compliance work, and produces the appearance of adoption. Options C and D are both reasonable components and neither, alone, changes what the team does when nobody is looking.
+
+**Question 11 (harder) — Consensus you cannot reach**
+
+After several discussions, a service manager and a content designer remain in genuine disagreement about a design approach, and the work is blocked. What is the most effective response?
+
+- A) Establish what each would accept and what evidence would change their view, and if the disagreement is empirical, propose the smallest test that would settle it — because a blocked decision usually means two people optimising for different things without having said so.
+- B) Make the decision yourself.
+- C) Escalate to the programme director.
+- D) Propose a compromise that combines both approaches.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** Most stalled design disagreements are not about the design; they are about unstated and different priorities, and naming those usually resolves it. Where the difference is genuinely empirical, a small test settles it better than more discussion. Option D is least effective — a combined approach typically acquires the weaknesses of both and the coherence of neither, and coherence is most of what a design provides. Option B ends the block and leaves two people unconvinced. Option C is available once the direct routes are exhausted.
+
+**Question 12 (harder) — Speaking about the work externally**
+
+You are asked to present your service's design work at a cross-government event. Some of it went well and one significant part was abandoned. What is the most effective approach?
+
+- A) Present all of it, and be specific about why the abandoned part did not work, because the failure is the part the audience can learn from and your own team will hear whether you described what actually happened.
+- B) Present the successful work.
+- C) Present the successes and mention challenges generally.
+- D) Decline; the picture is mixed.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Successes are hard to transfer between contexts and failures are instructive, so the abandoned work is disproportionately the useful material. Option A also serves the audience nobody thinks about — your own team, who will know immediately whether the account was honest. Option C is least effective: vague reference to "challenges" in front of practitioners who know the specifics reads as evasion and costs more credibility than the abandonment itself. Option B omits the useful part. Option D forgoes influence indefinitely, since the picture is always mixed.
+
+### Preparation tips
+
+- **Find the quality behind a stakeholder's enthusiasm.**
+- **Ask what problem a design choice was solving before correcting it.**
+- **Put accessibility failures to the decision owner with options.**
+- **Present both costs when evidence undercuts a committed direction.**
+- **Move disagreeing parties from positions to requirements.**
+- **Test where a brand constraint actually binds.**
+- **Record unresolved issues with what would resolve them.**
+- **Raise contrary evidence about your own recommendations yourself.**
+
+### Common pitfalls to avoid
+
+- **Building something you expect to fail.**
+- **Changing a junior designer's work rather than reviewing it.**
+- **Applying a cosmetic fix to an accessibility failure.**
+- **Continuing with a direction because it is committed.**
+- **Accepting a permanent inconsistency between two teams.**
+- **Substituting a different typeface without telling anyone.**
+- **Confirming a service "is accessible".**
+- **Combining two approaches to settle a disagreement.**
+
+## Conclusion
+
+You have worked through four assessments pitched at senior graphic designer, and the threads are worth drawing together.
+
+The cognitive section was about the reasoning behind design decisions rather than the decisions themselves — reading a set of inconsistencies for its structural cause, following conditional rules through several steps, and separating what a design does from what it is meant to do.
+
+The numeric section was the arithmetic that supports design argument: ratios and thresholds, proportions of a real user base, and the recurring point that a percentage of a government service is a number of people, which is a far more persuasive thing to put in front of a programme director.
+
+The verbal section was an exercise in reading precisely the documents that constrain and justify your work. Both limbs of a condition are required. A disproportionate burden exemption does not reach essential content. Notification is not approval and endorsement is not veto. And "consistent with earlier work" is compatibility, not a body of evidence.
+
+The situational judgement section circled the particular position this level puts you in: enough seniority to be listened to, not enough authority to compel, and frequently the only person present who represents users with access needs. The strong answers found the want behind a stakeholder's enthusiasm, moved disagreements from positions to requirements, recorded the unresolved issue so it would outlive the conversation, and raised contrary evidence about their own past recommendations before anyone else could.
+
+If one thread runs through all four, it is that your influence rests on being believed. Teams accept difficult questions from someone who visibly asks the same questions of their own work. Service managers accept an accessibility problem from someone whose confirmations have always been accurate. That credibility takes years to build and one over-claimed endorsement to spend.
+
+Good luck. This is a level where the craft matters and the judgement around it matters more, and the care you have given this is exactly the right kind.

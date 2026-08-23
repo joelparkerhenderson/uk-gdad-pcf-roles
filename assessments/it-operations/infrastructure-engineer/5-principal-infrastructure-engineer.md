@@ -429,4 +429,430 @@ Two teams have independently estimated the annual cost of your area's unplanned 
 - **Accepting constructed medians.** Comparator selection, price basis, and dispersion determine any benchmark's meaning. Request the construction before crediting the conclusion.
 - **Presenting single numbers where ranges are the truth.** Reconciled ranges with visible reasoning let boards govern; averaged point estimates transfer your uncertainty to their ignorance. The honest range is the principal's signature figure.
 
-<!-- APPEND -->
+## Workplace job-specific verbal reasoning assessment
+
+### About this assessment
+
+A workplace job-specific verbal reasoning assessment tests whether you can determine exactly what a piece of written material establishes. At principal level the material is supplier contracts and service level agreements, security standards, change and design governance, regulatory requirements and technical documentation — writing that creates obligations and allocates authority, and which you are often the person others rely on to read correctly.
+
+The commonest format presents a passage followed by statements to be marked True, False or Cannot Say. True means the passage establishes it, False means it contradicts it, and Cannot Say means it settles neither — regardless of what you know from running these systems.
+
+Deep operational experience is the main hazard. You will know how these arrangements usually work while the passage describes this one, and a confident wrong reading of a contract term is expensive in a way that a confident wrong reading of a puzzle is not.
+
+Three specifics matter particularly at your level.
+
+The first is that service level agreements define availability with precise measurement methods and exclusions — planned maintenance, customer-caused outages, force majeure — and those exclusions determine what a headline percentage actually promises. Your role names owning operational supplier relationships, which makes this reading a core part of the job rather than a legal nicety.
+
+The second is that security and design standards attach obligations to classifications and environments, and a control required in one context is frequently not required in a neighbouring one.
+
+The third is that governance documents allocate authority in language that looks interchangeable and is not: approves, endorses, is consulted, may direct, must consult.
+
+### How this assessment maps to your role
+
+- **Reading supplier agreements** maps to owning operational relationships with suppliers and ensuring alignment to contractual requirements.
+- **Reading service level definitions** maps to **Service focus** and **Availability** reasoning.
+- **Reading security standards** maps to **Information security**.
+- **Reading design governance** maps to **Systems design** and working with technical architects.
+- **Reading change and problem records** maps to **Problem management** and **Troubleshooting and problem resolution**.
+- **Reading technical documentation** maps to **IT infrastructure** and **Systems integration**.
+
+### Practice questions
+
+*Passage A — for Questions 1 to 4*
+
+"The supplier warrants monthly availability of at least 99.9%, measured as the proportion of five-minute intervals in which the service responded successfully to the monitoring probe. Availability is calculated excluding planned maintenance windows notified at least five working days in advance, and excluding periods of unavailability caused by the customer's own systems or network. Planned maintenance may not exceed eight hours in any calendar month. Where availability falls below the warranted level, the customer is entitled to a service credit calculated in accordance with Schedule 4. Service credits are the customer's sole remedy for availability failures, except in the case of a failure below 95% in any month, where the customer may additionally terminate on 30 days' notice."
+
+**Question 1 (easy)**
+
+Statement: Eight hours of properly notified planned maintenance would reduce the reported availability figure.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts this: availability is calculated "excluding planned maintenance windows notified at least five working days in advance". Properly notified maintenance is outside the measurement entirely. The practical significance is worth spelling out — eight hours is roughly 1.1% of a month, so a service could be down for eight notified hours plus 43 minutes of unplanned outage and still report 99.9%. Note the exclusion depends on the notice being given; maintenance taken at shorter notice is not excluded.
+
+**Question 2 (moderate)**
+
+Statement: If availability falls to 96% in a month, the customer may terminate the agreement.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts this. Service credits are "the customer's sole remedy for availability failures, except in the case of a failure below 95% in any month", where termination becomes available. 96% is above 95%, so the exception is not triggered and credits remain the sole remedy. Both halves matter — finding the exception without checking the threshold, or reading "sole remedy" without finding the exception, each produces a wrong answer.
+
+**Question 3 (moderate)**
+
+Statement: The reported availability figure reflects what users actually experienced.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage defines availability as the proportion of five-minute intervals in which the service "responded successfully to the monitoring probe", excluding notified maintenance and customer-caused outages. A service can be badly degraded for real users while answering a probe every five minutes, and users experience notified maintenance as downtime regardless of the contractual treatment. The measurement definition contradicts the statement rather than merely failing to support it. This is the most useful thing in the passage: the number you are contractually owed and the number your users experience are different numbers, and knowing that is what lets you negotiate the next agreement properly.
+
+**Question 4 (harder)**
+
+Statement: A period of unavailability caused by a failure in the customer's network would trigger a service credit.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** Such periods are excluded from the availability calculation, so they cannot cause the measured figure to fall below the warranted level, and service credits are triggered by availability falling below that level. The passage therefore contradicts the statement through the interaction of two clauses rather than by stating it. Note what the passage does *not* address: who determines causation. In practice that is where these disputes actually happen, and the passage's silence on it is worth noticing when you are the person who will be arguing the point.
+
+*Passage B — for Questions 5 to 8*
+
+"Standard changes are pre-approved and may be implemented by any authorised engineer without further approval, provided they are recorded within one working day. Normal changes require approval by the change advisory board, which meets weekly. Emergency changes may be implemented with the approval of the on-call incident manager, and must be presented to the next change advisory board for retrospective review. A change may be classified as standard only where it has been implemented successfully at least five times as a normal change and has an approved implementation procedure. The board reviews the standard change catalogue quarterly and may remove a change type from it."
+
+**Question 5 (easy)**
+
+Statement: Standard changes require approval before implementation.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts this: standard changes "are pre-approved and may be implemented by any authorised engineer without further approval". The pre-approval is the entire point of the category. The recording obligation within one working day is a separate duty and is not prior approval.
+
+**Question 6 (moderate)**
+
+Statement: A change implemented successfully four times as a normal change can be reclassified as standard.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage requires "at least five times", so four falls short. Note also that the five-implementation requirement is one of two conjunctive conditions — there must also be an approved implementation procedure — so even five successes would not suffice alone. The statement fails on the first condition without needing the second.
+
+**Question 7 (moderate)**
+
+Statement: An emergency change does not require change advisory board involvement.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts this: emergency changes "must be presented to the next change advisory board for retrospective review". The board's involvement is deferred rather than removed. Reading an emergency route as bypassing governance entirely is the natural error, and the retrospective review is precisely what makes an emergency route safe to have — without it, "emergency" becomes the route of choice.
+
+**Question 8 (harder)**
+
+Statement: A change type will remain in the standard catalogue unless it causes an incident.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage says the board "reviews the standard change catalogue quarterly and may remove a change type from it", without stating any grounds for removal. Removal could follow an incident, a technology retirement, a procedural change, or the board's judgement. The statement attaches a specific condition to a discretionary power the passage leaves unconditioned. Distinguishing an unconditioned discretion from a conditioned one is the skill, and it matters because a team relying on "they only remove things that cause incidents" may lose a standard change classification without warning.
+
+*Passage C — for Questions 9 to 12*
+
+"Secrets used by production services must be stored in the approved secrets management service and must be rotated at least every 90 days. Secrets used only in non-production environments must be stored in the approved service but are not subject to the rotation requirement, provided that no non-production environment holds production data. Where a non-production environment holds production data, it is treated as production for the purposes of this standard. Access to production secrets is granted on the approval of the service owner and is reviewed quarterly. A secret that has been exposed must be rotated immediately and the exposure reported to the security team within 24 hours."
+
+**Question 9 (moderate)**
+
+Statement: Secrets used only in non-production environments are exempt from the 90-day rotation requirement.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The exemption exists and is conditional: non-production secrets are exempt "provided that no non-production environment holds production data". The statement asserts the exemption without the condition, and the passage does not tell you whether the condition is met in any particular case. Note how broad the proviso is — it refers to *no* non-production environment holding production data, not merely the one in question, which is stricter than a quick reading suggests and in most organisations is not satisfied.
+
+**Question 10 (moderate)**
+
+Statement: A test environment containing a copy of production data must have its secrets rotated every 90 days.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** The passage establishes this: "Where a non-production environment holds production data, it is treated as production for the purposes of this standard", and production secrets must be rotated at least every 90 days. The reclassification clause does the work, and it is the clause most often missed — teams copy production data into test environments as a matter of routine and rarely notice that doing so changes the environment's classification and pulls in a set of controls.
+
+**Question 11 (moderate)**
+
+Statement: An exposed secret must be reported to the security team before it is rotated.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage requires immediate rotation and reporting within 24 hours. That strongly implies rotation happens first, and it does not state an order — both obligations are compatible with reporting first if the report takes a moment. The passage establishes two duties and their deadlines without establishing a sequence, so a statement asserting a required order is neither supported nor contradicted.
+
+**Question 12 (harder)**
+
+Statement: Access to non-production secrets is reviewed quarterly.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage says "access to production secrets is granted on the approval of the service owner and is reviewed quarterly", and says nothing about access governance for non-production secrets. There may be a quarterly review, a different arrangement, or none at all. The scoping word is "production", and the passage's silence about the other case is genuine silence rather than an implied negative. Contrast this with Question 9, where the passage explicitly addressed non-production and created a conditional exemption — the drafting speaks to non-production in one place and not the other, and you cannot carry a rule across the gap.
+
+### Preparation tips
+
+- **Check how availability is measured and what is excluded before quoting a percentage.**
+- **Find the threshold attached to an exception to a sole remedy.**
+- **Read a deferred approval as approval, not as a bypass.**
+- **Treat conjunctive conditions as all required.**
+- **Look for reclassification clauses that change which rules apply.**
+- **Distinguish an unconditioned discretionary power from a conditioned one.**
+- **Check whether two obligations with deadlines also specify an order.**
+- **Note when a scoping word confines a clause to one case.**
+
+### Common pitfalls to avoid
+
+- **Reading a warranted availability figure as what users experienced.**
+- **Missing the threshold on a termination right.**
+- **Treating an emergency change route as bypassing governance.**
+- **Reading a conditional exemption as unconditional.**
+- **Overlooking that production data reclassifies an environment.**
+- **Inferring a sequence from two deadlines.**
+- **Extending a rule stated for production to non-production.**
+- **Answering from how these agreements usually work.**
+
+## Workplace job-specific situational judgement assessment
+
+### About this assessment
+
+A workplace job-specific situational judgement assessment presents realistic scenarios and asks you to identify effective and ineffective responses. At principal level the scenarios involve supplier relationships, roadmap decisions with multi-year consequences, incident leadership, translating architecture into something operable, and leading specialist teams whose best work is invisible.
+
+The commonest formats ask for the most and least effective response, or for ratings. Scoring is against a key derived from experienced practitioners at comparable seniority.
+
+Three patterns run through the strong answers.
+
+The first is that during an incident the priority is restoration and afterwards it is learning, and mixing the two degrades both. Diagnosing while users are affected costs users; looking for a responsible individual afterwards costs you the next honest account.
+
+The second is that you are frequently the person saying that something will not work, to people who want it to. The effective form of that is making the consequence visible and the decision explicit, not refusing.
+
+The third is that infrastructure work is noticed only when it fails. A large part of your job is making the value of things that did not happen legible to people who will otherwise never see it.
+
+### How this assessment maps to your role
+
+- **Supplier management** maps to owning operational relationships with suppliers.
+- **Roadmap decisions** maps to developing strategic and tactical engineering roadmaps.
+- **Working with architects** maps to translating architectural designs into operations.
+- **Incident and problem leadership** maps to **Problem management** and **Troubleshooting and problem resolution**.
+- **Team leadership** maps to leading and directing infrastructure specialist teams.
+- **Security judgement** maps to **Information security**.
+
+### Practice questions
+
+**Question 1 (easy) — During an incident**
+
+A major incident is in progress and two engineers are debating the root cause while the service stays degraded. What is the most effective response?
+
+- A) Let them continue; identifying the cause will resolve it.
+- B) Redirect to restoration — revert what is revertible, fail over what can fail over — and hold the cause discussion afterwards with the evidence preserved, because the debate can be settled at leisure and the degradation cannot.
+- C) Decide the root cause yourself.
+- D) Bring in more people.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** Restoration and diagnosis are different activities and the wrong order costs users directly. Option B redirects and preserves the evidence, which is what keeps the later diagnosis possible. Option D is least effective: adding people to a live incident increases coordination cost, and a crowded bridge is slower than a small one. Option C makes a call on incomplete information and may send effort in the wrong direction. Option A lets a debate run while the service is down.
+
+**Question 2 (easy) — After an incident**
+
+A post-incident review is drifting towards identifying who made the mistake. What is the most effective response?
+
+- A) Let it run; accountability matters.
+- B) Redirect to the conditions that made the mistake possible and consequential — what made the wrong action easy, what let it reach production, why it was not caught — because a review that finds a person stops there, and the same conditions will produce the same outcome with a different person.
+- C) Move the discussion to a private setting.
+- D) Remind everyone the review is blameless.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Option B redirects and supplies the questions that produce systemic findings, which is the part that makes it work — "blameless" as a stated value does nothing without them. Option A is least effective because a review that identifies an individual changes nothing about the system and reliably ensures the next incident is described less honestly. Option D names the principle without the alternative and tends to be ignored within two minutes. Option C removes the discussion from the people who would learn from it.
+
+**Question 3 (moderate) — A supplier missing its commitments**
+
+A supplier is repeatedly missing response times. The contract provides service credits. What is the most effective response?
+
+- A) Claim the service credits.
+- B) Establish why they are missing — capability, resourcing, or a contract that pays for something other than what you need — and address that, because service credits compensate you for a failure without changing it, and a supplier resourcing your work thinly because the contract rewards it will keep doing so through any number of credit claims.
+- C) Escalate to the supplier's account director.
+- D) Begin planning to replace the supplier.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** The three causes need different remedies, and the contractual one is both common and untouched by escalation or credits. Option B diagnoses before acting. Option D is least effective as a first move: replacing an infrastructure supplier is a multi-year undertaking with substantial risk, and starting it before you know whether the problem is fixable is disproportionate. Option A takes the compensation and leaves the service as it is. Option C is reasonable once you know what you are escalating about.
+
+**Question 4 (moderate) — An architecture that will be hard to operate**
+
+A technical architect's design is sound architecturally but would be difficult for your teams to operate and support. What is the most effective response?
+
+- A) Raise it as an operational concern in the design review.
+- B) Set out concretely what makes it hard to operate — what would happen at 3am, what the diagnostic path is, what skills it needs that the team does not have — and work with the architect on changes that keep the architectural intent, because your role is translating designs into operations and "hard to operate" is not actionable until it is specific.
+- C) Accept it; architecture is their responsibility.
+- D) Ask for the design to be reworked.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** Your role summary names working with technical architects to translate designs into operations, and option B does exactly that — the specifics are what make the concern something an architect can act on, and most such problems have solutions that preserve the design's intent. Option C is least effective: accepting a design your teams cannot operate guarantees the cost lands on them for years, and you are the only person positioned to prevent it. Option D asks for rework without saying what would fix it. Option A raises it in a form that is easy to note and hard to act on.
+
+**Question 5 (moderate) — A roadmap decision with a long tail**
+
+You are choosing between two infrastructure platforms. One is technically stronger; the other is one your organisation already has skills in. What is the most effective analysis?
+
+- A) Choose the technically stronger platform.
+- B) Treat operability by the people who will actually run it as a design criterion rather than a compromise — so the real comparison is between the familiar platform and the stronger one plus a credible, funded plan to build the capability, and the familiar one usually wins unless those skills are strategically valuable.
+- C) Choose the familiar platform.
+- D) Run both and decide later.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** A platform nobody in the organisation can debug at 3am is a bad platform regardless of its architecture, and option B frames that as part of the assessment rather than an obstacle to it. It also keeps the stronger option live under the one condition that would make it viable. Option D is least effective: running two infrastructure platforms doubles the operational surface, splits scarce skills, and defers a decision that gets harder as both accumulate dependencies. Option C reaches the usual answer without the reasoning and misses the case where building capability is right. Option A weighs one dimension.
+
+**Question 6 (moderate) — A capability concentrated in one person**
+
+Only one engineer understands the configuration of a platform underpinning several services. What is the most effective response?
+
+- A) Ask them to document it.
+- B) Reduce the dependency by having someone else do the work with them — making a change, handling an incident — because the risk lives in what the expert does without thinking, which documentation systematically misses, and only doing transfers it.
+- C) Recruit a second specialist.
+- D) Simplify the platform.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** Documentation is worth having and is reliably incomplete precisely where it matters, because the expert cannot see which of their actions are non-obvious. Option B transfers capability by exercising it. Option C is least effective as the primary response: it is slow, uncertain, expensive, and ends with concentrated knowledge in two heads rather than distributed capability. Option D is frequently the best long-term answer — a platform only one person understands is usually too complicated — and does nothing about the next three months.
+
+**Question 7 (harder) — Pressure to accept a risk**
+
+A programme wants to go live on infrastructure you consider under-provisioned for its expected peak. Delaying is costly. What is the most effective response?
+
+- A) Refuse to approve the go-live.
+- B) Quantify the risk — expected peak against capacity, what fails first, how long recovery takes — and put the options to whoever owns the service risk, including going live with reduced scope, additional temporary capacity, or accepting a degradation risk from a stated date.
+- C) Approve it; the programme owns its delivery.
+- D) Approve it and record the risk.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** Option B converts an engineering judgement into a decision someone accountable can take, and the three options are the ones that actually exist at that stage — temporary capacity in particular is frequently available and frequently unconsidered. Option C is least effective: treating a risk you can see and they cannot as somebody else's problem is not how it will be viewed afterwards. Option D is close and weaker, since a recorded risk with no owner and no decision changes nothing while looking like diligence. Option A removes the risk owner from their own decision.
+
+**Question 8 (harder) — A security finding nobody wants to fund**
+
+A significant vulnerability in a platform component requires a migration the organisation has no appetite for. What is the most effective response?
+
+- A) Escalate until it is funded.
+- B) Set out the exposure concretely — what an attacker could do, what access they would need, what is reachable — and the options with costs, including interim mitigations that reduce the risk without the migration, then get a named risk acceptance from whoever is accountable if nothing is done.
+- C) Implement interim mitigations and move on.
+- D) Record it on the risk register.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** Option B does the three available things: makes the risk evaluable, offers the middle path that usually exists, and ensures a decision to accept the risk is made explicitly by someone accountable rather than by inertia. The named acceptance is the part most often skipped and the part that converts a warning into a decision. Option D is least effective: a register entry with no owner and no decision is where findings go to be forgotten, and it will be rediscovered after an incident. Option C is useful and leaves the residual risk unowned. Option A escalates before quantifying.
+
+**Question 9 (harder) — Recurring failures with different causes**
+
+A platform has had four significant outages in a year, each with a different immediate cause: a certificate expiry, a full disk, a misconfigured limit and a dependency timeout. What is the most effective response?
+
+- A) Fix each cause thoroughly.
+- B) Look for the shared property — most likely that all four were conditions that develop observably before they fail and none was detected in advance — because four different causes with the same consequence usually indicate one missing capability rather than four unrelated faults.
+- C) Add more alerting.
+- D) Increase the frequency of maintenance checks.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Each of the four is a condition that develops gradually and visibly before it causes an outage, and in every case nobody saw it coming. That is a single systemic property — no leading indicators, no alerting on approach to a threshold — with one fix that covers all four and the next four. Option A is least effective as the whole response: it resolves four specific faults and leaves the property that let them become outages entirely intact. Option C is directionally right and unspecific, since more alerts on symptoms would not have helped. Option D substitutes human vigilance for instrumentation.
+
+**Question 10 (harder) — Recognising invisible work**
+
+An engineer has spent months on resilience improvements. There have been no incidents in their area and their contribution appears in no delivery metric. What is the most effective response?
+
+- A) Thank them and note it in their appraisal.
+- B) Make the value legible — what failure classes are now impossible, what incidents would have occurred at the previous rate, what that is worth — and put it in front of the people who make promotion and resourcing decisions, because invisible work stays invisible unless someone converts it into something countable.
+- C) Give them public credit at a team meeting.
+- D) Move them onto more visible work.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** Success in resilience work looks like nothing happening, which disadvantages the person doing it in every process that counts outputs. Option B produces the count, which serves them and also protects the work from being deprioritised. Option D is least effective — it solves their visibility problem by stopping the valuable work, and tells everyone that resilience work is a career dead end. Options A and C are good and insufficient: neither reaches the people making decisions about promotion or headcount.
+
+**Question 11 (harder) — Evidence against your own roadmap decision**
+
+A platform choice you led three years ago is now the main source of operational toil for several teams. What is the most effective response?
+
+- A) Defend it; the decision was right given what was known.
+- B) Quantify what the toil is costing — hours a month, incidents attributable, what teams cannot do — say plainly that the original assumptions have not held, and get someone other than you to assess the options, because a recommendation about your own decision carries a discount you cannot argue away.
+- C) Propose a migration.
+- D) Invest in reducing the toil on the current platform.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Option B quantifies the problem, is honest about the decision, and handles the credibility issue by removing yourself from the recommendation — which is what makes the analysis actionable, since whatever you recommend about your own choice will be read as defensiveness or guilt. Option A is least effective: probably true and beside the point, since the question is what to do now, and defending it teaches several teams that the toil is permanent. Options C and D are plausible outcomes that should come from the independent assessment rather than from you.
+
+**Question 12 (harder) — Reporting honestly**
+
+A director asks you to summarise infrastructure reliability for a board paper. Availability figures are good; time to restore is poor. What is the most effective response?
+
+- A) Report availability; it is the headline metric.
+- B) Report both and interpret them — the platform rarely fails and takes a long time to recover when it does, which is a specific and fixable problem — because a board given only the favourable metric will not fund the work the unfavourable one points at.
+- C) Report availability and mention restore time if asked.
+- D) Describe the picture as mixed.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Option B reports honestly and does the more valuable thing, which is to interpret: high availability with slow recovery is a recognisable pattern with known remedies — runbooks, faster rollback, better observability — and naming it turns two numbers into a proposal. Option A is least effective because it gets you thanked now and leaves the restore-time problem unfunded until it causes a serious incident, at which point the board will ask what you knew. Option C is the same omission with a fallback. Option D characterises without informing.
+
+### Preparation tips
+
+- **Restore first, diagnose afterwards, preserve the evidence.**
+- **Redirect post-incident reviews to conditions with specific questions.**
+- **Diagnose why a supplier is failing before claiming credits.**
+- **Make "hard to operate" specific enough for an architect to act on.**
+- **Treat operability as a design criterion, not a compromise.**
+- **Transfer tacit knowledge by doing, not by documenting.**
+- **Get a named risk acceptance when a finding will not be fixed.**
+- **Convert invisible resilience work into something countable.**
+
+### Common pitfalls to avoid
+
+- **Adding people to a live incident.**
+- **Letting a post-incident review identify a person.**
+- **Taking service credits as a response to poor supplier performance.**
+- **Accepting a design your teams cannot operate.**
+- **Running two platforms to defer a decision.**
+- **Answering a single-person dependency with documentation alone.**
+- **Recording a risk instead of getting it decided.**
+- **Reporting only the favourable metric.**
+
+## Conclusion
+
+You have worked through four assessments pitched at principal infrastructure engineer, and the threads are worth drawing together.
+
+The cognitive section kept returning to systems rather than components. Four outages with four causes is usually one missing detection capability. A design that is architecturally sound and operationally unworkable is not sound. And the question worth asking of any automation or platform change is what bounds the damage when it goes wrong, rather than how well it performs when it does not.
+
+The numeric section was the arithmetic that decides infrastructure work: availability composing across dependencies, peak headroom rather than average utilisation, lifetime cost rather than build cost, and volumetrics done at design time rather than discovered in the first full-volume run.
+
+The verbal section was about the documents that define what you are owed and what you are permitted. A warranted availability figure excluding notified maintenance promises considerably less than it appears to. An emergency change route defers governance rather than removing it. And copying production data into a test environment reclassifies that environment under most security standards — the clause teams miss most reliably.
+
+The situational judgement section was about standing between delivery pressure and operational reality. The strong answers restored before diagnosing, diagnosed why a supplier was failing rather than claiming compensation for it, made risks concrete enough to be accepted by someone accountable, and treated your own past platform decision with the same scrutiny you would apply to anyone else's.
+
+If one thread runs through all four, it is the visibility problem. Your teams' best work produces nothing observable — outages that did not happen, capacity that absorbed a peak, an attack surface that closed. Nobody else in the organisation will translate that into evidence, and the funding, the recognition and your own credibility all depend on someone doing it.
+
+Good luck. This is work that shows mainly when it is missing, and the care you have given this is exactly the kind that keeps it from showing.

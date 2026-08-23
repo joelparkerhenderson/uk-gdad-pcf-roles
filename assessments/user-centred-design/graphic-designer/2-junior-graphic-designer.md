@@ -488,4 +488,436 @@ An accessibility audit found that 20% of pages in your service had at least one 
 - **Trusting bar heights over labelled values.** Truncated axes exaggerate change. Read the numbers; the bars are decoration until you have checked the scale.
 - **Letting one outlier speak for the group.** An average dragged by an outlier misdescribes the typical user. Notice outliers, report them separately, and investigate them — they are often where the interesting design problem hides.
 
-<!-- APPEND -->
+## Workplace job-specific verbal reasoning assessment
+
+### About this assessment
+
+A workplace job-specific verbal reasoning assessment checks whether you can work out exactly what a piece of writing establishes — not what it implies, and not what you already know to be true.
+
+For a junior graphic designer the material is the writing that surrounds design work: accessibility standards, a design system's guidance, brand and style rules, a brief from a service manager, and research findings from a user researcher.
+
+The usual format gives you a passage and then statements to mark **True**, **False** or **Cannot Say**:
+
+- **True** — the passage establishes it.
+- **False** — the passage contradicts it.
+- **Cannot Say** — the passage settles it neither way.
+
+Get comfortable with Cannot Say. It is a confident, correct answer rather than an admission of defeat, and in a well-built test there will be several.
+
+Two things are worth knowing before you begin.
+
+The first is that **design standards are written with precise conditions**. A contrast requirement applies at a stated ratio, to a stated kind of content, with stated exceptions. Reading past the condition changes what the rule requires, and in accessibility that difference is the difference between a compliant design and a non-compliant one.
+
+The second is that **your design knowledge is the main hazard**. You may know that a 3:1 ratio is too low for body text. If the passage does not say so, the answer comes from the passage. This feels strange at first and becomes natural quickly — and it is genuinely useful, because reading a standard for what it actually says is a large part of applying it correctly.
+
+### How this assessment maps to your role
+
+- **Reading accessibility standards precisely** maps to **Designing for everyone**, where you ensure a design meets appropriate standards with support.
+- **Reading design system guidance** maps to working independently after direction from more senior designers.
+- **Reading briefs** maps to identifying user issues and important needs.
+- **Reading research findings** maps to understanding what research does and does not tell you.
+- **Explaining accurately** maps to **Design communication**, where you explain design decisions to others.
+- **Reading collaboratively-produced documents** maps to working collaboratively as part of a service.
+
+### Practice questions
+
+*Passage A — for Questions 1 to 4*
+
+"Text and images of text must have a contrast ratio of at least 4.5:1 against their background. Large-scale text must have a ratio of at least 3:1, where large-scale means at least 24 pixels, or at least 18.66 pixels if bold. This requirement does not apply to text that is purely decorative, text that is part of an inactive interface component, or text within a photograph containing significant other visual content. Logotypes are exempt. Interface components and meaningful graphics must have a contrast ratio of at least 3:1 against adjacent colours."
+
+**Question 1 (easy)**
+
+Statement: Body text must have a contrast ratio of at least 4.5:1.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** The first sentence says so directly, and body text is neither large-scale nor covered by any of the exemptions listed. This is the baseline question, and the ones that follow complicate it.
+
+**Question 2 (easy)**
+
+Statement: Text at 20 pixels bold counts as large-scale text.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** The passage defines large-scale as at least 24 pixels, "or at least 18.66 pixels if bold". At 20 pixels bold, the second threshold applies and 20 clears 18.66. So it counts as large-scale, and the 3:1 ratio applies rather than 4.5:1. Reading both halves of a two-part definition is the whole skill here — plenty of people check 20 against 24, see it fall short, and answer False.
+
+**Question 3 (moderate)**
+
+Statement: The border of a text input must have a contrast ratio of at least 4.5:1.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage sets 3:1 for "interface components and meaningful graphics", and an input border is an interface component rather than text. The statement applies the text threshold to a non-text element, so the passage contradicts it. Note that a border *at* 4.5:1 would comfortably satisfy 3:1 — the statement fails because it says 4.5:1 is *required*, which is not what the passage says. Applying the text ratio universally is a common error and it leads to rejecting perfectly compliant designs.
+
+**Question 4 (moderate)**
+
+Statement: The label on a greyed-out button must meet the 4.5:1 ratio.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage exempts "text that is part of an inactive interface component", and a greyed-out button is inactive. So the requirement does not apply. This is the question where your instincts pull hardest against the text — low-contrast disabled states really are a usability problem, and many teams choose to exceed the requirement deliberately. Both things are true at once: the exemption exists, and relying on it is often a poor design choice. The question asks about the first.
+
+*Passage B — for Questions 5 to 8*
+
+"The design system provides three button styles: primary, secondary and warning. Guidance states that a page should contain no more than one primary button, which should be used for the main action the user is expected to take. Secondary buttons may be used for alternative actions. The warning style should be reserved for actions that are difficult or impossible to reverse, such as deleting a record. Teams departing from the design system should record the reason. The design system is updated quarterly."
+
+**Question 5 (easy)**
+
+Statement: The design system provides three button styles.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly: primary, secondary and warning. Straightforward, and worth reading carefully anyway, because the questions that follow turn on the guidance attached to each.
+
+**Question 6 (moderate)**
+
+Statement: A page must never contain two primary buttons.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage says a page *should* contain no more than one primary button. "Should" is a strong recommendation from which a team may depart with a recorded reason — indeed the passage explicitly provides for departure. "Must never" asserts an absolute rule, which the passage contradicts. This is the should-versus-must distinction, and it is the single most reliable source of lost marks in this format.
+
+**Question 7 (moderate)**
+
+Statement: A "cancel subscription" action should use the warning style.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The warning style is for actions "difficult or impossible to reverse, such as deleting a record". Whether cancelling a subscription is difficult to reverse is not something the passage tells you — in some services you can resubscribe in a minute, in others the cancellation is final. You would need to know how this particular service works, and the passage does not say. Tempting to answer True by matching the vibe of the action rather than the stated criterion.
+
+**Question 8 (harder)**
+
+Statement: A team that departs from the design system is required to record the reason.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage says teams departing "should record the reason", not "must". The statement's "required" overstates it, in a passage that has already shown it distinguishes between the two — it uses "may" for secondary buttons and "should" three times. If you found this one frustrating, that is a good sign: it means you are reading the modal verbs, which is exactly the habit the section rewards.
+
+*Passage C — for Questions 9 to 12*
+
+"Research with 24 participants tested two versions of a service start page. Version A used an illustration above the start button; version B used no illustration. Participants using version B located the start button more quickly, with a median time of 3.2 seconds against 5.1 seconds for version A. Three participants using version A did not find the start button within the time allowed. Participants were recruited from existing users of the service. The research team noted that no participants used screen magnification."
+
+**Question 9 (easy)**
+
+Statement: Participants using version B found the start button faster than those using version A.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly, with the figures: a median of 3.2 seconds against 5.1. True. Note the passage gives medians rather than means, which is the appropriate statistic for timing data and worth noticing when you come to describe the finding to anyone else.
+
+**Question 10 (moderate)**
+
+Statement: The illustration caused participants to take longer to find the start button.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The illustration is the difference between the two versions, and the version with it was slower — so this is a very reasonable inference and you would be right to act on it. What the passage establishes is an association between the version and the timing, not a cause. The pages may have differed in other ways the passage does not mention. Marking a well-evidenced explanation as Cannot Say feels overly cautious, and it is exactly the discipline the format is testing.
+
+**Question 11 (moderate)**
+
+Statement: The findings apply to people who have never used the service before.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** Participants were "recruited from existing users of the service", so the research tells you about existing users. Whether the same pattern holds for first-time users is not established — plausibly it would be stronger, since existing users know roughly where to look, but the passage does not say. Checking who was in a study before generalising from it is a habit worth having well beyond assessments.
+
+**Question 12 (harder)**
+
+Statement: The illustration causes problems for people using screen magnification.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage notes that no participants used screen magnification, which tells you the research did not cover that group — and "not covered" is not the same as "no problem found", nor is it the same as "problem found". The passage establishes a gap in the evidence and nothing about what is in the gap. This is worth being precise about in real work too: a research finding that is silent about a group is a reason to find out, not a reason to conclude either way.
+
+### Preparation tips
+
+- **Read both halves of a two-part definition.** 24px *or* 18.66px if bold.
+- **Underline "must", "should" and "may".** They decide more questions than anything else.
+- **Check whether a threshold applies to text or to components.** They differ.
+- **Read the exemption list before deciding a requirement applies.**
+- **Ask who was in the research before generalising the finding.**
+- **Treat a stated association as an association, not a cause.**
+- **Notice when a passage records a gap in the evidence.**
+- **Ask yourself "where does it say that?"** If you cannot point at the sentence, it is Cannot Say.
+
+### Common pitfalls to avoid
+
+- **Applying the 4.5:1 text ratio to buttons, borders and icons.**
+- **Reading "should" as "must".**
+- **Answering from accessibility knowledge rather than from the passage.**
+- **Matching the feel of an action to a style rather than the stated criterion.**
+- **Marking a well-evidenced cause as True.**
+- **Generalising a finding past the participants who produced it.**
+- **Reading "not tested" as "no problem".**
+- **Missing the second half of a definition or an exemption at the end.**
+
+## Workplace job-specific situational judgement assessment
+
+### About this assessment
+
+A workplace job-specific situational judgement assessment gives you realistic situations from your working life and asks what you would do. The situations are ordinary, and the question is which response an experienced designer would choose.
+
+For a junior graphic designer the situations involve working to direction from more senior designers, explaining your decisions, working with people from other disciplines, raising accessibility concerns, and receiving critique.
+
+You will usually pick the **most effective** and **least effective** response, or rate each. Scoring is against a key built from experienced practitioners, so you are aiming at professional consensus rather than personal taste.
+
+Three things explain most of the answer key.
+
+**Design decisions need reasons, not preferences.** Your role summary names explaining design decisions, and the difference between "I thought it looked better" and "I increased the spacing because the two groups were being read as one list" is the difference between a decision a team can discuss and one they can only agree or disagree with.
+
+**Accessibility is not a matter of taste.** When a design fails a standard, that is a fact rather than an opinion, and saying so early is much easier than saying so late. You are not expected to own accessibility at your level — you are expected to notice and raise.
+
+**Asking is expected.** You work under direction from more senior designers, which means questions are the arrangement working properly. Guessing what someone meant and building it is how a week gets wasted.
+
+### How this assessment maps to your role
+
+- **Explaining design decisions** maps to **Design communication**.
+- **Working to direction** maps to working independently after being given direction by more senior designers.
+- **Raising accessibility issues** maps to **Designing for everyone**.
+- **Working across disciplines** maps to working collaboratively and having responsibility as part of a service.
+- **Spotting user problems** maps to identifying user issues and important needs.
+- **Receiving critique** maps to developing your practice within a team.
+
+### Practice questions
+
+**Question 1 (easy) — Explaining a choice**
+
+In a design review, someone asks why you chose a particular type size. What is the most effective response?
+
+- A) Say it looked right at that size.
+- B) Explain what the size is doing — the reading distance and device you designed for, the hierarchy it establishes against the surrounding text, and the minimum you were working to — because a reason can be discussed and improved, while a preference can only be agreed or disagreed with.
+- C) Say it matches the design system.
+- D) Offer to change it if they prefer something else.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** Your role summary names explaining design decisions, and option B is what that looks like: the choice connected to the problem it solves. Option D is least effective because it treats a question as a complaint — the person asking usually wants to understand your thinking, and immediately offering to change it teaches them that your decisions are not considered. Option C is a good and partial answer, since it explains where the value came from rather than why it is right here. Option A is honest and gives the room nothing to work with.
+
+**Question 2 (easy) — A brief you do not fully understand**
+
+A senior designer gives you direction for a piece of work and you are not sure what they mean by part of it. What is the most effective response?
+
+- A) Ask them to clarify the part you are unsure about before you start.
+- B) Make a start and ask if you get stuck.
+- C) Interpret it the way that seems most sensible and show them the result.
+- D) Ask a colleague what they think it means.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** A two-minute question at the start is the cheapest it will ever be. Option A is direct and expected — you work to their direction, so clarifying it is the process working properly rather than a sign of difficulty. Option C is least effective: producing a full piece of work on a guess risks a day's effort and puts the senior designer in the awkward position of rejecting something you have finished. Option B is reasonable for small ambiguities and lets a misunderstanding grow. Option D asks someone who is also guessing.
+
+**Question 3 (moderate) — Spotting a contrast problem**
+
+You notice that a colour combination in a colleague's design fails contrast requirements. What is the most effective response?
+
+- A) Mention it to them with the measured ratio and the required ratio, and suggest a nearby colour that passes.
+- B) Mention that the contrast looks low.
+- C) Leave it; it is their design.
+- D) Raise it in the next design review.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Option A turns an observation into something immediately actionable, and bringing a working alternative makes it collaborative rather than critical. The measurement matters because it removes the question of taste entirely — a ratio either meets the threshold or it does not. Option C is least effective: an accessibility failure that reaches build costs far more to fix, and noticing without saying is the one option that helps nobody. Option B is a good instinct expressed too vaguely to act on. Option D delays something that takes a minute now.
+
+**Question 4 (moderate) — Critique on your work**
+
+In a critique session, several people suggest substantial changes to something you have spent days on. What is the most effective response?
+
+- A) Listen, ask questions to understand each point, and take notes without defending each choice in the moment.
+- B) Explain the reasoning behind each decision as it comes up.
+- C) Agree to make all the changes.
+- D) Ask whether the critique is really necessary at this stage.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** Critique works best when you gather everything first and decide afterwards, because defending each point as it arrives turns a review into a negotiation and people stop offering the useful observations. Option A also asks questions, which is how you tell a strong point from a passing preference. Option D is least effective — questioning whether the critique should be happening reads as defensiveness and reliably reduces what people tell you next time. Option B has a place, particularly where someone has misunderstood the constraint, and as a general posture it costs you the session. Option C accepts everything without judgement, including the contradictory suggestions.
+
+**Question 5 (moderate) — A stakeholder's colour request**
+
+A service manager asks you to use a colour from their team's branding. It fails contrast against the background you were planning. What is the most effective response?
+
+- A) Use the colour; the service manager has asked.
+- B) Explain that the combination would fail the accessibility requirement, show the measurement, and offer options — a darker version of the same colour, a different background, or the colour used somewhere it is not carrying meaning.
+- C) Explain that you cannot use it.
+- D) Use it and flag it for accessibility testing later.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** Option B keeps what the service manager actually wants — their brand present — while meeting the requirement, and offering three routes makes it a design conversation rather than a refusal. Option D is least effective: knowingly building something that fails a standard and hoping testing catches it later is how accessibility problems reach users, and it also wastes the rework. Option C reaches the right answer with nothing attached, which invites the reading that accessibility is an obstacle. Option A defers to seniority on something that is not a matter of preference.
+
+**Question 6 (moderate) — Research that contradicts your design**
+
+A user researcher reports that people are not noticing an element you designed. What is the most effective response?
+
+- A) Ask the researcher what people were trying to do and where their attention was, because that determines whether the fix is the element, its position, or the content around it.
+- B) Redesign the element to be more prominent.
+- C) Ask how many participants there were.
+- D) Ask to see the recordings yourself.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** "People did not notice it" is a fact about attention rather than a diagnosis, and the remedy depends entirely on why. Option A gets the detail that tells you. Option C is least effective as a first response — asking about sample size in reply to an unwelcome finding is what defensiveness sounds like, and it is the fastest way to be left out of research. Option D is genuinely valuable and slower than asking. Option B jumps to a solution, and making a missed element louder is not always the right answer, particularly if it is in the wrong place.
+
+**Question 7 (harder) — A mistake in something already published**
+
+You realise a graphic you produced, now live, has an error in it. Nobody has mentioned it. What is the most effective response?
+
+- A) Tell your team now, say what the error is, and offer a corrected version.
+- B) Correct it quietly and replace the file.
+- C) Wait to see whether anyone notices.
+- D) Mention it at the next team meeting.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Errors happen and how they are handled is what people remember. Option A is quick and lets someone else assess whether the error matters more than you think — it might appear in printed material or in a partner's service, which you may not know. Option C is least effective: waiting means it is found by someone else, later, possibly by a user, and the delay is what looks bad rather than the error. Option B looks tidy and removes anyone's chance to check the wider impact. Option D delays by days.
+
+**Question 8 (harder) — Direction you disagree with**
+
+A senior designer directs you to lay something out in a way you think will be harder to read. What is the most effective response?
+
+- A) Ask about it — describe what you think the reading problem is and ask what you might be missing — because you may be right, you may not have the whole context, and either way it is a reasonable question.
+- B) Do it as directed; they are more experienced.
+- C) Produce both versions and let them choose.
+- D) Do it your way and explain afterwards.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** The "what am I missing?" framing makes this easy to ask and easy to answer, and quite often you *are* missing something — a constraint from elsewhere in the service, or a decision made before you joined. Equally, senior designers get things wrong and would rather be asked. Option D is least effective: producing something other than what was asked for without saying so wastes the review and damages trust, for no benefit that a question would not have got you. Option C is a genuinely good move when the disagreement is substantive, and as a way of avoiding the conversation it is slower. Option B may be right and skips the chance to learn why.
+
+**Question 9 (harder) — Working with a content designer**
+
+A content designer asks you to accommodate a heading much longer than the one your layout was designed around. What is the most effective response?
+
+- A) Ask what the heading needs to do and work out together whether the layout or the wording should give — because they will have a reason for the length, and the answer is often a small change on both sides.
+- B) Redesign the layout to fit it.
+- C) Ask them to shorten it.
+- D) Let it wrap and accept the result.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** Content designers work to their own evidence about what users understand, and a long heading usually exists because a short one tested badly. Option A treats it as a shared problem, which is what usually produces the best result — often a slightly shorter heading in a slightly more flexible layout. Option D is least effective: accepting an unplanned wrap without looking at it is how layouts break at exactly the moment real content arrives, and it decides the outcome by not deciding. Options B and C each assume one side should absorb the whole problem.
+
+**Question 10 (harder) — Being asked for an estimate**
+
+You are asked how long a set of graphics will take. You have not done this type of work before. What is the most effective response?
+
+- A) Give a range, say what you are unsure about, and offer a firmer figure after looking at one example properly.
+- B) Give your best single guess.
+- C) Say you cannot estimate it.
+- D) Give a generous figure so you are safe.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** Nobody expects precision on unfamiliar work; what they need is a sense of scale and of what could change it. Option A gives both and offers a cheap way to improve the answer. Option D is least effective — padding looks harmless and quietly distorts everyone else's planning, and finishing far early teaches people to discount your estimates afterwards. Option B hides the uncertainty. Option C leaves the person with nothing to plan around.
+
+**Question 11 (harder) — An inconsistency across a service**
+
+You notice that two parts of a service you are working on use different icon styles. Neither is yours. What is the most effective response?
+
+- A) Raise it with your team, showing the two examples and asking which is intended.
+- B) Change one to match the other.
+- C) Leave it; neither is your work.
+- D) Note it for a future consistency review.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** Your role summary names identifying user issues, and inconsistency across a service is one users genuinely notice — it makes a service feel unreliable even when nothing is broken. Option A raises it in the form easiest to act on, and asking which is intended is the right question, since one may be a deliberate exception. Option B is least effective: changing another team's work without asking may undo a decision made for a reason, and it is discourteous. Option C lets it stand. Option D is slower than a two-minute conversation.
+
+**Question 12 (harder) — Too much work**
+
+You have been given more work than you think you can finish this week. What is the most effective response?
+
+- A) Say so now, explain which pieces are at risk, and ask which matter most.
+- B) Do your best and see how far you get.
+- C) Work extra hours to finish it.
+- D) Say something at the end of the week if it has not been finished.
+
+**Correct answer: A. Least effective: D**
+
+**Explanation:** Raising it now is what makes it useful — it gives whoever is planning a chance to reprioritise while there is still time to act. Asking which matter most is the practical part: if something must slip, far better it is the piece the team would have chosen. Option D is least effective because information arriving after the week cannot change anything. Option C hides a planning problem behind your own time. Option B leaves everyone to find out at the end.
+
+### Preparation tips
+
+- **Explain design decisions by the problem they solve.**
+- **Bring the measurement when raising a contrast issue.**
+- **Offer an alternative alongside a problem.**
+- **Gather critique first and decide afterwards.**
+- **Ask "what am I missing?" when you disagree with direction.**
+- **Ask a researcher what people were doing before you redesign.**
+- **Raise your own errors quickly.**
+- **Give ranges rather than single numbers for unfamiliar work.**
+
+### Common pitfalls to avoid
+
+- **Justifying a choice by preference.**
+- **Offering to change a design as soon as it is questioned.**
+- **Building a full piece of work on a guess about the brief.**
+- **Knowingly using a failing colour and relying on later testing.**
+- **Asking about sample size in reply to an unwelcome finding.**
+- **Changing another team's work without asking.**
+- **Correcting a live error quietly.**
+- **Padding an estimate to be safe.**
+
+## Conclusion
+
+You have worked through four assessments built around the reasoning a junior graphic designer actually uses, and it is worth drawing them together.
+
+The cognitive section was about working carefully from what is in front of you — spotting the pattern in a set of inconsistencies, following a rule through several conditions, and checking details rather than trusting a first impression.
+
+The numeric section was ordinary arithmetic done accurately: ratios, spacing scales, proportions and percentages, with the recurring lesson that writing the steps down beats doing it in your head.
+
+The verbal section asked for something slightly counterintuitive — reading exactly what a standard says and setting aside what you know. Large-scale text has a two-part definition. Interface components have a different threshold from text. "Should" is not "must". And research that did not include a group tells you nothing about that group either way.
+
+The situational judgement section was mostly about two habits. The first is **giving reasons**: a design decision explained by the problem it solves can be discussed, improved and defended, while one explained by preference can only be accepted or overruled. The second is **saying things early**: raising the contrast problem, asking about the unclear brief, mentioning your own mistake, flagging that the work will not fit. Every strong answer involved raising something sooner than felt comfortable.
+
+Both of those get easier with practice, and both are noticed. Experienced colleagues read a designer who explains their thinking and raises things early as someone who will be reliable with more responsibility — which is, in the end, what this role level is for.
+
+Good luck. You are at the stage where the habits you build now shape the designer you become, and working through all of this is a good sign about how you approach the craft.

@@ -840,4 +840,18 @@ A serious outage takes down three services for four hours. The immediate cause: 
 - **Accepting misdirected credit or deflecting deserved accountability.** Both are currency thefts — one steals from your people, the other from your own role. The SJT tests whether you know which direction each should flow.
 - **Fixing demography by abandoning process, or protecting process by ignoring demography.** Inclusion scenarios reward redesigning the process so that merit and openness stop being in tension.
 
-<!-- APPEND -->
+## Conclusion
+
+You have worked through four assessments pitched at lead DevOps engineer on the management track, and it is worth drawing the threads together.
+
+The cognitive section was about systems rather than instances — reading recurring failures for the property they share, weighing automation by what bounds its blast radius, and asking what a design assumes rather than what it states.
+
+The numeric section was the arithmetic that decides delivery and reliability decisions: availability in minutes, capacity sized on peak with a failure rather than on average, error budgets as burn rate, and the recurring caution against presenting elapsed queue time as recovered engineer hours.
+
+The verbal section asked you to read governance and contractual prose exactly. Quote numbers with their nouns. Track verb force — proposes, guarantees, is judged. "Could not be tested" is a different finding from "failed". Mitigation is not elimination. And where a figure is measured, at the provider boundary or the network edge, decides what it actually tells you.
+
+The situational judgement section was about answering as the accountable owner rather than the smartest engineer in the room. The strong answers generated a third option where a scenario offered a false binary, protected the channel by which bad news reaches you, and refused the quiet deceptions — the silent deprioritisation, the trade-off made in secret, the pilot result softened because the strategy was yours.
+
+If one thread runs through all four, it is that your effectiveness depends on what people are willing to tell you. Teams surface near-misses, slipping estimates and unwelcome pilot results to a lead who has shown that the last such disclosure was met with a question rather than a consequence. Almost everything else in this role gets easier when they do.
+
+Good luck. This is work where the good days are invisible and the habits compound, and the attention you have given this is well spent.

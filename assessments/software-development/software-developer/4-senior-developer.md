@@ -844,4 +844,20 @@ You have identified that the team's manual release checklist could be largely au
 - **Sacrificing standards silently to be agreeable.** Quietly dropping tests, approving the risky pull request, deferring to the louder peer — harmony purchased with hidden risk scores poorly, because the risk lands on users. The effective versions of "yes" are transparent trade-offs.
 - **Forgetting the people in technical scenarios.** Every scenario with a mentee, a peer, or another discipline is scoring how you treat them, not just what gets built. Responses that humiliate, bypass, or manipulate people lose points even when their technical content is impeccable.
 
-<!-- APPEND -->
+## Conclusion
+
+You have worked through four assessments pitched at senior developer, and it is worth drawing the threads together.
+
+The cognitive section was about reasoning across a whole system rather than a component — what fails when a dependency is slow rather than absent, why several incidents with different causes often share one property, and how to tell an instance from a pattern.
+
+The numeric section was the arithmetic behind the operational half of your role: availability figures, capacity headroom, error rates against real volumes, and the recurring lesson that an average across dissimilar things conceals exactly the information you needed.
+
+The verbal section asked you to read specifications and standards precisely, where "must", "should" and "may" are terms of art and an exception stops where it says it stops. It also asked you to resist over-correcting — Cannot Say is not automatically the safe answer, and a passage that does establish something deserves True.
+
+The situational judgement section reduced to a handful of recurring shapes: the incident, the mentee, the deadline against quality, the cross-disciplinary disagreement, the design review. The strong answers solved the problem *and* the system that produced it. The weak ones were passive or self-protective — the email trail, the noted concern, the quietly dropped test.
+
+Two symmetrical failures are worth naming because senior candidates commit both. Confusing decisiveness with unilateralism, by taking bold solo action where a conversation was available. And over-escalating or under-escalating, by skipping a level before the accountable person has had a chance, or by absorbing something that genuinely needed raising.
+
+If one thing is worth carrying away, it is the last of the pitfalls above: there are people in every technical scenario. A mentee, a peer, a designer, a product manager — and the option that gets the technical answer right while handling the person badly is rarely the one experienced practitioners choose.
+
+Good luck. This is a level where the habits you set now shape the developer you become, and the care you have given this is well placed.

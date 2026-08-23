@@ -471,3 +471,430 @@ D) 512 GB
 - **Over-calculating.** Some questions yield to estimation and elimination in a quarter of the time a full calculation takes; look at the spread of the options before diving in.
 - **Forgetting to round in the correct direction.** Replicas, staff, and labelled examples are whole units and round up for requirements; averages and costs are not.
 - **Trusting your first pass of arithmetic.** Recompute subtotals in a different order, as demonstrated in Question 11 — transposition and slip errors are invisible on a same-order re-read.
+
+## Workplace job-specific verbal reasoning assessment
+
+### About this assessment
+
+A workplace job-specific verbal reasoning assessment tests whether you can determine exactly what a piece of written material establishes. As a senior machine learning engineer the material is model documentation, evaluation reports, data sharing agreements, ethics and privacy guidance, and the research papers and vendor claims you assess when deciding what model is suitable.
+
+The commonest format presents a passage followed by statements to be marked True, False or Cannot Say. True means the passage establishes it, False means it contradicts it, and Cannot Say means it settles neither — regardless of what you know.
+
+Technical expertise is the principal hazard here, and it is a sharper hazard in machine learning than in most fields, because the discipline is full of claims that sound like results. You will read that a model "achieved" something and supply an experimental design the passage never described.
+
+Three specifics matter particularly.
+
+The first is that evaluation claims are scoped by dataset, metric and population. A figure established on one test set says nothing about another, and a metric that improved is not the same as an outcome that improved.
+
+The second is that data sharing and privacy documents define permitted purposes narrowly. A permission to use data for one purpose does not extend to training a model on it, and this is precisely the kind of boundary your role requires you to respect.
+
+The third is that "no evidence of X" combined with limited ability to detect X never establishes that X did not occur. This appears constantly in fairness and bias reporting, and reading it correctly is part of checking that live models stay safe.
+
+### What it measures for your role
+
+- **Reading evaluation reports precisely** maps to testing and assuring models to ensure they meet performance requirements.
+- **Reading model documentation** maps to deciding what model is most suitable for use.
+- **Reading data agreements** maps to **Data ethics and privacy**.
+- **Reading integration documentation** maps to **Systems integration**.
+- **Reading statistical claims** maps to **Applied maths, statistics and scientific practices**.
+- **Communicating precisely** maps to **Communicating between the technical and non-technical**.
+
+### Practice questions
+
+*Passage A — for Questions 1 to 4*
+
+"The model was evaluated on a held-out test set of 12,000 records drawn from the same collection period as the training data. Accuracy was 91.4%, and the area under the receiver operating characteristic curve was 0.88. Performance was reported separately for four age bands; the widest gap between bands was 6 percentage points in accuracy. The evaluation did not include records from the two regions onboarded after the collection period. No assessment of performance by ethnicity was carried out, as the field is not collected. The model is intended for use across all regions."
+
+**Question 1 (easy)**
+
+Statement: The model achieved 91.4% accuracy on the held-out test set.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly and scoped precisely to the held-out test set. Note how much of the passage is devoted to qualifying what that figure covers — same collection period, four age bands, two regions excluded, no ethnicity data — which is what a well-written evaluation report does and what the next three questions test.
+
+**Question 2 (moderate)**
+
+Statement: The model will achieve approximately 91% accuracy in the two regions onboarded after the collection period.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage states that the evaluation "did not include records from the two regions onboarded after the collection period", while the model "is intended for use across all regions". So performance in those regions is untested, and untested is not the same as equivalent or as worse. Both the test set and the training data come from the same collection period, which is a further reason to be cautious — but caution is not a finding, and the honest answer is that the passage establishes a gap rather than what is in it.
+
+**Question 3 (moderate)**
+
+Statement: The model performs equitably across ethnic groups.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** "No assessment of performance by ethnicity was carried out, as the field is not collected." That establishes the absence of an assessment, not the absence of a disparity. This is the single most consequential reading error in machine learning documentation, because an unassessed dimension is routinely reported and read as a clean one — and a model deployed in a public service with an unexamined equity dimension is a real problem regardless of how the sentence is phrased.
+
+**Question 4 (harder)**
+
+Statement: The evaluation shows the model performs consistently across age bands.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage reports "the widest gap between bands was 6 percentage points in accuracy". Whether 6 points counts as consistent is a judgement the passage does not make, and it depends entirely on what the model is used for — 6 points is negligible for a content ranking task and serious for an eligibility decision. The passage supplies the number and not the interpretation. Marking True treats a small-sounding figure as a verdict; marking False treats it as a failure. Neither is established.
+
+*Passage B — for Questions 5 to 8*
+
+"The data sharing agreement permits the recipient to process the shared dataset for the purpose of evaluating eligibility for the named scheme. Processing for any other purpose requires the written agreement of the data controller. The recipient may retain the dataset for the duration of the scheme and for twelve months afterwards, after which it must be deleted and deletion confirmed in writing. The recipient may create derived datasets where those datasets do not permit re-identification of individuals. Derived datasets are subject to the same retention terms. The agreement does not permit onward sharing with third parties."
+
+**Question 5 (easy)**
+
+Statement: The recipient may process the dataset to evaluate eligibility for the named scheme.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: A**
+
+**Explanation:** Stated directly as the permitted purpose. Note how tightly the permission is drawn — one named purpose, with anything else requiring written agreement — which is the structure of most data sharing agreements and the reason the next question matters.
+
+**Question 6 (moderate)**
+
+Statement: The recipient may train a machine learning model on the dataset without further permission.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** This turns on whether training a model *is* processing for the purpose of evaluating eligibility. If the model exists to evaluate eligibility for that scheme, a reasonable reading is that training it falls within the permitted purpose; if the model is for something else, it plainly does not. The passage does not say what the model is for, so it cannot be settled. This is exactly the ambiguity that should be resolved with the data controller in writing rather than by your own reading, and recognising that it is ambiguous is the professionally important part.
+
+**Question 7 (moderate)**
+
+Statement: A derived dataset that cannot be used to re-identify individuals may be retained indefinitely.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: B**
+
+**Explanation:** The passage contradicts this: "Derived datasets are subject to the same retention terms" — the scheme duration plus twelve months, then deletion. The non-re-identifiability condition governs whether a derived dataset may be created at all, not how long it may be kept. Reading a condition attached to creation as a release from a separate obligation is the error, and it is a common one in practice, where anonymised derivatives are often assumed to fall outside retention schedules.
+
+**Question 8 (harder)**
+
+Statement: The recipient may share a derived dataset with a supplier processing data on the recipient's behalf.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The agreement "does not permit onward sharing with third parties", and whether a supplier processing on the recipient's behalf constitutes a third party in this sense is not addressed. In data protection terms a processor acting under the controller's instruction is often treated differently from an independent third party, and this passage does not adopt or reject that distinction. So the answer is genuinely unresolved — and, as with Question 6, the professional response is to get it in writing rather than to rely on the reading you prefer.
+
+*Passage C — for Questions 9 to 12*
+
+"A monitoring review of the deployed model covered the six months since launch. Predicted-versus-actual calibration remained within tolerance for the first four months and drifted in months five and six. The review found no evidence of degradation in performance for any monitored subgroup, noting that subgroup sample sizes in monthly monitoring are small. Input feature distributions shifted for two of eleven features. The review recommends retraining. The review did not examine whether the drift affected decisions made by the caseworkers who use the model's output."
+
+**Question 9 (moderate)**
+
+Statement: The model's performance did not degrade for any monitored subgroup.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The review "found no evidence of degradation ... noting that subgroup sample sizes in monthly monitoring are small". No evidence of an effect, combined with limited power to detect it, does not establish absence. The passage is unusually helpful in flagging its own limitation, and the correct reading is that subgroup degradation is undetermined rather than ruled out. This is the standing trap in fairness monitoring, and the passage's own caveat is the clue.
+
+**Question 10 (moderate)**
+
+Statement: The distribution shift in two features caused the calibration drift.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** Both facts are reported; no causal link is asserted. The shift is a plausible and probably correct explanation, and the passage neither establishes it nor rules out other causes — a change in the underlying population, a change in how the data is recorded upstream, or a genuine change in the relationship being modelled. Professionally you would investigate the two shifted features first; that is a good prior, not a finding.
+
+**Question 11 (moderate)**
+
+Statement: The drift affected the decisions caseworkers made.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The passage states explicitly that the review "did not examine" this. Nothing either way — and it is worth noticing that this is the question that actually matters. Calibration drift that caseworkers compensated for is a technical issue; drift that changed outcomes for people is something else entirely, and the review has left the important question unanswered while recommending a technical remedy.
+
+**Question 12 (harder)**
+
+Statement: Retraining the model will restore calibration.
+
+- A) True
+- B) False
+- C) Cannot Say
+
+**Correct answer: C**
+
+**Explanation:** The review "recommends retraining", and a recommendation is not a prediction of its effect. Whether retraining restores calibration depends on why calibration drifted — retraining on recent data addresses a shifted input distribution and does not address a change in how the outcome is recorded upstream, or a feedback loop created by the model's own deployment. Treating a recommended action as an established remedy is a specific and common overreach, and here the passage has already told you that the cause was not determined.
+
+### Preparation tips
+
+- **Check the scope of an evaluation figure: which dataset, which population, which period.**
+- **Read "no assessment was carried out" as absence of evidence.**
+- **Read "no evidence of X" plus low power as undetermined, never as absence.**
+- **Distinguish a reported number from an interpretation of it.**
+- **Check whether a condition governs creation or retention.**
+- **Notice when an agreement's key term is undefined for your case.**
+- **Read a recommendation as a proposal, not as a predicted outcome.**
+- **Notice which question a review did not ask.**
+
+### Common pitfalls to avoid
+
+- **Treating an unassessed dimension as a clean one.**
+- **Generalising a test-set figure to an untested population.**
+- **Assuming anonymised derivatives escape retention terms.**
+- **Resolving an ambiguous data permission by your preferred reading.**
+- **Reading a plausible cause as an established one.**
+- **Treating a recommended remedy as a known fix.**
+- **Answering from machine learning practice rather than from the passage.**
+
+## Workplace job-specific situational judgement assessment
+
+### About this assessment
+
+A workplace job-specific situational judgement assessment presents realistic scenarios and asks you to identify effective and ineffective responses. As a senior machine learning engineer the scenarios involve deciding whether a model is fit to deploy, maintaining models already live, working with people who cannot evaluate what you tell them, and raising ethical and privacy concerns that are inconvenient.
+
+The commonest formats ask for the most and least effective response, or for ratings. Scoring is against a key derived from experienced practitioners in comparable roles.
+
+Three patterns run through the strong answers.
+
+The first is that a model in production is a system rather than a result. The research question is answered once; the engineering questions — what happens when the input distribution shifts, who notices, what the fallback is, how it is rolled back — are answered continuously, and your role names checking that live models stay safe, secure and effective.
+
+The second is that you are usually the only person in the room who can evaluate what you are saying. That creates an obligation to make your reasoning legible, including its uncertainty, because confident assertion from someone nobody can check is how organisations acquire expensive mistakes.
+
+The third is that ethical and privacy concerns are cheapest to raise early and hardest to raise late, and you are frequently best placed to see them.
+
+### What it measures for your role
+
+- **Deployment judgement** maps to deploying, testing and assuring models against performance requirements.
+- **Model maintenance** maps to checking that live models stay safe, secure and effective.
+- **Model selection** maps to deciding what model is most suitable.
+- **Communicating uncertainty** maps to **Communicating between the technical and non-technical**.
+- **Ethical judgement** maps to **Data ethics and privacy**.
+- **Integration** maps to **Systems integration** and working with others.
+
+### Practice questions
+
+**Question 1 (easy) — A model that evaluates well**
+
+Your model performs strongly on the held-out test set and a product manager asks to deploy it. What is the most effective response?
+
+- A) Deploy it; the evaluation is strong.
+- B) Answer the questions the evaluation cannot — how live traffic will differ from the training data, what happens when it drifts, what the fallback is if the model is unavailable, and how a bad prediction gets noticed — because a strong test result shows the model can work, not that the system around it will.
+- C) Run further offline evaluation.
+- D) Deploy it behind a flag.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Offline evaluation answers one question and is silent on the four in option B, each of which has caused production failures in models that evaluated beautifully. Option D is a good mechanism and belongs after the questions rather than instead of them — a flag limits exposure without telling you what you are exposed to. Option C produces more of the evidence you already have. Option A is least effective because it treats a research result as a production decision, which is precisely the step your role exists to add rigour to.
+
+**Question 2 (easy) — Explaining a model to a non-technical stakeholder**
+
+A service manager asks how confident they can be in the model's predictions. What is the most effective response?
+
+- A) Give the accuracy figure.
+- B) Give the figure with what it means for their decisions — how often the model is wrong, in which direction, and what happens to a person when it is — because an accuracy percentage tells a non-specialist nothing actionable, and the errors are what they need to plan for.
+- C) Explain that no model is perfect.
+- D) Give the accuracy and the area under the curve.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** Option B translates a technical figure into the terms the person actually decides in, and the direction of error is the part that matters most — a model that wrongly approves is a different operational problem from one that wrongly refuses. Option C is least effective: true, uninformative, and it reads as evasion when someone has asked a real question. Option D adds a second number the listener can interpret even less than the first. Option A gives a figure whose meaning depends on a base rate they do not know.
+
+**Question 3 (moderate) — Drift in a live model**
+
+Monitoring shows a live model's calibration has drifted over two months. Nobody has reported a problem. What is the most effective response?
+
+- A) Retrain on recent data.
+- B) Establish what is driving the drift and whether it is affecting decisions — a shifted input distribution, a change in upstream recording, or a feedback effect from the model's own deployment all look similar and need different responses, and "nobody has noticed" may mean no impact or a diffuse one.
+- C) Alert the service team that the model is failing.
+- D) Roll back to the previous model version.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** Retraining is often the right answer and option A applies it before knowing the cause — if the drift comes from a change in how a field is recorded upstream, retraining bakes in the new error. Option B distinguishes the causes and asks the question that actually matters, which is whether decisions changed. Option D is least effective: rolling back to a model trained on older data responds to drift by moving further from the current distribution. Option C states a conclusion the evidence does not yet support.
+
+**Question 4 (moderate) — A simpler model performs nearly as well**
+
+A logistic regression achieves 89% accuracy where your gradient-boosted model achieves 91%. What is the most effective analysis?
+
+- A) Use the more accurate model.
+- B) Weigh the two points against what the simpler model buys — explainability to caseworkers and to people affected by decisions, faster inference, easier debugging when it behaves oddly, and a much lower maintenance burden — because in a public service those often outweigh two percentage points, and your role names deciding what model is most suitable rather than most accurate.
+- C) Use the simpler model; explainability matters most.
+- D) Ensemble the two.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** Option B frames the decision as your role actually defines it — suitability rather than accuracy — and names the specific advantages that make simpler models frequently the right choice in government, where a decision affecting someone's benefits may need explaining to them. Option D is least effective: an ensemble adds the complexity of both models and the explainability of neither, for a marginal gain over the better one. Option C reaches a defensible conclusion by asserting a priority rather than weighing it. Option A optimises the metric rather than the decision.
+
+**Question 5 (moderate) — An integration constraint**
+
+The team integrating your model reports that its inference time is too slow for the transaction it sits in. What is the most effective response?
+
+- A) Ask them to increase the timeout.
+- B) Establish the actual budget available and work within it — through a smaller model, feature reduction, caching, or moving inference off the synchronous path — because an inference budget is a design constraint on model selection, not an obstacle to be negotiated away after the model is built.
+- C) Optimise the model's implementation.
+- D) Explain that the model needs the time it needs.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** Option B treats latency as what it is — a requirement the model has to meet — and lists the routes, of which moving inference off the synchronous path is the one most often overlooked and frequently the best. Option D is least effective: it asserts an immovable constraint on the model's side of a boundary that is genuinely movable, and it puts the problem entirely on the other team. Option C is a good step within option B and may not close a large gap alone. Option A asks the transaction to absorb a cost users will feel.
+
+**Question 6 (moderate) — A fairness concern raised late**
+
+Days before deployment, a colleague suggests the model may perform worse for a particular group. What is the most effective response?
+
+- A) Deploy and monitor for the issue.
+- B) Test it before deploying, because the question is answerable with data you already have and the answer changes what you should do — and if the concern holds, deploying a model with known differential performance in a public service is a decision that must be made explicitly by someone accountable.
+- C) Delay the deployment until it is resolved.
+- D) Note the concern in the model documentation.
+
+**Correct answer: B. Least effective: D**
+
+**Explanation:** The concern is empirically checkable, usually within hours, and testing converts an uncomfortable question into a fact. Option B also names what happens if it holds — a risk decision belonging to an accountable person, not a judgement you make alone under deadline. Option D is least effective: recording a concern you could have resolved, and deploying anyway, is the version that looks worst in a subsequent review and helps nobody in the meantime. Option A monitors for something you could establish now. Option C may be the outcome and pre-empts the test that determines whether it is necessary.
+
+**Question 7 (harder) — Pressure to over-claim**
+
+A senior stakeholder wants to describe the model publicly as "95% accurate". The figure is from a balanced test set; the live class distribution is heavily skewed, making the number misleading. What is the most effective response?
+
+- A) Allow it; the figure is technically correct.
+- B) Explain concretely why it will mislead — on live data with this distribution a trivial baseline would score similarly, so the figure says nothing about the model's value — and offer a claim that is both true and stronger, such as what the model does better than the process it replaces.
+- C) Refuse to allow the claim.
+- D) Suggest adding a caveat about the test set.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** Option B explains the problem in terms a non-specialist can act on and supplies a replacement claim, which is what stops the conversation becoming a refusal — a stakeholder wanting a strong public statement will accept a different strong statement far more readily than a subtraction. Option A is least effective: a misleading accuracy figure in public communication attracts scrutiny later, and you will be the person asked why it was allowed. Option D keeps the misleading headline behind a caveat nobody reads. Option C is right in substance and offers nothing.
+
+**Question 8 (harder) — A model you inherited**
+
+You take over a model in production with no documentation of how it was evaluated. What is the most effective response?
+
+- A) Re-evaluate it from scratch on current data.
+- B) Establish what it is being used for and what would happen if it were wrong, and let that determine how much assurance is needed — a model ranking internal search results needs far less than one contributing to a decision about a person — because "no documentation" is a risk whose size depends entirely on the use.
+- C) Withdraw it until it can be assured.
+- D) Document what you can reconstruct.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** Option B proportions the response to the consequence, which is the judgement the situation actually requires — an undocumented model is not equally alarming everywhere. Option C is least effective as a first move: withdrawing a working production model on the basis of missing paperwork rather than a demonstrated fault may remove a service that is functioning, and the disruption is real. Option A is the right answer for a high-stakes use and disproportionate for a low-stakes one, which is what option B determines. Option D is useful and does not tell you whether the model is sound.
+
+**Question 9 (harder) — A colleague's evaluation has a flaw**
+
+Reviewing a colleague's work, you find their test set overlaps with their training data. They are more senior than you. What is the most effective response?
+
+- A) Raise it directly, describing the overlap specifically and what it means for the reported figure.
+- B) Approve it and mention the concern informally.
+- C) Ask a third person to check whether you are right.
+- D) Re-run the evaluation yourself and present the corrected figures.
+
+**Correct answer: A. Least effective: B**
+
+**Explanation:** Train-test contamination invalidates the reported performance entirely, which makes it a factual finding rather than a matter of opinion, and describing it specifically keeps the conversation technical regardless of seniority. Option B is least effective: letting an invalid evaluation stand while raising it informally means the figure circulates and gets used, and the informal mention provides no record. Option C is reasonable if you are genuinely unsure and, used to avoid the conversation, delays a clear finding. Option D is well-meant and takes over their work rather than telling them.
+
+**Question 10 (harder) — Monitoring nobody asked for**
+
+You want to add monitoring for subgroup performance on a live model. Nobody has requested it and there is no allocated time. What is the most effective response?
+
+- A) Add it gradually alongside other work.
+- B) Make the case with the specific risk — what could go undetected, for whom, and for how long — and put it to whoever owns the service as a prioritisation decision, because this competes for the same time as everything else and needs to be chosen rather than smuggled in.
+- C) Raise it at a retrospective.
+- D) Add a ticket to the backlog.
+
+**Correct answer: B. Least effective: A**
+
+**Explanation:** The risk is what makes this a decision rather than a preference, and naming who could be affected and for how long is what makes it land with a service owner. Option A is least effective: unsanctioned work alongside sanctioned work makes both slower, is invisible if it succeeds, and looks like a missed estimate if it does not. Option D puts an item in a queue nobody will prioritise without the argument. Option C surfaces it to the team rather than to the person who decides.
+
+**Question 11 (harder) — A request that pushes a data boundary**
+
+A product team asks you to train a model on a dataset whose sharing agreement permits use for a different purpose. What is the most effective response?
+
+- A) Say the agreement does not cover it and stop there.
+- B) Say the position clearly and get it resolved properly — either written agreement from the data controller, or a different dataset — because the boundary is not yours to interpret away, and a written permission takes days while an unpermitted use discovered later is a serious matter for the department.
+- C) Train the model; the purposes are related.
+- D) Ask the product team to check with legal.
+
+**Correct answer: B. Least effective: C**
+
+**Explanation:** Option B holds the line and supplies the route through it, which is what makes it constructive rather than obstructive — most of these situations are resolved by an email to the controller. Option C is least effective: interpreting a purpose limitation generously on your own judgement is exactly the decision that is not yours, and "the purposes are related" is how unlawful processing happens with good intentions. Option D routes the question to people who need your technical account of what would actually be done with the data. Option A is correct and unhelpful.
+
+**Question 12 (harder) — Your own model is underperforming**
+
+A model you built and championed is performing worse in production than the rules-based process it replaced. What is the most effective response?
+
+- A) Raise it yourself, with the comparison, and propose how to establish whether the model can be improved or should be withdrawn.
+- B) Investigate quietly and act if it holds up.
+- C) Note it alongside the model's other benefits.
+- D) Retrain and see whether performance recovers.
+
+**Correct answer: A. Least effective: C**
+
+**Explanation:** Option A is honest, and the reason is practical rather than moral: you are the person best placed to see it, the least suspected of motivated reasoning if you raise it, and the most damaged if somebody else does. Framing it as a question with two possible answers — improvable or withdrawable — keeps it a technical matter. Option C is least effective: changing the subject to offsetting benefits is the move that, once noticed, discounts everything you say afterwards. Option B looks like concealment if discovered. Option D is a reasonable technical step taken without telling anyone the model is currently doing worse than what it replaced.
+
+### Preparation tips
+
+- **Ask what an offline evaluation cannot tell you.**
+- **Translate accuracy into how often, in which direction, and what happens to a person.**
+- **Find the cause of drift before retraining.**
+- **Decide model suitability, not model accuracy.**
+- **Treat inference latency as a requirement on model selection.**
+- **Test a fairness concern rather than documenting it.**
+- **Proportion assurance to the consequence of being wrong.**
+- **Raise problems with your own models yourself.**
+
+### Common pitfalls to avoid
+
+- **Treating a strong test result as a deployment decision.**
+- **Answering a confidence question with an accuracy figure.**
+- **Retraining before diagnosing drift.**
+- **Ensembling to avoid choosing.**
+- **Allowing a technically correct but misleading public claim.**
+- **Approving an evaluation with train-test contamination.**
+- **Interpreting a data purpose limitation generously.**
+- **Doing unsanctioned monitoring work alongside committed work.**
+
+## Conclusion
+
+You have worked through four assessments pitched at senior machine learning engineer, and the threads are worth drawing together.
+
+The cognitive section was about reasoning under the particular uncertainty this role carries — models whose behaviour is learned rather than specified, evaluated on data that is never quite the data they will meet. The recurring discipline was asking what a result does not establish.
+
+The numeric section was the arithmetic that separates a real effect from an artefact: base rates, class imbalance, the difference between a metric moving and a decision changing, and the scale qualifiers that quietly multiply an answer by a thousand.
+
+The verbal section was an exercise in reading evaluation and governance prose exactly. An unassessed dimension is not a clean one. "No evidence of degradation" plus small samples is undetermined, not absence. A condition on creating a derived dataset is not a release from retention terms. And a recommendation is not a predicted outcome.
+
+The situational judgement section circled what makes this role distinctive: you are usually the only person who can evaluate what you are saying, working on systems whose failures are quiet and whose consequences land on people who will never know a model was involved. The strong answers translated technical figures into terms that could be acted on, tested the uncomfortable question rather than recording it, held a data boundary while supplying the route through it, and raised a problem with the speaker's own model before anyone else could.
+
+If one thing is worth carrying away, it is the pattern behind the fairness question and the accuracy claim: in both, the honest move cost something immediately and very little compared with what the alternative costs later. You are frequently the only person positioned to see these, which makes reliably raising them a large part of what senior means here.
+
+Good luck. This is demanding work at the point where statistics meets consequence, and the care you have given this is exactly right.
